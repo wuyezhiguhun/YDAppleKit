@@ -9,5 +9,9 @@
 #ifndef YDKit_h
 #define YDKit_h
 
+#import "YDRouter.h"
+#import "YDNetworking.h"
+#import "YDMultiLanguage.h"
+#import "YDMultiLanguageContainer.h"
 
 #endif /* YDKit_h */

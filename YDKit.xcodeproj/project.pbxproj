@@ -11,6 +11,9 @@
 		5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124ED20E1E3AB001C2CCC /* YDNetworkingController.m */; };
 		5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F120E1E609001C2CCC /* YDRouter.m */; };
 		5A6124F920E25220001C2CCC /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F820E25220001C2CCC /* YDConstant.m */; };
+		5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */; };
+		5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */; };
+		5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */; };
 		62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
 		62B5EC7220DFE29400CAF304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
 		62B5EC7320DFE29400CAF304 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC7020DFE29400CAF304 /* Info.plist */; };
@@ -28,6 +31,13 @@
 		5A6124F720E25220001C2CCC /* YDConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDConstant.h; sourceTree = "<group>"; };
 		5A6124F820E25220001C2CCC /* YDConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDConstant.m; sourceTree = "<group>"; };
 		5A6124FA20E25244001C2CCC /* YDPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPrefixHeader.pch; sourceTree = "<group>"; };
+		5A6395A020E490D900CA4CC2 /* YDMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMacro.h; sourceTree = "<group>"; };
+		5A6395A120E4926900CA4CC2 /* YDModuleRouterUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDModuleRouterUrl.h; sourceTree = "<group>"; };
+		5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDModuleRouterUrl.m; sourceTree = "<group>"; };
+		5A6395AC20E4C24000CA4CC2 /* YDMultiLanguageContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMultiLanguageContainer.h; sourceTree = "<group>"; };
+		5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguageContainer.m; sourceTree = "<group>"; };
+		5A6395AF20E4C7D600CA4CC2 /* YDMultiLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMultiLanguage.h; sourceTree = "<group>"; };
+		5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguage.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B5EC5120DFE04D00CAF304 /* YDKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,11 +103,25 @@
 		5A6124F620E25207001C2CCC /* YDConstant */ = {
 			isa = PBXGroup;
 			children = (
+				5A6124FA20E25244001C2CCC /* YDPrefixHeader.pch */,
+				5A6395A120E4926900CA4CC2 /* YDModuleRouterUrl.h */,
+				5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */,
 				5A6124F720E25220001C2CCC /* YDConstant.h */,
 				5A6124F820E25220001C2CCC /* YDConstant.m */,
-				5A6124FA20E25244001C2CCC /* YDPrefixHeader.pch */,
+				5A6395A020E490D900CA4CC2 /* YDMacro.h */,
 			);
 			path = YDConstant;
+			sourceTree = "<group>";
+		};
+		5A6395A420E4C17C00CA4CC2 /* YDMultiLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				5A6395AF20E4C7D600CA4CC2 /* YDMultiLanguage.h */,
+				5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */,
+				5A6395AC20E4C24000CA4CC2 /* YDMultiLanguageContainer.h */,
+				5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */,
+			);
+			path = YDMultiLanguage;
 			sourceTree = "<group>";
 		};
 		62B5EC4820DFE04D00CAF304 = {
@@ -132,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				62B5EC7920DFE7A600CAF304 /* YDKit.h */,
+				5A6395A420E4C17C00CA4CC2 /* YDMultiLanguage */,
 				5A6124EF20E1E5CD001C2CCC /* YDRouter */,
 				62B5EC6C20DFE19400CAF304 /* YDNetworking */,
 			);
@@ -283,8 +308,11 @@
 				5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */,
 				62B5EC7420DFE29400CAF304 /* AppDelegate.m in Sources */,
 				5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */,
+				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
+				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
 				62B5EC7C20DFE7D700CAF304 /* YDNetworking.m in Sources */,
 				62B5EC7220DFE29400CAF304 /* main.m in Sources */,
+				5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

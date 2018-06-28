@@ -11,12 +11,15 @@
 
 @interface YDMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, copy) NSArray *titleList;
+@property (nonatomic, copy) NSArray *routerList;
 @end
 
 @implementation YDMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[YDMultiLanguageContainer shared] addLanguageChangeController:self];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"YDKit";
     
@@ -31,7 +34,7 @@
 
 #pragma mark -- UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [self.titleList count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *tableViewCell = @"UITableViewCell";
@@ -39,16 +42,17 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableViewCell];
     }
-    cell.textLabel.text = @"网络请求模块";
+    cell.textLabel.text = [self.titleList objectAtIndex:indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    UIViewController *viewController = [[YDRouter shared] matchController:@"wuyezhiguhun/networking"];    
+    UIViewController *viewController = [[YDRouter shared] matchController:[self.routerList objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:viewController animated:YES];
 }
+
 #pragma mark -- get 函数
 - (UITableView *)tableView {
     if (!_tableView) {
@@ -59,7 +63,18 @@
     }
     return _tableView;
 }
-
+- (NSArray *)titleList {
+    if (!_titleList) {
+        _titleList = @[@"网络请求模块"];
+    }
+    return _titleList;
+}
+- (NSArray *)routerList {
+    if (!_routerList) {
+        _routerList = @[YDModuleRouterNetworkingUrl];
+    }
+    return _routerList;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

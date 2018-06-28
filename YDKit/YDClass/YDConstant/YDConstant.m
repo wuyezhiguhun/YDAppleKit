@@ -7,12 +7,10 @@
 //
 
 #import "YDConstant.h"
-#import "YDNetworkingController.h"
+
 
 @implementation YDConstant
 
-+ (void)load {
-    [[YDRouter shared] map:@"wuyezhiguhun/networking" toControllerClass:[YDNetworkingController class]];
-}
+
 
 @end
