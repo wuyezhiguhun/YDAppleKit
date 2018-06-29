@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01B34A171969F9487F9E1FB1 /* libPods-defaults-YDKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */; };
+		5A0B1A4B20E5FF04005F177C /* NSString+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B1A4A20E5FF04005F177C /* NSString+YDCategory.m */; };
+		5A0B1A4E20E600B2005F177C /* NSDictionary+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B1A4D20E600B2005F177C /* NSDictionary+YDCategory.m */; };
 		5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124ED20E1E3AB001C2CCC /* YDNetworkingController.m */; };
 		5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F120E1E609001C2CCC /* YDRouter.m */; };
 		5A6124F920E25220001C2CCC /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F820E25220001C2CCC /* YDConstant.m */; };
@@ -24,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		012D797C5DC694CE4FFCC97B /* Pods-defaults-YDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5A0B1A4920E5FF04005F177C /* NSString+YDCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YDCategory.h"; sourceTree = "<group>"; };
+		5A0B1A4A20E5FF04005F177C /* NSString+YDCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YDCategory.m"; sourceTree = "<group>"; };
+		5A0B1A4C20E600B2005F177C /* NSDictionary+YDCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YDCategory.h"; sourceTree = "<group>"; };
+		5A0B1A4D20E600B2005F177C /* NSDictionary+YDCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YDCategory.m"; sourceTree = "<group>"; };
 		5A6124EC20E1E3AB001C2CCC /* YDNetworkingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNetworkingController.h; sourceTree = "<group>"; };
 		5A6124ED20E1E3AB001C2CCC /* YDNetworkingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNetworkingController.m; sourceTree = "<group>"; };
 		5A6124F020E1E609001C2CCC /* YDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDRouter.h; sourceTree = "<group>"; };
@@ -72,6 +78,17 @@
 				E9ABED0581171F0E07A7BF78 /* Pods-defaults-YDKit.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A0B1A4820E5FE60005F177C /* YDCategory */ = {
+			isa = PBXGroup;
+			children = (
+				5A0B1A4920E5FF04005F177C /* NSString+YDCategory.h */,
+				5A0B1A4A20E5FF04005F177C /* NSString+YDCategory.m */,
+				5A0B1A4C20E600B2005F177C /* NSDictionary+YDCategory.h */,
+				5A0B1A4D20E600B2005F177C /* NSDictionary+YDCategory.m */,
+			);
+			path = YDCategory;
 			sourceTree = "<group>";
 		};
 		5A6124EA20E1E379001C2CCC /* YDNetworking */ = {
@@ -156,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				62B5EC7920DFE7A600CAF304 /* YDKit.h */,
+				5A0B1A4820E5FE60005F177C /* YDCategory */,
 				5A6395A420E4C17C00CA4CC2 /* YDMultiLanguage */,
 				5A6124EF20E1E5CD001C2CCC /* YDRouter */,
 				62B5EC6C20DFE19400CAF304 /* YDNetworking */,
@@ -308,11 +326,13 @@
 				5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */,
 				62B5EC7420DFE29400CAF304 /* AppDelegate.m in Sources */,
 				5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */,
+				5A0B1A4E20E600B2005F177C /* NSDictionary+YDCategory.m in Sources */,
 				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
 				62B5EC7C20DFE7D700CAF304 /* YDNetworking.m in Sources */,
 				62B5EC7220DFE29400CAF304 /* main.m in Sources */,
 				5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */,
+				5A0B1A4B20E5FF04005F177C /* NSString+YDCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,4 +14,9 @@
 #import "YDMultiLanguage.h"
 #import "YDMultiLanguageContainer.h"
 
+
+#pragma mark --- Category
+#import "NSString+YDCategory.h"
+#import "NSDictionary+YDCategory.h"
+
 #endif /* YDKit_h */
