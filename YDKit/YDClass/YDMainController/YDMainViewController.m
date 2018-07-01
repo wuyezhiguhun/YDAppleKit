@@ -9,7 +9,7 @@
 #import "YDMainViewController.h"
 
 
-@interface YDMainViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface YDMainViewController ()<UITableViewDelegate, UITableViewDataSource, YDMultiLanguageChange>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *titleList;
 @property (nonatomic, copy) NSArray *routerList;
@@ -31,7 +31,10 @@
     }];
     // Do any additional setup after loading the view.
 }
-
+- (void)reloadUIWhenLanguageChange {
+    self.titleList = @[YDLanguage(@"YDNetworkingModule")];
+    [self.tableView reloadData];
+}
 #pragma mark -- UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.titleList count];
@@ -65,7 +68,7 @@
 }
 - (NSArray *)titleList {
     if (!_titleList) {
-        _titleList = @[@"网络请求模块"];
+        _titleList = @[YDLanguage(@"YDNetworkingModule")];
     }
     return _titleList;
 }

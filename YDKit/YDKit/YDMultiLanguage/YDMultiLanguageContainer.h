@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol YDMultiLanguageChange <NSObject>
+
 @optional
 - (void)reloadUIWhenLanguageChange;
 
