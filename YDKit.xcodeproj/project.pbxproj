@@ -16,6 +16,24 @@
 		5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */; };
 		5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */; };
 		5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */; };
+		5A6AA30B20FED6BD001C0210 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA30A20FED6BD001C0210 /* README.md */; };
+		5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA31C20FEE1C6001C0210 /* YDBaiduMapFactory.m */; };
+		5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32120FEE723001C0210 /* YDBaiduMapView.m */; };
+		5A6AA32620FF0919001C0210 /* YDMapPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32520FF0919001C0210 /* YDMapPlatform.m */; };
+		5A6AA32920FF09D7001C0210 /* YDMapPlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32820FF09D7001C0210 /* YDMapPlatformXmlParser.m */; };
+		5A6AA32C20FF103F001C0210 /* YDMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32B20FF103F001C0210 /* YDMapEngine.m */; };
+		5A6AA33120FF1AC4001C0210 /* YDFactoryMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA33020FF1AC4001C0210 /* YDFactoryMapController.m */; };
+		5A6AA33520FF2114001C0210 /* YDConfig.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA33420FF2114001C0210 /* YDConfig.map.xml */; };
+		5A6AA33A20FF32CF001C0210 /* YDAmapMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA33920FF32CF001C0210 /* YDAmapMapFactory.m */; };
+		5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA33C20FF32ED001C0210 /* YDAmapMapView.m */; };
+		5A6AA34020FF3D0D001C0210 /* YDConfig.map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA33F20FF3D0D001C0210 /* YDConfig.map.plist */; };
+		5A6AA34320FF4021001C0210 /* YDMapPlatformPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA34220FF4021001C0210 /* YDMapPlatformPlistParser.m */; };
+		5A9CD35920F307D600657DBA /* YDFactoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD35820F307D600657DBA /* YDFactoryButton.m */; };
+		5A9CD35C20F307ED00657DBA /* YDFactoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD35B20F307ED00657DBA /* YDFactoryImageView.m */; };
+		5A9CD35F20F3081900657DBA /* YDViewFactoryConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A9CD35E20F3081900657DBA /* YDViewFactoryConfig.xml */; };
+		5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36220F3094900657DBA /* YDViewXmlParser.m */; };
+		5A9CD36720F30D3200657DBA /* YDViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36620F30D3200657DBA /* YDViewFactory.m */; };
+		5A9CD36C20F3105900657DBA /* YDFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36B20F3105900657DBA /* YDFactoryController.m */; };
 		6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
 		62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
 		62B5EC7220DFE29400CAF304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
@@ -45,6 +63,40 @@
 		5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguageContainer.m; sourceTree = "<group>"; };
 		5A6395AF20E4C7D600CA4CC2 /* YDMultiLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMultiLanguage.h; sourceTree = "<group>"; };
 		5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguage.m; sourceTree = "<group>"; };
+		5A6AA30A20FED6BD001C0210 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A6AA31020FEDA40001C0210 /* YDMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapFactory.h; sourceTree = "<group>"; };
+		5A6AA31120FEDAC2001C0210 /* YDMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapView.h; sourceTree = "<group>"; };
+		5A6AA31B20FEE1C6001C0210 /* YDBaiduMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapFactory.h; sourceTree = "<group>"; };
+		5A6AA31C20FEE1C6001C0210 /* YDBaiduMapFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapFactory.m; sourceTree = "<group>"; };
+		5A6AA32120FEE723001C0210 /* YDBaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapView.m; sourceTree = "<group>"; };
+		5A6AA32220FEE723001C0210 /* YDBaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapView.h; sourceTree = "<group>"; };
+		5A6AA32420FF0919001C0210 /* YDMapPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapPlatform.h; sourceTree = "<group>"; };
+		5A6AA32520FF0919001C0210 /* YDMapPlatform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMapPlatform.m; sourceTree = "<group>"; };
+		5A6AA32720FF09D7001C0210 /* YDMapPlatformXmlParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapPlatformXmlParser.h; sourceTree = "<group>"; };
+		5A6AA32820FF09D7001C0210 /* YDMapPlatformXmlParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMapPlatformXmlParser.m; sourceTree = "<group>"; };
+		5A6AA32A20FF103F001C0210 /* YDMapEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapEngine.h; sourceTree = "<group>"; };
+		5A6AA32B20FF103F001C0210 /* YDMapEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMapEngine.m; sourceTree = "<group>"; };
+		5A6AA32F20FF1AC4001C0210 /* YDFactoryMapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFactoryMapController.h; sourceTree = "<group>"; };
+		5A6AA33020FF1AC4001C0210 /* YDFactoryMapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFactoryMapController.m; sourceTree = "<group>"; };
+		5A6AA33420FF2114001C0210 /* YDConfig.map.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = YDConfig.map.xml; sourceTree = "<group>"; };
+		5A6AA33820FF32CF001C0210 /* YDAmapMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapFactory.h; sourceTree = "<group>"; };
+		5A6AA33920FF32CF001C0210 /* YDAmapMapFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapFactory.m; sourceTree = "<group>"; };
+		5A6AA33B20FF32ED001C0210 /* YDAmapMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapView.h; sourceTree = "<group>"; };
+		5A6AA33C20FF32ED001C0210 /* YDAmapMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapView.m; sourceTree = "<group>"; };
+		5A6AA33F20FF3D0D001C0210 /* YDConfig.map.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YDConfig.map.plist; sourceTree = "<group>"; };
+		5A6AA34120FF4021001C0210 /* YDMapPlatformPlistParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapPlatformPlistParser.h; sourceTree = "<group>"; };
+		5A6AA34220FF4021001C0210 /* YDMapPlatformPlistParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMapPlatformPlistParser.m; sourceTree = "<group>"; };
+		5A9CD35720F307D600657DBA /* YDFactoryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFactoryButton.h; sourceTree = "<group>"; };
+		5A9CD35820F307D600657DBA /* YDFactoryButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFactoryButton.m; sourceTree = "<group>"; };
+		5A9CD35A20F307ED00657DBA /* YDFactoryImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFactoryImageView.h; sourceTree = "<group>"; };
+		5A9CD35B20F307ED00657DBA /* YDFactoryImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFactoryImageView.m; sourceTree = "<group>"; };
+		5A9CD35E20F3081900657DBA /* YDViewFactoryConfig.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = YDViewFactoryConfig.xml; sourceTree = "<group>"; };
+		5A9CD36120F3094900657DBA /* YDViewXmlParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDViewXmlParser.h; sourceTree = "<group>"; };
+		5A9CD36220F3094900657DBA /* YDViewXmlParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDViewXmlParser.m; sourceTree = "<group>"; };
+		5A9CD36520F30D3200657DBA /* YDViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDViewFactory.h; sourceTree = "<group>"; };
+		5A9CD36620F30D3200657DBA /* YDViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDViewFactory.m; sourceTree = "<group>"; };
+		5A9CD36A20F3105900657DBA /* YDFactoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFactoryController.h; sourceTree = "<group>"; };
+		5A9CD36B20F3105900657DBA /* YDFactoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFactoryController.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6280B3C220E8A67900F5E1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C420E8A69100F5E1FC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -145,9 +197,207 @@
 			path = YDMultiLanguage;
 			sourceTree = "<group>";
 		};
+		5A6AA30C20FED8E6001C0210 /* YDMapFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA31820FEE114001C0210 /* Engine */,
+				5A6AA31220FEDEA6001C0210 /* Config */,
+				5A6AA30E20FED9A5001C0210 /* Base */,
+				5A6AA30D20FED99D001C0210 /* Map */,
+			);
+			path = YDMapFramework;
+			sourceTree = "<group>";
+		};
+		5A6AA30D20FED99D001C0210 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA31720FEDFED001C0210 /* Amap */,
+				5A6AA31520FEDF55001C0210 /* Baidu */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		5A6AA30E20FED9A5001C0210 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA30F20FEDA1C001C0210 /* Views */,
+				5A6AA31020FEDA40001C0210 /* YDMapFactory.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A6AA30F20FEDA1C001C0210 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA31120FEDAC2001C0210 /* YDMapView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A6AA31220FEDEA6001C0210 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA33420FF2114001C0210 /* YDConfig.map.xml */,
+				5A6AA33F20FF3D0D001C0210 /* YDConfig.map.plist */,
+				5A6AA32420FF0919001C0210 /* YDMapPlatform.h */,
+				5A6AA32520FF0919001C0210 /* YDMapPlatform.m */,
+				5A6AA32720FF09D7001C0210 /* YDMapPlatformXmlParser.h */,
+				5A6AA32820FF09D7001C0210 /* YDMapPlatformXmlParser.m */,
+				5A6AA34120FF4021001C0210 /* YDMapPlatformPlistParser.h */,
+				5A6AA34220FF4021001C0210 /* YDMapPlatformPlistParser.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5A6AA31520FEDF55001C0210 /* Baidu */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA31A20FEE18B001C0210 /* Factory */,
+				5A6AA31920FEE181001C0210 /* Views */,
+			);
+			path = Baidu;
+			sourceTree = "<group>";
+		};
+		5A6AA31720FEDFED001C0210 /* Amap */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA33620FF3294001C0210 /* Factory */,
+				5A6AA33720FF32A2001C0210 /* Views */,
+			);
+			path = Amap;
+			sourceTree = "<group>";
+		};
+		5A6AA31820FEE114001C0210 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA32A20FF103F001C0210 /* YDMapEngine.h */,
+				5A6AA32B20FF103F001C0210 /* YDMapEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		5A6AA31920FEE181001C0210 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA32220FEE723001C0210 /* YDBaiduMapView.h */,
+				5A6AA32120FEE723001C0210 /* YDBaiduMapView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A6AA31A20FEE18B001C0210 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA31B20FEE1C6001C0210 /* YDBaiduMapFactory.h */,
+				5A6AA31C20FEE1C6001C0210 /* YDBaiduMapFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		5A6AA32D20FF1A80001C0210 /* YDFactoryMap */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA32E20FF1A9D001C0210 /* Controller */,
+			);
+			path = YDFactoryMap;
+			sourceTree = "<group>";
+		};
+		5A6AA32E20FF1A9D001C0210 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA32F20FF1AC4001C0210 /* YDFactoryMapController.h */,
+				5A6AA33020FF1AC4001C0210 /* YDFactoryMapController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A6AA33620FF3294001C0210 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA33820FF32CF001C0210 /* YDAmapMapFactory.h */,
+				5A6AA33920FF32CF001C0210 /* YDAmapMapFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		5A6AA33720FF32A2001C0210 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AA33B20FF32ED001C0210 /* YDAmapMapView.h */,
+				5A6AA33C20FF32ED001C0210 /* YDAmapMapView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A9CD35520F3070400657DBA /* YDFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD36420F30D0600657DBA /* ViewFactory */,
+				5A9CD36020F3092500657DBA /* Utils */,
+				5A9CD35D20F307F200657DBA /* Config */,
+				5A9CD35620F307B100657DBA /* View */,
+			);
+			path = YDFactory;
+			sourceTree = "<group>";
+		};
+		5A9CD35620F307B100657DBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD35720F307D600657DBA /* YDFactoryButton.h */,
+				5A9CD35820F307D600657DBA /* YDFactoryButton.m */,
+				5A9CD35A20F307ED00657DBA /* YDFactoryImageView.h */,
+				5A9CD35B20F307ED00657DBA /* YDFactoryImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A9CD35D20F307F200657DBA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD35E20F3081900657DBA /* YDViewFactoryConfig.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5A9CD36020F3092500657DBA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD36120F3094900657DBA /* YDViewXmlParser.h */,
+				5A9CD36220F3094900657DBA /* YDViewXmlParser.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A9CD36420F30D0600657DBA /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD36520F30D3200657DBA /* YDViewFactory.h */,
+				5A9CD36620F30D3200657DBA /* YDViewFactory.m */,
+			);
+			path = ViewFactory;
+			sourceTree = "<group>";
+		};
+		5A9CD36820F3102400657DBA /* YDFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD36920F3103600657DBA /* Controller */,
+			);
+			path = YDFactory;
+			sourceTree = "<group>";
+		};
+		5A9CD36920F3103600657DBA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CD36A20F3105900657DBA /* YDFactoryController.h */,
+				5A9CD36B20F3105900657DBA /* YDFactoryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		62B5EC4820DFE04D00CAF304 = {
 			isa = PBXGroup;
 			children = (
+				5A6AA30A20FED6BD001C0210 /* README.md */,
 				62B5EC5320DFE04D00CAF304 /* YDKit */,
 				62B5EC5220DFE04D00CAF304 /* Products */,
 				150F5C39BDC3C05298846817 /* Pods */,
@@ -177,6 +427,8 @@
 			isa = PBXGroup;
 			children = (
 				62B5EC7920DFE7A600CAF304 /* YDKit.h */,
+				5A6AA30C20FED8E6001C0210 /* YDMapFramework */,
+				5A9CD35520F3070400657DBA /* YDFactory */,
 				5A0B1A4820E5FE60005F177C /* YDCategory */,
 				5A6395A420E4C17C00CA4CC2 /* YDMultiLanguage */,
 				5A6124EF20E1E5CD001C2CCC /* YDRouter */,
@@ -188,10 +440,12 @@
 		62B5EC6B20DFE13C00CAF304 /* YDClass */ = {
 			isa = PBXGroup;
 			children = (
+				5A6AA32D20FF1A80001C0210 /* YDFactoryMap */,
+				5A9CD36820F3102400657DBA /* YDFactory */,
+				62B5EC6D20DFE1A900CAF304 /* AppDelegate */,
 				5A6124F620E25207001C2CCC /* YDConstant */,
 				5A6124EA20E1E379001C2CCC /* YDNetworking */,
 				62B5EC7520DFE2D800CAF304 /* YDMainController */,
-				62B5EC6D20DFE1A900CAF304 /* AppDelegate */,
 			);
 			path = YDClass;
 			sourceTree = "<group>";
@@ -245,6 +499,7 @@
 				62B5EC4D20DFE04D00CAF304 /* Sources */,
 				62B5EC4E20DFE04D00CAF304 /* Frameworks */,
 				62B5EC4F20DFE04D00CAF304 /* Resources */,
+				2430A7AB0A42D1A76C615AE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,7 +550,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6AA33520FF2114001C0210 /* YDConfig.map.xml in Resources */,
+				5A6AA34020FF3D0D001C0210 /* YDConfig.map.plist in Resources */,
+				5A9CD35F20F3081900657DBA /* YDViewFactoryConfig.xml in Resources */,
 				62B5EC7320DFE29400CAF304 /* Info.plist in Resources */,
+				5A6AA30B20FED6BD001C0210 /* README.md in Resources */,
 				6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */,
 				62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */,
 			);
@@ -304,6 +563,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2430A7AB0A42D1A76C615AE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FE319B1D6D9F3B03529BA14D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,14 +609,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B5EC7820DFE31F00CAF304 /* YDMainViewController.m in Sources */,
+				5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */,
+				5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */,
+				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
 				5A6124F920E25220001C2CCC /* YDConstant.m in Sources */,
 				5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */,
 				62B5EC7420DFE29400CAF304 /* AppDelegate.m in Sources */,
+				5A6AA32620FF0919001C0210 /* YDMapPlatform.m in Sources */,
+				5A6AA34320FF4021001C0210 /* YDMapPlatformPlistParser.m in Sources */,
+				5A6AA32C20FF103F001C0210 /* YDMapEngine.m in Sources */,
 				5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */,
 				5A0B1A4E20E600B2005F177C /* NSDictionary+YDCategory.m in Sources */,
 				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
+				5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
+				5A9CD35C20F307ED00657DBA /* YDFactoryImageView.m in Sources */,
+				5A6AA32920FF09D7001C0210 /* YDMapPlatformXmlParser.m in Sources */,
+				5A6AA33A20FF32CF001C0210 /* YDAmapMapFactory.m in Sources */,
+				5A6AA33120FF1AC4001C0210 /* YDFactoryMapController.m in Sources */,
+				5A9CD36C20F3105900657DBA /* YDFactoryController.m in Sources */,
+				5A9CD36720F30D3200657DBA /* YDViewFactory.m in Sources */,
 				62B5EC7C20DFE7D700CAF304 /* YDNetworking.m in Sources */,
+				5A9CD35920F307D600657DBA /* YDFactoryButton.m in Sources */,
 				62B5EC7220DFE29400CAF304 /* main.m in Sources */,
 				5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */,
 				5A0B1A4B20E5FF04005F177C /* NSString+YDCategory.m in Sources */,
@@ -478,7 +771,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = K749AEADAX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDClass/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDClass/AppDelegate/Info.plist";
@@ -489,6 +784,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6f9a4b08-e33e-4d97-b22b-7a35f5bc96de";
+				PROVISIONING_PROFILE_SPECIFIER = rowenatechDevelop;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -499,7 +796,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = K749AEADAX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDClass/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDClass/AppDelegate/Info.plist";
@@ -510,6 +809,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6eb0ec5f-ef7f-4aef-9562-9308efa1064f";
+				PROVISIONING_PROFILE_SPECIFIER = rowenatechDistribution;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

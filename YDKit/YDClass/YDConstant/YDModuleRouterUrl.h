@@ -10,6 +10,10 @@
 
 /** 网络请求模块 */
 FOUNDATION_EXTERN NSString * const YDModuleRouterNetworkingUrl;
+/** 工厂模式模块 */
+FOUNDATION_EXPORT NSString * const YDModuleRouterFactoryUrl;
+/** 工厂模式应用之地图 */
+FOUNDATION_EXPORT NSString * const YDModuleRouterFactoryMapUrl;
 
 @interface YDModuleRouterUrl : NSObject
 

@@ -32,7 +32,7 @@
     // Do any additional setup after loading the view.
 }
 - (void)reloadUIWhenLanguageChange {
-    self.titleList = @[YDLanguage(@"YDNetworkingModule")];
+    self.titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap")];
     [self.tableView reloadData];
 }
 #pragma mark -- UITableViewDelegate
@@ -68,13 +68,13 @@
 }
 - (NSArray *)titleList {
     if (!_titleList) {
-        _titleList = @[YDLanguage(@"YDNetworkingModule")];
+        _titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap")];
     }
     return _titleList;
 }
 - (NSArray *)routerList {
     if (!_routerList) {
-        _routerList = @[YDModuleRouterNetworkingUrl];
+        _routerList = @[YDModuleRouterNetworkingUrl,YDModuleRouterFactoryUrl,YDModuleRouterFactoryMapUrl];
     }
     return _routerList;
 }

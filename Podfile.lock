@@ -14,17 +14,29 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - AMap2DMap-NO-IDFA (5.6.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapFoundation-NO-IDFA (1.5.3)
+  - BaiduMapKit (4.1.1)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 3.2.0)
+  - AMap2DMap-NO-IDFA
+  - BaiduMapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - AMap2DMap-NO-IDFA
+    - AMapFoundation-NO-IDFA
+    - BaiduMapKit
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AMap2DMap-NO-IDFA: 277965383679f1a4676df7e1a0439a1e14d0599a
+  AMapFoundation-NO-IDFA: 128ccf9249abc9de1661b935f01d116700583691
+  BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
 
-PODFILE CHECKSUM: b32cb35f8056ed6e49ed2df7a4e2c18e476853f8
+PODFILE CHECKSUM: 5b32c0804659a43a015c13f29d04f279430857e3
 
 COCOAPODS: 1.5.0

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views>
+    <view key="1" className="YDFactoryButton"/>
+    <view key="2" className="YDFactoryImageView"/>
+</views>
+

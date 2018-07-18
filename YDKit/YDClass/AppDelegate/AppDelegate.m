@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YDMainViewController.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     YDMainViewController *mainViewController = [[YDMainViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
