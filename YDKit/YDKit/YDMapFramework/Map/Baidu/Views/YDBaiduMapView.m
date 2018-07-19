@@ -21,7 +21,7 @@
 //专门用于实现百度地图
 //初始化百度地图
 - (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
         self.mapView = [[BMKMapView alloc] initWithFrame:frame];
     }
@@ -31,6 +31,50 @@
 - (UIView *)getView {
     return self.mapView;
 }
+
+
+//显示定位图层
+- (void)showsUserLocation:(BOOL)isShowUserLocation {
+    self.mapView.showsUserLocation = isShowUserLocation;
+}
+
+//更新定位图层
+- (void)updateLocationData:(id<YDUserLocation>)userLocation {
+    [self.mapView updateLocationData:[userLocation getObject]];
+}
+
+//设置定位模式
+- (void)setUserTrackingModel:(YDUserTrackingMode)mode {
+    switch (mode) {
+        case YDUserTrackingModeNone:
+            self.mapView.userTrackingMode = BMKUserTrackingModeNone;
+            break;
+        case YDUserTrackingModeFollow:
+            self.mapView.userTrackingMode = BMKUserTrackingModeFollow;
+            break;
+        case YDUserTrackingModeHeading:
+            self.mapView.userTrackingMode = BMKUserTrackingModeHeading;
+            break;
+        case YDUserTrackingModeFollowWithHeading:
+            self.mapView.userTrackingMode = BMKUserTrackingModeFollowWithHeading;
+            break;
+            
+        default:
+            break;
+    }
+}
+
+//当mapview即将被显示的时候调用，恢复之前存储的mapview状态
+- (void)viewWillAppear {
+    [self.mapView viewWillAppear];
+}
+
+//当mapview即将被隐藏的时候调用，存储当前mapview的状态
+- (void)viewWillDisappear {
+    [self.mapView viewWillDisappear];
+}
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

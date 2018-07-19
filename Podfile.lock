@@ -17,26 +17,35 @@ PODS:
   - AMap2DMap-NO-IDFA (5.6.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
   - AMapFoundation-NO-IDFA (1.5.3)
+  - AMapLocation-NO-IDFA (2.6.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
   - BaiduMapKit (4.1.1)
+  - BMKLocationKit (1.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.0)
   - AMap2DMap-NO-IDFA
+  - AMapLocation-NO-IDFA
   - BaiduMapKit
+  - BMKLocationKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - AMap2DMap-NO-IDFA
     - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
     - BaiduMapKit
+    - BMKLocationKit
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   AMap2DMap-NO-IDFA: 277965383679f1a4676df7e1a0439a1e14d0599a
   AMapFoundation-NO-IDFA: 128ccf9249abc9de1661b935f01d116700583691
+  AMapLocation-NO-IDFA: a75b762ae9a90840ce683de12504ac843a9f3b6c
   BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
+  BMKLocationKit: c0fd588904738a6865e9311ed445c38452039007
 
-PODFILE CHECKSUM: 5b32c0804659a43a015c13f29d04f279430857e3
+PODFILE CHECKSUM: 378c38816a97794ab7ffd68fb5bbb87154772bcd
 
 COCOAPODS: 1.5.0

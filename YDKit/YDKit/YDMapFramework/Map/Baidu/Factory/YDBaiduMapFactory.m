@@ -10,6 +10,7 @@
 #import "YDBaiduMapView.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import "YDBaiduMapLocationService.h"
 
 @interface YDBaiduMapFactory()
 
@@ -33,4 +34,8 @@
     return [[YDBaiduMapView alloc] initWithFrame:frame];
 }
 
+//生产线  定位 （定位SDK生产线）
+- (id<YDLocationService>)getMapLocationService {
+    return [[YDBaiduMapLocationService alloc] init];
+}
 @end

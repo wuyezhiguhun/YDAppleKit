@@ -34,6 +34,10 @@
 		5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36220F3094900657DBA /* YDViewXmlParser.m */; };
 		5A9CD36720F30D3200657DBA /* YDViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36620F30D3200657DBA /* YDViewFactory.m */; };
 		5A9CD36C20F3105900657DBA /* YDFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36B20F3105900657DBA /* YDFactoryController.m */; };
+		5ABA588921002CBB009A5773 /* YDBaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA588821002CBB009A5773 /* YDBaiduMapUserLocation.m */; };
+		5ABA588C21002CF9009A5773 /* YDBaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA588B21002CF9009A5773 /* YDBaiduMapLocationService.m */; };
+		5ABA589221007C26009A5773 /* YDAmapMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589121007C26009A5773 /* YDAmapMapUserLocation.m */; };
+		5ABA589521007C48009A5773 /* YDAmapMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */; };
 		6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
 		62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
 		62B5EC7220DFE29400CAF304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
@@ -97,6 +101,17 @@
 		5A9CD36620F30D3200657DBA /* YDViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDViewFactory.m; sourceTree = "<group>"; };
 		5A9CD36A20F3105900657DBA /* YDFactoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDFactoryController.h; sourceTree = "<group>"; };
 		5A9CD36B20F3105900657DBA /* YDFactoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDFactoryController.m; sourceTree = "<group>"; };
+		5ABA588521002C0A009A5773 /* YDUserLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDUserLocation.h; sourceTree = "<group>"; };
+		5ABA588721002CBB009A5773 /* YDBaiduMapUserLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapUserLocation.h; sourceTree = "<group>"; };
+		5ABA588821002CBB009A5773 /* YDBaiduMapUserLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapUserLocation.m; sourceTree = "<group>"; };
+		5ABA588A21002CF9009A5773 /* YDBaiduMapLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapLocationService.h; sourceTree = "<group>"; };
+		5ABA588B21002CF9009A5773 /* YDBaiduMapLocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapLocationService.m; sourceTree = "<group>"; };
+		5ABA588D21002D55009A5773 /* YDLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLocationService.h; sourceTree = "<group>"; };
+		5ABA588E21002D77009A5773 /* YDLocationServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDLocationServiceDelegate.h; sourceTree = "<group>"; };
+		5ABA589021007C26009A5773 /* YDAmapMapUserLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapUserLocation.h; sourceTree = "<group>"; };
+		5ABA589121007C26009A5773 /* YDAmapMapUserLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapUserLocation.m; sourceTree = "<group>"; };
+		5ABA589321007C48009A5773 /* YDAmapMapLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapLocationService.h; sourceTree = "<group>"; };
+		5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapLocationService.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6280B3C220E8A67900F5E1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C420E8A69100F5E1FC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -220,6 +235,7 @@
 		5A6AA30E20FED9A5001C0210 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				5ABA588421002BCD009A5773 /* Location */,
 				5A6AA30F20FEDA1C001C0210 /* Views */,
 				5A6AA31020FEDA40001C0210 /* YDMapFactory.h */,
 			);
@@ -252,6 +268,7 @@
 		5A6AA31520FEDF55001C0210 /* Baidu */ = {
 			isa = PBXGroup;
 			children = (
+				5ABA588621002C7B009A5773 /* Location */,
 				5A6AA31A20FEE18B001C0210 /* Factory */,
 				5A6AA31920FEE181001C0210 /* Views */,
 			);
@@ -261,6 +278,7 @@
 		5A6AA31720FEDFED001C0210 /* Amap */ = {
 			isa = PBXGroup;
 			children = (
+				5ABA588F21007BFA009A5773 /* Location */,
 				5A6AA33620FF3294001C0210 /* Factory */,
 				5A6AA33720FF32A2001C0210 /* Views */,
 			);
@@ -392,6 +410,38 @@
 				5A9CD36B20F3105900657DBA /* YDFactoryController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ABA588421002BCD009A5773 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA588521002C0A009A5773 /* YDUserLocation.h */,
+				5ABA588E21002D77009A5773 /* YDLocationServiceDelegate.h */,
+				5ABA588D21002D55009A5773 /* YDLocationService.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5ABA588621002C7B009A5773 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA588721002CBB009A5773 /* YDBaiduMapUserLocation.h */,
+				5ABA588821002CBB009A5773 /* YDBaiduMapUserLocation.m */,
+				5ABA588A21002CF9009A5773 /* YDBaiduMapLocationService.h */,
+				5ABA588B21002CF9009A5773 /* YDBaiduMapLocationService.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5ABA588F21007BFA009A5773 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA589021007C26009A5773 /* YDAmapMapUserLocation.h */,
+				5ABA589121007C26009A5773 /* YDAmapMapUserLocation.m */,
+				5ABA589321007C48009A5773 /* YDAmapMapLocationService.h */,
+				5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		62B5EC4820DFE04D00CAF304 = {
@@ -609,9 +659,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B5EC7820DFE31F00CAF304 /* YDMainViewController.m in Sources */,
+				5ABA589521007C48009A5773 /* YDAmapMapLocationService.m in Sources */,
 				5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */,
 				5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */,
 				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
+				5ABA589221007C26009A5773 /* YDAmapMapUserLocation.m in Sources */,
 				5A6124F920E25220001C2CCC /* YDConstant.m in Sources */,
 				5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */,
 				62B5EC7420DFE29400CAF304 /* AppDelegate.m in Sources */,
@@ -620,6 +672,7 @@
 				5A6AA32C20FF103F001C0210 /* YDMapEngine.m in Sources */,
 				5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */,
 				5A0B1A4E20E600B2005F177C /* NSDictionary+YDCategory.m in Sources */,
+				5ABA588C21002CF9009A5773 /* YDBaiduMapLocationService.m in Sources */,
 				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
 				5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
@@ -628,6 +681,7 @@
 				5A6AA33A20FF32CF001C0210 /* YDAmapMapFactory.m in Sources */,
 				5A6AA33120FF1AC4001C0210 /* YDFactoryMapController.m in Sources */,
 				5A9CD36C20F3105900657DBA /* YDFactoryController.m in Sources */,
+				5ABA588921002CBB009A5773 /* YDBaiduMapUserLocation.m in Sources */,
 				5A9CD36720F30D3200657DBA /* YDViewFactory.m in Sources */,
 				62B5EC7C20DFE7D700CAF304 /* YDNetworking.m in Sources */,
 				5A9CD35920F307D600657DBA /* YDFactoryButton.m in Sources */,
@@ -772,8 +826,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = K749AEADAX;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDClass/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDClass/AppDelegate/Info.plist";
@@ -784,8 +838,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6f9a4b08-e33e-4d97-b22b-7a35f5bc96de";
-				PROVISIONING_PROFILE_SPECIFIER = rowenatechDevelop;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -796,9 +850,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = K749AEADAX;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDClass/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDClass/AppDelegate/Info.plist";
@@ -809,8 +863,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6eb0ec5f-ef7f-4aef-9562-9308efa1064f";
-				PROVISIONING_PROFILE_SPECIFIER = rowenatechDistribution;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

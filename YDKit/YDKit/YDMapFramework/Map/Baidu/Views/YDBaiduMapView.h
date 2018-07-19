@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YDMapView.h"
 
-@interface YDBaiduMapView : UIView<YDMapView>
+@interface YDBaiduMapView : NSObject<YDMapView>
 
 
 @end

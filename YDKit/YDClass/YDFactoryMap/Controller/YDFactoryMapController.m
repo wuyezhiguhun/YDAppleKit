@@ -9,12 +9,16 @@
 #import "YDFactoryMapController.h"
 #import "YDMapEngine.h"
 
-@interface YDFactoryMapController ()
+@interface YDFactoryMapController ()<YDLocationServiceDelegate>
 
 @property (nonatomic, strong) UIButton *button;
 
 /** 地图View */
 @property (nonatomic, strong) UIView *mapView;
+
+@property (nonatomic, strong) id<YDMapView> mapViewFactory;
+@property (nonatomic, strong) id<YDMapFactory> factory;
+@property (nonatomic, strong) id<YDLocationService> locationService;
 
 @end
 
@@ -25,17 +29,48 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.button];
     [self addMapView];
+    [self initLocationService];
     
     // Do any additional setup after loading the view.
 }
 //添加地图
 - (void)addMapView {
     [[YDMapEngine shareInstance] initMap];
-    id<YDMapFactory> factory = [[YDMapEngine shareInstance] getMapFactory];
-    id<YDMapView> mapView = [factory getMapViewWithFrame:CGRectMake(0, 139, YDScreenWidth, YDScreenHeight - 139)];
-    self.mapView = [mapView getView];
+    self.factory = [[YDMapEngine shareInstance] getMapFactory];
+    self.mapViewFactory = [self.factory getMapViewWithFrame:CGRectMake(0, 139, YDScreenWidth, YDScreenHeight - 139)];
+    self.mapView = [self.mapViewFactory getView];
     [self.view addSubview:self.mapView];
 }
+- (void)initLocationService {
+    self.locationService = [self.factory getMapLocationService];
+    [self.locationService startUserLocationService];
+    [self.mapViewFactory showsUserLocation:NO];
+    [self.mapViewFactory setUserTrackingModel:YDUserTrackingModeNone];
+    [self.mapViewFactory showsUserLocation:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.mapViewFactory viewWillAppear];
+    [self.locationService setDelegate:self];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.mapViewFactory viewWillDisappear];
+    [self.locationService setDelegate:nil];
+    [self.locationService stopUserLocationService];
+}
+#pragma mark -- YDLocationServiceDelegate
+- (void)didUpdateUserHeading:(id<YDUserLocation>)userLocation {
+    
+}
+- (void)didUpdateUserLocation:(id<YDUserLocation>)userLocation {
+    
+}
+- (void)didFailToLocateUserWithError:(NSError *)error {
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

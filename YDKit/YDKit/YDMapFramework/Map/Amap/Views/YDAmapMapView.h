@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface YDAmapMapView : UIView
+#import "YDMapView.h"
+@interface YDAmapMapView : NSObject<YDMapView>
 
 @end

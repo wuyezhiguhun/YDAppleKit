@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "YDMapView.h"
+#import "YDLocationService.h"
 
 @protocol YDMapFactory <NSObject>
 
@@ -17,4 +18,6 @@
 //生产线（视图生产线）
 - (id<YDMapView>)getMapViewWithFrame:(CGRect)frame;
 
+//生产线 定位 （定位SDK生产线）
+- (id<YDLocationService>)getMapLocationService;
 @end

@@ -20,7 +20,7 @@
 //专门用于实现百度地图
 //初始化百度地图
 - (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
         self.mapView = [[MAMapView alloc] initWithFrame:frame];
     }
