@@ -12,7 +12,6 @@
 @interface YDAmapMapLocationService()<AMapLocationManagerDelegate>
 
 @property (nonatomic, strong) AMapLocationManager *locationManager;
-//@property (nonatomic, strong) BMKLocationService *locationService;
 
 @property (nonatomic, strong) id<YDLocationServiceDelegate> delegate;
 
@@ -43,7 +42,6 @@
     [self.locationManager startUpdatingLocation];
     //方向定位
     [self.locationManager startUpdatingHeading];
-//    [self.locationService startUserLocationService];
 }
 
 //结束定位
@@ -52,7 +50,6 @@
     [self.locationManager stopUpdatingLocation];
     //方向定位
     [self.locationManager stopUpdatingHeading];
-//    [self.locationService stopUserLocationService];
 }
 
 //实现相关delegate 处理位置信息更新
@@ -75,10 +72,8 @@
  *  @param newHeading 设备朝向。
  */
 - (void)amapLocationManager:(AMapLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
-    MAUserLocation *userLocation = [[MAUserLocation alloc] init];
     if (self.delegate && [self.delegate respondsToSelector:@selector(didUpdateUserHeading:)]) {
-//        [[YDAmapMapUserLocation alloc] initwith];
-//        [self.delegate didUpdateUserHeading:[[YDBaiduMapUserLocation alloc] initWithUserLocation:userLocation]];
+        [self.delegate didUpdateUserHeading:[[YDAmapMapUserLocation alloc] initWithHeading:newHeading]];
     }
 
 }
@@ -90,29 +85,12 @@
  *  @param reGeocode 逆地理信息。
  */
 - (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didUpdateUserLocation:)]) {
+        [self.delegate didUpdateUserLocation:[[YDAmapMapUserLocation alloc] initWithLocation:location]];
+    }
 }
 
 
-////处理方向变更信息
-//- (void)didUpdateUserHeading:(BMKUserLocation *)userLocation {
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(didUpdateUserHeading:)]) {
-//        [self.delegate didUpdateUserHeading:[[YDBaiduMapUserLocation alloc] initWithUserLocation:userLocation]];
-//    }
-//}
-////位置坐标更新
-//- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(didUpdateBMKUserLocation:)]) {
-//        [self.delegate didUpdateUserLocation:[[YDBaiduMapUserLocation alloc] initWithUserLocation:userLocation]];
-//    }
-//}
-//
-////定位失败后，回调此函数
-//- (void)didFailToLocateUserWithError:(NSError *)error {
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(didFailToLocateUserWithError:)]) {
-//        [self.delegate didFailToLocateUserWithError:error];
-//    }
-//}
 
 
 @end

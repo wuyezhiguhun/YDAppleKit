@@ -62,13 +62,13 @@
 }
 #pragma mark -- YDLocationServiceDelegate
 - (void)didUpdateUserHeading:(id<YDUserLocation>)userLocation {
-    
+    NSLog(@"heading ---@ %@",[userLocation getHeading]);
 }
 - (void)didUpdateUserLocation:(id<YDUserLocation>)userLocation {
-    
+    NSLog(@"location ---@ %@",[userLocation getLocation]);
 }
 - (void)didFailToLocateUserWithError:(NSError *)error {
-    
+    NSLog(@"error ---@ %@",error);
 }
 
 

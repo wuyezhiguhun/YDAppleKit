@@ -16,6 +16,8 @@
 
 - (instancetype)initWithUserLocation:(MAUserLocation *)userLocation;
 
+- (instancetype)initWithHeading:(CLHeading *)userHeading;
 
+- (instancetype)initWithLocation:(CLLocation *)userLocation;
 
 @end

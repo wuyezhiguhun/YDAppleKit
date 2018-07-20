@@ -16,8 +16,7 @@
 
 //实现相关delegate 处理位置信息更新
 //处理方向变更信息
-- (void)didUpdateUserHeadingLocation:(id<YDUserLocation>)userLocation;
-- (void)didUpdateUserHeading:(CLHeading *)heading;
+- (void)didUpdateUserHeading:(id<YDUserLocation>)userLocation;
 
 //处理位置坐标更新
 - (void)didUpdateUserLocation:(id<YDUserLocation>)userLocation;

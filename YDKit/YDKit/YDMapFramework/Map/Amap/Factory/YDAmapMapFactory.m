@@ -9,6 +9,7 @@
 #import "YDAmapMapFactory.h"
 #import "YDAmapMapView.h"
 #import <AMapFoundation-NO-IDFA/AMapFoundationKit/AMapServices.h>
+#import "YDAmapMapLocationService.h"
 
 @implementation YDAmapMapFactory
 
@@ -23,6 +24,11 @@
 //生产线
 - (id<YDMapView>)getMapViewWithFrame:(CGRect)frame {
     return [[YDAmapMapView alloc] initWithFrame:frame];
+}
+
+//生产线 定位 （定位SDK生产线）
+- (id<YDLocationService>)getMapLocationService {
+    return [[YDAmapMapLocationService alloc] init];
 }
 
 @end

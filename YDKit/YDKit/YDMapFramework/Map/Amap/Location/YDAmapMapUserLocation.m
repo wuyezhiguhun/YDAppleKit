@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) MAUserLocation *userLocation;
 
+@property (nonatomic, strong) CLHeading *userHeading;
+
+@property (nonatomic, strong) CLLocation *amapLocation;
+
 @end
 
 @implementation YDAmapMapUserLocation
@@ -24,10 +28,18 @@
     return self;
 }
 
-- (instancetype)initWithHeading:(CLHeading *)newHeading {
+- (instancetype)initWithHeading:(CLHeading *)userHeading {
     self = [super init];
     if (self) {
-        self.userLocation = [[MAUserLocation alloc] init];
+        self.userHeading = userHeading;
+    }
+    return self;
+}
+
+- (instancetype)initWithLocation:(CLLocation *)userLocation {
+    self = [super init];
+    if (self) {
+        self.amapLocation = userLocation;
     }
     return self;
 }
@@ -44,12 +56,12 @@
 
 /// 位置信息，尚未定位成功，则该值为nil
 - (CLLocation *)getLocation {
-    return self.userLocation.location;
+    return self.amapLocation;
 }
 
 /// heading信息，尚未定位成功，则该值为nil
 - (CLHeading *)getHeading {
-    return self.userLocation.heading;
+    return self.userHeading;
 }
 
 /// 定位标注点要显示的标题信息
