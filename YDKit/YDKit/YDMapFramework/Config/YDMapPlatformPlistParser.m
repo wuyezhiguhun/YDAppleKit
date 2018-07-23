@@ -51,7 +51,7 @@
         }
         [platformArray addObject:platformDict];
     }
-    [platformArray writeToFile:filePath atomically:NO];
+    [platformArray writeToFile:filePath atomically:YES];
 }
 /**
  * 查看本地地图模式

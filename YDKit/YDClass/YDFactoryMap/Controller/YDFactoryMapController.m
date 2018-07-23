@@ -45,7 +45,7 @@
     self.locationService = [self.factory getMapLocationService];
     [self.locationService startUserLocationService];
     [self.mapViewFactory showsUserLocation:NO];
-    [self.mapViewFactory setUserTrackingModel:YDUserTrackingModeNone];
+    [self.mapViewFactory setUserTrackingModel:YDUserTrackingModeFollow];
     [self.mapViewFactory showsUserLocation:YES];
 }
 
@@ -62,9 +62,11 @@
 }
 #pragma mark -- YDLocationServiceDelegate
 - (void)didUpdateUserHeading:(id<YDUserLocation>)userLocation {
+ //   [self.mapViewFactory updateLocationData:userLocation];
     NSLog(@"heading ---@ %@",[userLocation getHeading]);
 }
 - (void)didUpdateUserLocation:(id<YDUserLocation>)userLocation {
+    [self.mapViewFactory updateLocationData:userLocation];
     NSLog(@"location ---@ %@",[userLocation getLocation]);
 }
 - (void)didFailToLocateUserWithError:(NSError *)error {

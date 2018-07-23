@@ -46,12 +46,12 @@
 
 //返回指定的定位数据
 - (id)getObject {
-    return self.userLocation;
+    return nil;
 }
 
 /// 位置更新状态，如果正在更新位置信息，则该值为YES
 - (BOOL)isUpdating {
-    return self.userLocation.updating;
+    return YES;
 }
 
 /// 位置信息，尚未定位成功，则该值为nil
@@ -66,12 +66,12 @@
 
 /// 定位标注点要显示的标题信息
 - (NSString *)getTitle {
-    return self.userLocation.title;
+    return nil;
 }
 
 /// 定位标注点要显示的子标题信息.
 - (NSString *)getSubtitle {
-    return self.userLocation.subtitle;
+    return nil;
 }
 
 @end

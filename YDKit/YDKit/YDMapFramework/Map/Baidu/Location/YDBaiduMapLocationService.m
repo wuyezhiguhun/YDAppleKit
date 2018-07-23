@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) BMKLocationService *locationService;
 
-@property (nonatomic, strong) id<YDLocationServiceDelegate> delegate;
+@property (nonatomic, weak) id<YDLocationServiceDelegate> delegate;
 
 @end
 
@@ -57,7 +57,7 @@
 }
 //位置坐标更新
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(didUpdateBMKUserLocation:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didUpdateUserLocation:)]) {
         [self.delegate didUpdateUserLocation:[[YDBaiduMapUserLocation alloc] initWithUserLocation:userLocation]];
     }
 }

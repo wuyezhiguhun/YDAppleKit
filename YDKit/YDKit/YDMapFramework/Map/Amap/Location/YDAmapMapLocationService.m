@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) AMapLocationManager *locationManager;
 
-@property (nonatomic, strong) id<YDLocationServiceDelegate> delegate;
+@property (nonatomic, weak) id<YDLocationServiceDelegate> delegate;
 
 @end
 

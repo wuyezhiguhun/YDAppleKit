@@ -8,10 +8,12 @@
 
 #import "YDAmapMapView.h"
 #import <AMap2DMap-NO-IDFA/MAMapKit/MAMapView.h>
+#import <MAMapKit/MAMapKit.h>
 
 @interface YDAmapMapView()
 
 @property (nonatomic, strong) MAMapView *mapView;
+@property (nonatomic, strong) MAPointAnnotation *pointAnnotation;
 
 @end
 
@@ -38,6 +40,13 @@
 
 //更新定位图层
 - (void)updateLocationData:(id<YDUserLocation>)userLocation {
+    if (self.pointAnnotation == nil) {
+        self.pointAnnotation = [[MAPointAnnotation alloc] init];
+        [self.pointAnnotation setCoordinate:[userLocation getLocation].coordinate];
+        [self.mapView addAnnotation:self.pointAnnotation];
+    }
+    [self.pointAnnotation setCoordinate:[userLocation getLocation].coordinate];
+    [self.mapView setCenterCoordinate:[userLocation getLocation].coordinate];
     
 }
 
