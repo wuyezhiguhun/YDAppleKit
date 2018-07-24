@@ -40,6 +40,9 @@
 		5ABA588C21002CF9009A5773 /* YDBaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA588B21002CF9009A5773 /* YDBaiduMapLocationService.m */; };
 		5ABA589221007C26009A5773 /* YDAmapMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589121007C26009A5773 /* YDAmapMapUserLocation.m */; };
 		5ABA589521007C48009A5773 /* YDAmapMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */; };
+		5AE11C332107200700C10064 /* YDPoiSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C322107200700C10064 /* YDPoiSearchRequest.m */; };
+		5AE11C3621072B4F00C10064 /* YDBaiduMapPoiDetailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C3521072B4F00C10064 /* YDBaiduMapPoiDetailResult.m */; };
+		5AE11C39210738DE00C10064 /* YDBaiduMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */; };
 		6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
 		62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
 		62B5EC7220DFE29400CAF304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
@@ -127,6 +130,13 @@
 		5ABA589121007C26009A5773 /* YDAmapMapUserLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapUserLocation.m; sourceTree = "<group>"; };
 		5ABA589321007C48009A5773 /* YDAmapMapLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapLocationService.h; sourceTree = "<group>"; };
 		5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapLocationService.m; sourceTree = "<group>"; };
+		5AE11C2E21071D9900C10064 /* YDMapPoiIndoorInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapPoiIndoorInfo.h; sourceTree = "<group>"; };
+		5AE11C312107200700C10064 /* YDPoiSearchRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDPoiSearchRequest.h; sourceTree = "<group>"; };
+		5AE11C322107200700C10064 /* YDPoiSearchRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDPoiSearchRequest.m; sourceTree = "<group>"; };
+		5AE11C3421072B4F00C10064 /* YDBaiduMapPoiDetailResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapPoiDetailResult.h; sourceTree = "<group>"; };
+		5AE11C3521072B4F00C10064 /* YDBaiduMapPoiDetailResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiDetailResult.m; sourceTree = "<group>"; };
+		5AE11C37210738DE00C10064 /* YDBaiduMapPoiInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapPoiInfo.h; sourceTree = "<group>"; };
+		5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiInfo.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6280B3C220E8A67900F5E1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C420E8A69100F5E1FC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -178,6 +188,9 @@
 				5A0A63192105DAEB008F6657 /* YDMapSearchErrorCode.h */,
 				5A0A631A2105F0C8008F6657 /* YDMapPoiDetailResult.h */,
 				5A0A631B2105F1C8008F6657 /* YDMapPoiIndoorResult.h */,
+				5AE11C2E21071D9900C10064 /* YDMapPoiIndoorInfo.h */,
+				5AE11C312107200700C10064 /* YDPoiSearchRequest.h */,
+				5AE11C322107200700C10064 /* YDPoiSearchRequest.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -189,6 +202,10 @@
 				5A0A63142105C232008F6657 /* YDBaiduMapPoiSearch.m */,
 				5A0A63162105C272008F6657 /* YDBaiduMapPoiSearchResponse.h */,
 				5A0A63172105C272008F6657 /* YDBaiduMapPoiSearchResponse.m */,
+				5AE11C3421072B4F00C10064 /* YDBaiduMapPoiDetailResult.h */,
+				5AE11C37210738DE00C10064 /* YDBaiduMapPoiInfo.h */,
+				5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */,
+				5AE11C3521072B4F00C10064 /* YDBaiduMapPoiDetailResult.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -707,6 +724,7 @@
 				5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */,
 				5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */,
 				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
+				5AE11C39210738DE00C10064 /* YDBaiduMapPoiInfo.m in Sources */,
 				5A0A63182105C272008F6657 /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5ABA589221007C26009A5773 /* YDAmapMapUserLocation.m in Sources */,
 				5A6124F920E25220001C2CCC /* YDConstant.m in Sources */,
@@ -720,9 +738,11 @@
 				5A0B1A4E20E600B2005F177C /* NSDictionary+YDCategory.m in Sources */,
 				5ABA588C21002CF9009A5773 /* YDBaiduMapLocationService.m in Sources */,
 				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
+				5AE11C3621072B4F00C10064 /* YDBaiduMapPoiDetailResult.m in Sources */,
 				5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
 				5A9CD35C20F307ED00657DBA /* YDFactoryImageView.m in Sources */,
+				5AE11C332107200700C10064 /* YDPoiSearchRequest.m in Sources */,
 				5A6AA32920FF09D7001C0210 /* YDMapPlatformXmlParser.m in Sources */,
 				5A6AA33A20FF32CF001C0210 /* YDAmapMapFactory.m in Sources */,
 				5A6AA33120FF1AC4001C0210 /* YDFactoryMapController.m in Sources */,

@@ -9,6 +9,8 @@
 #import "YDBaiduMapPoiSearch.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Search/BMKPoiSearch.h>
+#import "YDBaiduMapPoiSearchResponse.h"
+#import "YDBaiduMapPoiDetailResult.h"
 
 @interface YDBaiduMapPoiSearch()<BMKPoiSearchDelegate>
 
@@ -61,7 +63,9 @@
  *@param errorCode 错误号，@see BMKSearchErrorCode
  */
 - (void)onGetPoiResult:(BMKPoiSearch*)searcher result:(BMKPOISearchResult*)poiResult errorCode:(BMKSearchErrorCode)errorCode {
-
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onGetPoiResul:errorCode:)]) {
+        [self.delegate onGetPoiResul:[[YDBaiduMapPoiSearchResponse alloc] initWithResult:poiResult] errorCode:YD_MAP_SEARCH_NO_ERROR];
+    }
 }
 
 /**
@@ -71,7 +75,9 @@
  *@param errorCode 错误号，@see BMKSearchErrorCode
  */
 - (void)onGetPoiDetailResult:(BMKPoiSearch*)searcher result:(BMKPOIDetailSearchResult*)poiDetailResult errorCode:(BMKSearchErrorCode)errorCode {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onGetPoiDetailResult:errorCode:)]) {
+        [self.delegate onGetPoiDetailResult:[[YDBaiduMapPoiDetailResult alloc] initWithPoiDetailResult:poiDetailResult] errorCode:YD_MAP_SEARCH_NO_ERROR];
+    }
 }
 
 /**
