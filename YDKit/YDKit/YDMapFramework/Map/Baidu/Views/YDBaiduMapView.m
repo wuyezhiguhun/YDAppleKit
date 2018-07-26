@@ -64,6 +64,11 @@
     }
 }
 
+//设定是否总让选中的annotation置于最前面
+- (void)setSelectedAnnotationViewFront:(BOOL)isSwlwctedAnnotationViewFront {
+    self.mapView.isSelectedAnnotationViewFront = isSwlwctedAnnotationViewFront;
+}
+
 //当mapview即将被显示的时候调用，恢复之前存储的mapview状态
 - (void)viewWillAppear {
     [self.mapView viewWillAppear];

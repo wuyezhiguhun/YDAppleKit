@@ -11,6 +11,7 @@
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import "YDBaiduMapLocationService.h"
+#import "YDBaiduMapPoiSearch.h"
 
 @interface YDBaiduMapFactory()
 
@@ -38,4 +39,10 @@
 - (id<YDLocationService>)getMapLocationService {
     return [[YDBaiduMapLocationService alloc] init];
 }
+
+//生产线 - POI搜索
+- (id<YDMapPoiSearch>)getMapPoiSearch {
+    return [[YDBaiduMapPoiSearch alloc] init];
+}
+
 @end

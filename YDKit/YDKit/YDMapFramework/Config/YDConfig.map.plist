@@ -10,11 +10,11 @@
 		<key>factoryName</key>
 		<string>YDAmapMapFactory</string>
 		<key>isOpen</key>
-		<string>YES</string>
+		<string>NO</string>
 	</dict>
 	<dict>
 		<key>isOpen</key>
-		<string>NO</string>
+		<string>YES</string>
 		<key>factoryName</key>
 		<string>YDBaiduMapFactory</string>
 		<key>id</key>

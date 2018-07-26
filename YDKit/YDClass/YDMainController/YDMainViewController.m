@@ -29,8 +29,8 @@
         NSLog(@"YDMainViewController ---* %@",params);
         return nil;
     }];
-    // Do any additional setup after loading the view.
 }
+
 - (void)reloadUIWhenLanguageChange {
     self.titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap")];
     [self.tableView reloadData];

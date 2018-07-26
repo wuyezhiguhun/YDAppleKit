@@ -45,6 +45,7 @@
     citySearchOption.pageIndex = [option getPageIndex];
     citySearchOption.pageSize = [option getPageSize];
     citySearchOption.city = [option getCity];
+    citySearchOption.keyword = [option getKeyword];
     BOOL flag = [self.poiSearch poiSearchInCity:citySearchOption];
     if (flag) {
         NSLog(@"城市内检索发送成功");

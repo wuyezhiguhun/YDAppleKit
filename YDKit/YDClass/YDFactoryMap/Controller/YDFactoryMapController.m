@@ -8,8 +8,9 @@
 
 #import "YDFactoryMapController.h"
 #import "YDMapEngine.h"
+#import "YDPoiSearchRequest.h"
 
-@interface YDFactoryMapController ()<YDLocationServiceDelegate>
+@interface YDFactoryMapController ()<YDLocationServiceDelegate, YDMapPoiSearchDelegate>
 
 @property (nonatomic, strong) UIButton *button;
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) id<YDMapView> mapViewFactory;
 @property (nonatomic, strong) id<YDMapFactory> factory;
 @property (nonatomic, strong) id<YDLocationService> locationService;
+@property (nonatomic, strong) id<YDMapPoiSearch> mapPoiSearch;
 
 @end
 
@@ -29,7 +31,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.button];
     [self addMapView];
-    [self initLocationService];
+//    [self initLocationService];
+    
+    //初始化POI搜索服务
+    [self initPoiSearch];
     
     // Do any additional setup after loading the view.
 }
@@ -41,12 +46,26 @@
     self.mapView = [self.mapViewFactory getView];
     [self.view addSubview:self.mapView];
 }
+//初始化定位服务
 - (void)initLocationService {
     self.locationService = [self.factory getMapLocationService];
     [self.locationService startUserLocationService];
     [self.mapViewFactory showsUserLocation:NO];
     [self.mapViewFactory setUserTrackingModel:YDUserTrackingModeFollow];
     [self.mapViewFactory showsUserLocation:YES];
+}
+//初始化POI搜索服务
+- (void)initPoiSearch {
+    self.mapPoiSearch = [self.factory getMapPoiSearch];
+    [self.mapViewFactory setSelectedAnnotationViewFront:YES];
+    [self.mapPoiSearch setDelegate:self];
+    id<YDMapPoiSearchRequest> request = [[YDPoiSearchRequest alloc] init];
+    [request setCity:@"北京"];
+    [request setKeyword:@"停车场"];
+    [request setPageIndex:0];
+    [request setPageSize:10];
+    
+    [self.mapPoiSearch setSearchOption:request];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -73,6 +92,33 @@
     NSLog(@"error ---@ %@",error);
 }
 
+#pragma mark -- YDMapPoiSearchDelegate
+/**
+ *返回POI搜索结果
+ *@param poiResult 搜索结果列表
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiResul:(id<YDMapPoiSearchResponse>)poiResult errorCode:(YDMapSearchErrorCode)errorCode {
+    
+}
+
+/**
+ *返回POI详情搜索结果
+ *@param poiDetailResult 详情搜索结果
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiDetailResult:(id<YDMapPoiDetailResult>)poiDetailResult errorCode:(YDMapSearchErrorCode)errorCode {
+    
+}
+
+/**
+ *返回POI室内搜索结果
+ *@param poiIndoorResult 搜索结果列表
+ *@param errorCode 错误号，@see BMKSearchErrorCode
+ */
+- (void)onGetPoiIndoorResult:(id<YDMapPoiIndoorResult>)poiIndoorResult errorCode:(YDMapSearchErrorCode)errorCode {
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

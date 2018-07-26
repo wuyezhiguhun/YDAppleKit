@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "YDMapView.h"
 #import "YDLocationService.h"
+#import "YDMapPoiSearch.h"
+
 
 @protocol YDMapFactory <NSObject>
 
@@ -20,4 +22,8 @@
 
 //生产线 定位 （定位SDK生产线）
 - (id<YDLocationService>)getMapLocationService;
+
+//生产线 - POI搜索
+- (id<YDMapPoiSearch>)getMapPoiSearch;
+
 @end

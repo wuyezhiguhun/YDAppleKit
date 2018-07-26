@@ -8,6 +8,7 @@
 
 #import "YDPoiSearchRequest.h"
 
+
 @interface YDPoiSearchRequest()
 
 @property (nonatomic, copy) NSString *keyword;
