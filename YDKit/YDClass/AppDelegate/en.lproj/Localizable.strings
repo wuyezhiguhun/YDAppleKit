@@ -8,3 +8,4 @@
 "YDNetworkingModule"="YDNetworkingModule";
 "YDFactoryPattern"="YDFactoryPattern";
 "YDFactoryMap"="YDFactoryMap";
+"YDSingletonPattern"="YDSingletonPattern";

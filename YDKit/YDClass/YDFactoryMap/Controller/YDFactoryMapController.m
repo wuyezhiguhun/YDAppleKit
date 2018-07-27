@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addNavigationBack];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.button];
     [self addMapView];
