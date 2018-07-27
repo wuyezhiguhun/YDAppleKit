@@ -10,6 +10,7 @@
 #import "YDAmapMapView.h"
 #import <AMapFoundation-NO-IDFA/AMapFoundationKit/AMapServices.h>
 #import "YDAmapMapLocationService.h"
+#import "YDAmapMapSearch.h"
 
 @implementation YDAmapMapFactory
 
@@ -29,6 +30,11 @@
 //生产线 定位 （定位SDK生产线）
 - (id<YDLocationService>)getMapLocationService {
     return [[YDAmapMapLocationService alloc] init];
+}
+
+//生产线 - POI搜索
+- (id<YDMapPoiSearch>)getMapPoiSearch {
+    return [[YDAmapMapSearch alloc] init];
 }
 
 @end

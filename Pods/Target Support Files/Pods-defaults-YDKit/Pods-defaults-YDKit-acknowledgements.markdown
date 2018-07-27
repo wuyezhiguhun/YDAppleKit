@@ -39,6 +39,11 @@ Copyright © 2014 AutoNavi. All Rights Reserved.
 Copyright © 2014 AutoNavi. All Rights Reserved.
 
 
+## AMapSearch-NO-IDFA
+
+Copyright © 2014 AutoNavi. All Rights Reserved.
+
+
 ## BMKLocationKit
 
 MIT License

@@ -6,6 +6,7 @@ abstract_target 'defaults' do
     pod 'BMKLocationKit'
     pod 'AMap2DMap-NO-IDFA'
     pod 'AMapLocation-NO-IDFA'
+    pod 'AMapSearch-NO-IDFA'
     target 'YDKit'
 end
 

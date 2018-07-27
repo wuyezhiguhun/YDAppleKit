@@ -50,6 +50,9 @@
 		5AFADE0E210AD4B80058FAC0 /* base_back_24@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFADE0C210AD4B80058FAC0 /* base_back_24@3x.png */; };
 		5AFADE0F210AD4B80058FAC0 /* base_back_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFADE0D210AD4B80058FAC0 /* base_back_24@2x.png */; };
 		5AFADE13210AEA0A0058FAC0 /* YDSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE12210AEA0A0058FAC0 /* YDSingletonPattern.m */; };
+		5AFADE17210B08330058FAC0 /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */; };
+		5AFADE1A210B15010058FAC0 /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */; };
+		5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */; };
 		6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
 		62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
 		62B5EC7220DFE29400CAF304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
@@ -154,6 +157,12 @@
 		5AFADE0D210AD4B80058FAC0 /* base_back_24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "base_back_24@2x.png"; sourceTree = "<group>"; };
 		5AFADE11210AEA0A0058FAC0 /* YDSingletonPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSingletonPattern.h; sourceTree = "<group>"; };
 		5AFADE12210AEA0A0058FAC0 /* YDSingletonPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSingletonPattern.m; sourceTree = "<group>"; };
+		5AFADE15210B08330058FAC0 /* YDAmapMapSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapSearch.h; sourceTree = "<group>"; };
+		5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapSearch.m; sourceTree = "<group>"; };
+		5AFADE18210B15010058FAC0 /* YDAmapMapSearchResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapSearchResponse.h; sourceTree = "<group>"; };
+		5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapSearchResponse.m; sourceTree = "<group>"; };
+		5AFADE1B210B1A970058FAC0 /* YDAmapMapPoiInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapPoiInfo.h; sourceTree = "<group>"; };
+		5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapPoiInfo.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6280B3C220E8A67900F5E1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C420E8A69100F5E1FC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -219,9 +228,9 @@
 				5A0A63142105C232008F6657 /* YDBaiduMapPoiSearch.m */,
 				5A0A63162105C272008F6657 /* YDBaiduMapPoiSearchResponse.h */,
 				5A0A63172105C272008F6657 /* YDBaiduMapPoiSearchResponse.m */,
-				5AE11C3421072B4F00C10064 /* YDBaiduMapPoiDetailResult.h */,
 				5AE11C37210738DE00C10064 /* YDBaiduMapPoiInfo.h */,
 				5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */,
+				5AE11C3421072B4F00C10064 /* YDBaiduMapPoiDetailResult.h */,
 				5AE11C3521072B4F00C10064 /* YDBaiduMapPoiDetailResult.m */,
 			);
 			path = Search;
@@ -358,6 +367,7 @@
 		5A6AA31720FEDFED001C0210 /* Amap */ = {
 			isa = PBXGroup;
 			children = (
+				5AFADE14210B06DF0058FAC0 /* Search */,
 				5ABA588F21007BFA009A5773 /* Location */,
 				5A6AA33620FF3294001C0210 /* Factory */,
 				5A6AA33720FF32A2001C0210 /* Views */,
@@ -567,6 +577,19 @@
 				5AFADE12210AEA0A0058FAC0 /* YDSingletonPattern.m */,
 			);
 			path = YDSingleton;
+			sourceTree = "<group>";
+		};
+		5AFADE14210B06DF0058FAC0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5AFADE15210B08330058FAC0 /* YDAmapMapSearch.h */,
+				5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */,
+				5AFADE18210B15010058FAC0 /* YDAmapMapSearchResponse.h */,
+				5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */,
+				5AFADE1B210B1A970058FAC0 /* YDAmapMapPoiInfo.h */,
+				5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		62B5EC4820DFE04D00CAF304 = {
@@ -793,6 +816,7 @@
 				62B5EC7820DFE31F00CAF304 /* YDMainViewController.m in Sources */,
 				5ABA589521007C48009A5773 /* YDAmapMapLocationService.m in Sources */,
 				5AFADE02210ACBBF0058FAC0 /* YDSingletonController.m in Sources */,
+				5AFADE1A210B15010058FAC0 /* YDAmapMapSearchResponse.m in Sources */,
 				5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */,
 				5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */,
 				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
@@ -814,6 +838,8 @@
 				5AE11C3621072B4F00C10064 /* YDBaiduMapPoiDetailResult.m in Sources */,
 				5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
+				5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */,
+				5AFADE17210B08330058FAC0 /* YDAmapMapSearch.m in Sources */,
 				5A9CD35C20F307ED00657DBA /* YDFactoryImageView.m in Sources */,
 				5AE11C332107200700C10064 /* YDPoiSearchRequest.m in Sources */,
 				5A6AA32920FF09D7001C0210 /* YDMapPlatformXmlParser.m in Sources */,

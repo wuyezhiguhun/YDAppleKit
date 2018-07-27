@@ -13,4 +13,6 @@
 
 @interface YDBaiduMapPoiInfo : NSObject<YDMapPoiInfo>
 
+- (instancetype)initWithPoiInfo:(BMKPoiInfo *)poiInfo;
+
 @end

@@ -19,6 +19,8 @@ PODS:
   - AMapFoundation-NO-IDFA (1.5.3)
   - AMapLocation-NO-IDFA (2.6.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapSearch-NO-IDFA (6.1.1):
+    - AMapFoundation-NO-IDFA (~> 1.4)
   - BaiduMapKit (4.1.1)
   - BMKLocationKit (1.2.1)
 
@@ -26,6 +28,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.2.0)
   - AMap2DMap-NO-IDFA
   - AMapLocation-NO-IDFA
+  - AMapSearch-NO-IDFA
   - BaiduMapKit
   - BMKLocationKit
 
@@ -35,6 +38,7 @@ SPEC REPOS:
     - AMap2DMap-NO-IDFA
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
+    - AMapSearch-NO-IDFA
     - BaiduMapKit
     - BMKLocationKit
 
@@ -43,9 +47,10 @@ SPEC CHECKSUMS:
   AMap2DMap-NO-IDFA: 277965383679f1a4676df7e1a0439a1e14d0599a
   AMapFoundation-NO-IDFA: 128ccf9249abc9de1661b935f01d116700583691
   AMapLocation-NO-IDFA: a75b762ae9a90840ce683de12504ac843a9f3b6c
+  AMapSearch-NO-IDFA: 848e148a31876217a1094e6be3448e95d1688b6a
   BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
   BMKLocationKit: c0fd588904738a6865e9311ed445c38452039007
 
-PODFILE CHECKSUM: 378c38816a97794ab7ffd68fb5bbb87154772bcd
+PODFILE CHECKSUM: 5f066af25b7f89f866a678f6e5734f8f43030584
 
 COCOAPODS: 1.5.0

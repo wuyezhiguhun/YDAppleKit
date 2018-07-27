@@ -7,6 +7,7 @@
 //
 
 #import "YDBaiduMapPoiSearchResponse.h"
+#import "YDBaiduMapPoiInfo.h"
 
 @interface YDBaiduMapPoiSearchResponse()
 
@@ -26,12 +27,17 @@
 
 //POI搜索关键字总数
 - (NSInteger)getTotalPoiNum {
-    return 0;
+    return self.searchResult.totalPOINum;
 }
 
 //POI列表
 - (NSArray<id<YDMapPoiInfo>>*)getPoiInfoList {
-    return nil;
+    NSMutableArray<id<YDMapPoiInfo>> *poiArray = [NSMutableArray<id<YDMapPoiInfo>> array];
+    for (BMKPoiInfo *poiInfo in self.searchResult.poiInfoList) {
+        YDBaiduMapPoiInfo *baiduPoiInfo = [[YDBaiduMapPoiInfo alloc] initWithPoiInfo:poiInfo];
+        [poiArray addObject:baiduPoiInfo];
+    }
+    return [poiArray copy];
 }
 
 //城市列表

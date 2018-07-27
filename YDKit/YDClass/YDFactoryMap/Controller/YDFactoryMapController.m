@@ -9,6 +9,7 @@
 #import "YDFactoryMapController.h"
 #import "YDMapEngine.h"
 #import "YDPoiSearchRequest.h"
+#import "YDMapPoiInfo.h"
 
 @interface YDFactoryMapController ()<YDLocationServiceDelegate, YDMapPoiSearchDelegate>
 
@@ -100,7 +101,10 @@
  *@param errorCode 错误号，@see BMKSearchErrorCode
  */
 - (void)onGetPoiResul:(id<YDMapPoiSearchResponse>)poiResult errorCode:(YDMapSearchErrorCode)errorCode {
-    
+    NSArray *poiInfoList = [poiResult getPoiInfoList];
+    for (id<YDMapPoiInfo> poiInfo in poiInfoList) {
+        NSLog(@"name:%@  address:%@",[poiInfo getName],[poiInfo getAddress]);
+    }
 }
 
 /**
