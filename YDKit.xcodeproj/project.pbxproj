@@ -18,7 +18,6 @@
 		5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */; };
 		5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */; };
 		5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */; };
-		5A6AA30B20FED6BD001C0210 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA30A20FED6BD001C0210 /* README.md */; };
 		5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA31C20FEE1C6001C0210 /* YDBaiduMapFactory.m */; };
 		5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32120FEE723001C0210 /* YDBaiduMapView.m */; };
 		5A6AA32620FF0919001C0210 /* YDMapPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32520FF0919001C0210 /* YDMapPlatform.m */; };
@@ -44,16 +43,67 @@
 		5AE11C3621072B4F00C10064 /* YDBaiduMapPoiDetailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C3521072B4F00C10064 /* YDBaiduMapPoiDetailResult.m */; };
 		5AE11C39210738DE00C10064 /* YDBaiduMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */; };
 		5AFADE02210ACBBF0058FAC0 /* YDSingletonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE01210ACBBF0058FAC0 /* YDSingletonController.m */; };
-		5AFADE07210AD1330058FAC0 /* base_back_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFADE05210AD1320058FAC0 /* base_back_16@2x.png */; };
-		5AFADE08210AD1330058FAC0 /* base_back_16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFADE06210AD1320058FAC0 /* base_back_16@3x.png */; };
 		5AFADE0B210AD1690058FAC0 /* UIViewController+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE0A210AD1690058FAC0 /* UIViewController+YDCategory.m */; };
-		5AFADE0E210AD4B80058FAC0 /* base_back_24@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFADE0C210AD4B80058FAC0 /* base_back_24@3x.png */; };
-		5AFADE0F210AD4B80058FAC0 /* base_back_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFADE0D210AD4B80058FAC0 /* base_back_24@2x.png */; };
 		5AFADE13210AEA0A0058FAC0 /* YDSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE12210AEA0A0058FAC0 /* YDSingletonPattern.m */; };
 		5AFADE17210B08330058FAC0 /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */; };
 		5AFADE1A210B15010058FAC0 /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */; };
 		5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */; };
 		6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
+		6297F18F2110A17E0098F229 /* YDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7720DFE31F00CAF304 /* YDMainViewController.m */; };
+		6297F1902110A17E0098F229 /* YDAmapMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */; };
+		6297F1912110A17E0098F229 /* YDSingletonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE01210ACBBF0058FAC0 /* YDSingletonController.m */; };
+		6297F1922110A17E0098F229 /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */; };
+		6297F1932110A17E0098F229 /* YDBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32120FEE723001C0210 /* YDBaiduMapView.m */; };
+		6297F1942110A17E0098F229 /* YDAmapMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA33C20FF32ED001C0210 /* YDAmapMapView.m */; };
+		6297F1952110A17E0098F229 /* YDViewXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36220F3094900657DBA /* YDViewXmlParser.m */; };
+		6297F1962110A17E0098F229 /* YDBaiduMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */; };
+		6297F1972110A17E0098F229 /* YDBaiduMapPoiSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A63172105C272008F6657 /* YDBaiduMapPoiSearchResponse.m */; };
+		6297F1982110A17E0098F229 /* YDAmapMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589121007C26009A5773 /* YDAmapMapUserLocation.m */; };
+		6297F1992110A17E0098F229 /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F820E25220001C2CCC /* YDConstant.m */; };
+		6297F19A2110A17E0098F229 /* YDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F120E1E609001C2CCC /* YDRouter.m */; };
+		6297F19B2110A17E0098F229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7120DFE29400CAF304 /* AppDelegate.m */; };
+		6297F19C2110A17E0098F229 /* YDMapPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32520FF0919001C0210 /* YDMapPlatform.m */; };
+		6297F19D2110A17E0098F229 /* YDMapPlatformPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA34220FF4021001C0210 /* YDMapPlatformPlistParser.m */; };
+		6297F19E2110A17E0098F229 /* YDMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32B20FF103F001C0210 /* YDMapEngine.m */; };
+		6297F19F2110A17E0098F229 /* YDNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124ED20E1E3AB001C2CCC /* YDNetworkingController.m */; };
+		6297F1A02110A17E0098F229 /* YDBaiduMapPoiSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A63142105C232008F6657 /* YDBaiduMapPoiSearch.m */; };
+		6297F1A12110A17E0098F229 /* NSDictionary+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B1A4D20E600B2005F177C /* NSDictionary+YDCategory.m */; };
+		6297F1A22110A17E0098F229 /* YDBaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA588B21002CF9009A5773 /* YDBaiduMapLocationService.m */; };
+		6297F1A32110A17E0098F229 /* UIViewController+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE0A210AD1690058FAC0 /* UIViewController+YDCategory.m */; };
+		6297F1A42110A17E0098F229 /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */; };
+		6297F1A52110A17E0098F229 /* YDBaiduMapPoiDetailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C3521072B4F00C10064 /* YDBaiduMapPoiDetailResult.m */; };
+		6297F1A62110A17E0098F229 /* YDBaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA31C20FEE1C6001C0210 /* YDBaiduMapFactory.m */; };
+		6297F1A72110A17E0098F229 /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */; };
+		6297F1A82110A17E0098F229 /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */; };
+		6297F1A92110A17E0098F229 /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */; };
+		6297F1AA2110A17E0098F229 /* YDFactoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD35B20F307ED00657DBA /* YDFactoryImageView.m */; };
+		6297F1AB2110A17E0098F229 /* YDPoiSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE11C322107200700C10064 /* YDPoiSearchRequest.m */; };
+		6297F1AC2110A17E0098F229 /* YDMapPlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA32820FF09D7001C0210 /* YDMapPlatformXmlParser.m */; };
+		6297F1AD2110A17E0098F229 /* YDAmapMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA33920FF32CF001C0210 /* YDAmapMapFactory.m */; };
+		6297F1AE2110A17E0098F229 /* YDFactoryMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA33020FF1AC4001C0210 /* YDFactoryMapController.m */; };
+		6297F1AF2110A17E0098F229 /* YDSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE12210AEA0A0058FAC0 /* YDSingletonPattern.m */; };
+		6297F1B02110A17E0098F229 /* YDFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36B20F3105900657DBA /* YDFactoryController.m */; };
+		6297F1B12110A17E0098F229 /* YDBaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA588821002CBB009A5773 /* YDBaiduMapUserLocation.m */; };
+		6297F1B22110A17E0098F229 /* YDViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD36620F30D3200657DBA /* YDViewFactory.m */; };
+		6297F1B32110A17E0098F229 /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7A20DFE7D700CAF304 /* YDNetworking.m */; };
+		6297F1B42110A17E0098F229 /* YDFactoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CD35820F307D600657DBA /* YDFactoryButton.m */; };
+		6297F1B52110A17E0098F229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
+		6297F1B62110A17E0098F229 /* YDMultiLanguageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */; };
+		6297F1B72110A17E0098F229 /* NSString+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B1A4A20E5FF04005F177C /* NSString+YDCategory.m */; };
+		6297F1B92110A17E0098F229 /* libPods-defaults-YDKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */; };
+		6297F1BB2110A17E0098F229 /* YDConfig.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA33420FF2114001C0210 /* YDConfig.map.xml */; };
+		6297F1BD2110A17E0098F229 /* YDConfig.map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA33F20FF3D0D001C0210 /* YDConfig.map.plist */; };
+		6297F1BE2110A17E0098F229 /* YDViewFactoryConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A9CD35E20F3081900657DBA /* YDViewFactoryConfig.xml */; };
+		6297F1C02110A17E0098F229 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC7020DFE29400CAF304 /* Info.plist */; };
+		6297F1C42110A17E0098F229 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
+		6297F1C52110A17E0098F229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
+		6297F1D02110A2870098F229 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6297F1CF2110A2870098F229 /* Info.plist */; };
+		6297F1D12110A2870098F229 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6297F1CF2110A2870098F229 /* Info.plist */; };
+		6297F1D72110A2F30098F229 /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297F1D62110A2F30098F229 /* YDSingletonPattern.swift */; };
+		6297F1D82110A2F30098F229 /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297F1D62110A2F30098F229 /* YDSingletonPattern.swift */; };
+		6297F1DD2110A8FC0098F229 /* YDMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297F1DC2110A8FC0098F229 /* YDMainController.swift */; };
+		6297F1DE2110A8FC0098F229 /* YDMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297F1DC2110A8FC0098F229 /* YDMainController.swift */; };
+		6297F1E92110B5F50098F229 /* YDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6297F1E82110B5F50098F229 /* YDAppDelegate.m */; };
 		62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */; };
 		62B5EC7220DFE29400CAF304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC6F20DFE29300CAF304 /* main.m */; };
 		62B5EC7320DFE29400CAF304 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B5EC7020DFE29400CAF304 /* Info.plist */; };
@@ -95,7 +145,6 @@
 		5A6395AD20E4C24000CA4CC2 /* YDMultiLanguageContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguageContainer.m; sourceTree = "<group>"; };
 		5A6395AF20E4C7D600CA4CC2 /* YDMultiLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMultiLanguage.h; sourceTree = "<group>"; };
 		5A6395B020E4C7D600CA4CC2 /* YDMultiLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguage.m; sourceTree = "<group>"; };
-		5A6AA30A20FED6BD001C0210 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5A6AA31020FEDA40001C0210 /* YDMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapFactory.h; sourceTree = "<group>"; };
 		5A6AA31120FEDAC2001C0210 /* YDMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapView.h; sourceTree = "<group>"; };
 		5A6AA31B20FEE1C6001C0210 /* YDBaiduMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapFactory.h; sourceTree = "<group>"; };
@@ -149,12 +198,8 @@
 		5AE11C38210738DE00C10064 /* YDBaiduMapPoiInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiInfo.m; sourceTree = "<group>"; };
 		5AFADE00210ACBBF0058FAC0 /* YDSingletonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSingletonController.h; sourceTree = "<group>"; };
 		5AFADE01210ACBBF0058FAC0 /* YDSingletonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSingletonController.m; sourceTree = "<group>"; };
-		5AFADE05210AD1320058FAC0 /* base_back_16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "base_back_16@2x.png"; sourceTree = "<group>"; };
-		5AFADE06210AD1320058FAC0 /* base_back_16@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "base_back_16@3x.png"; sourceTree = "<group>"; };
 		5AFADE09210AD1690058FAC0 /* UIViewController+YDCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YDCategory.h"; sourceTree = "<group>"; };
 		5AFADE0A210AD1690058FAC0 /* UIViewController+YDCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YDCategory.m"; sourceTree = "<group>"; };
-		5AFADE0C210AD4B80058FAC0 /* base_back_24@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "base_back_24@3x.png"; sourceTree = "<group>"; };
-		5AFADE0D210AD4B80058FAC0 /* base_back_24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "base_back_24@2x.png"; sourceTree = "<group>"; };
 		5AFADE11210AEA0A0058FAC0 /* YDSingletonPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSingletonPattern.h; sourceTree = "<group>"; };
 		5AFADE12210AEA0A0058FAC0 /* YDSingletonPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDSingletonPattern.m; sourceTree = "<group>"; };
 		5AFADE15210B08330058FAC0 /* YDAmapMapSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapSearch.h; sourceTree = "<group>"; };
@@ -167,6 +212,13 @@
 		6280B3C220E8A67900F5E1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C420E8A69100F5E1FC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C520E8A69600F5E1FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6297F1CA2110A17E0098F229 /* YDSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6297F1CF2110A2870098F229 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6297F1D52110A2F30098F229 /* YDSwiftKitBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSwiftKitBridgingHeader.h; sourceTree = "<group>"; };
+		6297F1D62110A2F30098F229 /* YDSingletonPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSingletonPattern.swift; sourceTree = "<group>"; };
+		6297F1DC2110A8FC0098F229 /* YDMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDMainController.swift; sourceTree = "<group>"; };
+		6297F1E72110B5F50098F229 /* YDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAppDelegate.h; sourceTree = "<group>"; };
+		6297F1E82110B5F50098F229 /* YDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAppDelegate.m; sourceTree = "<group>"; };
 		62B5EC5120DFE04D00CAF304 /* YDKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B5EC6E20DFE29300CAF304 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +234,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6297F1B82110A17E0098F229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6297F1B92110A17E0098F229 /* libPods-defaults-YDKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62B5EC4E20DFE04D00CAF304 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,11 +339,12 @@
 			isa = PBXGroup;
 			children = (
 				5A6124FA20E25244001C2CCC /* YDPrefixHeader.pch */,
+				6297F1D52110A2F30098F229 /* YDSwiftKitBridgingHeader.h */,
+				5A6395A020E490D900CA4CC2 /* YDMacro.h */,
 				5A6395A120E4926900CA4CC2 /* YDModuleRouterUrl.h */,
 				5A6395A220E4926900CA4CC2 /* YDModuleRouterUrl.m */,
 				5A6124F720E25220001C2CCC /* YDConstant.h */,
 				5A6124F820E25220001C2CCC /* YDConstant.m */,
-				5A6395A020E490D900CA4CC2 /* YDMacro.h */,
 			);
 			path = YDConstant;
 			sourceTree = "<group>";
@@ -554,20 +615,9 @@
 		5AFADE03210ACF710058FAC0 /* YDResources */ = {
 			isa = PBXGroup;
 			children = (
-				5AFADE04210ACFE40058FAC0 /* YDBase */,
+				62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */,
 			);
 			path = YDResources;
-			sourceTree = "<group>";
-		};
-		5AFADE04210ACFE40058FAC0 /* YDBase */ = {
-			isa = PBXGroup;
-			children = (
-				5AFADE05210AD1320058FAC0 /* base_back_16@2x.png */,
-				5AFADE06210AD1320058FAC0 /* base_back_16@3x.png */,
-				5AFADE0D210AD4B80058FAC0 /* base_back_24@2x.png */,
-				5AFADE0C210AD4B80058FAC0 /* base_back_24@3x.png */,
-			);
-			path = YDBase;
 			sourceTree = "<group>";
 		};
 		5AFADE10210AE99C0058FAC0 /* YDSingleton */ = {
@@ -592,11 +642,93 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		6297F18B2110A1450098F229 /* YDSwiftKit */ = {
+			isa = PBXGroup;
+			children = (
+				6297F1D22110A2CB0098F229 /* YDKit */,
+				6297F1CD2110A2450098F229 /* YDClass */,
+			);
+			path = YDSwiftKit;
+			sourceTree = "<group>";
+		};
+		6297F1CD2110A2450098F229 /* YDClass */ = {
+			isa = PBXGroup;
+			children = (
+				6297F1DF2110AEB80098F229 /* YDAppDelegate */,
+				6297F1DB2110A8D50098F229 /* YDMainController */,
+			);
+			path = YDClass;
+			sourceTree = "<group>";
+		};
+		6297F1D22110A2CB0098F229 /* YDKit */ = {
+			isa = PBXGroup;
+			children = (
+				6297F1D32110A2DB0098F229 /* YDSingletonPattern */,
+			);
+			path = YDKit;
+			sourceTree = "<group>";
+		};
+		6297F1D32110A2DB0098F229 /* YDSingletonPattern */ = {
+			isa = PBXGroup;
+			children = (
+				6297F1D62110A2F30098F229 /* YDSingletonPattern.swift */,
+			);
+			path = YDSingletonPattern;
+			sourceTree = "<group>";
+		};
+		6297F1D92110A33F0098F229 /* YDPublic */ = {
+			isa = PBXGroup;
+			children = (
+				62B5EC6F20DFE29300CAF304 /* main.m */,
+				6280B3C320E8A67900F5E1FC /* Localizable.strings */,
+			);
+			path = YDPublic;
+			sourceTree = "<group>";
+		};
+		6297F1DA2110A4BA0098F229 /* YDKit */ = {
+			isa = PBXGroup;
+			children = (
+				5AFADE03210ACF710058FAC0 /* YDResources */,
+				5A6124F620E25207001C2CCC /* YDConstant */,
+				6297F1D92110A33F0098F229 /* YDPublic */,
+				62B5EC5320DFE04D00CAF304 /* YDObjectiveCKit */,
+				6297F18B2110A1450098F229 /* YDSwiftKit */,
+			);
+			path = YDKit;
+			sourceTree = "<group>";
+		};
+		6297F1DB2110A8D50098F229 /* YDMainController */ = {
+			isa = PBXGroup;
+			children = (
+				6297F1DC2110A8FC0098F229 /* YDMainController.swift */,
+			);
+			path = YDMainController;
+			sourceTree = "<group>";
+		};
+		6297F1DF2110AEB80098F229 /* YDAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6297F1E72110B5F50098F229 /* YDAppDelegate.h */,
+				6297F1E82110B5F50098F229 /* YDAppDelegate.m */,
+				6297F1CF2110A2870098F229 /* Info.plist */,
+			);
+			path = YDAppDelegate;
+			sourceTree = "<group>";
+		};
+		6297F1EA2110B6DB0098F229 /* YDAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				62B5EC6E20DFE29300CAF304 /* AppDelegate.h */,
+				62B5EC7120DFE29400CAF304 /* AppDelegate.m */,
+				62B5EC7020DFE29400CAF304 /* Info.plist */,
+			);
+			path = YDAppDelegate;
+			sourceTree = "<group>";
+		};
 		62B5EC4820DFE04D00CAF304 = {
 			isa = PBXGroup;
 			children = (
-				5A6AA30A20FED6BD001C0210 /* README.md */,
-				62B5EC5320DFE04D00CAF304 /* YDKit */,
+				6297F1DA2110A4BA0098F229 /* YDKit */,
 				62B5EC5220DFE04D00CAF304 /* Products */,
 				150F5C39BDC3C05298846817 /* Pods */,
 				DA83401B034BBE016F7B9F21 /* Frameworks */,
@@ -607,19 +739,18 @@
 			isa = PBXGroup;
 			children = (
 				62B5EC5120DFE04D00CAF304 /* YDKit.app */,
+				6297F1CA2110A17E0098F229 /* YDSwiftKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		62B5EC5320DFE04D00CAF304 /* YDKit */ = {
+		62B5EC5320DFE04D00CAF304 /* YDObjectiveCKit */ = {
 			isa = PBXGroup;
 			children = (
-				5AFADE03210ACF710058FAC0 /* YDResources */,
 				62B5EC6A20DFE12F00CAF304 /* YDKit */,
 				62B5EC6B20DFE13C00CAF304 /* YDClass */,
-				62B5EC5D20DFE04F00CAF304 /* Assets.xcassets */,
 			);
-			path = YDKit;
+			path = YDObjectiveCKit;
 			sourceTree = "<group>";
 		};
 		62B5EC6A20DFE12F00CAF304 /* YDKit */ = {
@@ -640,11 +771,10 @@
 		62B5EC6B20DFE13C00CAF304 /* YDClass */ = {
 			isa = PBXGroup;
 			children = (
+				6297F1EA2110B6DB0098F229 /* YDAppDelegate */,
 				5AFADDFE210ACB8D0058FAC0 /* YDSingleton */,
 				5A6AA32D20FF1A80001C0210 /* YDFactoryMap */,
 				5A9CD36820F3102400657DBA /* YDFactory */,
-				62B5EC6D20DFE1A900CAF304 /* AppDelegate */,
-				5A6124F620E25207001C2CCC /* YDConstant */,
 				5A6124EA20E1E379001C2CCC /* YDNetworking */,
 				62B5EC7520DFE2D800CAF304 /* YDMainController */,
 			);
@@ -658,18 +788,6 @@
 				62B5EC7A20DFE7D700CAF304 /* YDNetworking.m */,
 			);
 			path = YDNetworking;
-			sourceTree = "<group>";
-		};
-		62B5EC6D20DFE1A900CAF304 /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				62B5EC6E20DFE29300CAF304 /* AppDelegate.h */,
-				62B5EC7120DFE29400CAF304 /* AppDelegate.m */,
-				62B5EC6F20DFE29300CAF304 /* main.m */,
-				62B5EC7020DFE29400CAF304 /* Info.plist */,
-				6280B3C320E8A67900F5E1FC /* Localizable.strings */,
-			);
-			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		62B5EC7520DFE2D800CAF304 /* YDMainController */ = {
@@ -692,6 +810,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6297F18C2110A17E0098F229 /* YDSwiftKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6297F1C72110A17E0098F229 /* Build configuration list for PBXNativeTarget "YDSwiftKit" */;
+			buildPhases = (
+				6297F18D2110A17E0098F229 /* [CP] Check Pods Manifest.lock */,
+				6297F18E2110A17E0098F229 /* Sources */,
+				6297F1B82110A17E0098F229 /* Frameworks */,
+				6297F1BA2110A17E0098F229 /* Resources */,
+				6297F1C62110A17E0098F229 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDSwiftKit;
+			productName = YDKit;
+			productReference = 6297F1CA2110A17E0098F229 /* YDSwiftKit.app */;
+			productType = "com.apple.product-type.application";
+		};
 		62B5EC5020DFE04D00CAF304 /* YDKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62B5EC6720DFE04F00CAF304 /* Build configuration list for PBXNativeTarget "YDKit" */;
@@ -721,8 +858,12 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "王允顶";
 				TargetAttributes = {
+					6297F18C2110A17E0098F229 = {
+						LastSwiftMigration = 0930;
+					};
 					62B5EC5020DFE04D00CAF304 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -742,24 +883,35 @@
 			projectRoot = "";
 			targets = (
 				62B5EC5020DFE04D00CAF304 /* YDKit */,
+				6297F18C2110A17E0098F229 /* YDSwiftKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6297F1BA2110A17E0098F229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6297F1BB2110A17E0098F229 /* YDConfig.map.xml in Resources */,
+				6297F1BD2110A17E0098F229 /* YDConfig.map.plist in Resources */,
+				6297F1BE2110A17E0098F229 /* YDViewFactoryConfig.xml in Resources */,
+				6297F1C02110A17E0098F229 /* Info.plist in Resources */,
+				6297F1D12110A2870098F229 /* Info.plist in Resources */,
+				6297F1C42110A17E0098F229 /* Localizable.strings in Resources */,
+				6297F1C52110A17E0098F229 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62B5EC4F20DFE04D00CAF304 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5A6AA33520FF2114001C0210 /* YDConfig.map.xml in Resources */,
-				5AFADE07210AD1330058FAC0 /* base_back_16@2x.png in Resources */,
 				5A6AA34020FF3D0D001C0210 /* YDConfig.map.plist in Resources */,
 				5A9CD35F20F3081900657DBA /* YDViewFactoryConfig.xml in Resources */,
-				5AFADE0F210AD4B80058FAC0 /* base_back_24@2x.png in Resources */,
 				62B5EC7320DFE29400CAF304 /* Info.plist in Resources */,
-				5AFADE0E210AD4B80058FAC0 /* base_back_24@3x.png in Resources */,
-				5A6AA30B20FED6BD001C0210 /* README.md in Resources */,
-				5AFADE08210AD1330058FAC0 /* base_back_16@3x.png in Resources */,
+				6297F1D02110A2870098F229 /* Info.plist in Resources */,
 				6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */,
 				62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */,
 			);
@@ -769,6 +921,44 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		2430A7AB0A42D1A76C615AE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6297F18D2110A17E0098F229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-YDKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6297F1C62110A17E0098F229 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -809,6 +999,57 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6297F18E2110A17E0098F229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6297F18F2110A17E0098F229 /* YDMainViewController.m in Sources */,
+				6297F1902110A17E0098F229 /* YDAmapMapLocationService.m in Sources */,
+				6297F1912110A17E0098F229 /* YDSingletonController.m in Sources */,
+				6297F1922110A17E0098F229 /* YDAmapMapSearchResponse.m in Sources */,
+				6297F1932110A17E0098F229 /* YDBaiduMapView.m in Sources */,
+				6297F1942110A17E0098F229 /* YDAmapMapView.m in Sources */,
+				6297F1952110A17E0098F229 /* YDViewXmlParser.m in Sources */,
+				6297F1962110A17E0098F229 /* YDBaiduMapPoiInfo.m in Sources */,
+				6297F1972110A17E0098F229 /* YDBaiduMapPoiSearchResponse.m in Sources */,
+				6297F1982110A17E0098F229 /* YDAmapMapUserLocation.m in Sources */,
+				6297F1992110A17E0098F229 /* YDConstant.m in Sources */,
+				6297F1DE2110A8FC0098F229 /* YDMainController.swift in Sources */,
+				6297F19A2110A17E0098F229 /* YDRouter.m in Sources */,
+				6297F19B2110A17E0098F229 /* AppDelegate.m in Sources */,
+				6297F19C2110A17E0098F229 /* YDMapPlatform.m in Sources */,
+				6297F19D2110A17E0098F229 /* YDMapPlatformPlistParser.m in Sources */,
+				6297F19E2110A17E0098F229 /* YDMapEngine.m in Sources */,
+				6297F19F2110A17E0098F229 /* YDNetworkingController.m in Sources */,
+				6297F1A02110A17E0098F229 /* YDBaiduMapPoiSearch.m in Sources */,
+				6297F1A12110A17E0098F229 /* NSDictionary+YDCategory.m in Sources */,
+				6297F1A22110A17E0098F229 /* YDBaiduMapLocationService.m in Sources */,
+				6297F1A32110A17E0098F229 /* UIViewController+YDCategory.m in Sources */,
+				6297F1A42110A17E0098F229 /* YDModuleRouterUrl.m in Sources */,
+				6297F1A52110A17E0098F229 /* YDBaiduMapPoiDetailResult.m in Sources */,
+				6297F1D82110A2F30098F229 /* YDSingletonPattern.swift in Sources */,
+				6297F1A62110A17E0098F229 /* YDBaiduMapFactory.m in Sources */,
+				6297F1A72110A17E0098F229 /* YDMultiLanguage.m in Sources */,
+				6297F1A82110A17E0098F229 /* YDAmapMapPoiInfo.m in Sources */,
+				6297F1A92110A17E0098F229 /* YDAmapMapSearch.m in Sources */,
+				6297F1AA2110A17E0098F229 /* YDFactoryImageView.m in Sources */,
+				6297F1AB2110A17E0098F229 /* YDPoiSearchRequest.m in Sources */,
+				6297F1AC2110A17E0098F229 /* YDMapPlatformXmlParser.m in Sources */,
+				6297F1AD2110A17E0098F229 /* YDAmapMapFactory.m in Sources */,
+				6297F1E92110B5F50098F229 /* YDAppDelegate.m in Sources */,
+				6297F1AE2110A17E0098F229 /* YDFactoryMapController.m in Sources */,
+				6297F1AF2110A17E0098F229 /* YDSingletonPattern.m in Sources */,
+				6297F1B02110A17E0098F229 /* YDFactoryController.m in Sources */,
+				6297F1B12110A17E0098F229 /* YDBaiduMapUserLocation.m in Sources */,
+				6297F1B22110A17E0098F229 /* YDViewFactory.m in Sources */,
+				6297F1B32110A17E0098F229 /* YDNetworking.m in Sources */,
+				6297F1B42110A17E0098F229 /* YDFactoryButton.m in Sources */,
+				6297F1B52110A17E0098F229 /* main.m in Sources */,
+				6297F1B62110A17E0098F229 /* YDMultiLanguageContainer.m in Sources */,
+				6297F1B72110A17E0098F229 /* NSString+YDCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62B5EC4D20DFE04D00CAF304 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,6 +1065,7 @@
 				5A0A63182105C272008F6657 /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5ABA589221007C26009A5773 /* YDAmapMapUserLocation.m in Sources */,
 				5A6124F920E25220001C2CCC /* YDConstant.m in Sources */,
+				6297F1DD2110A8FC0098F229 /* YDMainController.swift in Sources */,
 				5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */,
 				62B5EC7420DFE29400CAF304 /* AppDelegate.m in Sources */,
 				5A6AA32620FF0919001C0210 /* YDMapPlatform.m in Sources */,
@@ -836,6 +1078,7 @@
 				5AFADE0B210AD1690058FAC0 /* UIViewController+YDCategory.m in Sources */,
 				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
 				5AE11C3621072B4F00C10064 /* YDBaiduMapPoiDetailResult.m in Sources */,
+				6297F1D72110A2F30098F229 /* YDSingletonPattern.swift in Sources */,
 				5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
 				5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */,
@@ -873,6 +1116,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6297F1C82110A17E0098F229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012D797C5DC694CE4FFCC97B /* Pods-defaults-YDKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDSwiftKit/YDClass/YDAppDelegate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
+				PRODUCT_NAME = YDSwiftKit;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6297F1C92110A17E0098F229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9ABED0581171F0E07A7BF78 /* Pods-defaults-YDKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDSwiftKit/YDClass/YDAppDelegate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
+				PRODUCT_NAME = YDSwiftKit;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		62B5EC6520DFE04F00CAF304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -991,12 +1291,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Q4N5684Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDClass/YDConstant/YDPrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDClass/AppDelegate/Info.plist";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDObjectiveCKit/YDClass/YDAppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1006,6 +1307,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1016,12 +1320,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Q4N5684Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDClass/YDConstant/YDPrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDClass/AppDelegate/Info.plist";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDObjectiveCKit/YDClass/YDAppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1031,6 +1336,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1038,6 +1345,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6297F1C72110A17E0098F229 /* Build configuration list for PBXNativeTarget "YDSwiftKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6297F1C82110A17E0098F229 /* Debug */,
+				6297F1C92110A17E0098F229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		62B5EC4C20DFE04D00CAF304 /* Build configuration list for PBXProject "YDKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

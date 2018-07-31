@@ -21,7 +21,7 @@
     [super viewDidLoad];
     [[YDMultiLanguageContainer shared] addLanguageChangeController:self];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"YDKit";
+    self.navigationItem.title = @"ObjectC知识点";
     
     [self.view addSubview:self.tableView];
     

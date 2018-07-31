@@ -21,12 +21,11 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    YDMainViewController *mainViewController = [[YDMainViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    YDMainViewController *mainController = [[YDMainViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainController];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
-
     
     return YES;
 }
