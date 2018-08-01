@@ -8,12 +8,14 @@
 
 import UIKit
 
-class YDMainController: UIViewController {
+class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Swift知识点"
         self.view.backgroundColor = UIColor.white
+        self.addAllViews()
+        self.setAllViewsLayout()
         // Do any additional setup after loading the view.
     }
 
@@ -22,7 +24,23 @@ class YDMainController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    lazy var tableView: UITableView = {
+       let table = UITableView(frame: self.view.bounds, style: UITableViewStyle.plain)
+        table.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "UITableViewCell")
+        table.separatorStyle = UITableViewCellSeparatorStyle.none
+        table.delegate = self
+        table.dataSource = self
+        
+        return table
+    }()
+    lazy var titleList: [String] = {
+       let list = ["单例模式"]
+        return list
+    }()
+    lazy var controllerList: [String] = {
+        let list = [YDModuleRouterSwiftSingletonUrl]
+        return list
+    }()
     /*
     // MARK: - Navigation
 
@@ -34,3 +52,55 @@ class YDMainController: UIViewController {
     */
 
 }
+
+//MARK: - 添加所以的view
+extension YDMainController {
+    func addAllViews() {
+        self.view.addSubview(self.tableView)
+    }
+}
+
+//MARK: - 自动布局
+extension YDMainController {
+    func setAllViewsLayout() {
+        self.setTableViewLayout()
+    }
+    func setTableViewLayout() {
+    
+    }
+}
+
+//MARK: - UITableViewDataSource
+extension YDMainController {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.titleList.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")!
+        cell.textLabel?.text = self.titleList[indexPath.row]
+        cell.textLabel?.textAlignment = NSTextAlignment.center
+        return cell
+    }
+}
+
+//MARK: - UITableViewDelegate
+extension YDMainController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let controllerUrl = self.controllerList[indexPath.row]
+        let controller: UIViewController = YDRouter.shared().match(controllerUrl)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

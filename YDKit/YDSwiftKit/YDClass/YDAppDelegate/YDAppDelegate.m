@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [YDSwiftModuleRouterUrl loadModuleRouter];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     YDMainController *mainController = [[YDMainController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainController];

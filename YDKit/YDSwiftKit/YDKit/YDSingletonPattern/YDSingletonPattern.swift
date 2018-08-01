@@ -8,6 +8,18 @@
 
 import UIKit
 
-class YDSingletonPattern: NSObject {
+final class YDSingletonPattern: NSObject {
 
+    private static let instance: YDSingletonPattern = YDSingletonPattern()
+    class func sharedInstance() -> YDSingletonPattern {
+        return instance
+    }
+    
+    //将构成方法私有化
+    private override init() {
+        
+    }
+    
+    
+    
 }
