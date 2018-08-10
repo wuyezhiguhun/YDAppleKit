@@ -28,6 +28,7 @@ class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSo
        let table = UITableView(frame: self.view.bounds, style: UITableViewStyle.plain)
         table.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "UITableViewCell")
         table.separatorStyle = UITableViewCellSeparatorStyle.none
+        table.backgroundColor = UIColor.clear
         table.delegate = self
         table.dataSource = self
         
@@ -40,6 +41,11 @@ class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSo
     lazy var controllerList: [String] = {
         let list = [YDModuleRouterSwiftSingletonUrl]
         return list
+    }()
+    lazy var backImageView: UIImageView = {
+        let imageView = UIImageView(frame: UIScreen.main.bounds)
+        imageView.image = UIImage(named: "swift_back")
+        return imageView
     }()
     /*
     // MARK: - Navigation
@@ -56,6 +62,7 @@ class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSo
 //MARK: - 添加所以的view
 extension YDMainController {
     func addAllViews() {
+        self.view.addSubview(self.backImageView)
         self.view.addSubview(self.tableView)
     }
 }
@@ -79,6 +86,8 @@ extension YDMainController {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")!
         cell.textLabel?.text = self.titleList[indexPath.row]
         cell.textLabel?.textAlignment = NSTextAlignment.center
+        cell.textLabel?.textColor = UIColor.red
+        cell.backgroundColor = UIColor.clear
         return cell
     }
 }

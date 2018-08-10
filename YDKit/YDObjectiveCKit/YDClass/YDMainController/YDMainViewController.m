@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *titleList;
 @property (nonatomic, copy) NSArray *routerList;
+@property (nonatomic, strong) UIImageView *backImageView;
 @end
 
 @implementation YDMainViewController
@@ -20,9 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[YDMultiLanguageContainer shared] addLanguageChangeController:self];
+    [YDMultiLanguage setMultiLanguageType:YDMultiLanguageTypeChinese];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"ObjectC知识点";
     
+    [self.view addSubview:self.backImageView];
     [self.view addSubview:self.tableView];
     
     [[YDRouter shared] map:@"wuyezhiguhun/networking/block" toBlock:^id(NSDictionary *params) {
@@ -47,6 +50,7 @@
     }
     cell.textLabel.text = [self.titleList objectAtIndex:indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,9 +61,17 @@
 }
 
 #pragma mark -- get 函数
+- (UIImageView *)backImageView {
+    if (!_backImageView) {
+        _backImageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _backImageView.image = [UIImage imageNamed:@"object_back"];
+    }
+    return _backImageView;
+}
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.backgroundColor = [UIColor clearColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.delegate = self;
         _tableView.dataSource = self;

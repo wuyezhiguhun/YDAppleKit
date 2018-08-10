@@ -17,8 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addNavigationBack];
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.navigationItem.title = YDLanguage(@"YDFactoryPattern");
     NSObject *factoryButton = [YDViewFactory getInstance:@"1"];
     
     // Do any additional setup after loading the view.

@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addNavigationBack];
+    self.navigationItem.title = YDLanguage(@"YDNetworkingModule");
     self.view.backgroundColor = [UIColor orangeColor];
     
     NSLog(@"YDNetworkingController ---* %@",self.params);

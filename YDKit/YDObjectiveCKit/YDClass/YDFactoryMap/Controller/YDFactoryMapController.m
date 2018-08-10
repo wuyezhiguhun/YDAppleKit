@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addNavigationBack];
+    self.navigationItem.title = YDLanguage(@"YDFactoryMap");
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.button];
     [self addMapView];
