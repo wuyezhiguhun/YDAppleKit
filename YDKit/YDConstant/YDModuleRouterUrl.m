@@ -11,7 +11,6 @@
 #import "YDFactoryController.h"
 #import "YDFactoryMapController.h"
 #import "YDSingletonController.h"
-#import "YDWebViewController.h"
 
 /** 网络请求模块 */
 NSString * const YDModuleRouterNetworkingUrl         = @"weixin.wuyezhiguhun/module.router/networking";
@@ -21,8 +20,6 @@ NSString * const YDModuleRouterFactoryUrl            = @"weixin.wuyezhiguhun/mod
 NSString * const YDModuleRouterFactoryMapUrl         = @"weixin.wuyezhiguhun/module.router/factorymap";
 /** 单例模式 */
 NSString * const YDModuleRouterSingletonUrl          = @"weixin.wuyezhiguhun/module.router/singleton";
-/** WebView */
-NSString * const YDModuleRouterWebViewUrl            = @"weixin.wuyezhiguhun/module.router/webview";
 
 @implementation YDModuleRouterUrl
 
@@ -31,7 +28,6 @@ NSString * const YDModuleRouterWebViewUrl            = @"weixin.wuyezhiguhun/mod
     [[YDRouter shared] map:YDModuleRouterFactoryUrl toControllerClass:[YDFactoryController class]];
     [[YDRouter shared] map:YDModuleRouterFactoryMapUrl toControllerClass:[YDFactoryMapController class]];
     [[YDRouter shared] map:YDModuleRouterSingletonUrl toControllerClass:[YDSingletonController class]];
-    [[YDRouter shared] map:YDModuleRouterWebViewUrl toControllerClass:[YDWebViewController class]];
 }
 
 @end

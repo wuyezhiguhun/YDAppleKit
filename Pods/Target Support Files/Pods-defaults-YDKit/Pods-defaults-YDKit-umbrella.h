@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_YDSwiftKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_YDSwiftKitVersionString[];
+FOUNDATION_EXPORT double Pods_defaults_YDKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_defaults_YDKitVersionString[];
 

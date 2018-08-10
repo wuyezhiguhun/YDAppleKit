@@ -17,8 +17,6 @@
 		5A3750CE21115728003877B1 /* YDSwiftSingletonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750CC21115728003877B1 /* YDSwiftSingletonController.swift */; };
 		5A3750D02111590A003877B1 /* YDSwiftModuleRouterUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750CF2111590A003877B1 /* YDSwiftModuleRouterUrl.swift */; };
 		5A3750D12111590A003877B1 /* YDSwiftModuleRouterUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750CF2111590A003877B1 /* YDSwiftModuleRouterUrl.swift */; };
-		5A37D0A2211C3A8A00D7FB15 /* YDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A37D0A1211C3A8A00D7FB15 /* YDWebViewController.m */; };
-		5A37D0A3211C3A8A00D7FB15 /* YDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A37D0A1211C3A8A00D7FB15 /* YDWebViewController.m */; };
 		5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124ED20E1E3AB001C2CCC /* YDNetworkingController.m */; };
 		5A6124F220E1E609001C2CCC /* YDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F120E1E609001C2CCC /* YDRouter.m */; };
 		5A6124F920E25220001C2CCC /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6124F820E25220001C2CCC /* YDConstant.m */; };
@@ -117,17 +115,12 @@
 		62B5EC7420DFE29400CAF304 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7120DFE29400CAF304 /* AppDelegate.m */; };
 		62B5EC7820DFE31F00CAF304 /* YDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7720DFE31F00CAF304 /* YDMainViewController.m */; };
 		62B5EC7C20DFE7D700CAF304 /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7A20DFE7D700CAF304 /* YDNetworking.m */; };
-		75B7F4A88A3AF30F0A450E80 /* libPods-YDKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ADD35EB54284B08A1FA8F1 /* libPods-YDKit.a */; };
-		79A3157A2AC250A46C0726A9 /* Pods_YDSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196DF09159E6D6BA448375EB /* Pods_YDSwiftKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		012D797C5DC694CE4FFCC97B /* Pods-defaults-YDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit.debug.xcconfig"; sourceTree = "<group>"; };
 		13590A5FED5B1ECD29ACA82B /* libPods-defaults-YDSwiftKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDSwiftKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		150A3BF0D35568B23489B4CC /* Pods-YDSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDSwiftKit/Pods-YDSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
-		196DF09159E6D6BA448375EB /* Pods_YDSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25817788A5CDDF3937080AD1 /* Pods-defaults-YDSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
-		56AE6ADA3C1F0EB5CEDDEC16 /* Pods-YDSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDSwiftKit/Pods-YDSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
 		5A0A630C2105B624008F6657 /* YDMapCityInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapCityInfo.h; sourceTree = "<group>"; };
 		5A0A630D2105B738008F6657 /* YDMapPoiInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapPoiInfo.h; sourceTree = "<group>"; };
 		5A0A630E2105B7E8008F6657 /* YDMapPoiSearchResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDMapPoiSearchResponse.h; sourceTree = "<group>"; };
@@ -147,8 +140,6 @@
 		5A0B1A4D20E600B2005F177C /* NSDictionary+YDCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YDCategory.m"; sourceTree = "<group>"; };
 		5A3750CC21115728003877B1 /* YDSwiftSingletonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSwiftSingletonController.swift; sourceTree = "<group>"; };
 		5A3750CF2111590A003877B1 /* YDSwiftModuleRouterUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSwiftModuleRouterUrl.swift; sourceTree = "<group>"; };
-		5A37D0A0211C3A8A00D7FB15 /* YDWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDWebViewController.h; sourceTree = "<group>"; };
-		5A37D0A1211C3A8A00D7FB15 /* YDWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDWebViewController.m; sourceTree = "<group>"; };
 		5A6124EC20E1E3AB001C2CCC /* YDNetworkingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNetworkingController.h; sourceTree = "<group>"; };
 		5A6124ED20E1E3AB001C2CCC /* YDNetworkingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNetworkingController.m; sourceTree = "<group>"; };
 		5A6124F020E1E609001C2CCC /* YDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDRouter.h; sourceTree = "<group>"; };
@@ -248,11 +239,8 @@
 		62B5EC7920DFE7A600CAF304 /* YDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKit.h; sourceTree = "<group>"; };
 		62B5EC7A20DFE7D700CAF304 /* YDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworking.m; sourceTree = "<group>"; };
 		62B5EC7B20DFE7D700CAF304 /* YDNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworking.h; sourceTree = "<group>"; };
-		876AED0F6241874459A78589 /* Pods-YDKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YDKit/Pods-YDKit.release.xcconfig"; sourceTree = "<group>"; };
-		A849EA31248442202601FFC8 /* Pods-YDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YDKit/Pods-YDKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C0812E9EC0FD18A3BDD39C3F /* Pods-defaults-YDSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
 		E9ABED0581171F0E07A7BF78 /* Pods-defaults-YDKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit.release.xcconfig"; sourceTree = "<group>"; };
-		F4ADD35EB54284B08A1FA8F1 /* libPods-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +250,6 @@
 			files = (
 				6297F1B92110A17E0098F229 /* libPods-defaults-YDKit.a in Frameworks */,
 				2B9EE1EACFD84F77FF1FD4D7 /* libPods-defaults-YDSwiftKit.a in Frameworks */,
-				79A3157A2AC250A46C0726A9 /* Pods_YDSwiftKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B34A171969F9487F9E1FB1 /* libPods-defaults-YDKit.a in Frameworks */,
-				75B7F4A88A3AF30F0A450E80 /* libPods-YDKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +271,6 @@
 				E9ABED0581171F0E07A7BF78 /* Pods-defaults-YDKit.release.xcconfig */,
 				C0812E9EC0FD18A3BDD39C3F /* Pods-defaults-YDSwiftKit.debug.xcconfig */,
 				25817788A5CDDF3937080AD1 /* Pods-defaults-YDSwiftKit.release.xcconfig */,
-				A849EA31248442202601FFC8 /* Pods-YDKit.debug.xcconfig */,
-				876AED0F6241874459A78589 /* Pods-YDKit.release.xcconfig */,
-				150A3BF0D35568B23489B4CC /* Pods-YDSwiftKit.debug.xcconfig */,
-				56AE6ADA3C1F0EB5CEDDEC16 /* Pods-YDSwiftKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -352,23 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				5A3750CC21115728003877B1 /* YDSwiftSingletonController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5A37D09E211C3A4800D7FB15 /* YDWebView */ = {
-			isa = PBXGroup;
-			children = (
-				5A37D09F211C3A6600D7FB15 /* Controller */,
-			);
-			path = YDWebView;
-			sourceTree = "<group>";
-		};
-		5A37D09F211C3A6600D7FB15 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				5A37D0A0211C3A8A00D7FB15 /* YDWebViewController.h */,
-				5A37D0A1211C3A8A00D7FB15 /* YDWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -837,7 +802,6 @@
 		62B5EC6B20DFE13C00CAF304 /* YDClass */ = {
 			isa = PBXGroup;
 			children = (
-				5A37D09E211C3A4800D7FB15 /* YDWebView */,
 				6297F1EA2110B6DB0098F229 /* YDAppDelegate */,
 				5AFADDFE210ACB8D0058FAC0 /* YDSingleton */,
 				5A6AA32D20FF1A80001C0210 /* YDFactoryMap */,
@@ -871,8 +835,6 @@
 			children = (
 				5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */,
 				13590A5FED5B1ECD29ACA82B /* libPods-defaults-YDSwiftKit.a */,
-				F4ADD35EB54284B08A1FA8F1 /* libPods-YDKit.a */,
-				196DF09159E6D6BA448375EB /* Pods_YDSwiftKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -888,6 +850,7 @@
 				6297F18E2110A17E0098F229 /* Sources */,
 				6297F1B82110A17E0098F229 /* Frameworks */,
 				6297F1BA2110A17E0098F229 /* Resources */,
+				6297F1C62110A17E0098F229 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -995,7 +958,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YDKit/Pods-YDKit-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit-resources.sh",
 				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
 			);
@@ -1006,7 +969,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YDKit/Pods-YDKit-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDKit/Pods-defaults-YDKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6297F18D2110A17E0098F229 /* [CP] Check Pods Manifest.lock */ = {
@@ -1020,11 +983,31 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YDSwiftKit-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-defaults-YDSwiftKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6297F1C62110A17E0098F229 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE319B1D6D9F3B03529BA14D /* [CP] Check Pods Manifest.lock */ = {
@@ -1038,7 +1021,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YDKit-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-defaults-YDKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1074,7 +1057,6 @@
 				6297F1A02110A17E0098F229 /* YDBaiduMapPoiSearch.m in Sources */,
 				6297F1A12110A17E0098F229 /* NSDictionary+YDCategory.m in Sources */,
 				6297F1A22110A17E0098F229 /* YDBaiduMapLocationService.m in Sources */,
-				5A37D0A3211C3A8A00D7FB15 /* YDWebViewController.m in Sources */,
 				6297F1A32110A17E0098F229 /* UIViewController+YDCategory.m in Sources */,
 				6297F1A42110A17E0098F229 /* YDModuleRouterUrl.m in Sources */,
 				6297F1A52110A17E0098F229 /* YDBaiduMapPoiDetailResult.m in Sources */,
@@ -1110,7 +1092,6 @@
 				5ABA589521007C48009A5773 /* YDAmapMapLocationService.m in Sources */,
 				5AFADE02210ACBBF0058FAC0 /* YDSingletonController.m in Sources */,
 				5AFADE1A210B15010058FAC0 /* YDAmapMapSearchResponse.m in Sources */,
-				5A37D0A2211C3A8A00D7FB15 /* YDWebViewController.m in Sources */,
 				5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */,
 				5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */,
 				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
@@ -1173,7 +1154,7 @@
 /* Begin XCBuildConfiguration section */
 		6297F1C82110A17E0098F229 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 150A3BF0D35568B23489B4CC /* Pods-YDSwiftKit.debug.xcconfig */;
+			baseConfigurationReference = C0812E9EC0FD18A3BDD39C3F /* Pods-defaults-YDSwiftKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Swift;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_Swift;
@@ -1185,7 +1166,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDSwiftKit/YDClass/YDAppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
 				PRODUCT_NAME = YDSwiftKit;
 				PROVISIONING_PROFILE = "";
@@ -1199,7 +1183,7 @@
 		};
 		6297F1C92110A17E0098F229 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56AE6ADA3C1F0EB5CEDDEC16 /* Pods-YDSwiftKit.release.xcconfig */;
+			baseConfigurationReference = 25817788A5CDDF3937080AD1 /* Pods-defaults-YDSwiftKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Swift;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_Swift;
@@ -1211,7 +1195,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDSwiftKit/YDClass/YDAppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
 				PRODUCT_NAME = YDSwiftKit;
 				PROVISIONING_PROFILE = "";
@@ -1336,7 +1323,7 @@
 		};
 		62B5EC6820DFE04F00CAF304 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A849EA31248442202601FFC8 /* Pods-YDKit.debug.xcconfig */;
+			baseConfigurationReference = 012D797C5DC694CE4FFCC97B /* Pods-defaults-YDKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_OC;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_OC;
@@ -1348,7 +1335,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDObjectiveCKit/YDClass/YDAppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1362,7 +1352,7 @@
 		};
 		62B5EC6920DFE04F00CAF304 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 876AED0F6241874459A78589 /* Pods-YDKit.release.xcconfig */;
+			baseConfigurationReference = E9ABED0581171F0E07A7BF78 /* Pods-defaults-YDKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_OC;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_OC;
@@ -1374,7 +1364,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDKit/YDConstant/YDPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YDKit/YDObjectiveCKit/YDClass/YDAppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -1,6 +1,0 @@
-framework module Pods_YDSwiftKit {
-  umbrella header "Pods-YDSwiftKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
