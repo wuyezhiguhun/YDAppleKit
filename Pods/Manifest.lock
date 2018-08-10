@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - AMap2DMap-NO-IDFA (5.6.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
@@ -43,7 +43,7 @@ SPEC REPOS:
     - BMKLocationKit
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   AMap2DMap-NO-IDFA: 277965383679f1a4676df7e1a0439a1e14d0599a
   AMapFoundation-NO-IDFA: 128ccf9249abc9de1661b935f01d116700583691
   AMapLocation-NO-IDFA: a75b762ae9a90840ce683de12504ac843a9f3b6c
@@ -51,6 +51,6 @@ SPEC CHECKSUMS:
   BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
   BMKLocationKit: c0fd588904738a6865e9311ed445c38452039007
 
-PODFILE CHECKSUM: 27e62c4d159aedd3e462003e0bf35babdfe845ad
+PODFILE CHECKSUM: 4cc7bf6bfa558e9b081c04797c76886941b414fe
 
 COCOAPODS: 1.5.0

@@ -16,7 +16,8 @@ FOUNDATION_EXPORT NSString * const YDModuleRouterFactoryUrl;
 FOUNDATION_EXPORT NSString * const YDModuleRouterFactoryMapUrl;
 /** 单例模式 */
 FOUNDATION_EXPORT NSString * const YDModuleRouterSingletonUrl;
-
+/** WebView */
+FOUNDATION_EXPORT NSString * const YDModuleRouterWebViewUrl;
 
 @interface YDModuleRouterUrl : NSObject
 
