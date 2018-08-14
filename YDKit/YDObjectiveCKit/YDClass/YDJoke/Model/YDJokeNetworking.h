@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol YDJokeNetworkingDelegate <NSObject>
+
+@optional
+- (void)jokeNetworkingStart;
+- (void)jokeNetworkingSuccess:(NSArray *)success;
+- (void)jokeNetworkingFailure:(NSArray *)failure;
+
+@end
+
 @interface YDJokeNetworking : NSObject
+
+@property (nonatomic, weak) id <YDJokeNetworkingDelegate> delegate;
+
+- (void)getJokeWithPageNum:(NSInteger)pageNum pageSize:(NSInteger)pageSize;
 
 @end

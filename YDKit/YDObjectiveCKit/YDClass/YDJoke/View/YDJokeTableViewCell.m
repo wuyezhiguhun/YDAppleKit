@@ -46,7 +46,7 @@
 }
 - (UILabel *)jokeLabel {
     if (!_jokeLabel) {
-        _jokeLabel = [[UILabel alloc] initWithFrame:CGRectMake(130, 15, YDScreenWidth - 145, 100)];
+        _jokeLabel = [[UILabel alloc] initWithFrame:CGRectMake(130, 15, YDScreenWidth - 145, 150)];
         _jokeLabel.backgroundColor = [UIColor clearColor];
         _jokeLabel.textColor = YDColorHex(0x666666);
         _jokeLabel.font = [UIFont systemFontOfSize:15];

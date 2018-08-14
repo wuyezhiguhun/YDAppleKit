@@ -8,11 +8,13 @@
 
 #import "YDJokeController.h"
 #import "YDJokeTableViewCell.h"
+#import "YDJokeNetworking.h"
 
-@interface YDJokeController ()<UITableViewDelegate, UITableViewDataSource>
+@interface YDJokeController ()<UITableViewDelegate, UITableViewDataSource, YDJokeNetworkingDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataList;
+@property (nonatomic, strong) YDJokeNetworking *jokeNetworking;
 
 @end
 
@@ -24,6 +26,7 @@
     self.navigationItem.title = YDLanguage(@"YDJokeDaquan");
     [self addNavigationBack];
     [self.view addSubview:self.tableView];
+    [self.jokeNetworking getJokeWithPageNum:1 pageSize:20];
     // Do any additional setup after loading the view.
 }
 
@@ -32,9 +35,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -- YDJokeNetworkingDelegate
+- (void)jokeNetworkingStart {
+    
+}
+- (void)jokeNetworkingSuccess:(NSArray *)success {
+    [self.dataList addObjectsFromArray:success];
+    [self.tableView reloadData];
+}
+- (void)jokeNetworkingFailure:(NSArray *)failure {
+    
+}
+
 #pragma mark -- UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 15;
+    return [self.dataList count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *jokeTableViewCell = @"YDJokeTableViewCell";
@@ -45,10 +60,11 @@
     int random = arc4random() % 14;
     NSString *imageName = [NSString stringWithFormat:@"anime-%02d",random];
     cell.iconImageView.image = [UIImage imageNamed:imageName];
+    cell.jokeLabel.text = [self.dataList objectAtIndex:indexPath.row];
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 130;
+    return 180;
 }
 #pragma mark -- get 函数
 - (UITableView *)tableView {
@@ -59,7 +75,19 @@
     }
     return _tableView;
 }
-
+- (NSMutableArray *)dataList {
+    if (!_dataList) {
+        _dataList = [NSMutableArray array];
+    }
+    return _dataList;
+}
+- (YDJokeNetworking *)jokeNetworking {
+    if (!_jokeNetworking) {
+        _jokeNetworking = [[YDJokeNetworking alloc] init];
+        _jokeNetworking.delegate = self;
+    }
+    return _jokeNetworking;
+}
 /*
 #pragma mark - Navigation
 
