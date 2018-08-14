@@ -11,6 +11,7 @@
 #import "YDFactoryController.h"
 #import "YDFactoryMapController.h"
 #import "YDSingletonController.h"
+#import "YDJokeController.h"
 
 /** 网络请求模块 */
 NSString * const YDModuleRouterNetworkingUrl         = @"weixin.wuyezhiguhun/module.router/networking";
@@ -20,6 +21,9 @@ NSString * const YDModuleRouterFactoryUrl            = @"weixin.wuyezhiguhun/mod
 NSString * const YDModuleRouterFactoryMapUrl         = @"weixin.wuyezhiguhun/module.router/factorymap";
 /** 单例模式 */
 NSString * const YDModuleRouterSingletonUrl          = @"weixin.wuyezhiguhun/module.router/singleton";
+/** 笑话大全 */
+NSString * const YDModuleRoyterJokeDaquanUrl         = @"weixin.wuyezhiguhun/module.router/joke";
+
 
 @implementation YDModuleRouterUrl
 
@@ -28,6 +32,7 @@ NSString * const YDModuleRouterSingletonUrl          = @"weixin.wuyezhiguhun/mod
     [[YDRouter shared] map:YDModuleRouterFactoryUrl toControllerClass:[YDFactoryController class]];
     [[YDRouter shared] map:YDModuleRouterFactoryMapUrl toControllerClass:[YDFactoryMapController class]];
     [[YDRouter shared] map:YDModuleRouterSingletonUrl toControllerClass:[YDSingletonController class]];
+    [[YDRouter shared] map:YDModuleRoyterJokeDaquanUrl toControllerClass:[YDJokeController class]];
 }
 
 @end

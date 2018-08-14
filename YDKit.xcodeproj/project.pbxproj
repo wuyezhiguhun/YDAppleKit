@@ -53,6 +53,68 @@
 		5AFADE17210B08330058FAC0 /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */; };
 		5AFADE1A210B15010058FAC0 /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */; };
 		5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */; };
+		625AD9A42123081C0080D1B2 /* YDJokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AD9A32123081C0080D1B2 /* YDJokeController.m */; };
+		625AD9A52123081C0080D1B2 /* YDJokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AD9A32123081C0080D1B2 /* YDJokeController.m */; };
+		625AD9A9212308AA0080D1B2 /* YDJokeNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AD9A8212308AA0080D1B2 /* YDJokeNetworking.m */; };
+		625AD9AA212308AA0080D1B2 /* YDJokeNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AD9A8212308AA0080D1B2 /* YDJokeNetworking.m */; };
+		625AD9C82123187A0080D1B2 /* anime-06@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AC212318790080D1B2 /* anime-06@3x.png */; };
+		625AD9C92123187A0080D1B2 /* anime-06@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AC212318790080D1B2 /* anime-06@3x.png */; };
+		625AD9CA2123187A0080D1B2 /* anime-08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AD212318790080D1B2 /* anime-08@3x.png */; };
+		625AD9CB2123187A0080D1B2 /* anime-08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AD212318790080D1B2 /* anime-08@3x.png */; };
+		625AD9CC2123187A0080D1B2 /* anime-14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AE212318790080D1B2 /* anime-14@3x.png */; };
+		625AD9CD2123187A0080D1B2 /* anime-14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AE212318790080D1B2 /* anime-14@3x.png */; };
+		625AD9CE2123187A0080D1B2 /* anime-11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AF212318790080D1B2 /* anime-11@2x.png */; };
+		625AD9CF2123187A0080D1B2 /* anime-11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9AF212318790080D1B2 /* anime-11@2x.png */; };
+		625AD9D02123187A0080D1B2 /* anime-02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B0212318790080D1B2 /* anime-02@3x.png */; };
+		625AD9D12123187A0080D1B2 /* anime-02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B0212318790080D1B2 /* anime-02@3x.png */; };
+		625AD9D22123187A0080D1B2 /* anime-10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B1212318790080D1B2 /* anime-10@3x.png */; };
+		625AD9D32123187A0080D1B2 /* anime-10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B1212318790080D1B2 /* anime-10@3x.png */; };
+		625AD9D42123187A0080D1B2 /* anime-11@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B2212318790080D1B2 /* anime-11@3x.png */; };
+		625AD9D52123187A0080D1B2 /* anime-11@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B2212318790080D1B2 /* anime-11@3x.png */; };
+		625AD9D62123187A0080D1B2 /* anime-10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B3212318790080D1B2 /* anime-10@2x.png */; };
+		625AD9D72123187A0080D1B2 /* anime-10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B3212318790080D1B2 /* anime-10@2x.png */; };
+		625AD9D82123187A0080D1B2 /* anime-07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B4212318790080D1B2 /* anime-07@3x.png */; };
+		625AD9D92123187A0080D1B2 /* anime-07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B4212318790080D1B2 /* anime-07@3x.png */; };
+		625AD9DA2123187A0080D1B2 /* anime-14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B5212318790080D1B2 /* anime-14@2x.png */; };
+		625AD9DB2123187A0080D1B2 /* anime-14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B5212318790080D1B2 /* anime-14@2x.png */; };
+		625AD9DC2123187A0080D1B2 /* anime-13@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B6212318790080D1B2 /* anime-13@3x.png */; };
+		625AD9DD2123187A0080D1B2 /* anime-13@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B6212318790080D1B2 /* anime-13@3x.png */; };
+		625AD9DE2123187A0080D1B2 /* anime-06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B7212318790080D1B2 /* anime-06@2x.png */; };
+		625AD9DF2123187A0080D1B2 /* anime-06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B7212318790080D1B2 /* anime-06@2x.png */; };
+		625AD9E02123187A0080D1B2 /* anime-09@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B8212318790080D1B2 /* anime-09@3x.png */; };
+		625AD9E12123187A0080D1B2 /* anime-09@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B8212318790080D1B2 /* anime-09@3x.png */; };
+		625AD9E22123187A0080D1B2 /* anime-01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B9212318790080D1B2 /* anime-01@3x.png */; };
+		625AD9E32123187A0080D1B2 /* anime-01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9B9212318790080D1B2 /* anime-01@3x.png */; };
+		625AD9E42123187A0080D1B2 /* anime-03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BA212318790080D1B2 /* anime-03@3x.png */; };
+		625AD9E52123187A0080D1B2 /* anime-03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BA212318790080D1B2 /* anime-03@3x.png */; };
+		625AD9E62123187A0080D1B2 /* anime-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BB212318790080D1B2 /* anime-02@2x.png */; };
+		625AD9E72123187A0080D1B2 /* anime-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BB212318790080D1B2 /* anime-02@2x.png */; };
+		625AD9E82123187A0080D1B2 /* anime-12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BC2123187A0080D1B2 /* anime-12@2x.png */; };
+		625AD9E92123187A0080D1B2 /* anime-12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BC2123187A0080D1B2 /* anime-12@2x.png */; };
+		625AD9EA2123187A0080D1B2 /* anime-04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BD2123187A0080D1B2 /* anime-04@3x.png */; };
+		625AD9EB2123187A0080D1B2 /* anime-04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BD2123187A0080D1B2 /* anime-04@3x.png */; };
+		625AD9EC2123187A0080D1B2 /* anime-05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BE2123187A0080D1B2 /* anime-05@2x.png */; };
+		625AD9ED2123187A0080D1B2 /* anime-05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BE2123187A0080D1B2 /* anime-05@2x.png */; };
+		625AD9EE2123187A0080D1B2 /* anime-08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BF2123187A0080D1B2 /* anime-08@2x.png */; };
+		625AD9EF2123187A0080D1B2 /* anime-08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9BF2123187A0080D1B2 /* anime-08@2x.png */; };
+		625AD9F02123187A0080D1B2 /* anime-07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C02123187A0080D1B2 /* anime-07@2x.png */; };
+		625AD9F12123187A0080D1B2 /* anime-07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C02123187A0080D1B2 /* anime-07@2x.png */; };
+		625AD9F22123187A0080D1B2 /* anime-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C12123187A0080D1B2 /* anime-03@2x.png */; };
+		625AD9F32123187A0080D1B2 /* anime-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C12123187A0080D1B2 /* anime-03@2x.png */; };
+		625AD9F42123187A0080D1B2 /* anime-09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C22123187A0080D1B2 /* anime-09@2x.png */; };
+		625AD9F52123187A0080D1B2 /* anime-09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C22123187A0080D1B2 /* anime-09@2x.png */; };
+		625AD9F62123187A0080D1B2 /* anime-12@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C32123187A0080D1B2 /* anime-12@3x.png */; };
+		625AD9F72123187A0080D1B2 /* anime-12@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C32123187A0080D1B2 /* anime-12@3x.png */; };
+		625AD9F82123187A0080D1B2 /* anime-13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C42123187A0080D1B2 /* anime-13@2x.png */; };
+		625AD9F92123187A0080D1B2 /* anime-13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C42123187A0080D1B2 /* anime-13@2x.png */; };
+		625AD9FA2123187A0080D1B2 /* anime-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C52123187A0080D1B2 /* anime-01@2x.png */; };
+		625AD9FB2123187A0080D1B2 /* anime-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C52123187A0080D1B2 /* anime-01@2x.png */; };
+		625AD9FC2123187A0080D1B2 /* anime-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C62123187A0080D1B2 /* anime-04@2x.png */; };
+		625AD9FD2123187A0080D1B2 /* anime-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C62123187A0080D1B2 /* anime-04@2x.png */; };
+		625AD9FE2123187A0080D1B2 /* anime-05@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C72123187A0080D1B2 /* anime-05@3x.png */; };
+		625AD9FF2123187A0080D1B2 /* anime-05@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625AD9C72123187A0080D1B2 /* anime-05@3x.png */; };
+		625ADA0321231B030080D1B2 /* YDJokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 625ADA0221231B030080D1B2 /* YDJokeTableViewCell.m */; };
+		625ADA0421231B030080D1B2 /* YDJokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 625ADA0221231B030080D1B2 /* YDJokeTableViewCell.m */; };
 		6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6280B3C320E8A67900F5E1FC /* Localizable.strings */; };
 		6297F18F2110A17E0098F229 /* YDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B5EC7720DFE31F00CAF304 /* YDMainViewController.m */; };
 		6297F1902110A17E0098F229 /* YDAmapMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA589421007C48009A5773 /* YDAmapMapLocationService.m */; };
@@ -228,6 +290,40 @@
 		5AFADE1B210B1A970058FAC0 /* YDAmapMapPoiInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapPoiInfo.h; sourceTree = "<group>"; };
 		5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapPoiInfo.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		625AD9A22123081C0080D1B2 /* YDJokeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDJokeController.h; sourceTree = "<group>"; };
+		625AD9A32123081C0080D1B2 /* YDJokeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJokeController.m; sourceTree = "<group>"; };
+		625AD9A7212308AA0080D1B2 /* YDJokeNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDJokeNetworking.h; sourceTree = "<group>"; };
+		625AD9A8212308AA0080D1B2 /* YDJokeNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJokeNetworking.m; sourceTree = "<group>"; };
+		625AD9AC212318790080D1B2 /* anime-06@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-06@3x.png"; sourceTree = "<group>"; };
+		625AD9AD212318790080D1B2 /* anime-08@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-08@3x.png"; sourceTree = "<group>"; };
+		625AD9AE212318790080D1B2 /* anime-14@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-14@3x.png"; sourceTree = "<group>"; };
+		625AD9AF212318790080D1B2 /* anime-11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-11@2x.png"; sourceTree = "<group>"; };
+		625AD9B0212318790080D1B2 /* anime-02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-02@3x.png"; sourceTree = "<group>"; };
+		625AD9B1212318790080D1B2 /* anime-10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-10@3x.png"; sourceTree = "<group>"; };
+		625AD9B2212318790080D1B2 /* anime-11@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-11@3x.png"; sourceTree = "<group>"; };
+		625AD9B3212318790080D1B2 /* anime-10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-10@2x.png"; sourceTree = "<group>"; };
+		625AD9B4212318790080D1B2 /* anime-07@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-07@3x.png"; sourceTree = "<group>"; };
+		625AD9B5212318790080D1B2 /* anime-14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-14@2x.png"; sourceTree = "<group>"; };
+		625AD9B6212318790080D1B2 /* anime-13@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-13@3x.png"; sourceTree = "<group>"; };
+		625AD9B7212318790080D1B2 /* anime-06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-06@2x.png"; sourceTree = "<group>"; };
+		625AD9B8212318790080D1B2 /* anime-09@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-09@3x.png"; sourceTree = "<group>"; };
+		625AD9B9212318790080D1B2 /* anime-01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-01@3x.png"; sourceTree = "<group>"; };
+		625AD9BA212318790080D1B2 /* anime-03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-03@3x.png"; sourceTree = "<group>"; };
+		625AD9BB212318790080D1B2 /* anime-02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-02@2x.png"; sourceTree = "<group>"; };
+		625AD9BC2123187A0080D1B2 /* anime-12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-12@2x.png"; sourceTree = "<group>"; };
+		625AD9BD2123187A0080D1B2 /* anime-04@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-04@3x.png"; sourceTree = "<group>"; };
+		625AD9BE2123187A0080D1B2 /* anime-05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-05@2x.png"; sourceTree = "<group>"; };
+		625AD9BF2123187A0080D1B2 /* anime-08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-08@2x.png"; sourceTree = "<group>"; };
+		625AD9C02123187A0080D1B2 /* anime-07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-07@2x.png"; sourceTree = "<group>"; };
+		625AD9C12123187A0080D1B2 /* anime-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-03@2x.png"; sourceTree = "<group>"; };
+		625AD9C22123187A0080D1B2 /* anime-09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-09@2x.png"; sourceTree = "<group>"; };
+		625AD9C32123187A0080D1B2 /* anime-12@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-12@3x.png"; sourceTree = "<group>"; };
+		625AD9C42123187A0080D1B2 /* anime-13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-13@2x.png"; sourceTree = "<group>"; };
+		625AD9C52123187A0080D1B2 /* anime-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-01@2x.png"; sourceTree = "<group>"; };
+		625AD9C62123187A0080D1B2 /* anime-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-04@2x.png"; sourceTree = "<group>"; };
+		625AD9C72123187A0080D1B2 /* anime-05@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-05@3x.png"; sourceTree = "<group>"; };
+		625ADA0121231B030080D1B2 /* YDJokeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDJokeTableViewCell.h; sourceTree = "<group>"; };
+		625ADA0221231B030080D1B2 /* YDJokeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJokeTableViewCell.m; sourceTree = "<group>"; };
 		6280B3C220E8A67900F5E1FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C420E8A69100F5E1FC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6280B3C520E8A69600F5E1FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -691,6 +787,79 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		625AD9A0212307D00080D1B2 /* YDJoke */ = {
+			isa = PBXGroup;
+			children = (
+				625ADA0021231AE30080D1B2 /* View */,
+				625AD9AB212309090080D1B2 /* Resources */,
+				625AD9A1212307FB0080D1B2 /* Controller */,
+				625AD9A6212308420080D1B2 /* Model */,
+			);
+			path = YDJoke;
+			sourceTree = "<group>";
+		};
+		625AD9A1212307FB0080D1B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				625AD9A22123081C0080D1B2 /* YDJokeController.h */,
+				625AD9A32123081C0080D1B2 /* YDJokeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		625AD9A6212308420080D1B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				625AD9A7212308AA0080D1B2 /* YDJokeNetworking.h */,
+				625AD9A8212308AA0080D1B2 /* YDJokeNetworking.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		625AD9AB212309090080D1B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				625AD9C52123187A0080D1B2 /* anime-01@2x.png */,
+				625AD9B9212318790080D1B2 /* anime-01@3x.png */,
+				625AD9BB212318790080D1B2 /* anime-02@2x.png */,
+				625AD9B0212318790080D1B2 /* anime-02@3x.png */,
+				625AD9C12123187A0080D1B2 /* anime-03@2x.png */,
+				625AD9BA212318790080D1B2 /* anime-03@3x.png */,
+				625AD9C62123187A0080D1B2 /* anime-04@2x.png */,
+				625AD9BD2123187A0080D1B2 /* anime-04@3x.png */,
+				625AD9BE2123187A0080D1B2 /* anime-05@2x.png */,
+				625AD9C72123187A0080D1B2 /* anime-05@3x.png */,
+				625AD9B7212318790080D1B2 /* anime-06@2x.png */,
+				625AD9AC212318790080D1B2 /* anime-06@3x.png */,
+				625AD9C02123187A0080D1B2 /* anime-07@2x.png */,
+				625AD9B4212318790080D1B2 /* anime-07@3x.png */,
+				625AD9BF2123187A0080D1B2 /* anime-08@2x.png */,
+				625AD9AD212318790080D1B2 /* anime-08@3x.png */,
+				625AD9C22123187A0080D1B2 /* anime-09@2x.png */,
+				625AD9B8212318790080D1B2 /* anime-09@3x.png */,
+				625AD9B3212318790080D1B2 /* anime-10@2x.png */,
+				625AD9B1212318790080D1B2 /* anime-10@3x.png */,
+				625AD9AF212318790080D1B2 /* anime-11@2x.png */,
+				625AD9B2212318790080D1B2 /* anime-11@3x.png */,
+				625AD9BC2123187A0080D1B2 /* anime-12@2x.png */,
+				625AD9C32123187A0080D1B2 /* anime-12@3x.png */,
+				625AD9C42123187A0080D1B2 /* anime-13@2x.png */,
+				625AD9B6212318790080D1B2 /* anime-13@3x.png */,
+				625AD9B5212318790080D1B2 /* anime-14@2x.png */,
+				625AD9AE212318790080D1B2 /* anime-14@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		625ADA0021231AE30080D1B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				625ADA0121231B030080D1B2 /* YDJokeTableViewCell.h */,
+				625ADA0221231B030080D1B2 /* YDJokeTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6297F18B2110A1450098F229 /* YDSwiftKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +992,7 @@
 		62B5EC6B20DFE13C00CAF304 /* YDClass */ = {
 			isa = PBXGroup;
 			children = (
+				625AD9A0212307D00080D1B2 /* YDJoke */,
 				6297F1EA2110B6DB0098F229 /* YDAppDelegate */,
 				5AFADDFE210ACB8D0058FAC0 /* YDSingleton */,
 				5A6AA32D20FF1A80001C0210 /* YDFactoryMap */,
@@ -969,15 +1139,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625AD9FB2123187A0080D1B2 /* anime-01@2x.png in Resources */,
+				625AD9ED2123187A0080D1B2 /* anime-05@2x.png in Resources */,
 				6297F1BB2110A17E0098F229 /* YDConfig.map.xml in Resources */,
 				6297F1BD2110A17E0098F229 /* YDConfig.map.plist in Resources */,
+				625AD9F72123187A0080D1B2 /* anime-12@3x.png in Resources */,
 				6297F1BE2110A17E0098F229 /* YDViewFactoryConfig.xml in Resources */,
+				625AD9EF2123187A0080D1B2 /* anime-08@2x.png in Resources */,
 				6297F1C02110A17E0098F229 /* Info.plist in Resources */,
+				625AD9F32123187A0080D1B2 /* anime-03@2x.png in Resources */,
 				62CE95772121C78000E7C297 /* arrow@2x.png in Resources */,
+				625AD9CF2123187A0080D1B2 /* anime-11@2x.png in Resources */,
+				625AD9D52123187A0080D1B2 /* anime-11@3x.png in Resources */,
+				625AD9E12123187A0080D1B2 /* anime-09@3x.png in Resources */,
+				625AD9D12123187A0080D1B2 /* anime-02@3x.png in Resources */,
+				625AD9F52123187A0080D1B2 /* anime-09@2x.png in Resources */,
+				625AD9FD2123187A0080D1B2 /* anime-04@2x.png in Resources */,
+				625AD9D32123187A0080D1B2 /* anime-10@3x.png in Resources */,
+				625AD9D92123187A0080D1B2 /* anime-07@3x.png in Resources */,
+				625AD9CD2123187A0080D1B2 /* anime-14@3x.png in Resources */,
 				6297F1D12110A2870098F229 /* Info.plist in Resources */,
+				625AD9FF2123187A0080D1B2 /* anime-05@3x.png in Resources */,
+				625AD9CB2123187A0080D1B2 /* anime-08@3x.png in Resources */,
+				625AD9F92123187A0080D1B2 /* anime-13@2x.png in Resources */,
+				625AD9E92123187A0080D1B2 /* anime-12@2x.png in Resources */,
+				625AD9D72123187A0080D1B2 /* anime-10@2x.png in Resources */,
+				625AD9F12123187A0080D1B2 /* anime-07@2x.png in Resources */,
+				625AD9DF2123187A0080D1B2 /* anime-06@2x.png in Resources */,
 				62CE957A2121D04A00E7C297 /* README.md in Resources */,
+				625AD9E32123187A0080D1B2 /* anime-01@3x.png in Resources */,
+				625AD9E72123187A0080D1B2 /* anime-02@2x.png in Resources */,
 				6297F1C42110A17E0098F229 /* Localizable.strings in Resources */,
+				625AD9DD2123187A0080D1B2 /* anime-13@3x.png in Resources */,
+				625AD9DB2123187A0080D1B2 /* anime-14@2x.png in Resources */,
+				625AD9C92123187A0080D1B2 /* anime-06@3x.png in Resources */,
+				625AD9EB2123187A0080D1B2 /* anime-04@3x.png in Resources */,
 				6297F1C52110A17E0098F229 /* Assets.xcassets in Resources */,
+				625AD9E52123187A0080D1B2 /* anime-03@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,15 +1183,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625AD9FA2123187A0080D1B2 /* anime-01@2x.png in Resources */,
+				625AD9EC2123187A0080D1B2 /* anime-05@2x.png in Resources */,
 				5A6AA33520FF2114001C0210 /* YDConfig.map.xml in Resources */,
 				5A6AA34020FF3D0D001C0210 /* YDConfig.map.plist in Resources */,
+				625AD9F62123187A0080D1B2 /* anime-12@3x.png in Resources */,
 				5A9CD35F20F3081900657DBA /* YDViewFactoryConfig.xml in Resources */,
+				625AD9EE2123187A0080D1B2 /* anime-08@2x.png in Resources */,
 				62B5EC7320DFE29400CAF304 /* Info.plist in Resources */,
+				625AD9F22123187A0080D1B2 /* anime-03@2x.png in Resources */,
 				62CE95762121C78000E7C297 /* arrow@2x.png in Resources */,
+				625AD9CE2123187A0080D1B2 /* anime-11@2x.png in Resources */,
+				625AD9D42123187A0080D1B2 /* anime-11@3x.png in Resources */,
+				625AD9E02123187A0080D1B2 /* anime-09@3x.png in Resources */,
+				625AD9D02123187A0080D1B2 /* anime-02@3x.png in Resources */,
+				625AD9F42123187A0080D1B2 /* anime-09@2x.png in Resources */,
+				625AD9FC2123187A0080D1B2 /* anime-04@2x.png in Resources */,
+				625AD9D22123187A0080D1B2 /* anime-10@3x.png in Resources */,
+				625AD9D82123187A0080D1B2 /* anime-07@3x.png in Resources */,
+				625AD9CC2123187A0080D1B2 /* anime-14@3x.png in Resources */,
 				6297F1D02110A2870098F229 /* Info.plist in Resources */,
+				625AD9FE2123187A0080D1B2 /* anime-05@3x.png in Resources */,
+				625AD9CA2123187A0080D1B2 /* anime-08@3x.png in Resources */,
+				625AD9F82123187A0080D1B2 /* anime-13@2x.png in Resources */,
+				625AD9E82123187A0080D1B2 /* anime-12@2x.png in Resources */,
+				625AD9D62123187A0080D1B2 /* anime-10@2x.png in Resources */,
+				625AD9F02123187A0080D1B2 /* anime-07@2x.png in Resources */,
+				625AD9DE2123187A0080D1B2 /* anime-06@2x.png in Resources */,
 				62CE95792121D04A00E7C297 /* README.md in Resources */,
+				625AD9E22123187A0080D1B2 /* anime-01@3x.png in Resources */,
+				625AD9E62123187A0080D1B2 /* anime-02@2x.png in Resources */,
 				6280B3C120E8A67900F5E1FC /* Localizable.strings in Resources */,
+				625AD9DC2123187A0080D1B2 /* anime-13@3x.png in Resources */,
+				625AD9DA2123187A0080D1B2 /* anime-14@2x.png in Resources */,
+				625AD9C82123187A0080D1B2 /* anime-06@3x.png in Resources */,
+				625AD9EA2123187A0080D1B2 /* anime-04@3x.png in Resources */,
 				62B5EC5E20DFE04F00CAF304 /* Assets.xcassets in Resources */,
+				625AD9E42123187A0080D1B2 /* anime-03@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,6 +1314,7 @@
 				6297F1912110A17E0098F229 /* YDSingletonController.m in Sources */,
 				6297F1922110A17E0098F229 /* YDAmapMapSearchResponse.m in Sources */,
 				6297F1932110A17E0098F229 /* YDBaiduMapView.m in Sources */,
+				625AD9A52123081C0080D1B2 /* YDJokeController.m in Sources */,
 				6297F1942110A17E0098F229 /* YDAmapMapView.m in Sources */,
 				6297F1952110A17E0098F229 /* YDViewXmlParser.m in Sources */,
 				6297F1962110A17E0098F229 /* YDBaiduMapPoiInfo.m in Sources */,
@@ -1097,6 +1324,7 @@
 				6297F1DE2110A8FC0098F229 /* YDMainController.swift in Sources */,
 				62CE95732121C78000E7C297 /* YDRefreshBase.m in Sources */,
 				62CE95752121C78000E7C297 /* YDRefresh.m in Sources */,
+				625AD9AA212308AA0080D1B2 /* YDJokeNetworking.m in Sources */,
 				6297F19A2110A17E0098F229 /* YDRouter.m in Sources */,
 				6297F19B2110A17E0098F229 /* AppDelegate.m in Sources */,
 				6297F19C2110A17E0098F229 /* YDMapPlatform.m in Sources */,
@@ -1118,6 +1346,7 @@
 				6297F1A92110A17E0098F229 /* YDAmapMapSearch.m in Sources */,
 				6297F1AA2110A17E0098F229 /* YDFactoryImageView.m in Sources */,
 				6297F1AB2110A17E0098F229 /* YDPoiSearchRequest.m in Sources */,
+				625ADA0421231B030080D1B2 /* YDJokeTableViewCell.m in Sources */,
 				6297F1AC2110A17E0098F229 /* YDMapPlatformXmlParser.m in Sources */,
 				6297F1AD2110A17E0098F229 /* YDAmapMapFactory.m in Sources */,
 				6297F1E92110B5F50098F229 /* YDAppDelegate.m in Sources */,
@@ -1148,6 +1377,7 @@
 				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
 				5AE11C39210738DE00C10064 /* YDBaiduMapPoiInfo.m in Sources */,
 				62CE95702121C78000E7C297 /* UIView+DDExtension.m in Sources */,
+				625ADA0321231B030080D1B2 /* YDJokeTableViewCell.m in Sources */,
 				5A0A63182105C272008F6657 /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5ABA589221007C26009A5773 /* YDAmapMapUserLocation.m in Sources */,
 				5A6124F920E25220001C2CCC /* YDConstant.m in Sources */,
@@ -1178,6 +1408,7 @@
 				5A6AA32920FF09D7001C0210 /* YDMapPlatformXmlParser.m in Sources */,
 				5A6AA33A20FF32CF001C0210 /* YDAmapMapFactory.m in Sources */,
 				5A6AA33120FF1AC4001C0210 /* YDFactoryMapController.m in Sources */,
+				625AD9A42123081C0080D1B2 /* YDJokeController.m in Sources */,
 				5AFADE13210AEA0A0058FAC0 /* YDSingletonPattern.m in Sources */,
 				5A9CD36C20F3105900657DBA /* YDFactoryController.m in Sources */,
 				5ABA588921002CBB009A5773 /* YDBaiduMapUserLocation.m in Sources */,
@@ -1187,6 +1418,7 @@
 				62B5EC7220DFE29400CAF304 /* main.m in Sources */,
 				5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */,
 				5A0B1A4B20E5FF04005F177C /* NSString+YDCategory.m in Sources */,
+				625AD9A9212308AA0080D1B2 /* YDJokeNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

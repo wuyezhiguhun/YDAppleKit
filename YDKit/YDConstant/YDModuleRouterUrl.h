@@ -16,6 +16,8 @@ FOUNDATION_EXPORT NSString * const YDModuleRouterFactoryUrl;
 FOUNDATION_EXPORT NSString * const YDModuleRouterFactoryMapUrl;
 /** 单例模式 */
 FOUNDATION_EXPORT NSString * const YDModuleRouterSingletonUrl;
+/** 笑话大全 */
+FOUNDATION_EXPORT NSString * const YDModuleRoyterJokeDaquanUrl;
 
 
 @interface YDModuleRouterUrl : NSObject

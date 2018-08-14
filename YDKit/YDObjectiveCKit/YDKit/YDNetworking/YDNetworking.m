@@ -7,13 +7,7 @@
 //
 
 #import "YDNetworking.h"
-#import <AFNetworking/AFNetworking.h>
 
-@interface YDNetworking ()
-
-@property (nonatomic, strong) AFURLSessionManager *manager;
-
-@end
 
 @implementation YDNetworking
 

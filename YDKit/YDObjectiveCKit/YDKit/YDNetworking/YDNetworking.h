@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface YDNetworking : NSObject
+
+@property (nonatomic, strong) AFURLSessionManager *manager;
 
 NS_ASSUME_NONNULL_BEGIN
 /**
