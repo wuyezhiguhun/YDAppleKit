@@ -35,11 +35,11 @@ class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSo
         return table
     }()
     lazy var titleList: [String] = {
-       let list = ["单例模式"]
+       let list = ["单例模式", "构建者模式SQL"]
         return list
     }()
     lazy var controllerList: [String] = {
-        let list = [YDModuleRouterSwiftSingletonUrl]
+        let list = [YDModuleRouterSwiftSingletonUrl, YDModuleRouterSwiftBuilderSQLUrl]
         return list
     }()
     lazy var backImageView: UIImageView = {

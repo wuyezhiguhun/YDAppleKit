@@ -4,3 +4,5 @@
 
 #import "AppDelegate.h"
 #import "YDRouter.h"
+#import "YDMultiLanguage.h"
+#import "YDMacro.h"

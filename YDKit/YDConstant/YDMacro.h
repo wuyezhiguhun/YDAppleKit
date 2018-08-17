@@ -9,6 +9,9 @@
 #ifndef YDMacro_h
 #define YDMacro_h
 
+#import "YDConstant.h"
+#import "UIViewController+YDCategory.h"
+
 #define YDScreenWidth             [UIScreen mainScreen].bounds.size.width
 #define YDScreenHeight            [UIScreen mainScreen].bounds.size.height
 
