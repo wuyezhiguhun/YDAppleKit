@@ -40,8 +40,12 @@
     
 }
 - (void)jokeNetworkingSuccess:(NSArray *)success {
-    [self.dataList addObjectsFromArray:success];
-    [self.tableView reloadData];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.dataList addObjectsFromArray:success];
+        
+        [self.tableView reloadData];
+    });
+    
 }
 - (void)jokeNetworkingFailure:(NSArray *)failure {
     
@@ -64,12 +68,22 @@
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 180;
+    NSString *content = [self.dataList objectAtIndex:indexPath.row];
+    CGFloat height = [content boundingRectWithSize:CGSizeMake(YDScreenWidth - 145, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height + 20;
+    if (height < 130) {
+        return 130;
+    } else {
+        return height;
+    }
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 #pragma mark -- get 函数
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

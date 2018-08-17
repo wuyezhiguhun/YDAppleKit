@@ -13,11 +13,10 @@
 
 - (void)getJokeWithPageNum:(NSInteger)pageNum pageSize:(NSInteger)pageSize {
     
-    NSString *appcode = @"你自己的AppCode";
     NSString *host = @"https://jisuxhdq.market.alicloudapi.com";
     NSString *path = @"/xiaohua/text";
     NSString *method = @"GET";
-    NSString *querys = [NSString stringWithFormat:@"?pagenum=%ld&pagesize=%d&sort=addtime",(long)pageNum,pageSize];
+    NSString *querys = [NSString stringWithFormat:@"?pagenum=%ld&pagesize=%ld&sort=rand",(long)pageNum,(long)pageSize];
     NSString *url = [NSString stringWithFormat:@"%@%@%@", host, path, querys];
  
 
@@ -27,7 +26,6 @@
     NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"Response object: %@" , response);
-        NSString *bodyString = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
         NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:body options:NSUTF8StringEncoding error:nil];
         NSMutableArray *mutableArray = [NSMutableArray array];
         NSDictionary *result = [dictionary objectForKey:@"result"];

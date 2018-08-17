@@ -7,21 +7,18 @@
 //
 
 #import "YDJokeTableViewCell.h"
+#import <Masonry/Masonry.h>
 
-
-@interface YDJokeTableViewCell()
-
-
-
-@end
 
 @implementation YDJokeTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self.contentView addSubview:self.iconImageView];
         [self.contentView addSubview:self.jokeLabel];
+        [self setAllViewsLayout];
     }
     return self;
 }
@@ -37,6 +34,16 @@
     // Configure the view for the selected state
 }
 
+#pragma mark -- UI 设置
+- (void)setAllViewsLayout {
+    [self.jokeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.contentView).mas_offset(15);
+//        make.bottom.mas_equalTo(self.contentView).mas_offset(-15);
+        make.right.mas_equalTo(self.contentView).mas_offset(-15);
+        make.left.mas_equalTo(self.iconImageView.mas_right).mas_offset(15);
+    }];
+}
+
 #pragma mark -- get 函数
 - (UIImageView *)iconImageView {
     if (!_iconImageView) {
@@ -46,7 +53,7 @@
 }
 - (UILabel *)jokeLabel {
     if (!_jokeLabel) {
-        _jokeLabel = [[UILabel alloc] initWithFrame:CGRectMake(130, 15, YDScreenWidth - 145, 150)];
+        _jokeLabel = [[UILabel alloc] init];
         _jokeLabel.backgroundColor = [UIColor clearColor];
         _jokeLabel.textColor = YDColorHex(0x666666);
         _jokeLabel.font = [UIFont systemFontOfSize:15];

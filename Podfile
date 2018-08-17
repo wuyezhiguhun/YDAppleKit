@@ -7,6 +7,7 @@ abstract_target 'defaults' do
     pod 'AMap2DMap-NO-IDFA'
     pod 'AMapLocation-NO-IDFA'
     pod 'AMapSearch-NO-IDFA'
+    pod 'Masonry'
     
     #    pod 'SnapKit', '~>4.0.0'
     
