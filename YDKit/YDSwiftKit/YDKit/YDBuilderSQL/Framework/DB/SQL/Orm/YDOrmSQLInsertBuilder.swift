@@ -8,6 +8,6 @@
 
 import UIKit
 
-class YDOrmSQLInsertBuilder: NSObject {
+class YDOrmSQLInsertBuilder: YDSQLInsertBuilder {
 
 }

@@ -48,13 +48,13 @@ class YDBuilderSQLController: UIViewController {
 //        var batchValues = Array<Array<Any>>()
 //
 //        var values1 = Array<Any>()
-//        values1.append(3)
+//        values1.append(1)
 //        values1.append("Dream")
 //        values1.append(19)
 //        batchValues.append(values1)
 //
 //        var values2 = Array<Any>()
-//        values2.append(4)
+//        values2.append(2)
 //        values2.append("阳光种在风雨后")
 //        values2.append(20)
 //        batchValues.append(values2)

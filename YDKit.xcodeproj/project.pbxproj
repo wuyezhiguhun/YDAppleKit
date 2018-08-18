@@ -53,6 +53,20 @@
 		5AFADE17210B08330058FAC0 /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE16210B08330058FAC0 /* YDAmapMapSearch.m */; };
 		5AFADE1A210B15010058FAC0 /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE19210B15010058FAC0 /* YDAmapMapSearchResponse.m */; };
 		5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */; };
+		623D02FE2128797C0072E342 /* YDTableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D02FD2128797C0072E342 /* YDTableInfo.swift */; };
+		623D02FF2128797C0072E342 /* YDTableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D02FD2128797C0072E342 /* YDTableInfo.swift */; };
+		623D0301212879A00072E342 /* YDTableInfo.orm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 623D0300212879A00072E342 /* YDTableInfo.orm.xml */; };
+		623D0302212879A00072E342 /* YDTableInfo.orm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 623D0300212879A00072E342 /* YDTableInfo.orm.xml */; };
+		623D0304212879C30072E342 /* YDTableInfoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D0303212879C30072E342 /* YDTableInfoDao.swift */; };
+		623D0305212879C30072E342 /* YDTableInfoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D0303212879C30072E342 /* YDTableInfoDao.swift */; };
+		623D030821287C6F0072E342 /* YDTableTemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D030721287C6F0072E342 /* YDTableTemplateConfig.swift */; };
+		623D030921287C6F0072E342 /* YDTableTemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D030721287C6F0072E342 /* YDTableTemplateConfig.swift */; };
+		623D030B21287C8B0072E342 /* YDOrm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D030A21287C8B0072E342 /* YDOrm.swift */; };
+		623D030C21287C8B0072E342 /* YDOrm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D030A21287C8B0072E342 /* YDOrm.swift */; };
+		623D030E21287C9E0072E342 /* YDOrmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D030D21287C9E0072E342 /* YDOrmItem.swift */; };
+		623D030F21287C9E0072E342 /* YDOrmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D030D21287C9E0072E342 /* YDOrmItem.swift */; };
+		623D031121287CB40072E342 /* YDOrmKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D031021287CB40072E342 /* YDOrmKey.swift */; };
+		623D031221287CB40072E342 /* YDOrmKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D031021287CB40072E342 /* YDOrmKey.swift */; };
 		624D9A432125C5920040204A /* YDBuilderSQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9A422125C5920040204A /* YDBuilderSQLController.swift */; };
 		624D9A442125C5920040204A /* YDBuilderSQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9A422125C5920040204A /* YDBuilderSQLController.swift */; };
 		624D9A4C2125CCA60040204A /* YDSQLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9A4B2125CCA60040204A /* YDSQLBuilder.swift */; };
@@ -300,6 +314,13 @@
 		5AFADE1B210B1A970058FAC0 /* YDAmapMapPoiInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAmapMapPoiInfo.h; sourceTree = "<group>"; };
 		5AFADE1C210B1A970058FAC0 /* YDAmapMapPoiInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapPoiInfo.m; sourceTree = "<group>"; };
 		5C24B9DCDC02AD3AFDAD7BFA /* libPods-defaults-YDKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		623D02FD2128797C0072E342 /* YDTableInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDTableInfo.swift; sourceTree = "<group>"; };
+		623D0300212879A00072E342 /* YDTableInfo.orm.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = YDTableInfo.orm.xml; sourceTree = "<group>"; };
+		623D0303212879C30072E342 /* YDTableInfoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDTableInfoDao.swift; sourceTree = "<group>"; };
+		623D030721287C6F0072E342 /* YDTableTemplateConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDTableTemplateConfig.swift; sourceTree = "<group>"; };
+		623D030A21287C8B0072E342 /* YDOrm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrm.swift; sourceTree = "<group>"; };
+		623D030D21287C9E0072E342 /* YDOrmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmItem.swift; sourceTree = "<group>"; };
+		623D031021287CB40072E342 /* YDOrmKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmKey.swift; sourceTree = "<group>"; };
 		624D9A422125C5920040204A /* YDBuilderSQLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDBuilderSQLController.swift; sourceTree = "<group>"; };
 		624D9A4B2125CCA60040204A /* YDSQLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLBuilder.swift; sourceTree = "<group>"; };
 		624D9A4E2125CCE50040204A /* YDSQLInsertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLInsertBuilder.swift; sourceTree = "<group>"; };
@@ -802,6 +823,41 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		623D02FA212878FF0072E342 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				623D02FD2128797C0072E342 /* YDTableInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		623D02FB2128792B0072E342 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				623D0300212879A00072E342 /* YDTableInfo.orm.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		623D02FC212879380072E342 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				623D0303212879C30072E342 /* YDTableInfoDao.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		623D030621287A800072E342 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				623D030721287C6F0072E342 /* YDTableTemplateConfig.swift */,
+				623D030A21287C8B0072E342 /* YDOrm.swift */,
+				623D030D21287C9E0072E342 /* YDOrmItem.swift */,
+				623D031021287CB40072E342 /* YDOrmKey.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		624D9A402125C5350040204A /* YDBuilderSQL */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,6 +885,10 @@
 		624D9A462125CC310040204A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				623D030621287A800072E342 /* Utils */,
+				623D02FC212879380072E342 /* Dao */,
+				623D02FB2128792B0072E342 /* Config */,
+				623D02FA212878FF0072E342 /* Model */,
 				624D9A472125CC3E0040204A /* DB */,
 			);
 			path = Framework;
@@ -1243,6 +1303,7 @@
 				625AD9D92123187A0080D1B2 /* anime-07@3x.png in Resources */,
 				625AD9CD2123187A0080D1B2 /* anime-14@3x.png in Resources */,
 				6297F1D12110A2870098F229 /* Info.plist in Resources */,
+				623D0302212879A00072E342 /* YDTableInfo.orm.xml in Resources */,
 				625AD9FF2123187A0080D1B2 /* anime-05@3x.png in Resources */,
 				625AD9CB2123187A0080D1B2 /* anime-08@3x.png in Resources */,
 				625AD9F92123187A0080D1B2 /* anime-13@2x.png in Resources */,
@@ -1287,6 +1348,7 @@
 				625AD9D82123187A0080D1B2 /* anime-07@3x.png in Resources */,
 				625AD9CC2123187A0080D1B2 /* anime-14@3x.png in Resources */,
 				6297F1D02110A2870098F229 /* Info.plist in Resources */,
+				623D0301212879A00072E342 /* YDTableInfo.orm.xml in Resources */,
 				625AD9FE2123187A0080D1B2 /* anime-05@3x.png in Resources */,
 				625AD9CA2123187A0080D1B2 /* anime-08@3x.png in Resources */,
 				625AD9F82123187A0080D1B2 /* anime-13@2x.png in Resources */,
@@ -1400,6 +1462,8 @@
 				6297F1922110A17E0098F229 /* YDAmapMapSearchResponse.m in Sources */,
 				6297F1932110A17E0098F229 /* YDBaiduMapView.m in Sources */,
 				625AD9A52123081C0080D1B2 /* YDJokeController.m in Sources */,
+				623D031221287CB40072E342 /* YDOrmKey.swift in Sources */,
+				623D0305212879C30072E342 /* YDTableInfoDao.swift in Sources */,
 				6297F1942110A17E0098F229 /* YDAmapMapView.m in Sources */,
 				6297F1952110A17E0098F229 /* YDViewXmlParser.m in Sources */,
 				6297F1962110A17E0098F229 /* YDBaiduMapPoiInfo.m in Sources */,
@@ -1413,6 +1477,7 @@
 				625AD9AA212308AA0080D1B2 /* YDJokeNetworking.m in Sources */,
 				6297F19A2110A17E0098F229 /* YDRouter.m in Sources */,
 				6297F19B2110A17E0098F229 /* AppDelegate.m in Sources */,
+				623D030921287C6F0072E342 /* YDTableTemplateConfig.swift in Sources */,
 				6297F19C2110A17E0098F229 /* YDMapPlatform.m in Sources */,
 				5A3750CE21115728003877B1 /* YDSwiftSingletonController.swift in Sources */,
 				6297F19D2110A17E0098F229 /* YDMapPlatformPlistParser.m in Sources */,
@@ -1425,10 +1490,12 @@
 				6297F1A32110A17E0098F229 /* UIViewController+YDCategory.m in Sources */,
 				6297F1A42110A17E0098F229 /* YDModuleRouterUrl.m in Sources */,
 				6297F1A52110A17E0098F229 /* YDBaiduMapPoiDetailResult.m in Sources */,
+				623D030F21287C9E0072E342 /* YDOrmItem.swift in Sources */,
 				6297F1D82110A2F30098F229 /* YDSingletonPattern.swift in Sources */,
 				6297F1A62110A17E0098F229 /* YDBaiduMapFactory.m in Sources */,
 				6297F1A72110A17E0098F229 /* YDMultiLanguage.m in Sources */,
 				6297F1A82110A17E0098F229 /* YDAmapMapPoiInfo.m in Sources */,
+				623D02FF2128797C0072E342 /* YDTableInfo.swift in Sources */,
 				62CE95712121C78000E7C297 /* UIView+DDExtension.m in Sources */,
 				624D9A442125C5920040204A /* YDBuilderSQLController.swift in Sources */,
 				624D9A4D2125CCA60040204A /* YDSQLBuilder.swift in Sources */,
@@ -1436,6 +1503,7 @@
 				6297F1AA2110A17E0098F229 /* YDFactoryImageView.m in Sources */,
 				6297F1AB2110A17E0098F229 /* YDPoiSearchRequest.m in Sources */,
 				625ADA0421231B030080D1B2 /* YDJokeTableViewCell.m in Sources */,
+				623D030C21287C8B0072E342 /* YDOrm.swift in Sources */,
 				6297F1AC2110A17E0098F229 /* YDMapPlatformXmlParser.m in Sources */,
 				6297F1AD2110A17E0098F229 /* YDAmapMapFactory.m in Sources */,
 				6297F1E92110B5F50098F229 /* YDAppDelegate.m in Sources */,
@@ -1465,6 +1533,7 @@
 				5A6AA32320FEE723001C0210 /* YDBaiduMapView.m in Sources */,
 				5A6AA33D20FF32ED001C0210 /* YDAmapMapView.m in Sources */,
 				5A9CD36320F3094900657DBA /* YDViewXmlParser.m in Sources */,
+				623D030E21287C9E0072E342 /* YDOrmItem.swift in Sources */,
 				5AE11C39210738DE00C10064 /* YDBaiduMapPoiInfo.m in Sources */,
 				62CE95702121C78000E7C297 /* UIView+DDExtension.m in Sources */,
 				625ADA0321231B030080D1B2 /* YDJokeTableViewCell.m in Sources */,
@@ -1483,6 +1552,7 @@
 				5A6124EE20E1E3AB001C2CCC /* YDNetworkingController.m in Sources */,
 				5A0A63152105C232008F6657 /* YDBaiduMapPoiSearch.m in Sources */,
 				5A0B1A4E20E600B2005F177C /* NSDictionary+YDCategory.m in Sources */,
+				623D030821287C6F0072E342 /* YDTableTemplateConfig.swift in Sources */,
 				5ABA588C21002CF9009A5773 /* YDBaiduMapLocationService.m in Sources */,
 				5AFADE0B210AD1690058FAC0 /* UIViewController+YDCategory.m in Sources */,
 				5A6395A320E4926900CA4CC2 /* YDModuleRouterUrl.m in Sources */,
@@ -1492,6 +1562,7 @@
 				624D9A4F2125CCE50040204A /* YDSQLInsertBuilder.swift in Sources */,
 				5A6AA31D20FEE1C6001C0210 /* YDBaiduMapFactory.m in Sources */,
 				5A6395B120E4C7D600CA4CC2 /* YDMultiLanguage.m in Sources */,
+				623D02FE2128797C0072E342 /* YDTableInfo.swift in Sources */,
 				5A3750D02111590A003877B1 /* YDSwiftModuleRouterUrl.swift in Sources */,
 				5AFADE1D210B1A970058FAC0 /* YDAmapMapPoiInfo.m in Sources */,
 				5A3750CD21115728003877B1 /* YDSwiftSingletonController.swift in Sources */,
@@ -1503,14 +1574,17 @@
 				5A6AA33120FF1AC4001C0210 /* YDFactoryMapController.m in Sources */,
 				625AD9A42123081C0080D1B2 /* YDJokeController.m in Sources */,
 				5AFADE13210AEA0A0058FAC0 /* YDSingletonPattern.m in Sources */,
+				623D0304212879C30072E342 /* YDTableInfoDao.swift in Sources */,
 				5A9CD36C20F3105900657DBA /* YDFactoryController.m in Sources */,
 				5ABA588921002CBB009A5773 /* YDBaiduMapUserLocation.m in Sources */,
 				5A9CD36720F30D3200657DBA /* YDViewFactory.m in Sources */,
 				62B5EC7C20DFE7D700CAF304 /* YDNetworking.m in Sources */,
+				623D030B21287C8B0072E342 /* YDOrm.swift in Sources */,
 				5A9CD35920F307D600657DBA /* YDFactoryButton.m in Sources */,
 				62B5EC7220DFE29400CAF304 /* main.m in Sources */,
 				5A6395AE20E4C24000CA4CC2 /* YDMultiLanguageContainer.m in Sources */,
 				5A0B1A4B20E5FF04005F177C /* NSString+YDCategory.m in Sources */,
+				623D031121287CB40072E342 /* YDOrmKey.swift in Sources */,
 				625AD9A9212308AA0080D1B2 /* YDJokeNetworking.m in Sources */,
 				624D9A4C2125CCA60040204A /* YDSQLBuilder.swift in Sources */,
 			);
