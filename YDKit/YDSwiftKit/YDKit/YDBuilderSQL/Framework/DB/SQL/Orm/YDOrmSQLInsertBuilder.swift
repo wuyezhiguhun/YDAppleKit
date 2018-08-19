@@ -10,4 +10,41 @@ import UIKit
 
 class YDOrmSQLInsertBuilder: YDSQLInsertBuilder {
 
+    func insertTableOrm(orm: YDOrm, table: YDTableInfo) -> YDSQLInsertBuilder {
+        var columns = Array<String>()
+        var values = Array<Any>()
+        columns.append((orm.key?.column)!)
+        values.append(table.value(forKey: (orm.key?.property)!))
+        for item in orm.items! {
+            columns.append(item.column)
+            values.append(table.value(forKey: item.property))
+        }
+        return self.insert().into().table(orm.tableName).colums(columns).values(values)
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

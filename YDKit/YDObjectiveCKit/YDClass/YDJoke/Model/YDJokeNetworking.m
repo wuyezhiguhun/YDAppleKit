@@ -25,7 +25,7 @@
     [request addValue:@"APPCODE 9b2dd63024474f79b69a8aab70c8d658" forHTTPHeaderField:@"Authorization"];
     NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"Response object: %@" , response);
+
         NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:body options:NSUTF8StringEncoding error:nil];
         NSMutableArray *mutableArray = [NSMutableArray array];
         NSDictionary *result = [dictionary objectForKey:@"result"];
