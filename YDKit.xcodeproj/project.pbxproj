@@ -791,6 +791,14 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		5AD711672133F7500051257D /* YDExtension */ = {
+			isa = PBXGroup;
+			children = (
+				62A1EE822129790F00225F37 /* String-Extras.swift */,
+			);
+			path = YDExtension;
+			sourceTree = "<group>";
+		};
 		5AFADDFE210ACB8D0058FAC0 /* YDSingleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1043,6 +1051,7 @@
 		6297F1D22110A2CB0098F229 /* YDKit */ = {
 			isa = PBXGroup;
 			children = (
+				5AD711672133F7500051257D /* YDExtension */,
 				624D9A452125CC0E0040204A /* YDBuilderSQL */,
 				6297F1D32110A2DB0098F229 /* YDSingletonPattern */,
 			);
@@ -1111,7 +1120,6 @@
 			children = (
 				62A1EE7E2129784700225F37 /* impl */,
 				62A1EE7B2129782900225F37 /* YDSQLiteDB.swift */,
-				62A1EE822129790F00225F37 /* String-Extras.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
