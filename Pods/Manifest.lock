@@ -24,6 +24,7 @@ PODS:
   - BaiduMapKit (4.1.1)
   - BMKLocationKit (1.2.1)
   - Masonry (1.1.0)
+  - YDCategory (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.0)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - BaiduMapKit
   - BMKLocationKit
   - Masonry
+  - YDCategory (from `https://github.com/wuyezhiguhun/YDCategory.git`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -45,6 +47,15 @@ SPEC REPOS:
     - BMKLocationKit
     - Masonry
 
+EXTERNAL SOURCES:
+  YDCategory:
+    :git: https://github.com/wuyezhiguhun/YDCategory.git
+
+CHECKOUT OPTIONS:
+  YDCategory:
+    :commit: b6d3e3b8a30915b4cf6a2ad864894267ed1ba5d9
+    :git: https://github.com/wuyezhiguhun/YDCategory.git
+
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   AMap2DMap-NO-IDFA: 277965383679f1a4676df7e1a0439a1e14d0599a
@@ -54,7 +65,8 @@ SPEC CHECKSUMS:
   BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
   BMKLocationKit: c0fd588904738a6865e9311ed445c38452039007
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YDCategory: a916cfeafdd5d2cc4ca07e5b081de2cc5f7186b0
 
-PODFILE CHECKSUM: 55f2c1a01c40121bd2eb9fa8681ff3bb6ec13a27
+PODFILE CHECKSUM: cb47bd759095a9d577b05d31906e44ce5bd6c8e6
 
 COCOAPODS: 1.5.0

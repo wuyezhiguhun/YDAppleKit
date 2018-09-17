@@ -8,6 +8,7 @@ abstract_target 'defaults' do
     pod 'AMapLocation-NO-IDFA'
     pod 'AMapSearch-NO-IDFA'
     pod 'Masonry'
+    pod 'YDCategory' ,:git => 'https://github.com/wuyezhiguhun/YDCategory.git'
     
     #    pod 'SnapKit', '~>4.0.0'
     

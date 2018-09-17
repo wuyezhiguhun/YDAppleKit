@@ -20,23 +20,31 @@
     NSString *url = [NSString stringWithFormat:@"%@%@%@", host, path, querys];
  
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]  cachePolicy:1  timeoutInterval:  5];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]  cachePolicy:1  timeoutInterval:  30];
     request.HTTPMethod  =  method;
     [request addValue:@"APPCODE 9b2dd63024474f79b69a8aab70c8d658" forHTTPHeaderField:@"Authorization"];
     NSURLSession *requestSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURLSessionDataTask *task = [requestSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable body , NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (!error) {
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:body options:NSUTF8StringEncoding error:nil];
+            NSMutableArray *mutableArray = [NSMutableArray array];
+            NSDictionary *result = [dictionary objectForKey:@"result"];
+            NSArray *listArray = [result objectForKey:@"list"];
+            for (NSDictionary *dict in listArray) {
+                NSString *content = [dict objectForKey:@"content"];
+                [mutableArray addObject:content];
+            }
+            if (self.delegate && [self.delegate respondsToSelector:@selector(jokeNetworkingSuccess:)]) {
+                [self.delegate jokeNetworkingSuccess:[mutableArray copy]];
+            }
+        } else {
+            if (self.delegate && [self.delegate respondsToSelector:@selector(jokeNetworkingFailure:)]) {
+                [self.delegate jokeNetworkingFailure:@"网络请求失败!"];
+            }
+        }
 
-        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:body options:NSUTF8StringEncoding error:nil];
-        NSMutableArray *mutableArray = [NSMutableArray array];
-        NSDictionary *result = [dictionary objectForKey:@"result"];
-        NSArray *listArray = [result objectForKey:@"list"];
-        for (NSDictionary *dict in listArray) {
-            NSString *content = [dict objectForKey:@"content"];
-            [mutableArray addObject:content];
-        }
-        if (self.delegate && [self.delegate respondsToSelector:@selector(jokeNetworkingSuccess:)]) {
-            [self.delegate jokeNetworkingSuccess:[mutableArray copy]];
-        }
+        
     }];
     
     [task resume];

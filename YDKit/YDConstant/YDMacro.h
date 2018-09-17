@@ -11,6 +11,7 @@
 
 #import "YDConstant.h"
 #import "UIViewController+YDCategory.h"
+#import <YDCategory/YDCategory.h>
 
 #define YDScreenWidth             [UIScreen mainScreen].bounds.size.width
 #define YDScreenHeight            [UIScreen mainScreen].bounds.size.height

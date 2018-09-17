@@ -13,7 +13,7 @@
 @optional
 - (void)jokeNetworkingStart;
 - (void)jokeNetworkingSuccess:(NSArray *)success;
-- (void)jokeNetworkingFailure:(NSArray *)failure;
+- (void)jokeNetworkingFailure:(NSString *)failure;
 
 @end
 

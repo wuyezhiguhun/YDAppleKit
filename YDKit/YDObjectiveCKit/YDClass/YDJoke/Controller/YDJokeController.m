@@ -47,7 +47,7 @@
     });
     
 }
-- (void)jokeNetworkingFailure:(NSArray *)failure {
+- (void)jokeNetworkingFailure:(NSString *)failure {
     
 }
 
