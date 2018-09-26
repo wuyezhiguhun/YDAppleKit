@@ -10,4 +10,15 @@
 
 @interface YDMVCItem : NSObject
 
+@property (nonatomic, strong) NSUUID *uuid;
+
+- (instancetype)initName:(NSString *)name uuid:(NSUUID *)uuid;
+
+- (void)setName:(NSString *)name;
+
+- (void)deleted;
+
+- (YDMVCItem *)itemAtUUIDPath:(NSArray *)path;
+
+
 @end

@@ -10,4 +10,6 @@
 
 @interface YDMVCFolder : YDMVCItem
 
+@property (nonatomic, strong) NSMutableArray *contents;
+
 @end

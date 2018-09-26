@@ -57,7 +57,7 @@ static NSString *mvcFolderCell = @"YDMVCFolderCell";
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mvcFolderCell];
-    cell.textLabel.text = @"  MVC构架";
+    cell.textLabel.text = @" 🔊 MVC构架";
     return cell;
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

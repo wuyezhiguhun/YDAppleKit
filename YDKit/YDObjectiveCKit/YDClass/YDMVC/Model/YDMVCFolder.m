@@ -7,6 +7,11 @@
 //
 
 #import "YDMVCFolder.h"
+@class YDMVCStore;
+
+@interface YDMVCFolder()
+
+@end
 
 @implementation YDMVCFolder
 

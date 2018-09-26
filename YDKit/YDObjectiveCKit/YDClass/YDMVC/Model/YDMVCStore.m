@@ -8,7 +8,7 @@
 
 #import "YDMVCStore.h"
 #import "YDMVCFolder.h"
-
+#import "YDMVCRecording.h"
 
 @interface YDMVCStore()
 
@@ -55,6 +55,14 @@ static YDMVCStore *shared = nil;
         
     }
     return self;
+}
+
+- (NSURL *)fileUrlForRecording:(YDMVCRecording *)recording {
+    return [self.baseURL URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.m4a",recording.uuid.UUIDString]];
+}
+
+- (void)saveNotifying:(YDMVCItem *)notifying userInfo:(NSDictionary *)userInfo {
+    
 }
 
 #pragma mark -- get 函数

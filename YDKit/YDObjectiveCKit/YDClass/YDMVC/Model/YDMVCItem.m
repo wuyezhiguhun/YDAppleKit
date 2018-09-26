@@ -13,11 +13,20 @@
 @interface YDMVCItem()
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, strong) NSUUID *uuid;
+
 @property (nonatomic, weak) YDMVCStore *store;
 @property (nonatomic, weak) YDMVCFolder *parent;
+@property (nonatomic, strong) NSUUID *uuidPath;
 
 @end
+
+static NSString *YDMVCChangeReasonKey = @"reason";
+static NSString *YDMVCNewValueKey = @"newValue";
+static NSString *YDMVCOldValueKey = @"oldValue";
+static NSString *YDMVCParentFolderKey = @"parentFolder";
+static NSString *YDMVCRenamed = @"renamed";
+static NSString *YDMVCAdded = @"added";
+static NSString *YDMVCRemoved = @"removed";
 
 @implementation YDMVCItem
 
@@ -34,5 +43,22 @@
 - (void)setName:(NSString *)name {
     _name = name;
 }
+
+- (void)deleted {
+    self.parent = nil;
+}
+
+- (YDMVCItem *)itemAtUUIDPath:(NSArray *)path {
+    NSUUID *first = path.firstObject;
+    if (first != self.uuid) {
+        return nil;
+    }
+    
+    return self;
+}
+
+
+
+
 
 @end
