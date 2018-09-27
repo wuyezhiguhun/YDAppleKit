@@ -1,7 +1,7 @@
 platform :ios,'8.0'
 abstract_target 'defaults' do
 
-    pod 'AFNetworking', '~>3.2.0'
+    pod 'AFNetworking'
     pod 'BaiduMapKit'
     pod 'BMKLocationKit'
     pod 'AMap2DMap-NO-IDFA'
@@ -14,6 +14,6 @@ abstract_target 'defaults' do
     
     target 'YDKit'
     target 'YDSwiftKit'
-    
+
 end
 

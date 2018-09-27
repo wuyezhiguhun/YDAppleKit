@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
-#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+//#import <BaiduMapAPI_Base/>
+//#import <BMKLocationKit/BMKLocationComponent.h>
+//#import <BaiduMapAPI_Location/BMKLocationComponent.h>
 #import "YDUserLocation.h"
 
 @interface YDBaiduMapUserLocation : NSObject <YDUserLocation>
