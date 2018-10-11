@@ -13,14 +13,11 @@ let YDModuleRouterSwiftSingletonUrl: String = "weixin.wuyezhiguhun/module.router
 /** Swift 构建者模式SQL */
 let YDModuleRouterSwiftBuilderSQLUrl: String = "weixin.wuyezhiguhun/module.router/swift/builder.sql"
 
-class YDSwiftModuleRouterUrl: NSObject {
+@objc class YDSwiftModuleRouterUrl: NSObject {
     
-    class func loadModuleRouter() {
+    @objc class func loadModuleRouter() {
         YDRouter.shared().map(YDModuleRouterSwiftSingletonUrl, toControllerClass: YDSwiftSingletonController.classForCoder())
         YDRouter.shared().map(YDModuleRouterSwiftBuilderSQLUrl, toControllerClass: YDBuilderSQLController.classForCoder())
     }
-//    func loadModuleRouter() {
-//        YDRouter.shared().map(YDModuleRouterSwiftSingletonUrl, toControllerClass: YDSwiftSingletonController.classForCoder())
-//        YDRouter.shared().map(YDModuleRouterSwiftBuilderSQLUrl, toControllerClass: YDBuilderSQLController.classForCoder())
-//    }
+
 }

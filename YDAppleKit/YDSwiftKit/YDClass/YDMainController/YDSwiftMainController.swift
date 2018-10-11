@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+@objc class YDSwiftMainController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +60,7 @@ class YDMainController: UIViewController, UITableViewDelegate, UITableViewDataSo
 }
 
 //MARK: - 添加所以的view
-extension YDMainController {
+extension YDSwiftMainController {
     func addAllViews() {
         self.view.addSubview(self.backImageView)
         self.view.addSubview(self.tableView)
@@ -68,7 +68,7 @@ extension YDMainController {
 }
 
 //MARK: - 自动布局
-extension YDMainController {
+extension YDSwiftMainController {
     func setAllViewsLayout() {
         self.setTableViewLayout()
     }
@@ -78,7 +78,7 @@ extension YDMainController {
 }
 
 //MARK: - UITableViewDataSource
-extension YDMainController {
+extension YDSwiftMainController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.titleList.count;
     }
@@ -93,7 +93,7 @@ extension YDMainController {
 }
 
 //MARK: - UITableViewDelegate
-extension YDMainController {
+extension YDSwiftMainController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let controllerUrl = self.controllerList[indexPath.row]
