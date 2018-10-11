@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  YDAppleKit
+
+  Created by rowena on 2018/10/11.
+  Copyright © 2018年 wuyezhiguhun. All rights reserved.
+*/
+"YDNetworkingModule"="网络请求模块";
+"YDFactoryPattern"="工厂模式";
+"YDFactoryMap"="工厂模式之地图";
+"YDSingletonPattern"="单例模式";
+"YDJokeDaquan"="笑话大全";
+"YDBuilderSQL"="构建者模式SQL";
+"YDMVC"="YDMVC模式";

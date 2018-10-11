@@ -1,0 +1,30 @@
+//
+//  YDPrefixHeader.pch
+//  YDKit
+//
+//  Created by rowena on 2018/6/26.
+//  Copyright © 2018年 王允顶. All rights reserved.
+//
+
+#ifndef YDPrefixHeader_pch
+#define YDPrefixHeader_pch
+
+//#import "YDRouter.h"
+//#import "YDNetworking.h"
+//#import "YDMultiLanguage.h"
+//#import "YDMultiLanguageContainer.h"
+//
+//
+//#pragma mark --- Category
+//#import "NSString+YDCategory.h"
+//#import "NSDictionary+YDCategory.h"
+
+#import "YDKit.h"
+#import "YDModuleRouterUrl.h"
+#import "YDMacro.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* YDPrefixHeader_pch */

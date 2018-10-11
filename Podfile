@@ -10,9 +10,7 @@ abstract_target 'defaults' do
     pod 'Masonry'
     pod 'YDCategory' ,:git => 'https://github.com/wuyezhiguhun/YDCategory.git'
     
-    #    pod 'SnapKit', '~>4.0.0'
-    
-    target 'YDKit'
+    target 'YDObjectiveCKit'
     target 'YDSwiftKit'
 
 end

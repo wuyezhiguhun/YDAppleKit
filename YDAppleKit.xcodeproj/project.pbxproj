@@ -1,0 +1,1994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21E053BA16EBF26D105011E5 /* libPods-defaults-YDSwiftKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6743E4ED25198DBCAC90AA58 /* libPods-defaults-YDSwiftKit.a */; };
+		5ADC3492216C9C5A0020310B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3488216C9C4D0020310B /* main.m */; };
+		5ADC34A6216C9E1F0020310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34A5216C9E1F0020310B /* Assets.xcassets */; };
+		5ADC34A7216C9E1F0020310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34A5216C9E1F0020310B /* Assets.xcassets */; };
+		5ADC34B2216C9F9C0020310B /* YDObjectiveCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */; };
+		5ADC34B3216C9F9C0020310B /* YDObjectiveCInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */; };
+		5ADC34B7216C9FAA0020310B /* YDSwiftInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B5216C9FAA0020310B /* YDSwiftInfo.plist */; };
+		5ADC34B8216C9FAA0020310B /* YDSwiftAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34B6216C9FAA0020310B /* YDSwiftAppDelegate.m */; };
+		5ADC34B9216CA0E80020310B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3488216C9C4D0020310B /* main.m */; };
+		5ADC34BE216CA1CB0020310B /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34BD216CA1CB0020310B /* YDConstant.m */; };
+		5ADC34BF216CA1CB0020310B /* YDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34BD216CA1CB0020310B /* YDConstant.m */; };
+		5ADC34C3216CA47D0020310B /* YDSwiftMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34C2216CA47D0020310B /* YDSwiftMainController.swift */; };
+		5ADC34C8216CA7AC0020310B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34C7216CA7AC0020310B /* README.md */; };
+		5ADC34C9216CA7AC0020310B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34C7216CA7AC0020310B /* README.md */; };
+		5ADC34EA216CA84F0020310B /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34CC216CA84F0020310B /* String-Extras.swift */; };
+		5ADC34EB216CA84F0020310B /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34CC216CA84F0020310B /* String-Extras.swift */; };
+		5ADC34EC216CA84F0020310B /* YDTableInfo.orm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34D0216CA84F0020310B /* YDTableInfo.orm.xml */; };
+		5ADC34ED216CA84F0020310B /* YDTableInfo.orm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34D0216CA84F0020310B /* YDTableInfo.orm.xml */; };
+		5ADC34EE216CA84F0020310B /* YDTableInfoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D2216CA84F0020310B /* YDTableInfoDao.swift */; };
+		5ADC34EF216CA84F0020310B /* YDTableInfoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D2216CA84F0020310B /* YDTableInfoDao.swift */; };
+		5ADC34F0216CA84F0020310B /* YDTableTemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D4216CA84F0020310B /* YDTableTemplateConfig.swift */; };
+		5ADC34F1216CA84F0020310B /* YDTableTemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D4216CA84F0020310B /* YDTableTemplateConfig.swift */; };
+		5ADC34F2216CA84F0020310B /* YDOrmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D5216CA84F0020310B /* YDOrmItem.swift */; };
+		5ADC34F3216CA84F0020310B /* YDOrmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D5216CA84F0020310B /* YDOrmItem.swift */; };
+		5ADC34F4216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D6216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift */; };
+		5ADC34F5216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D6216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift */; };
+		5ADC34F6216CA84F0020310B /* YDOrmKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D7216CA84F0020310B /* YDOrmKey.swift */; };
+		5ADC34F7216CA84F0020310B /* YDOrmKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D7216CA84F0020310B /* YDOrmKey.swift */; };
+		5ADC34F8216CA84F0020310B /* YDSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D8216CA84F0020310B /* YDSQLiteOpenHelper.swift */; };
+		5ADC34F9216CA84F0020310B /* YDSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D8216CA84F0020310B /* YDSQLiteOpenHelper.swift */; };
+		5ADC34FA216CA84F0020310B /* YDOrm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D9216CA84F0020310B /* YDOrm.swift */; };
+		5ADC34FB216CA84F0020310B /* YDOrm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D9216CA84F0020310B /* YDOrm.swift */; };
+		5ADC34FC216CA84F0020310B /* YDTableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34DB216CA84F0020310B /* YDTableInfo.swift */; };
+		5ADC34FD216CA84F0020310B /* YDTableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34DB216CA84F0020310B /* YDTableInfo.swift */; };
+		5ADC34FE216CA84F0020310B /* YDOrmSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34DF216CA84F0020310B /* YDOrmSQLiteDB.swift */; };
+		5ADC34FF216CA84F0020310B /* YDOrmSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34DF216CA84F0020310B /* YDOrmSQLiteDB.swift */; };
+		5ADC3500216CA84F0020310B /* YDSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E0216CA84F0020310B /* YDSQLiteDB.swift */; };
+		5ADC3501216CA84F0020310B /* YDSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E0216CA84F0020310B /* YDSQLiteDB.swift */; };
+		5ADC3502216CA84F0020310B /* YDSQLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E2216CA84F0020310B /* YDSQLBuilder.swift */; };
+		5ADC3503216CA84F0020310B /* YDSQLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E2216CA84F0020310B /* YDSQLBuilder.swift */; };
+		5ADC3504216CA84F0020310B /* YDOrmSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E4216CA84F0020310B /* YDOrmSQLInsertBuilder.swift */; };
+		5ADC3505216CA84F0020310B /* YDOrmSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E4216CA84F0020310B /* YDOrmSQLInsertBuilder.swift */; };
+		5ADC3506216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */; };
+		5ADC3507216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */; };
+		5ADC3508216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */; };
+		5ADC3509216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */; };
+		5ADC350A216CA84F0020310B /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */; };
+		5ADC350B216CA84F0020310B /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */; };
+		5ADC3512216CA8780020310B /* YDSwiftSingletonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */; };
+		5ADC3513216CA8780020310B /* YDSwiftSingletonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */; };
+		5ADC3514216CA8780020310B /* YDBuilderSQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3511216CA8780020310B /* YDBuilderSQLController.swift */; };
+		5ADC3515216CA8780020310B /* YDBuilderSQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3511216CA8780020310B /* YDBuilderSQLController.swift */; };
+		5ADC362A216CA8FC0020310B /* anime-11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E0216CA8FB0020310B /* anime-11@2x.png */; };
+		5ADC362B216CA8FC0020310B /* anime-11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E0216CA8FB0020310B /* anime-11@2x.png */; };
+		5ADC362C216CA8FC0020310B /* anime-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E1216CA8FB0020310B /* anime-03@2x.png */; };
+		5ADC362D216CA8FC0020310B /* anime-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E1216CA8FB0020310B /* anime-03@2x.png */; };
+		5ADC362E216CA8FC0020310B /* anime-13@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E2216CA8FB0020310B /* anime-13@3x.png */; };
+		5ADC362F216CA8FC0020310B /* anime-13@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E2216CA8FB0020310B /* anime-13@3x.png */; };
+		5ADC3630216CA8FC0020310B /* anime-01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E3216CA8FB0020310B /* anime-01@3x.png */; };
+		5ADC3631216CA8FC0020310B /* anime-01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E3216CA8FB0020310B /* anime-01@3x.png */; };
+		5ADC3632216CA8FC0020310B /* anime-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E4216CA8FB0020310B /* anime-01@2x.png */; };
+		5ADC3633216CA8FC0020310B /* anime-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E4216CA8FB0020310B /* anime-01@2x.png */; };
+		5ADC3634216CA8FC0020310B /* anime-13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E5216CA8FB0020310B /* anime-13@2x.png */; };
+		5ADC3635216CA8FC0020310B /* anime-13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E5216CA8FB0020310B /* anime-13@2x.png */; };
+		5ADC3636216CA8FC0020310B /* anime-03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E6216CA8FB0020310B /* anime-03@3x.png */; };
+		5ADC3637216CA8FC0020310B /* anime-03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E6216CA8FB0020310B /* anime-03@3x.png */; };
+		5ADC3638216CA8FC0020310B /* anime-11@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E7216CA8FB0020310B /* anime-11@3x.png */; };
+		5ADC3639216CA8FC0020310B /* anime-11@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E7216CA8FB0020310B /* anime-11@3x.png */; };
+		5ADC363A216CA8FC0020310B /* anime-07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E8216CA8FB0020310B /* anime-07@3x.png */; };
+		5ADC363B216CA8FC0020310B /* anime-07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E8216CA8FB0020310B /* anime-07@3x.png */; };
+		5ADC363C216CA8FC0020310B /* anime-09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E9216CA8FB0020310B /* anime-09@2x.png */; };
+		5ADC363D216CA8FC0020310B /* anime-09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E9216CA8FB0020310B /* anime-09@2x.png */; };
+		5ADC363E216CA8FC0020310B /* anime-05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EA216CA8FB0020310B /* anime-05@2x.png */; };
+		5ADC363F216CA8FC0020310B /* anime-05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EA216CA8FB0020310B /* anime-05@2x.png */; };
+		5ADC3640216CA8FC0020310B /* anime-05@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EB216CA8FB0020310B /* anime-05@3x.png */; };
+		5ADC3641216CA8FC0020310B /* anime-05@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EB216CA8FB0020310B /* anime-05@3x.png */; };
+		5ADC3642216CA8FC0020310B /* anime-09@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EC216CA8FB0020310B /* anime-09@3x.png */; };
+		5ADC3643216CA8FC0020310B /* anime-09@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EC216CA8FB0020310B /* anime-09@3x.png */; };
+		5ADC3644216CA8FC0020310B /* anime-07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35ED216CA8FB0020310B /* anime-07@2x.png */; };
+		5ADC3645216CA8FC0020310B /* anime-07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35ED216CA8FB0020310B /* anime-07@2x.png */; };
+		5ADC3646216CA8FC0020310B /* anime-12@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EE216CA8FB0020310B /* anime-12@3x.png */; };
+		5ADC3647216CA8FC0020310B /* anime-12@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EE216CA8FB0020310B /* anime-12@3x.png */; };
+		5ADC3648216CA8FC0020310B /* anime-10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EF216CA8FB0020310B /* anime-10@2x.png */; };
+		5ADC3649216CA8FC0020310B /* anime-10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35EF216CA8FB0020310B /* anime-10@2x.png */; };
+		5ADC364A216CA8FC0020310B /* anime-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F0216CA8FB0020310B /* anime-02@2x.png */; };
+		5ADC364B216CA8FC0020310B /* anime-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F0216CA8FB0020310B /* anime-02@2x.png */; };
+		5ADC364C216CA8FC0020310B /* anime-02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F1216CA8FB0020310B /* anime-02@3x.png */; };
+		5ADC364D216CA8FC0020310B /* anime-02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F1216CA8FB0020310B /* anime-02@3x.png */; };
+		5ADC364E216CA8FC0020310B /* anime-10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F2216CA8FB0020310B /* anime-10@3x.png */; };
+		5ADC364F216CA8FC0020310B /* anime-10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F2216CA8FB0020310B /* anime-10@3x.png */; };
+		5ADC3650216CA8FC0020310B /* anime-12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F3216CA8FB0020310B /* anime-12@2x.png */; };
+		5ADC3651216CA8FC0020310B /* anime-12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F3216CA8FB0020310B /* anime-12@2x.png */; };
+		5ADC3652216CA8FC0020310B /* anime-08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F4216CA8FB0020310B /* anime-08@2x.png */; };
+		5ADC3653216CA8FC0020310B /* anime-08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F4216CA8FB0020310B /* anime-08@2x.png */; };
+		5ADC3654216CA8FC0020310B /* anime-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F5216CA8FB0020310B /* anime-04@2x.png */; };
+		5ADC3655216CA8FC0020310B /* anime-04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F5216CA8FB0020310B /* anime-04@2x.png */; };
+		5ADC3656216CA8FC0020310B /* anime-14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F6216CA8FB0020310B /* anime-14@3x.png */; };
+		5ADC3657216CA8FC0020310B /* anime-14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F6216CA8FB0020310B /* anime-14@3x.png */; };
+		5ADC3658216CA8FC0020310B /* anime-06@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F7216CA8FB0020310B /* anime-06@3x.png */; };
+		5ADC3659216CA8FC0020310B /* anime-06@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F7216CA8FB0020310B /* anime-06@3x.png */; };
+		5ADC365A216CA8FC0020310B /* anime-06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F8216CA8FB0020310B /* anime-06@2x.png */; };
+		5ADC365B216CA8FC0020310B /* anime-06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F8216CA8FB0020310B /* anime-06@2x.png */; };
+		5ADC365C216CA8FC0020310B /* anime-14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F9216CA8FB0020310B /* anime-14@2x.png */; };
+		5ADC365D216CA8FC0020310B /* anime-14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F9216CA8FB0020310B /* anime-14@2x.png */; };
+		5ADC365E216CA8FC0020310B /* anime-04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35FA216CA8FB0020310B /* anime-04@3x.png */; };
+		5ADC365F216CA8FC0020310B /* anime-04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35FA216CA8FB0020310B /* anime-04@3x.png */; };
+		5ADC3660216CA8FC0020310B /* anime-08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35FB216CA8FB0020310B /* anime-08@3x.png */; };
+		5ADC3661216CA8FC0020310B /* anime-08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35FB216CA8FB0020310B /* anime-08@3x.png */; };
+		5ADC3662216CA8FC0020310B /* YDJokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC35FE216CA8FC0020310B /* YDJokeController.m */; };
+		5ADC3663216CA8FC0020310B /* YDJokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC35FE216CA8FC0020310B /* YDJokeController.m */; };
+		5ADC3664216CA8FC0020310B /* YDJokeNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3601216CA8FC0020310B /* YDJokeNetworking.m */; };
+		5ADC3665216CA8FC0020310B /* YDJokeNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3601216CA8FC0020310B /* YDJokeNetworking.m */; };
+		5ADC3666216CA8FC0020310B /* YDJokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3604216CA8FC0020310B /* YDJokeTableViewCell.m */; };
+		5ADC3667216CA8FC0020310B /* YDJokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3604216CA8FC0020310B /* YDJokeTableViewCell.m */; };
+		5ADC3668216CA8FC0020310B /* YDMVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3608216CA8FC0020310B /* YDMVCController.m */; };
+		5ADC3669216CA8FC0020310B /* YDMVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3608216CA8FC0020310B /* YDMVCController.m */; };
+		5ADC366A216CA8FC0020310B /* YDMVCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC360C216CA8FC0020310B /* YDMVCStore.m */; };
+		5ADC366B216CA8FC0020310B /* YDMVCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC360C216CA8FC0020310B /* YDMVCStore.m */; };
+		5ADC366C216CA8FC0020310B /* YDMVCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC360E216CA8FC0020310B /* YDMVCItem.m */; };
+		5ADC366D216CA8FC0020310B /* YDMVCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC360E216CA8FC0020310B /* YDMVCItem.m */; };
+		5ADC366E216CA8FC0020310B /* YDMVCFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC360F216CA8FC0020310B /* YDMVCFolder.m */; };
+		5ADC366F216CA8FC0020310B /* YDMVCFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC360F216CA8FC0020310B /* YDMVCFolder.m */; };
+		5ADC3670216CA8FC0020310B /* YDMVCRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3611216CA8FC0020310B /* YDMVCRecording.m */; };
+		5ADC3671216CA8FC0020310B /* YDMVCRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3611216CA8FC0020310B /* YDMVCRecording.m */; };
+		5ADC3672216CA8FC0020310B /* YDMVCRecordingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3613216CA8FC0020310B /* YDMVCRecordingCell.m */; };
+		5ADC3673216CA8FC0020310B /* YDMVCRecordingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3613216CA8FC0020310B /* YDMVCRecordingCell.m */; };
+		5ADC3674216CA8FC0020310B /* YDMVCFolderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3614216CA8FC0020310B /* YDMVCFolderCell.m */; };
+		5ADC3675216CA8FC0020310B /* YDMVCFolderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3614216CA8FC0020310B /* YDMVCFolderCell.m */; };
+		5ADC3676216CA8FC0020310B /* YDFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC361A216CA8FC0020310B /* YDFactoryController.m */; };
+		5ADC3677216CA8FC0020310B /* YDFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC361A216CA8FC0020310B /* YDFactoryController.m */; };
+		5ADC3678216CA8FC0020310B /* YDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC361C216CA8FC0020310B /* YDMainViewController.m */; };
+		5ADC3679216CA8FC0020310B /* YDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC361C216CA8FC0020310B /* YDMainViewController.m */; };
+		5ADC367A216CA8FC0020310B /* YDNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3620216CA8FC0020310B /* YDNetworkingController.m */; };
+		5ADC367B216CA8FC0020310B /* YDNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3620216CA8FC0020310B /* YDNetworkingController.m */; };
+		5ADC367C216CA8FC0020310B /* YDSingletonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3624216CA8FC0020310B /* YDSingletonController.m */; };
+		5ADC367D216CA8FC0020310B /* YDSingletonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3624216CA8FC0020310B /* YDSingletonController.m */; };
+		5ADC367E216CA8FC0020310B /* YDFactoryMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3628216CA8FC0020310B /* YDFactoryMapController.m */; };
+		5ADC367F216CA8FC0020310B /* YDFactoryMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3628216CA8FC0020310B /* YDFactoryMapController.m */; };
+		5ADC3685216CA9440020310B /* YDSwiftModuleRouterUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3682216CA9440020310B /* YDSwiftModuleRouterUrl.swift */; };
+		5ADC3686216CA9440020310B /* YDSwiftModuleRouterUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3682216CA9440020310B /* YDSwiftModuleRouterUrl.swift */; };
+		5ADC3687216CA9440020310B /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3683216CA9440020310B /* YDModuleRouterUrl.m */; };
+		5ADC3688216CA9440020310B /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3683216CA9440020310B /* YDModuleRouterUrl.m */; };
+		5ADC3703216CAB570020310B /* YDSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC368C216CAB560020310B /* YDSingletonPattern.m */; };
+		5ADC3704216CAB570020310B /* YDSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC368C216CAB560020310B /* YDSingletonPattern.m */; };
+		5ADC3705216CAB570020310B /* YDRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC368F216CAB560020310B /* YDRefreshBase.m */; };
+		5ADC3706216CAB570020310B /* YDRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC368F216CAB560020310B /* YDRefreshBase.m */; };
+		5ADC3707216CAB570020310B /* UIView+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3690216CAB560020310B /* UIView+DDExtension.m */; };
+		5ADC3708216CAB570020310B /* UIView+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3690216CAB560020310B /* UIView+DDExtension.m */; };
+		5ADC3709216CAB570020310B /* YDRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3691216CAB560020310B /* YDRefresh.m */; };
+		5ADC370A216CAB570020310B /* YDRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3691216CAB560020310B /* YDRefresh.m */; };
+		5ADC370B216CAB570020310B /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC3696216CAB560020310B /* arrow@2x.png */; };
+		5ADC370C216CAB570020310B /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC3696216CAB560020310B /* arrow@2x.png */; };
+		5ADC370D216CAB570020310B /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3699216CAB560020310B /* YDMultiLanguage.m */; };
+		5ADC370E216CAB570020310B /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3699216CAB560020310B /* YDMultiLanguage.m */; };
+		5ADC370F216CAB570020310B /* YDMultiLanguageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC369A216CAB560020310B /* YDMultiLanguageContainer.m */; };
+		5ADC3710216CAB570020310B /* YDMultiLanguageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC369A216CAB560020310B /* YDMultiLanguageContainer.m */; };
+		5ADC3711216CAB570020310B /* YDViewFactoryConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC369F216CAB560020310B /* YDViewFactoryConfig.xml */; };
+		5ADC3712216CAB570020310B /* YDViewFactoryConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC369F216CAB560020310B /* YDViewFactoryConfig.xml */; };
+		5ADC3713216CAB570020310B /* YDViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A2216CAB560020310B /* YDViewFactory.m */; };
+		5ADC3714216CAB570020310B /* YDViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A2216CAB560020310B /* YDViewFactory.m */; };
+		5ADC3715216CAB570020310B /* YDViewXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A4216CAB560020310B /* YDViewXmlParser.m */; };
+		5ADC3716216CAB570020310B /* YDViewXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A4216CAB560020310B /* YDViewXmlParser.m */; };
+		5ADC3717216CAB570020310B /* YDFactoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A7216CAB560020310B /* YDFactoryImageView.m */; };
+		5ADC3718216CAB570020310B /* YDFactoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A7216CAB560020310B /* YDFactoryImageView.m */; };
+		5ADC3719216CAB570020310B /* YDFactoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36AA216CAB560020310B /* YDFactoryButton.m */; };
+		5ADC371A216CAB570020310B /* YDFactoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36AA216CAB560020310B /* YDFactoryButton.m */; };
+		5ADC371B216CAB570020310B /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36AD216CAB560020310B /* YDNetworking.m */; };
+		5ADC371C216CAB570020310B /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36AD216CAB560020310B /* YDNetworking.m */; };
+		5ADC371D216CAB570020310B /* YDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B0216CAB560020310B /* YDRouter.m */; };
+		5ADC371E216CAB570020310B /* YDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B0216CAB560020310B /* YDRouter.m */; };
+		5ADC371F216CAB570020310B /* YDMapPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B3216CAB560020310B /* YDMapPlatform.m */; };
+		5ADC3720216CAB570020310B /* YDMapPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B3216CAB560020310B /* YDMapPlatform.m */; };
+		5ADC3721216CAB570020310B /* YDConfig.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC36B4216CAB560020310B /* YDConfig.map.xml */; };
+		5ADC3722216CAB570020310B /* YDConfig.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC36B4216CAB560020310B /* YDConfig.map.xml */; };
+		5ADC3723216CAB570020310B /* YDMapPlatformPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B8216CAB560020310B /* YDMapPlatformPlistParser.m */; };
+		5ADC3724216CAB570020310B /* YDMapPlatformPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B8216CAB560020310B /* YDMapPlatformPlistParser.m */; };
+		5ADC3725216CAB570020310B /* YDMapPlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B9216CAB560020310B /* YDMapPlatformXmlParser.m */; };
+		5ADC3726216CAB570020310B /* YDMapPlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B9216CAB560020310B /* YDMapPlatformXmlParser.m */; };
+		5ADC3727216CAB570020310B /* YDConfig.map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC36BA216CAB560020310B /* YDConfig.map.plist */; };
+		5ADC3728216CAB570020310B /* YDConfig.map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC36BA216CAB560020310B /* YDConfig.map.plist */; };
+		5ADC3729216CAB570020310B /* YDBaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36BF216CAB560020310B /* YDBaiduMapLocationService.m */; };
+		5ADC372A216CAB570020310B /* YDBaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36BF216CAB560020310B /* YDBaiduMapLocationService.m */; };
+		5ADC372B216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C0216CAB560020310B /* YDBaiduMapUserLocation.m */; };
+		5ADC372C216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C0216CAB560020310B /* YDBaiduMapUserLocation.m */; };
+		5ADC372D216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C3216CAB560020310B /* YDBaiduMapPoiSearchResponse.m */; };
+		5ADC372E216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C3216CAB560020310B /* YDBaiduMapPoiSearchResponse.m */; };
+		5ADC372F216CAB570020310B /* YDBaiduMapPoiSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C4216CAB560020310B /* YDBaiduMapPoiSearch.m */; };
+		5ADC3730216CAB570020310B /* YDBaiduMapPoiSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C4216CAB560020310B /* YDBaiduMapPoiSearch.m */; };
+		5ADC3731216CAB570020310B /* YDBaiduMapPoiDetailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C5216CAB560020310B /* YDBaiduMapPoiDetailResult.m */; };
+		5ADC3732216CAB570020310B /* YDBaiduMapPoiDetailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C5216CAB560020310B /* YDBaiduMapPoiDetailResult.m */; };
+		5ADC3733216CAB570020310B /* YDBaiduMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C6216CAB560020310B /* YDBaiduMapPoiInfo.m */; };
+		5ADC3734216CAB570020310B /* YDBaiduMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C6216CAB560020310B /* YDBaiduMapPoiInfo.m */; };
+		5ADC3735216CAB570020310B /* YDBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36CD216CAB560020310B /* YDBaiduMapView.m */; };
+		5ADC3736216CAB570020310B /* YDBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36CD216CAB560020310B /* YDBaiduMapView.m */; };
+		5ADC3737216CAB570020310B /* YDBaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D0216CAB560020310B /* YDBaiduMapFactory.m */; };
+		5ADC3738216CAB570020310B /* YDBaiduMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D0216CAB560020310B /* YDBaiduMapFactory.m */; };
+		5ADC3739216CAB570020310B /* YDAmapMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D4216CAB560020310B /* YDAmapMapLocationService.m */; };
+		5ADC373A216CAB570020310B /* YDAmapMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D4216CAB560020310B /* YDAmapMapLocationService.m */; };
+		5ADC373B216CAB570020310B /* YDAmapMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D5216CAB560020310B /* YDAmapMapUserLocation.m */; };
+		5ADC373C216CAB570020310B /* YDAmapMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D5216CAB560020310B /* YDAmapMapUserLocation.m */; };
+		5ADC373D216CAB570020310B /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D8216CAB570020310B /* YDAmapMapSearch.m */; };
+		5ADC373E216CAB570020310B /* YDAmapMapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36D8216CAB570020310B /* YDAmapMapSearch.m */; };
+		5ADC373F216CAB570020310B /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DA216CAB570020310B /* YDAmapMapSearchResponse.m */; };
+		5ADC3740216CAB570020310B /* YDAmapMapSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DA216CAB570020310B /* YDAmapMapSearchResponse.m */; };
+		5ADC3741216CAB570020310B /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DD216CAB570020310B /* YDAmapMapPoiInfo.m */; };
+		5ADC3742216CAB570020310B /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DD216CAB570020310B /* YDAmapMapPoiInfo.m */; };
+		5ADC3743216CAB570020310B /* YDAmapMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DF216CAB570020310B /* YDAmapMapView.m */; };
+		5ADC3744216CAB570020310B /* YDAmapMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DF216CAB570020310B /* YDAmapMapView.m */; };
+		5ADC3745216CAB570020310B /* YDAmapMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36E2216CAB570020310B /* YDAmapMapFactory.m */; };
+		5ADC3746216CAB570020310B /* YDAmapMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36E2216CAB570020310B /* YDAmapMapFactory.m */; };
+		5ADC3747216CAB570020310B /* YDMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36E5216CAB570020310B /* YDMapEngine.m */; };
+		5ADC3748216CAB570020310B /* YDMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36E5216CAB570020310B /* YDMapEngine.m */; };
+		5ADC3749216CAB570020310B /* YDPoiSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36F6216CAB570020310B /* YDPoiSearchRequest.m */; };
+		5ADC374A216CAB570020310B /* YDPoiSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36F6216CAB570020310B /* YDPoiSearchRequest.m */; };
+		5ADC374B216CAB570020310B /* NSString+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36FD216CAB570020310B /* NSString+YDCategory.m */; };
+		5ADC374C216CAB570020310B /* NSString+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36FD216CAB570020310B /* NSString+YDCategory.m */; };
+		5ADC374D216CAB570020310B /* NSDictionary+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36FE216CAB570020310B /* NSDictionary+YDCategory.m */; };
+		5ADC374E216CAB570020310B /* NSDictionary+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36FE216CAB570020310B /* NSDictionary+YDCategory.m */; };
+		5ADC374F216CAB570020310B /* UIViewController+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36FF216CAB570020310B /* UIViewController+YDCategory.m */; };
+		5ADC3750216CAB570020310B /* UIViewController+YDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36FF216CAB570020310B /* UIViewController+YDCategory.m */; };
+		5ADC3754216CB3870020310B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3752216CB3860020310B /* AppDelegate.m */; };
+		5ADC3755216CB3870020310B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3752216CB3860020310B /* AppDelegate.m */; };
+		5AE2297A216F4E860058C0C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AE2297D216F4E860058C0C5 /* Localizable.strings */; };
+		5AE2297B216F4E860058C0C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AE2297D216F4E860058C0C5 /* Localizable.strings */; };
+		EC1432CE4D64E8B88D64A131 /* libPods-defaults-YDObjectiveCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD88D8F9C7A25E1356D0C51C /* libPods-defaults-YDObjectiveCKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13CF037865E0D2AC41717AA8 /* Pods-defaults-YDSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
+		59EDC63E8DEECFA288E9C65A /* Pods-defaults-YDObjectiveCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDObjectiveCKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDObjectiveCKit/Pods-defaults-YDObjectiveCKit.release.xcconfig"; sourceTree = "<group>"; };
+		5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDObjectiveCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADC3488216C9C4D0020310B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5ADC349C216C9C5A0020310B /* YDSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADC34A5216C9E1F0020310B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObjectiveCAppDelegate.m; sourceTree = "<group>"; };
+		5ADC34B0216C9F9C0020310B /* YDObjectiveCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObjectiveCAppDelegate.h; sourceTree = "<group>"; };
+		5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDObjectiveCInfo.plist; sourceTree = "<group>"; };
+		5ADC34B4216C9FAA0020310B /* YDSwiftAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSwiftAppDelegate.h; sourceTree = "<group>"; };
+		5ADC34B5216C9FAA0020310B /* YDSwiftInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDSwiftInfo.plist; sourceTree = "<group>"; };
+		5ADC34B6216C9FAA0020310B /* YDSwiftAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSwiftAppDelegate.m; sourceTree = "<group>"; };
+		5ADC34BC216CA1CB0020310B /* YDConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDConstant.h; sourceTree = "<group>"; };
+		5ADC34BD216CA1CB0020310B /* YDConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDConstant.m; sourceTree = "<group>"; };
+		5ADC34C1216CA47D0020310B /* YDSwiftKitBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDSwiftKitBridgingHeader.h; sourceTree = "<group>"; };
+		5ADC34C2216CA47D0020310B /* YDSwiftMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSwiftMainController.swift; sourceTree = "<group>"; };
+		5ADC34C7216CA7AC0020310B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5ADC34CC216CA84F0020310B /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		5ADC34D0216CA84F0020310B /* YDTableInfo.orm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YDTableInfo.orm.xml; sourceTree = "<group>"; };
+		5ADC34D2216CA84F0020310B /* YDTableInfoDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTableInfoDao.swift; sourceTree = "<group>"; };
+		5ADC34D4216CA84F0020310B /* YDTableTemplateConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTableTemplateConfig.swift; sourceTree = "<group>"; };
+		5ADC34D5216CA84F0020310B /* YDOrmItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmItem.swift; sourceTree = "<group>"; };
+		5ADC34D6216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLiteOpenHelper.swift; sourceTree = "<group>"; };
+		5ADC34D7216CA84F0020310B /* YDOrmKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmKey.swift; sourceTree = "<group>"; };
+		5ADC34D8216CA84F0020310B /* YDSQLiteOpenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLiteOpenHelper.swift; sourceTree = "<group>"; };
+		5ADC34D9216CA84F0020310B /* YDOrm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrm.swift; sourceTree = "<group>"; };
+		5ADC34DB216CA84F0020310B /* YDTableInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTableInfo.swift; sourceTree = "<group>"; };
+		5ADC34DF216CA84F0020310B /* YDOrmSQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLiteDB.swift; sourceTree = "<group>"; };
+		5ADC34E0216CA84F0020310B /* YDSQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLiteDB.swift; sourceTree = "<group>"; };
+		5ADC34E2216CA84F0020310B /* YDSQLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLBuilder.swift; sourceTree = "<group>"; };
+		5ADC34E4216CA84F0020310B /* YDOrmSQLInsertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLInsertBuilder.swift; sourceTree = "<group>"; };
+		5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLSelectBuilder.swift; sourceTree = "<group>"; };
+		5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLInsertBuilder.swift; sourceTree = "<group>"; };
+		5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSingletonPattern.swift; sourceTree = "<group>"; };
+		5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSwiftSingletonController.swift; sourceTree = "<group>"; };
+		5ADC3511216CA8780020310B /* YDBuilderSQLController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDBuilderSQLController.swift; sourceTree = "<group>"; };
+		5ADC35E0216CA8FB0020310B /* anime-11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-11@2x.png"; sourceTree = "<group>"; };
+		5ADC35E1216CA8FB0020310B /* anime-03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-03@2x.png"; sourceTree = "<group>"; };
+		5ADC35E2216CA8FB0020310B /* anime-13@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-13@3x.png"; sourceTree = "<group>"; };
+		5ADC35E3216CA8FB0020310B /* anime-01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-01@3x.png"; sourceTree = "<group>"; };
+		5ADC35E4216CA8FB0020310B /* anime-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-01@2x.png"; sourceTree = "<group>"; };
+		5ADC35E5216CA8FB0020310B /* anime-13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-13@2x.png"; sourceTree = "<group>"; };
+		5ADC35E6216CA8FB0020310B /* anime-03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-03@3x.png"; sourceTree = "<group>"; };
+		5ADC35E7216CA8FB0020310B /* anime-11@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-11@3x.png"; sourceTree = "<group>"; };
+		5ADC35E8216CA8FB0020310B /* anime-07@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-07@3x.png"; sourceTree = "<group>"; };
+		5ADC35E9216CA8FB0020310B /* anime-09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-09@2x.png"; sourceTree = "<group>"; };
+		5ADC35EA216CA8FB0020310B /* anime-05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-05@2x.png"; sourceTree = "<group>"; };
+		5ADC35EB216CA8FB0020310B /* anime-05@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-05@3x.png"; sourceTree = "<group>"; };
+		5ADC35EC216CA8FB0020310B /* anime-09@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-09@3x.png"; sourceTree = "<group>"; };
+		5ADC35ED216CA8FB0020310B /* anime-07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-07@2x.png"; sourceTree = "<group>"; };
+		5ADC35EE216CA8FB0020310B /* anime-12@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-12@3x.png"; sourceTree = "<group>"; };
+		5ADC35EF216CA8FB0020310B /* anime-10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-10@2x.png"; sourceTree = "<group>"; };
+		5ADC35F0216CA8FB0020310B /* anime-02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-02@2x.png"; sourceTree = "<group>"; };
+		5ADC35F1216CA8FB0020310B /* anime-02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-02@3x.png"; sourceTree = "<group>"; };
+		5ADC35F2216CA8FB0020310B /* anime-10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-10@3x.png"; sourceTree = "<group>"; };
+		5ADC35F3216CA8FB0020310B /* anime-12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-12@2x.png"; sourceTree = "<group>"; };
+		5ADC35F4216CA8FB0020310B /* anime-08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-08@2x.png"; sourceTree = "<group>"; };
+		5ADC35F5216CA8FB0020310B /* anime-04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-04@2x.png"; sourceTree = "<group>"; };
+		5ADC35F6216CA8FB0020310B /* anime-14@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-14@3x.png"; sourceTree = "<group>"; };
+		5ADC35F7216CA8FB0020310B /* anime-06@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-06@3x.png"; sourceTree = "<group>"; };
+		5ADC35F8216CA8FB0020310B /* anime-06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-06@2x.png"; sourceTree = "<group>"; };
+		5ADC35F9216CA8FB0020310B /* anime-14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-14@2x.png"; sourceTree = "<group>"; };
+		5ADC35FA216CA8FB0020310B /* anime-04@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-04@3x.png"; sourceTree = "<group>"; };
+		5ADC35FB216CA8FB0020310B /* anime-08@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-08@3x.png"; sourceTree = "<group>"; };
+		5ADC35FD216CA8FB0020310B /* YDJokeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDJokeController.h; sourceTree = "<group>"; };
+		5ADC35FE216CA8FC0020310B /* YDJokeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDJokeController.m; sourceTree = "<group>"; };
+		5ADC3600216CA8FC0020310B /* YDJokeNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDJokeNetworking.h; sourceTree = "<group>"; };
+		5ADC3601216CA8FC0020310B /* YDJokeNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDJokeNetworking.m; sourceTree = "<group>"; };
+		5ADC3603216CA8FC0020310B /* YDJokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDJokeTableViewCell.h; sourceTree = "<group>"; };
+		5ADC3604216CA8FC0020310B /* YDJokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDJokeTableViewCell.m; sourceTree = "<group>"; };
+		5ADC3607216CA8FC0020310B /* YDMVCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCController.h; sourceTree = "<group>"; };
+		5ADC3608216CA8FC0020310B /* YDMVCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCController.m; sourceTree = "<group>"; };
+		5ADC360A216CA8FC0020310B /* YDMVCFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCFolder.h; sourceTree = "<group>"; };
+		5ADC360B216CA8FC0020310B /* YDMVCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCItem.h; sourceTree = "<group>"; };
+		5ADC360C216CA8FC0020310B /* YDMVCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCStore.m; sourceTree = "<group>"; };
+		5ADC360D216CA8FC0020310B /* YDMVCRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCRecording.h; sourceTree = "<group>"; };
+		5ADC360E216CA8FC0020310B /* YDMVCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCItem.m; sourceTree = "<group>"; };
+		5ADC360F216CA8FC0020310B /* YDMVCFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCFolder.m; sourceTree = "<group>"; };
+		5ADC3610216CA8FC0020310B /* YDMVCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCStore.h; sourceTree = "<group>"; };
+		5ADC3611216CA8FC0020310B /* YDMVCRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCRecording.m; sourceTree = "<group>"; };
+		5ADC3613216CA8FC0020310B /* YDMVCRecordingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCRecordingCell.m; sourceTree = "<group>"; };
+		5ADC3614216CA8FC0020310B /* YDMVCFolderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMVCFolderCell.m; sourceTree = "<group>"; };
+		5ADC3615216CA8FC0020310B /* YDMVCFolderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCFolderCell.h; sourceTree = "<group>"; };
+		5ADC3616216CA8FC0020310B /* YDMVCRecordingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMVCRecordingCell.h; sourceTree = "<group>"; };
+		5ADC3619216CA8FC0020310B /* YDFactoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFactoryController.h; sourceTree = "<group>"; };
+		5ADC361A216CA8FC0020310B /* YDFactoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFactoryController.m; sourceTree = "<group>"; };
+		5ADC361C216CA8FC0020310B /* YDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMainViewController.m; sourceTree = "<group>"; };
+		5ADC361D216CA8FC0020310B /* YDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMainViewController.h; sourceTree = "<group>"; };
+		5ADC3620216CA8FC0020310B /* YDNetworkingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworkingController.m; sourceTree = "<group>"; };
+		5ADC3621216CA8FC0020310B /* YDNetworkingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworkingController.h; sourceTree = "<group>"; };
+		5ADC3624216CA8FC0020310B /* YDSingletonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSingletonController.m; sourceTree = "<group>"; };
+		5ADC3625216CA8FC0020310B /* YDSingletonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSingletonController.h; sourceTree = "<group>"; };
+		5ADC3628216CA8FC0020310B /* YDFactoryMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFactoryMapController.m; sourceTree = "<group>"; };
+		5ADC3629216CA8FC0020310B /* YDFactoryMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFactoryMapController.h; sourceTree = "<group>"; };
+		5ADC3680216CA9440020310B /* YDMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMacro.h; sourceTree = "<group>"; };
+		5ADC3681216CA9440020310B /* YDPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPrefixHeader.pch; sourceTree = "<group>"; };
+		5ADC3682216CA9440020310B /* YDSwiftModuleRouterUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSwiftModuleRouterUrl.swift; sourceTree = "<group>"; };
+		5ADC3683216CA9440020310B /* YDModuleRouterUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDModuleRouterUrl.m; sourceTree = "<group>"; };
+		5ADC3684216CA9440020310B /* YDModuleRouterUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDModuleRouterUrl.h; sourceTree = "<group>"; };
+		5ADC368B216CAB560020310B /* YDSingletonPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSingletonPattern.h; sourceTree = "<group>"; };
+		5ADC368C216CAB560020310B /* YDSingletonPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSingletonPattern.m; sourceTree = "<group>"; };
+		5ADC368F216CAB560020310B /* YDRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRefreshBase.m; sourceTree = "<group>"; };
+		5ADC3690216CAB560020310B /* UIView+DDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDExtension.m"; sourceTree = "<group>"; };
+		5ADC3691216CAB560020310B /* YDRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRefresh.m; sourceTree = "<group>"; };
+		5ADC3692216CAB560020310B /* YDRefreshBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRefreshBase.h; sourceTree = "<group>"; };
+		5ADC3693216CAB560020310B /* YDRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRefresh.h; sourceTree = "<group>"; };
+		5ADC3694216CAB560020310B /* UIView+DDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDExtension.h"; sourceTree = "<group>"; };
+		5ADC3696216CAB560020310B /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		5ADC3697216CAB560020310B /* YDRefreshConmmon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRefreshConmmon.h; sourceTree = "<group>"; };
+		5ADC3699216CAB560020310B /* YDMultiLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguage.m; sourceTree = "<group>"; };
+		5ADC369A216CAB560020310B /* YDMultiLanguageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMultiLanguageContainer.m; sourceTree = "<group>"; };
+		5ADC369B216CAB560020310B /* YDMultiLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMultiLanguage.h; sourceTree = "<group>"; };
+		5ADC369C216CAB560020310B /* YDMultiLanguageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMultiLanguageContainer.h; sourceTree = "<group>"; };
+		5ADC369F216CAB560020310B /* YDViewFactoryConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YDViewFactoryConfig.xml; sourceTree = "<group>"; };
+		5ADC36A1216CAB560020310B /* YDViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDViewFactory.h; sourceTree = "<group>"; };
+		5ADC36A2216CAB560020310B /* YDViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDViewFactory.m; sourceTree = "<group>"; };
+		5ADC36A4216CAB560020310B /* YDViewXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDViewXmlParser.m; sourceTree = "<group>"; };
+		5ADC36A5216CAB560020310B /* YDViewXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDViewXmlParser.h; sourceTree = "<group>"; };
+		5ADC36A7216CAB560020310B /* YDFactoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFactoryImageView.m; sourceTree = "<group>"; };
+		5ADC36A8216CAB560020310B /* YDFactoryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFactoryButton.h; sourceTree = "<group>"; };
+		5ADC36A9216CAB560020310B /* YDFactoryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFactoryImageView.h; sourceTree = "<group>"; };
+		5ADC36AA216CAB560020310B /* YDFactoryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFactoryButton.m; sourceTree = "<group>"; };
+		5ADC36AC216CAB560020310B /* YDNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworking.h; sourceTree = "<group>"; };
+		5ADC36AD216CAB560020310B /* YDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworking.m; sourceTree = "<group>"; };
+		5ADC36AF216CAB560020310B /* YDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDRouter.h; sourceTree = "<group>"; };
+		5ADC36B0216CAB560020310B /* YDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDRouter.m; sourceTree = "<group>"; };
+		5ADC36B3216CAB560020310B /* YDMapPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMapPlatform.m; sourceTree = "<group>"; };
+		5ADC36B4216CAB560020310B /* YDConfig.map.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = YDConfig.map.xml; sourceTree = "<group>"; };
+		5ADC36B5216CAB560020310B /* YDMapPlatformXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPlatformXmlParser.h; sourceTree = "<group>"; };
+		5ADC36B6216CAB560020310B /* YDMapPlatformPlistParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPlatformPlistParser.h; sourceTree = "<group>"; };
+		5ADC36B7216CAB560020310B /* YDMapPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPlatform.h; sourceTree = "<group>"; };
+		5ADC36B8216CAB560020310B /* YDMapPlatformPlistParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMapPlatformPlistParser.m; sourceTree = "<group>"; };
+		5ADC36B9216CAB560020310B /* YDMapPlatformXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMapPlatformXmlParser.m; sourceTree = "<group>"; };
+		5ADC36BA216CAB560020310B /* YDConfig.map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDConfig.map.plist; sourceTree = "<group>"; };
+		5ADC36BE216CAB560020310B /* YDBaiduMapUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapUserLocation.h; sourceTree = "<group>"; };
+		5ADC36BF216CAB560020310B /* YDBaiduMapLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapLocationService.m; sourceTree = "<group>"; };
+		5ADC36C0216CAB560020310B /* YDBaiduMapUserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapUserLocation.m; sourceTree = "<group>"; };
+		5ADC36C1216CAB560020310B /* YDBaiduMapLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapLocationService.h; sourceTree = "<group>"; };
+		5ADC36C3216CAB560020310B /* YDBaiduMapPoiSearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiSearchResponse.m; sourceTree = "<group>"; };
+		5ADC36C4216CAB560020310B /* YDBaiduMapPoiSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiSearch.m; sourceTree = "<group>"; };
+		5ADC36C5216CAB560020310B /* YDBaiduMapPoiDetailResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiDetailResult.m; sourceTree = "<group>"; };
+		5ADC36C6216CAB560020310B /* YDBaiduMapPoiInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapPoiInfo.m; sourceTree = "<group>"; };
+		5ADC36C7216CAB560020310B /* YDBaiduMapPoiSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapPoiSearchResponse.h; sourceTree = "<group>"; };
+		5ADC36C8216CAB560020310B /* YDBaiduMapPoiInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapPoiInfo.h; sourceTree = "<group>"; };
+		5ADC36C9216CAB560020310B /* YDBaiduMapPoiDetailResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapPoiDetailResult.h; sourceTree = "<group>"; };
+		5ADC36CA216CAB560020310B /* YDBaiduMapPoiSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapPoiSearch.h; sourceTree = "<group>"; };
+		5ADC36CC216CAB560020310B /* YDBaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapView.h; sourceTree = "<group>"; };
+		5ADC36CD216CAB560020310B /* YDBaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapView.m; sourceTree = "<group>"; };
+		5ADC36CF216CAB560020310B /* YDBaiduMapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDBaiduMapFactory.h; sourceTree = "<group>"; };
+		5ADC36D0216CAB560020310B /* YDBaiduMapFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDBaiduMapFactory.m; sourceTree = "<group>"; };
+		5ADC36D3216CAB560020310B /* YDAmapMapUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapUserLocation.h; sourceTree = "<group>"; };
+		5ADC36D4216CAB560020310B /* YDAmapMapLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapLocationService.m; sourceTree = "<group>"; };
+		5ADC36D5216CAB560020310B /* YDAmapMapUserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapUserLocation.m; sourceTree = "<group>"; };
+		5ADC36D6216CAB570020310B /* YDAmapMapLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapLocationService.h; sourceTree = "<group>"; };
+		5ADC36D8216CAB570020310B /* YDAmapMapSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapSearch.m; sourceTree = "<group>"; };
+		5ADC36D9216CAB570020310B /* YDAmapMapPoiInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapPoiInfo.h; sourceTree = "<group>"; };
+		5ADC36DA216CAB570020310B /* YDAmapMapSearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapSearchResponse.m; sourceTree = "<group>"; };
+		5ADC36DB216CAB570020310B /* YDAmapMapSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapSearch.h; sourceTree = "<group>"; };
+		5ADC36DC216CAB570020310B /* YDAmapMapSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapSearchResponse.h; sourceTree = "<group>"; };
+		5ADC36DD216CAB570020310B /* YDAmapMapPoiInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapPoiInfo.m; sourceTree = "<group>"; };
+		5ADC36DF216CAB570020310B /* YDAmapMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapView.m; sourceTree = "<group>"; };
+		5ADC36E0216CAB570020310B /* YDAmapMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapView.h; sourceTree = "<group>"; };
+		5ADC36E2216CAB570020310B /* YDAmapMapFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDAmapMapFactory.m; sourceTree = "<group>"; };
+		5ADC36E3216CAB570020310B /* YDAmapMapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDAmapMapFactory.h; sourceTree = "<group>"; };
+		5ADC36E5216CAB570020310B /* YDMapEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDMapEngine.m; sourceTree = "<group>"; };
+		5ADC36E6216CAB570020310B /* YDMapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapEngine.h; sourceTree = "<group>"; };
+		5ADC36E8216CAB570020310B /* YDMapFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapFactory.h; sourceTree = "<group>"; };
+		5ADC36EA216CAB570020310B /* YDLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLocationService.h; sourceTree = "<group>"; };
+		5ADC36EB216CAB570020310B /* YDLocationServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLocationServiceDelegate.h; sourceTree = "<group>"; };
+		5ADC36EC216CAB570020310B /* YDUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUserLocation.h; sourceTree = "<group>"; };
+		5ADC36EE216CAB570020310B /* YDPoiSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPoiSearchRequest.h; sourceTree = "<group>"; };
+		5ADC36EF216CAB570020310B /* YDMapSearchErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapSearchErrorCode.h; sourceTree = "<group>"; };
+		5ADC36F0216CAB570020310B /* YDMapPoiIndoorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiIndoorInfo.h; sourceTree = "<group>"; };
+		5ADC36F1216CAB570020310B /* YDMapPoiDetailResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiDetailResult.h; sourceTree = "<group>"; };
+		5ADC36F2216CAB570020310B /* YDMapPoiSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiSearchResponse.h; sourceTree = "<group>"; };
+		5ADC36F3216CAB570020310B /* YDMapPoiSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiSearchRequest.h; sourceTree = "<group>"; };
+		5ADC36F4216CAB570020310B /* YDMapPoiSearchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiSearchDelegate.h; sourceTree = "<group>"; };
+		5ADC36F5216CAB570020310B /* YDMapPoiSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiSearch.h; sourceTree = "<group>"; };
+		5ADC36F6216CAB570020310B /* YDPoiSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPoiSearchRequest.m; sourceTree = "<group>"; };
+		5ADC36F7216CAB570020310B /* YDMapPoiInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiInfo.h; sourceTree = "<group>"; };
+		5ADC36F8216CAB570020310B /* YDMapPoiIndoorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapPoiIndoorResult.h; sourceTree = "<group>"; };
+		5ADC36F9216CAB570020310B /* YDMapCityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapCityInfo.h; sourceTree = "<group>"; };
+		5ADC36FB216CAB570020310B /* YDMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDMapView.h; sourceTree = "<group>"; };
+		5ADC36FD216CAB570020310B /* NSString+YDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YDCategory.m"; sourceTree = "<group>"; };
+		5ADC36FE216CAB570020310B /* NSDictionary+YDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YDCategory.m"; sourceTree = "<group>"; };
+		5ADC36FF216CAB570020310B /* UIViewController+YDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YDCategory.m"; sourceTree = "<group>"; };
+		5ADC3700216CAB570020310B /* NSDictionary+YDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YDCategory.h"; sourceTree = "<group>"; };
+		5ADC3701216CAB570020310B /* NSString+YDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YDCategory.h"; sourceTree = "<group>"; };
+		5ADC3702216CAB570020310B /* UIViewController+YDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YDCategory.h"; sourceTree = "<group>"; };
+		5ADC3751216CABE60020310B /* YDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKit.h; sourceTree = "<group>"; };
+		5ADC3752216CB3860020310B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5ADC3753216CB3870020310B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5AE2297C216F4E860058C0C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5AE2297E216F4E9E0058C0C5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5AE2297F216F4EA40058C0C5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6743E4ED25198DBCAC90AA58 /* libPods-defaults-YDSwiftKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDSwiftKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A2892598FAB1217EA2A51C /* Pods-defaults-YDSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
+		EED7BFFE614F6748ABA69157 /* Pods-defaults-YDObjectiveCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDObjectiveCKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDObjectiveCKit/Pods-defaults-YDObjectiveCKit.debug.xcconfig"; sourceTree = "<group>"; };
+		FD88D8F9C7A25E1356D0C51C /* libPods-defaults-YDObjectiveCKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDObjectiveCKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ADC3473216C9C4B0020310B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1432CE4D64E8B88D64A131 /* libPods-defaults-YDObjectiveCKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADC3494216C9C5A0020310B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E053BA16EBF26D105011E5 /* libPods-defaults-YDSwiftKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ADC346D216C9C4B0020310B = {
+			isa = PBXGroup;
+			children = (
+				5ADC34C7216CA7AC0020310B /* README.md */,
+				5ADC3478216C9C4B0020310B /* YDAppleKit */,
+				5ADC3477216C9C4B0020310B /* Products */,
+				62ED09DED9E86D7A85AE996B /* Pods */,
+				A0E55999BBE638807FEA7523 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5ADC3477216C9C4B0020310B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */,
+				5ADC349C216C9C5A0020310B /* YDSwiftKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ADC3478216C9C4B0020310B /* YDAppleKit */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34A4216C9DCF0020310B /* YDResources */,
+				5ADC34A8216C9E260020310B /* YDPublic */,
+				5ADC34BB216CA1920020310B /* YDConstant */,
+				5ADC34AA216C9E7C0020310B /* YDSwiftKit */,
+				5ADC34A9216C9E6D0020310B /* YDObjectiveCKit */,
+			);
+			path = YDAppleKit;
+			sourceTree = "<group>";
+		};
+		5ADC34A4216C9DCF0020310B /* YDResources */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34A5216C9E1F0020310B /* Assets.xcassets */,
+			);
+			path = YDResources;
+			sourceTree = "<group>";
+		};
+		5ADC34A8216C9E260020310B /* YDPublic */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3753216CB3870020310B /* AppDelegate.h */,
+				5ADC3752216CB3860020310B /* AppDelegate.m */,
+				5ADC3488216C9C4D0020310B /* main.m */,
+				5AE2297D216F4E860058C0C5 /* Localizable.strings */,
+			);
+			path = YDPublic;
+			sourceTree = "<group>";
+		};
+		5ADC34A9216C9E6D0020310B /* YDObjectiveCKit */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3689216CAB560020310B /* YDKit */,
+				5ADC34AB216C9E8D0020310B /* YDClass */,
+			);
+			path = YDObjectiveCKit;
+			sourceTree = "<group>";
+		};
+		5ADC34AA216C9E7C0020310B /* YDSwiftKit */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34CA216CA84F0020310B /* YDKit */,
+				5ADC34AC216C9EA00020310B /* YDClass */,
+			);
+			path = YDSwiftKit;
+			sourceTree = "<group>";
+		};
+		5ADC34AB216C9E8D0020310B /* YDClass */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3617216CA8FC0020310B /* YDFactory */,
+				5ADC3626216CA8FC0020310B /* YDFactoryMap */,
+				5ADC35DE216CA8FB0020310B /* YDJoke */,
+				5ADC361B216CA8FC0020310B /* YDMainController */,
+				5ADC3605216CA8FC0020310B /* YDMVC */,
+				5ADC361E216CA8FC0020310B /* YDNetworking */,
+				5ADC3622216CA8FC0020310B /* YDSingleton */,
+				5ADC34AD216C9EA70020310B /* YDAppDelegate */,
+			);
+			path = YDClass;
+			sourceTree = "<group>";
+		};
+		5ADC34AC216C9EA00020310B /* YDClass */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC350F216CA8780020310B /* YDBuilderSQL */,
+				5ADC350C216CA8780020310B /* YDSingletonPattern */,
+				5ADC34C0216CA3720020310B /* YDMainController */,
+				5ADC34AE216C9EB90020310B /* YDAppDelegage */,
+			);
+			path = YDClass;
+			sourceTree = "<group>";
+		};
+		5ADC34AD216C9EA70020310B /* YDAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34B0216C9F9C0020310B /* YDObjectiveCAppDelegate.h */,
+				5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */,
+				5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */,
+			);
+			path = YDAppDelegate;
+			sourceTree = "<group>";
+		};
+		5ADC34AE216C9EB90020310B /* YDAppDelegage */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34B4216C9FAA0020310B /* YDSwiftAppDelegate.h */,
+				5ADC34B6216C9FAA0020310B /* YDSwiftAppDelegate.m */,
+				5ADC34B5216C9FAA0020310B /* YDSwiftInfo.plist */,
+			);
+			path = YDAppDelegage;
+			sourceTree = "<group>";
+		};
+		5ADC34BB216CA1920020310B /* YDConstant */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34C1216CA47D0020310B /* YDSwiftKitBridgingHeader.h */,
+				5ADC34BC216CA1CB0020310B /* YDConstant.h */,
+				5ADC34BD216CA1CB0020310B /* YDConstant.m */,
+				5ADC3680216CA9440020310B /* YDMacro.h */,
+				5ADC3684216CA9440020310B /* YDModuleRouterUrl.h */,
+				5ADC3683216CA9440020310B /* YDModuleRouterUrl.m */,
+				5ADC3681216CA9440020310B /* YDPrefixHeader.pch */,
+				5ADC3682216CA9440020310B /* YDSwiftModuleRouterUrl.swift */,
+			);
+			path = YDConstant;
+			sourceTree = "<group>";
+		};
+		5ADC34C0216CA3720020310B /* YDMainController */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34C2216CA47D0020310B /* YDSwiftMainController.swift */,
+			);
+			path = YDMainController;
+			sourceTree = "<group>";
+		};
+		5ADC34CA216CA84F0020310B /* YDKit */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34CB216CA84F0020310B /* YDExtension */,
+				5ADC34CD216CA84F0020310B /* YDBuilderSQL */,
+				5ADC34E8216CA84F0020310B /* YDSingletonPattern */,
+			);
+			path = YDKit;
+			sourceTree = "<group>";
+		};
+		5ADC34CB216CA84F0020310B /* YDExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34CC216CA84F0020310B /* String-Extras.swift */,
+			);
+			path = YDExtension;
+			sourceTree = "<group>";
+		};
+		5ADC34CD216CA84F0020310B /* YDBuilderSQL */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34CE216CA84F0020310B /* Framework */,
+			);
+			path = YDBuilderSQL;
+			sourceTree = "<group>";
+		};
+		5ADC34CE216CA84F0020310B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34CF216CA84F0020310B /* Config */,
+				5ADC34D1216CA84F0020310B /* Dao */,
+				5ADC34D3216CA84F0020310B /* Utils */,
+				5ADC34DA216CA84F0020310B /* Model */,
+				5ADC34DC216CA84F0020310B /* DB */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		5ADC34CF216CA84F0020310B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34D0216CA84F0020310B /* YDTableInfo.orm.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5ADC34D1216CA84F0020310B /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34D2216CA84F0020310B /* YDTableInfoDao.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		5ADC34D3216CA84F0020310B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34D4216CA84F0020310B /* YDTableTemplateConfig.swift */,
+				5ADC34D5216CA84F0020310B /* YDOrmItem.swift */,
+				5ADC34D6216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift */,
+				5ADC34D7216CA84F0020310B /* YDOrmKey.swift */,
+				5ADC34D8216CA84F0020310B /* YDSQLiteOpenHelper.swift */,
+				5ADC34D9216CA84F0020310B /* YDOrm.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5ADC34DA216CA84F0020310B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34DB216CA84F0020310B /* YDTableInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ADC34DC216CA84F0020310B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34DD216CA84F0020310B /* DB */,
+				5ADC34E1216CA84F0020310B /* SQL */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		5ADC34DD216CA84F0020310B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34DE216CA84F0020310B /* impl */,
+				5ADC34E0216CA84F0020310B /* YDSQLiteDB.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		5ADC34DE216CA84F0020310B /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34DF216CA84F0020310B /* YDOrmSQLiteDB.swift */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		5ADC34E1216CA84F0020310B /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34E2216CA84F0020310B /* YDSQLBuilder.swift */,
+				5ADC34E3216CA84F0020310B /* Orm */,
+				5ADC34E5216CA84F0020310B /* Base */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		5ADC34E3216CA84F0020310B /* Orm */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34E4216CA84F0020310B /* YDOrmSQLInsertBuilder.swift */,
+			);
+			path = Orm;
+			sourceTree = "<group>";
+		};
+		5ADC34E5216CA84F0020310B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */,
+				5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5ADC34E8216CA84F0020310B /* YDSingletonPattern */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */,
+			);
+			path = YDSingletonPattern;
+			sourceTree = "<group>";
+		};
+		5ADC350C216CA8780020310B /* YDSingletonPattern */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC350D216CA8780020310B /* Controller */,
+			);
+			path = YDSingletonPattern;
+			sourceTree = "<group>";
+		};
+		5ADC350D216CA8780020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC350F216CA8780020310B /* YDBuilderSQL */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3510216CA8780020310B /* Controller */,
+			);
+			path = YDBuilderSQL;
+			sourceTree = "<group>";
+		};
+		5ADC3510216CA8780020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3511216CA8780020310B /* YDBuilderSQLController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC35DE216CA8FB0020310B /* YDJoke */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC35DF216CA8FB0020310B /* Resources */,
+				5ADC35FC216CA8FB0020310B /* Controller */,
+				5ADC35FF216CA8FC0020310B /* Model */,
+				5ADC3602216CA8FC0020310B /* View */,
+			);
+			path = YDJoke;
+			sourceTree = "<group>";
+		};
+		5ADC35DF216CA8FB0020310B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC35E0216CA8FB0020310B /* anime-11@2x.png */,
+				5ADC35E1216CA8FB0020310B /* anime-03@2x.png */,
+				5ADC35E2216CA8FB0020310B /* anime-13@3x.png */,
+				5ADC35E3216CA8FB0020310B /* anime-01@3x.png */,
+				5ADC35E4216CA8FB0020310B /* anime-01@2x.png */,
+				5ADC35E5216CA8FB0020310B /* anime-13@2x.png */,
+				5ADC35E6216CA8FB0020310B /* anime-03@3x.png */,
+				5ADC35E7216CA8FB0020310B /* anime-11@3x.png */,
+				5ADC35E8216CA8FB0020310B /* anime-07@3x.png */,
+				5ADC35E9216CA8FB0020310B /* anime-09@2x.png */,
+				5ADC35EA216CA8FB0020310B /* anime-05@2x.png */,
+				5ADC35EB216CA8FB0020310B /* anime-05@3x.png */,
+				5ADC35EC216CA8FB0020310B /* anime-09@3x.png */,
+				5ADC35ED216CA8FB0020310B /* anime-07@2x.png */,
+				5ADC35EE216CA8FB0020310B /* anime-12@3x.png */,
+				5ADC35EF216CA8FB0020310B /* anime-10@2x.png */,
+				5ADC35F0216CA8FB0020310B /* anime-02@2x.png */,
+				5ADC35F1216CA8FB0020310B /* anime-02@3x.png */,
+				5ADC35F2216CA8FB0020310B /* anime-10@3x.png */,
+				5ADC35F3216CA8FB0020310B /* anime-12@2x.png */,
+				5ADC35F4216CA8FB0020310B /* anime-08@2x.png */,
+				5ADC35F5216CA8FB0020310B /* anime-04@2x.png */,
+				5ADC35F6216CA8FB0020310B /* anime-14@3x.png */,
+				5ADC35F7216CA8FB0020310B /* anime-06@3x.png */,
+				5ADC35F8216CA8FB0020310B /* anime-06@2x.png */,
+				5ADC35F9216CA8FB0020310B /* anime-14@2x.png */,
+				5ADC35FA216CA8FB0020310B /* anime-04@3x.png */,
+				5ADC35FB216CA8FB0020310B /* anime-08@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5ADC35FC216CA8FB0020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC35FD216CA8FB0020310B /* YDJokeController.h */,
+				5ADC35FE216CA8FC0020310B /* YDJokeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC35FF216CA8FC0020310B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3600216CA8FC0020310B /* YDJokeNetworking.h */,
+				5ADC3601216CA8FC0020310B /* YDJokeNetworking.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ADC3602216CA8FC0020310B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3603216CA8FC0020310B /* YDJokeTableViewCell.h */,
+				5ADC3604216CA8FC0020310B /* YDJokeTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5ADC3605216CA8FC0020310B /* YDMVC */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3606216CA8FC0020310B /* Controller */,
+				5ADC3609216CA8FC0020310B /* Model */,
+				5ADC3612216CA8FC0020310B /* View */,
+			);
+			path = YDMVC;
+			sourceTree = "<group>";
+		};
+		5ADC3606216CA8FC0020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3607216CA8FC0020310B /* YDMVCController.h */,
+				5ADC3608216CA8FC0020310B /* YDMVCController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC3609216CA8FC0020310B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC360A216CA8FC0020310B /* YDMVCFolder.h */,
+				5ADC360B216CA8FC0020310B /* YDMVCItem.h */,
+				5ADC360C216CA8FC0020310B /* YDMVCStore.m */,
+				5ADC360D216CA8FC0020310B /* YDMVCRecording.h */,
+				5ADC360E216CA8FC0020310B /* YDMVCItem.m */,
+				5ADC360F216CA8FC0020310B /* YDMVCFolder.m */,
+				5ADC3610216CA8FC0020310B /* YDMVCStore.h */,
+				5ADC3611216CA8FC0020310B /* YDMVCRecording.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ADC3612216CA8FC0020310B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3613216CA8FC0020310B /* YDMVCRecordingCell.m */,
+				5ADC3614216CA8FC0020310B /* YDMVCFolderCell.m */,
+				5ADC3615216CA8FC0020310B /* YDMVCFolderCell.h */,
+				5ADC3616216CA8FC0020310B /* YDMVCRecordingCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5ADC3617216CA8FC0020310B /* YDFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3618216CA8FC0020310B /* Controller */,
+			);
+			path = YDFactory;
+			sourceTree = "<group>";
+		};
+		5ADC3618216CA8FC0020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3619216CA8FC0020310B /* YDFactoryController.h */,
+				5ADC361A216CA8FC0020310B /* YDFactoryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC361B216CA8FC0020310B /* YDMainController */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC361D216CA8FC0020310B /* YDMainViewController.h */,
+				5ADC361C216CA8FC0020310B /* YDMainViewController.m */,
+			);
+			path = YDMainController;
+			sourceTree = "<group>";
+		};
+		5ADC361E216CA8FC0020310B /* YDNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC361F216CA8FC0020310B /* Controller */,
+			);
+			path = YDNetworking;
+			sourceTree = "<group>";
+		};
+		5ADC361F216CA8FC0020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3620216CA8FC0020310B /* YDNetworkingController.m */,
+				5ADC3621216CA8FC0020310B /* YDNetworkingController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC3622216CA8FC0020310B /* YDSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3623216CA8FC0020310B /* Controller */,
+			);
+			path = YDSingleton;
+			sourceTree = "<group>";
+		};
+		5ADC3623216CA8FC0020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3624216CA8FC0020310B /* YDSingletonController.m */,
+				5ADC3625216CA8FC0020310B /* YDSingletonController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC3626216CA8FC0020310B /* YDFactoryMap */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3627216CA8FC0020310B /* Controller */,
+			);
+			path = YDFactoryMap;
+			sourceTree = "<group>";
+		};
+		5ADC3627216CA8FC0020310B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3628216CA8FC0020310B /* YDFactoryMapController.m */,
+				5ADC3629216CA8FC0020310B /* YDFactoryMapController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ADC3689216CAB560020310B /* YDKit */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3751216CABE60020310B /* YDKit.h */,
+				5ADC368A216CAB560020310B /* YDSingleton */,
+				5ADC368E216CAB560020310B /* YDRefresh */,
+				5ADC3698216CAB560020310B /* YDMultiLanguage */,
+				5ADC369D216CAB560020310B /* YDFactory */,
+				5ADC36AB216CAB560020310B /* YDNetworking */,
+				5ADC36AE216CAB560020310B /* YDRouter */,
+				5ADC36B1216CAB560020310B /* YDMapFramework */,
+				5ADC36FC216CAB570020310B /* YDCategory */,
+			);
+			path = YDKit;
+			sourceTree = "<group>";
+		};
+		5ADC368A216CAB560020310B /* YDSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC368B216CAB560020310B /* YDSingletonPattern.h */,
+				5ADC368C216CAB560020310B /* YDSingletonPattern.m */,
+			);
+			path = YDSingleton;
+			sourceTree = "<group>";
+		};
+		5ADC368E216CAB560020310B /* YDRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC368F216CAB560020310B /* YDRefreshBase.m */,
+				5ADC3690216CAB560020310B /* UIView+DDExtension.m */,
+				5ADC3691216CAB560020310B /* YDRefresh.m */,
+				5ADC3692216CAB560020310B /* YDRefreshBase.h */,
+				5ADC3693216CAB560020310B /* YDRefresh.h */,
+				5ADC3694216CAB560020310B /* UIView+DDExtension.h */,
+				5ADC3695216CAB560020310B /* Resource */,
+				5ADC3697216CAB560020310B /* YDRefreshConmmon.h */,
+			);
+			path = YDRefresh;
+			sourceTree = "<group>";
+		};
+		5ADC3695216CAB560020310B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3696216CAB560020310B /* arrow@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5ADC3698216CAB560020310B /* YDMultiLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC3699216CAB560020310B /* YDMultiLanguage.m */,
+				5ADC369A216CAB560020310B /* YDMultiLanguageContainer.m */,
+				5ADC369B216CAB560020310B /* YDMultiLanguage.h */,
+				5ADC369C216CAB560020310B /* YDMultiLanguageContainer.h */,
+			);
+			path = YDMultiLanguage;
+			sourceTree = "<group>";
+		};
+		5ADC369D216CAB560020310B /* YDFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC369E216CAB560020310B /* Config */,
+				5ADC36A0216CAB560020310B /* ViewFactory */,
+				5ADC36A3216CAB560020310B /* Utils */,
+				5ADC36A6216CAB560020310B /* View */,
+			);
+			path = YDFactory;
+			sourceTree = "<group>";
+		};
+		5ADC369E216CAB560020310B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC369F216CAB560020310B /* YDViewFactoryConfig.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5ADC36A0216CAB560020310B /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36A1216CAB560020310B /* YDViewFactory.h */,
+				5ADC36A2216CAB560020310B /* YDViewFactory.m */,
+			);
+			path = ViewFactory;
+			sourceTree = "<group>";
+		};
+		5ADC36A3216CAB560020310B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36A4216CAB560020310B /* YDViewXmlParser.m */,
+				5ADC36A5216CAB560020310B /* YDViewXmlParser.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5ADC36A6216CAB560020310B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36A7216CAB560020310B /* YDFactoryImageView.m */,
+				5ADC36A8216CAB560020310B /* YDFactoryButton.h */,
+				5ADC36A9216CAB560020310B /* YDFactoryImageView.h */,
+				5ADC36AA216CAB560020310B /* YDFactoryButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5ADC36AB216CAB560020310B /* YDNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36AC216CAB560020310B /* YDNetworking.h */,
+				5ADC36AD216CAB560020310B /* YDNetworking.m */,
+			);
+			path = YDNetworking;
+			sourceTree = "<group>";
+		};
+		5ADC36AE216CAB560020310B /* YDRouter */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36AF216CAB560020310B /* YDRouter.h */,
+				5ADC36B0216CAB560020310B /* YDRouter.m */,
+			);
+			path = YDRouter;
+			sourceTree = "<group>";
+		};
+		5ADC36B1216CAB560020310B /* YDMapFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36B2216CAB560020310B /* Config */,
+				5ADC36BB216CAB560020310B /* Map */,
+				5ADC36E4216CAB570020310B /* Engine */,
+				5ADC36E7216CAB570020310B /* Base */,
+			);
+			path = YDMapFramework;
+			sourceTree = "<group>";
+		};
+		5ADC36B2216CAB560020310B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36B3216CAB560020310B /* YDMapPlatform.m */,
+				5ADC36B4216CAB560020310B /* YDConfig.map.xml */,
+				5ADC36B5216CAB560020310B /* YDMapPlatformXmlParser.h */,
+				5ADC36B6216CAB560020310B /* YDMapPlatformPlistParser.h */,
+				5ADC36B7216CAB560020310B /* YDMapPlatform.h */,
+				5ADC36B8216CAB560020310B /* YDMapPlatformPlistParser.m */,
+				5ADC36B9216CAB560020310B /* YDMapPlatformXmlParser.m */,
+				5ADC36BA216CAB560020310B /* YDConfig.map.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5ADC36BB216CAB560020310B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36BC216CAB560020310B /* Baidu */,
+				5ADC36D1216CAB560020310B /* Amap */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		5ADC36BC216CAB560020310B /* Baidu */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36BD216CAB560020310B /* Location */,
+				5ADC36C2216CAB560020310B /* Search */,
+				5ADC36CB216CAB560020310B /* Views */,
+				5ADC36CE216CAB560020310B /* Factory */,
+			);
+			path = Baidu;
+			sourceTree = "<group>";
+		};
+		5ADC36BD216CAB560020310B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36BE216CAB560020310B /* YDBaiduMapUserLocation.h */,
+				5ADC36BF216CAB560020310B /* YDBaiduMapLocationService.m */,
+				5ADC36C0216CAB560020310B /* YDBaiduMapUserLocation.m */,
+				5ADC36C1216CAB560020310B /* YDBaiduMapLocationService.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5ADC36C2216CAB560020310B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36C3216CAB560020310B /* YDBaiduMapPoiSearchResponse.m */,
+				5ADC36C4216CAB560020310B /* YDBaiduMapPoiSearch.m */,
+				5ADC36C5216CAB560020310B /* YDBaiduMapPoiDetailResult.m */,
+				5ADC36C6216CAB560020310B /* YDBaiduMapPoiInfo.m */,
+				5ADC36C7216CAB560020310B /* YDBaiduMapPoiSearchResponse.h */,
+				5ADC36C8216CAB560020310B /* YDBaiduMapPoiInfo.h */,
+				5ADC36C9216CAB560020310B /* YDBaiduMapPoiDetailResult.h */,
+				5ADC36CA216CAB560020310B /* YDBaiduMapPoiSearch.h */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5ADC36CB216CAB560020310B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36CC216CAB560020310B /* YDBaiduMapView.h */,
+				5ADC36CD216CAB560020310B /* YDBaiduMapView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5ADC36CE216CAB560020310B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36CF216CAB560020310B /* YDBaiduMapFactory.h */,
+				5ADC36D0216CAB560020310B /* YDBaiduMapFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		5ADC36D1216CAB560020310B /* Amap */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36D2216CAB560020310B /* Location */,
+				5ADC36D7216CAB570020310B /* Search */,
+				5ADC36DE216CAB570020310B /* Views */,
+				5ADC36E1216CAB570020310B /* Factory */,
+			);
+			path = Amap;
+			sourceTree = "<group>";
+		};
+		5ADC36D2216CAB560020310B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36D3216CAB560020310B /* YDAmapMapUserLocation.h */,
+				5ADC36D4216CAB560020310B /* YDAmapMapLocationService.m */,
+				5ADC36D5216CAB560020310B /* YDAmapMapUserLocation.m */,
+				5ADC36D6216CAB570020310B /* YDAmapMapLocationService.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5ADC36D7216CAB570020310B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36D8216CAB570020310B /* YDAmapMapSearch.m */,
+				5ADC36D9216CAB570020310B /* YDAmapMapPoiInfo.h */,
+				5ADC36DA216CAB570020310B /* YDAmapMapSearchResponse.m */,
+				5ADC36DB216CAB570020310B /* YDAmapMapSearch.h */,
+				5ADC36DC216CAB570020310B /* YDAmapMapSearchResponse.h */,
+				5ADC36DD216CAB570020310B /* YDAmapMapPoiInfo.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5ADC36DE216CAB570020310B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36DF216CAB570020310B /* YDAmapMapView.m */,
+				5ADC36E0216CAB570020310B /* YDAmapMapView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5ADC36E1216CAB570020310B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36E2216CAB570020310B /* YDAmapMapFactory.m */,
+				5ADC36E3216CAB570020310B /* YDAmapMapFactory.h */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		5ADC36E4216CAB570020310B /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36E5216CAB570020310B /* YDMapEngine.m */,
+				5ADC36E6216CAB570020310B /* YDMapEngine.h */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		5ADC36E7216CAB570020310B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36E8216CAB570020310B /* YDMapFactory.h */,
+				5ADC36E9216CAB570020310B /* Location */,
+				5ADC36ED216CAB570020310B /* Search */,
+				5ADC36FA216CAB570020310B /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5ADC36E9216CAB570020310B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36EA216CAB570020310B /* YDLocationService.h */,
+				5ADC36EB216CAB570020310B /* YDLocationServiceDelegate.h */,
+				5ADC36EC216CAB570020310B /* YDUserLocation.h */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5ADC36ED216CAB570020310B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36EE216CAB570020310B /* YDPoiSearchRequest.h */,
+				5ADC36EF216CAB570020310B /* YDMapSearchErrorCode.h */,
+				5ADC36F0216CAB570020310B /* YDMapPoiIndoorInfo.h */,
+				5ADC36F1216CAB570020310B /* YDMapPoiDetailResult.h */,
+				5ADC36F2216CAB570020310B /* YDMapPoiSearchResponse.h */,
+				5ADC36F3216CAB570020310B /* YDMapPoiSearchRequest.h */,
+				5ADC36F4216CAB570020310B /* YDMapPoiSearchDelegate.h */,
+				5ADC36F5216CAB570020310B /* YDMapPoiSearch.h */,
+				5ADC36F6216CAB570020310B /* YDPoiSearchRequest.m */,
+				5ADC36F7216CAB570020310B /* YDMapPoiInfo.h */,
+				5ADC36F8216CAB570020310B /* YDMapPoiIndoorResult.h */,
+				5ADC36F9216CAB570020310B /* YDMapCityInfo.h */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5ADC36FA216CAB570020310B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36FB216CAB570020310B /* YDMapView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5ADC36FC216CAB570020310B /* YDCategory */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC36FD216CAB570020310B /* NSString+YDCategory.m */,
+				5ADC36FE216CAB570020310B /* NSDictionary+YDCategory.m */,
+				5ADC36FF216CAB570020310B /* UIViewController+YDCategory.m */,
+				5ADC3700216CAB570020310B /* NSDictionary+YDCategory.h */,
+				5ADC3701216CAB570020310B /* NSString+YDCategory.h */,
+				5ADC3702216CAB570020310B /* UIViewController+YDCategory.h */,
+			);
+			path = YDCategory;
+			sourceTree = "<group>";
+		};
+		62ED09DED9E86D7A85AE996B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EED7BFFE614F6748ABA69157 /* Pods-defaults-YDObjectiveCKit.debug.xcconfig */,
+				59EDC63E8DEECFA288E9C65A /* Pods-defaults-YDObjectiveCKit.release.xcconfig */,
+				96A2892598FAB1217EA2A51C /* Pods-defaults-YDSwiftKit.debug.xcconfig */,
+				13CF037865E0D2AC41717AA8 /* Pods-defaults-YDSwiftKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0E55999BBE638807FEA7523 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD88D8F9C7A25E1356D0C51C /* libPods-defaults-YDObjectiveCKit.a */,
+				6743E4ED25198DBCAC90AA58 /* libPods-defaults-YDSwiftKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ADC3475216C9C4B0020310B /* YDObjectiveCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADC348C216C9C4D0020310B /* Build configuration list for PBXNativeTarget "YDObjectiveCKit" */;
+			buildPhases = (
+				CF7B862BFEB767924EB2BAED /* [CP] Check Pods Manifest.lock */,
+				5ADC3472216C9C4B0020310B /* Sources */,
+				5ADC3473216C9C4B0020310B /* Frameworks */,
+				5ADC3474216C9C4B0020310B /* Resources */,
+				76C6EE55A11CA80BD69A9604 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDObjectiveCKit;
+			productName = YDAppleKit;
+			productReference = 5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ADC348F216C9C5A0020310B /* YDSwiftKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADC3499216C9C5A0020310B /* Build configuration list for PBXNativeTarget "YDSwiftKit" */;
+			buildPhases = (
+				071B186725E0AE5837EA3880 /* [CP] Check Pods Manifest.lock */,
+				5ADC3490216C9C5A0020310B /* Sources */,
+				5ADC3494216C9C5A0020310B /* Frameworks */,
+				5ADC3495216C9C5A0020310B /* Resources */,
+				8532781EB882DBA5C082AE45 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDSwiftKit;
+			productName = YDAppleKit;
+			productReference = 5ADC349C216C9C5A0020310B /* YDSwiftKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ADC346E216C9C4B0020310B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YD;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = wuyezhiguhun;
+				TargetAttributes = {
+					5ADC3475216C9C4B0020310B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					5ADC348F216C9C5A0020310B = {
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 5ADC3471216C9C4B0020310B /* Build configuration list for PBXProject "YDAppleKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				"zh-Hans",
+			);
+			mainGroup = 5ADC346D216C9C4B0020310B;
+			productRefGroup = 5ADC3477216C9C4B0020310B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ADC3475216C9C4B0020310B /* YDObjectiveCKit */,
+				5ADC348F216C9C5A0020310B /* YDSwiftKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ADC3474216C9C4B0020310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADC3656216CA8FC0020310B /* anime-14@3x.png in Resources */,
+				5ADC364C216CA8FC0020310B /* anime-02@3x.png in Resources */,
+				5ADC364E216CA8FC0020310B /* anime-10@3x.png in Resources */,
+				5ADC363E216CA8FC0020310B /* anime-05@2x.png in Resources */,
+				5ADC3660216CA8FC0020310B /* anime-08@3x.png in Resources */,
+				5ADC3652216CA8FC0020310B /* anime-08@2x.png in Resources */,
+				5ADC3646216CA8FC0020310B /* anime-12@3x.png in Resources */,
+				5ADC34C8216CA7AC0020310B /* README.md in Resources */,
+				5ADC3648216CA8FC0020310B /* anime-10@2x.png in Resources */,
+				5ADC365C216CA8FC0020310B /* anime-14@2x.png in Resources */,
+				5ADC3658216CA8FC0020310B /* anime-06@3x.png in Resources */,
+				5ADC3654216CA8FC0020310B /* anime-04@2x.png in Resources */,
+				5ADC3711216CAB570020310B /* YDViewFactoryConfig.xml in Resources */,
+				5ADC3634216CA8FC0020310B /* anime-13@2x.png in Resources */,
+				5ADC3640216CA8FC0020310B /* anime-05@3x.png in Resources */,
+				5ADC370B216CAB570020310B /* arrow@2x.png in Resources */,
+				5ADC3650216CA8FC0020310B /* anime-12@2x.png in Resources */,
+				5ADC362E216CA8FC0020310B /* anime-13@3x.png in Resources */,
+				5ADC3638216CA8FC0020310B /* anime-11@3x.png in Resources */,
+				5ADC363A216CA8FC0020310B /* anime-07@3x.png in Resources */,
+				5ADC363C216CA8FC0020310B /* anime-09@2x.png in Resources */,
+				5ADC34A6216C9E1F0020310B /* Assets.xcassets in Resources */,
+				5ADC362A216CA8FC0020310B /* anime-11@2x.png in Resources */,
+				5ADC3632216CA8FC0020310B /* anime-01@2x.png in Resources */,
+				5AE2297A216F4E860058C0C5 /* Localizable.strings in Resources */,
+				5ADC362C216CA8FC0020310B /* anime-03@2x.png in Resources */,
+				5ADC34B3216C9F9C0020310B /* YDObjectiveCInfo.plist in Resources */,
+				5ADC364A216CA8FC0020310B /* anime-02@2x.png in Resources */,
+				5ADC3721216CAB570020310B /* YDConfig.map.xml in Resources */,
+				5ADC365E216CA8FC0020310B /* anime-04@3x.png in Resources */,
+				5ADC365A216CA8FC0020310B /* anime-06@2x.png in Resources */,
+				5ADC3644216CA8FC0020310B /* anime-07@2x.png in Resources */,
+				5ADC3727216CAB570020310B /* YDConfig.map.plist in Resources */,
+				5ADC3630216CA8FC0020310B /* anime-01@3x.png in Resources */,
+				5ADC34EC216CA84F0020310B /* YDTableInfo.orm.xml in Resources */,
+				5ADC3636216CA8FC0020310B /* anime-03@3x.png in Resources */,
+				5ADC3642216CA8FC0020310B /* anime-09@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADC3495216C9C5A0020310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADC3657216CA8FC0020310B /* anime-14@3x.png in Resources */,
+				5ADC364D216CA8FC0020310B /* anime-02@3x.png in Resources */,
+				5ADC364F216CA8FC0020310B /* anime-10@3x.png in Resources */,
+				5ADC363F216CA8FC0020310B /* anime-05@2x.png in Resources */,
+				5ADC3661216CA8FC0020310B /* anime-08@3x.png in Resources */,
+				5ADC3653216CA8FC0020310B /* anime-08@2x.png in Resources */,
+				5ADC3647216CA8FC0020310B /* anime-12@3x.png in Resources */,
+				5ADC34C9216CA7AC0020310B /* README.md in Resources */,
+				5ADC3649216CA8FC0020310B /* anime-10@2x.png in Resources */,
+				5ADC365D216CA8FC0020310B /* anime-14@2x.png in Resources */,
+				5ADC3659216CA8FC0020310B /* anime-06@3x.png in Resources */,
+				5ADC3655216CA8FC0020310B /* anime-04@2x.png in Resources */,
+				5ADC3712216CAB570020310B /* YDViewFactoryConfig.xml in Resources */,
+				5ADC3635216CA8FC0020310B /* anime-13@2x.png in Resources */,
+				5ADC3641216CA8FC0020310B /* anime-05@3x.png in Resources */,
+				5ADC370C216CAB570020310B /* arrow@2x.png in Resources */,
+				5ADC3651216CA8FC0020310B /* anime-12@2x.png in Resources */,
+				5ADC362F216CA8FC0020310B /* anime-13@3x.png in Resources */,
+				5ADC3639216CA8FC0020310B /* anime-11@3x.png in Resources */,
+				5ADC363B216CA8FC0020310B /* anime-07@3x.png in Resources */,
+				5ADC363D216CA8FC0020310B /* anime-09@2x.png in Resources */,
+				5ADC34A7216C9E1F0020310B /* Assets.xcassets in Resources */,
+				5ADC362B216CA8FC0020310B /* anime-11@2x.png in Resources */,
+				5ADC3633216CA8FC0020310B /* anime-01@2x.png in Resources */,
+				5AE2297B216F4E860058C0C5 /* Localizable.strings in Resources */,
+				5ADC362D216CA8FC0020310B /* anime-03@2x.png in Resources */,
+				5ADC34B7216C9FAA0020310B /* YDSwiftInfo.plist in Resources */,
+				5ADC364B216CA8FC0020310B /* anime-02@2x.png in Resources */,
+				5ADC3722216CAB570020310B /* YDConfig.map.xml in Resources */,
+				5ADC365F216CA8FC0020310B /* anime-04@3x.png in Resources */,
+				5ADC365B216CA8FC0020310B /* anime-06@2x.png in Resources */,
+				5ADC3645216CA8FC0020310B /* anime-07@2x.png in Resources */,
+				5ADC3728216CAB570020310B /* YDConfig.map.plist in Resources */,
+				5ADC3631216CA8FC0020310B /* anime-01@3x.png in Resources */,
+				5ADC34ED216CA84F0020310B /* YDTableInfo.orm.xml in Resources */,
+				5ADC3637216CA8FC0020310B /* anime-03@3x.png in Resources */,
+				5ADC3643216CA8FC0020310B /* anime-09@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		071B186725E0AE5837EA3880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-YDSwiftKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C6EE55A11CA80BD69A9604 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDObjectiveCKit/Pods-defaults-YDObjectiveCKit-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDObjectiveCKit/Pods-defaults-YDObjectiveCKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8532781EB882DBA5C082AE45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7B862BFEB767924EB2BAED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-YDObjectiveCKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ADC3472216C9C4B0020310B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADC3672216CA8FC0020310B /* YDMVCRecordingCell.m in Sources */,
+				5ADC3713216CAB570020310B /* YDViewFactory.m in Sources */,
+				5ADC3500216CA84F0020310B /* YDSQLiteDB.swift in Sources */,
+				5ADC3504216CA84F0020310B /* YDOrmSQLInsertBuilder.swift in Sources */,
+				5ADC3743216CAB570020310B /* YDAmapMapView.m in Sources */,
+				5ADC3676216CA8FC0020310B /* YDFactoryController.m in Sources */,
+				5ADC367A216CA8FC0020310B /* YDNetworkingController.m in Sources */,
+				5ADC3666216CA8FC0020310B /* YDJokeTableViewCell.m in Sources */,
+				5ADC3747216CAB570020310B /* YDMapEngine.m in Sources */,
+				5ADC3719216CAB570020310B /* YDFactoryButton.m in Sources */,
+				5ADC3723216CAB570020310B /* YDMapPlatformPlistParser.m in Sources */,
+				5ADC3709216CAB570020310B /* YDRefresh.m in Sources */,
+				5ADC350A216CA84F0020310B /* YDSingletonPattern.swift in Sources */,
+				5ADC370D216CAB570020310B /* YDMultiLanguage.m in Sources */,
+				5ADC3707216CAB570020310B /* UIView+DDExtension.m in Sources */,
+				5ADC3687216CA9440020310B /* YDModuleRouterUrl.m in Sources */,
+				5ADC3502216CA84F0020310B /* YDSQLBuilder.swift in Sources */,
+				5ADC3703216CAB570020310B /* YDSingletonPattern.m in Sources */,
+				5ADC34F8216CA84F0020310B /* YDSQLiteOpenHelper.swift in Sources */,
+				5ADC374F216CAB570020310B /* UIViewController+YDCategory.m in Sources */,
+				5ADC3662216CA8FC0020310B /* YDJokeController.m in Sources */,
+				5ADC3508216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */,
+				5ADC3678216CA8FC0020310B /* YDMainViewController.m in Sources */,
+				5ADC3731216CAB570020310B /* YDBaiduMapPoiDetailResult.m in Sources */,
+				5ADC374B216CAB570020310B /* NSString+YDCategory.m in Sources */,
+				5ADC371B216CAB570020310B /* YDNetworking.m in Sources */,
+				5ADC3514216CA8780020310B /* YDBuilderSQLController.swift in Sources */,
+				5ADC366A216CA8FC0020310B /* YDMVCStore.m in Sources */,
+				5ADC3512216CA8780020310B /* YDSwiftSingletonController.swift in Sources */,
+				5ADC3733216CAB570020310B /* YDBaiduMapPoiInfo.m in Sources */,
+				5ADC3705216CAB570020310B /* YDRefreshBase.m in Sources */,
+				5ADC3717216CAB570020310B /* YDFactoryImageView.m in Sources */,
+				5ADC3674216CA8FC0020310B /* YDMVCFolderCell.m in Sources */,
+				5ADC34F4216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift in Sources */,
+				5ADC367C216CA8FC0020310B /* YDSingletonController.m in Sources */,
+				5ADC34F2216CA84F0020310B /* YDOrmItem.swift in Sources */,
+				5ADC367E216CA8FC0020310B /* YDFactoryMapController.m in Sources */,
+				5ADC34FE216CA84F0020310B /* YDOrmSQLiteDB.swift in Sources */,
+				5ADC3670216CA8FC0020310B /* YDMVCRecording.m in Sources */,
+				5ADC371F216CAB570020310B /* YDMapPlatform.m in Sources */,
+				5ADC3685216CA9440020310B /* YDSwiftModuleRouterUrl.swift in Sources */,
+				5ADC3664216CA8FC0020310B /* YDJokeNetworking.m in Sources */,
+				5ADC3741216CAB570020310B /* YDAmapMapPoiInfo.m in Sources */,
+				5ADC3506216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */,
+				5ADC34EA216CA84F0020310B /* String-Extras.swift in Sources */,
+				5ADC372D216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */,
+				5ADC3715216CAB570020310B /* YDViewXmlParser.m in Sources */,
+				5ADC3729216CAB570020310B /* YDBaiduMapLocationService.m in Sources */,
+				5ADC34B9216CA0E80020310B /* main.m in Sources */,
+				5ADC371D216CAB570020310B /* YDRouter.m in Sources */,
+				5ADC373F216CAB570020310B /* YDAmapMapSearchResponse.m in Sources */,
+				5ADC366E216CA8FC0020310B /* YDMVCFolder.m in Sources */,
+				5ADC3749216CAB570020310B /* YDPoiSearchRequest.m in Sources */,
+				5ADC34BE216CA1CB0020310B /* YDConstant.m in Sources */,
+				5ADC372F216CAB570020310B /* YDBaiduMapPoiSearch.m in Sources */,
+				5ADC34FC216CA84F0020310B /* YDTableInfo.swift in Sources */,
+				5ADC34F6216CA84F0020310B /* YDOrmKey.swift in Sources */,
+				5ADC373B216CAB570020310B /* YDAmapMapUserLocation.m in Sources */,
+				5ADC3745216CAB570020310B /* YDAmapMapFactory.m in Sources */,
+				5ADC374D216CAB570020310B /* NSDictionary+YDCategory.m in Sources */,
+				5ADC34EE216CA84F0020310B /* YDTableInfoDao.swift in Sources */,
+				5ADC366C216CA8FC0020310B /* YDMVCItem.m in Sources */,
+				5ADC3754216CB3870020310B /* AppDelegate.m in Sources */,
+				5ADC373D216CAB570020310B /* YDAmapMapSearch.m in Sources */,
+				5ADC3737216CAB570020310B /* YDBaiduMapFactory.m in Sources */,
+				5ADC34F0216CA84F0020310B /* YDTableTemplateConfig.swift in Sources */,
+				5ADC3735216CAB570020310B /* YDBaiduMapView.m in Sources */,
+				5ADC34FA216CA84F0020310B /* YDOrm.swift in Sources */,
+				5ADC3739216CAB570020310B /* YDAmapMapLocationService.m in Sources */,
+				5ADC370F216CAB570020310B /* YDMultiLanguageContainer.m in Sources */,
+				5ADC372B216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */,
+				5ADC3725216CAB570020310B /* YDMapPlatformXmlParser.m in Sources */,
+				5ADC3668216CA8FC0020310B /* YDMVCController.m in Sources */,
+				5ADC34B2216C9F9C0020310B /* YDObjectiveCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADC3490216C9C5A0020310B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADC3509216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */,
+				5ADC3673216CA8FC0020310B /* YDMVCRecordingCell.m in Sources */,
+				5ADC3730216CAB570020310B /* YDBaiduMapPoiSearch.m in Sources */,
+				5ADC373E216CAB570020310B /* YDAmapMapSearch.m in Sources */,
+				5ADC371C216CAB570020310B /* YDNetworking.m in Sources */,
+				5ADC3501216CA84F0020310B /* YDSQLiteDB.swift in Sources */,
+				5ADC372A216CAB570020310B /* YDBaiduMapLocationService.m in Sources */,
+				5ADC3744216CAB570020310B /* YDAmapMapView.m in Sources */,
+				5ADC3505216CA84F0020310B /* YDOrmSQLInsertBuilder.swift in Sources */,
+				5ADC3732216CAB570020310B /* YDBaiduMapPoiDetailResult.m in Sources */,
+				5ADC367F216CA8FC0020310B /* YDFactoryMapController.m in Sources */,
+				5ADC3716216CAB570020310B /* YDViewXmlParser.m in Sources */,
+				5ADC34F5216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift in Sources */,
+				5ADC3513216CA8780020310B /* YDSwiftSingletonController.swift in Sources */,
+				5ADC3710216CAB570020310B /* YDMultiLanguageContainer.m in Sources */,
+				5ADC34FF216CA84F0020310B /* YDOrmSQLiteDB.swift in Sources */,
+				5ADC3740216CAB570020310B /* YDAmapMapSearchResponse.m in Sources */,
+				5ADC374A216CAB570020310B /* YDPoiSearchRequest.m in Sources */,
+				5ADC3736216CAB570020310B /* YDBaiduMapView.m in Sources */,
+				5ADC34F7216CA84F0020310B /* YDOrmKey.swift in Sources */,
+				5ADC371A216CAB570020310B /* YDFactoryButton.m in Sources */,
+				5ADC3714216CAB570020310B /* YDViewFactory.m in Sources */,
+				5ADC3515216CA8780020310B /* YDBuilderSQLController.swift in Sources */,
+				5ADC3679216CA8FC0020310B /* YDMainViewController.m in Sources */,
+				5ADC3665216CA8FC0020310B /* YDJokeNetworking.m in Sources */,
+				5ADC3708216CAB570020310B /* UIView+DDExtension.m in Sources */,
+				5ADC3706216CAB570020310B /* YDRefreshBase.m in Sources */,
+				5ADC3724216CAB570020310B /* YDMapPlatformPlistParser.m in Sources */,
+				5ADC367D216CA8FC0020310B /* YDSingletonController.m in Sources */,
+				5ADC370E216CAB570020310B /* YDMultiLanguage.m in Sources */,
+				5ADC34C3216CA47D0020310B /* YDSwiftMainController.swift in Sources */,
+				5ADC34B8216C9FAA0020310B /* YDSwiftAppDelegate.m in Sources */,
+				5ADC34BF216CA1CB0020310B /* YDConstant.m in Sources */,
+				5ADC3677216CA8FC0020310B /* YDFactoryController.m in Sources */,
+				5ADC3750216CAB570020310B /* UIViewController+YDCategory.m in Sources */,
+				5ADC34EF216CA84F0020310B /* YDTableInfoDao.swift in Sources */,
+				5ADC34EB216CA84F0020310B /* String-Extras.swift in Sources */,
+				5ADC3507216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */,
+				5ADC372E216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */,
+				5ADC370A216CAB570020310B /* YDRefresh.m in Sources */,
+				5ADC34F3216CA84F0020310B /* YDOrmItem.swift in Sources */,
+				5ADC3663216CA8FC0020310B /* YDJokeController.m in Sources */,
+				5ADC3748216CAB570020310B /* YDMapEngine.m in Sources */,
+				5ADC3738216CAB570020310B /* YDBaiduMapFactory.m in Sources */,
+				5ADC3755216CB3870020310B /* AppDelegate.m in Sources */,
+				5ADC371E216CAB570020310B /* YDRouter.m in Sources */,
+				5ADC373C216CAB570020310B /* YDAmapMapUserLocation.m in Sources */,
+				5ADC3718216CAB570020310B /* YDFactoryImageView.m in Sources */,
+				5ADC3746216CAB570020310B /* YDAmapMapFactory.m in Sources */,
+				5ADC3671216CA8FC0020310B /* YDMVCRecording.m in Sources */,
+				5ADC366F216CA8FC0020310B /* YDMVCFolder.m in Sources */,
+				5ADC3720216CAB570020310B /* YDMapPlatform.m in Sources */,
+				5ADC34F1216CA84F0020310B /* YDTableTemplateConfig.swift in Sources */,
+				5ADC3742216CAB570020310B /* YDAmapMapPoiInfo.m in Sources */,
+				5ADC367B216CA8FC0020310B /* YDNetworkingController.m in Sources */,
+				5ADC34FD216CA84F0020310B /* YDTableInfo.swift in Sources */,
+				5ADC3726216CAB570020310B /* YDMapPlatformXmlParser.m in Sources */,
+				5ADC3667216CA8FC0020310B /* YDJokeTableViewCell.m in Sources */,
+				5ADC3704216CAB570020310B /* YDSingletonPattern.m in Sources */,
+				5ADC3492216C9C5A0020310B /* main.m in Sources */,
+				5ADC34FB216CA84F0020310B /* YDOrm.swift in Sources */,
+				5ADC3669216CA8FC0020310B /* YDMVCController.m in Sources */,
+				5ADC34F9216CA84F0020310B /* YDSQLiteOpenHelper.swift in Sources */,
+				5ADC3503216CA84F0020310B /* YDSQLBuilder.swift in Sources */,
+				5ADC366B216CA8FC0020310B /* YDMVCStore.m in Sources */,
+				5ADC374E216CAB570020310B /* NSDictionary+YDCategory.m in Sources */,
+				5ADC3688216CA9440020310B /* YDModuleRouterUrl.m in Sources */,
+				5ADC374C216CAB570020310B /* NSString+YDCategory.m in Sources */,
+				5ADC3734216CAB570020310B /* YDBaiduMapPoiInfo.m in Sources */,
+				5ADC372C216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */,
+				5ADC3675216CA8FC0020310B /* YDMVCFolderCell.m in Sources */,
+				5ADC373A216CAB570020310B /* YDAmapMapLocationService.m in Sources */,
+				5ADC366D216CA8FC0020310B /* YDMVCItem.m in Sources */,
+				5ADC350B216CA84F0020310B /* YDSingletonPattern.swift in Sources */,
+				5ADC3686216CA9440020310B /* YDSwiftModuleRouterUrl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5AE2297D216F4E860058C0C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE2297C216F4E860058C0C5 /* en */,
+				5AE2297E216F4E9E0058C0C5 /* fr */,
+				5AE2297F216F4EA40058C0C5 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ADC348A216C9C4D0020310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5ADC348B216C9C4D0020310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ADC348D216C9C4D0020310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED7BFFE614F6748ABA69157 /* Pods-defaults-YDObjectiveCKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_OC;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_OC;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDObjectiveCKit/YDClass/YDAppDelegate/YDObjectiveCInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5ADC348E216C9C4D0020310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59EDC63E8DEECFA288E9C65A /* Pods-defaults-YDObjectiveCKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_OC;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_OC;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDObjectiveCKit/YDClass/YDAppDelegate/YDObjectiveCInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5ADC349A216C9C5A0020310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A2892598FAB1217EA2A51C /* Pods-defaults-YDSwiftKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDSwiftKit/YDClass/YDAppDelegage/YDSwiftInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5ADC349B216C9C5A0020310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13CF037865E0D2AC41717AA8 /* Pods-defaults-YDSwiftKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45Q4N5684Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDSwiftKit/YDClass/YDAppDelegage/YDSwiftInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDSwiftKitBridgingHeader.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ADC3471216C9C4B0020310B /* Build configuration list for PBXProject "YDAppleKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADC348A216C9C4D0020310B /* Debug */,
+				5ADC348B216C9C4D0020310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ADC348C216C9C4D0020310B /* Build configuration list for PBXNativeTarget "YDObjectiveCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADC348D216C9C4D0020310B /* Debug */,
+				5ADC348E216C9C4D0020310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ADC3499216C9C5A0020310B /* Build configuration list for PBXNativeTarget "YDSwiftKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADC349A216C9C5A0020310B /* Debug */,
+				5ADC349B216C9C5A0020310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ADC346E216C9C4B0020310B /* Project object */;
+}
