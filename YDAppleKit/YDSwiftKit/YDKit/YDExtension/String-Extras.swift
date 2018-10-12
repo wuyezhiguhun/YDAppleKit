@@ -48,8 +48,8 @@ extension String {
         return res as String
     }
     
-//    func range() -> Range<String.Index> {
-//        return Range<String.Index>(startIndex ..< endIndex)
-//    }
+    func range() -> Range<String.Index> {
+        return Range(NSRange(location: 0, length: self.count - 1), in: self)!
+    }
     
 }

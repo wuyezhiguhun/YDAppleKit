@@ -8,8 +8,25 @@
 
 import UIKit
 
-class YDOrmSQLInsertBuilder: YDSQLInsertBuilder {
+class YDOrmSQLInsertBuilder<T: NSObject>: YDSQLInsertBuilder {
 
+    func insertIntoTableOrm(orm: YDOrm, obj: T) -> YDSQLInsertBuilder {
+        var columns = Array<String>()
+        var values = Array<Any>()
+        columns.append((orm.key?.column)!)
+        
+        //采用KVC获取属性的值
+        values.append(obj.value(forKey: (orm.key?.property)!)!)
+        
+        //普通字段没有拼接
+        for item in orm.items! {
+            columns.append(item.column)
+            values.append(obj.value(forKey: item.property)!)
+        }
+        
+        return self.insert().into().table(orm.tableName).colums(columns).values(values)
+    }
+    
     func insertTableOrm(orm: YDOrm, table: YDTableInfo) -> YDSQLInsertBuilder {
         var columns = Array<String>()
         var values = Array<Any>()
