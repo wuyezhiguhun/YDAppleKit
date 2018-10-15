@@ -247,6 +247,10 @@
 		5ADC3755216CB3870020310B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3752216CB3860020310B /* AppDelegate.m */; };
 		5AE2297A216F4E860058C0C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AE2297D216F4E860058C0C5 /* Localizable.strings */; };
 		5AE2297B216F4E860058C0C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AE2297D216F4E860058C0C5 /* Localizable.strings */; };
+		5AE9EBCB2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9EBCA2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift */; };
+		5AE9EBCC2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9EBCA2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift */; };
+		5AE9EBCE217476E1009C7A47 /* YDSQLCreateTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9EBCD217476E1009C7A47 /* YDSQLCreateTableBuilder.swift */; };
+		5AE9EBCF217476E1009C7A47 /* YDSQLCreateTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9EBCD217476E1009C7A47 /* YDSQLCreateTableBuilder.swift */; };
 		EC1432CE4D64E8B88D64A131 /* libPods-defaults-YDObjectiveCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD88D8F9C7A25E1356D0C51C /* libPods-defaults-YDObjectiveCKit.a */; };
 /* End PBXBuildFile section */
 
@@ -454,6 +458,8 @@
 		5AE2297C216F4E860058C0C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5AE2297E216F4E9E0058C0C5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5AE2297F216F4EA40058C0C5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5AE9EBCA2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmSQLCreateTableBuilder.swift; sourceTree = "<group>"; };
+		5AE9EBCD217476E1009C7A47 /* YDSQLCreateTableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLCreateTableBuilder.swift; sourceTree = "<group>"; };
 		6743E4ED25198DBCAC90AA58 /* libPods-defaults-YDSwiftKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-YDSwiftKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A2892598FAB1217EA2A51C /* Pods-defaults-YDSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
 		EED7BFFE614F6748ABA69157 /* Pods-defaults-YDObjectiveCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDObjectiveCKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDObjectiveCKit/Pods-defaults-YDObjectiveCKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -739,6 +745,7 @@
 				5AA52B462170B0C100DB0421 /* YDOrmSQLDeleteBuilder.swift */,
 				5AA52B4C2170B1C200DB0421 /* YDOrmSQLSelectBuilder.swift */,
 				5AA52B522170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift */,
+				5AE9EBCA2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift */,
 			);
 			path = Orm;
 			sourceTree = "<group>";
@@ -750,6 +757,7 @@
 				5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */,
 				5AA52B492170B10300DB0421 /* YDSQLDeleteBuilder.swift */,
 				5AA52B4F2170B2A800DB0421 /* YDSQLUpdateBuilder.swift */,
+				5AE9EBCD217476E1009C7A47 /* YDSQLCreateTableBuilder.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1610,6 +1618,7 @@
 				5ADC3676216CA8FC0020310B /* YDFactoryController.m in Sources */,
 				5ADC367A216CA8FC0020310B /* YDNetworkingController.m in Sources */,
 				5ADC3666216CA8FC0020310B /* YDJokeTableViewCell.m in Sources */,
+				5AE9EBCE217476E1009C7A47 /* YDSQLCreateTableBuilder.swift in Sources */,
 				5AA52B4D2170B1C200DB0421 /* YDOrmSQLSelectBuilder.swift in Sources */,
 				5ADC3747216CAB570020310B /* YDMapEngine.m in Sources */,
 				5ADC3719216CAB570020310B /* YDFactoryButton.m in Sources */,
@@ -1645,6 +1654,7 @@
 				5AA52B472170B0C100DB0421 /* YDOrmSQLDeleteBuilder.swift in Sources */,
 				5ADC34F2216CA84F0020310B /* YDOrmItem.swift in Sources */,
 				5ADC367E216CA8FC0020310B /* YDFactoryMapController.m in Sources */,
+				5AE9EBCB2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift in Sources */,
 				5ADC34FE216CA84F0020310B /* YDOrmSQLiteDB.swift in Sources */,
 				5ADC3670216CA8FC0020310B /* YDMVCRecording.m in Sources */,
 				5ADC371F216CAB570020310B /* YDMapPlatform.m in Sources */,
@@ -1731,6 +1741,7 @@
 				5ADC3750216CAB570020310B /* UIViewController+YDCategory.m in Sources */,
 				5ADC34EF216CA84F0020310B /* YDTableInfoDao.swift in Sources */,
 				5ADC34EB216CA84F0020310B /* String-Extras.swift in Sources */,
+				5AE9EBCF217476E1009C7A47 /* YDSQLCreateTableBuilder.swift in Sources */,
 				5ADC3507216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */,
 				5ADC372E216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5ADC370A216CAB570020310B /* YDRefresh.m in Sources */,
@@ -1769,6 +1780,7 @@
 				5AA52B4E2170B1C200DB0421 /* YDOrmSQLSelectBuilder.swift in Sources */,
 				5ADC3734216CAB570020310B /* YDBaiduMapPoiInfo.m in Sources */,
 				5ADC372C216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */,
+				5AE9EBCC2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift in Sources */,
 				5ADC3675216CA8FC0020310B /* YDMVCFolderCell.m in Sources */,
 				5ADC373A216CAB570020310B /* YDAmapMapLocationService.m in Sources */,
 				5ADC366D216CA8FC0020310B /* YDMVCItem.m in Sources */,

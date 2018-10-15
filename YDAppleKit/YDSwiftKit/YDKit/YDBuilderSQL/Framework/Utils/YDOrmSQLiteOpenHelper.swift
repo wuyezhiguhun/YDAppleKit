@@ -8,6 +8,6 @@
 
 import UIKit
 
-class YDOrmSQLiteOpenHelper: NSObject {
+class YDOrmSQLiteOpenHelper: YDSQLiteOpenHelper {
 
 }

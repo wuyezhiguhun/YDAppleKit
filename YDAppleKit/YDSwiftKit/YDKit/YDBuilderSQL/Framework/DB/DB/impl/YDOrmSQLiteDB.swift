@@ -10,4 +10,7 @@ import UIKit
 
 class YDOrmSQLiteDB: YDSQLiteDB {
 
+    let createBuilder = YDOrmSQLCreateTableBuilder()
+    
+    
 }

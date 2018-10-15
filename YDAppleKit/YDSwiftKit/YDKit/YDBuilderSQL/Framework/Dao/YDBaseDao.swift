@@ -24,7 +24,10 @@ class YDBaseDao<T: NSObject>: NSObject {
     //插入数据
     func insert(obj: T) -> Int {
         let orm = getOrm(cls: T.classForCoder())
-//        let sql = insertBuilder.insertTableOrm(orm: orm, table: <#T##YDTableInfo#>)
+        //根据ORM构建SQL语句
+        let sql = insertBuilder.insertIntoTableOrm(orm: orm, obj: obj).build()
+        print("构建的SQL： \(sql)")
+        return Int((self.helper?.getDb().execute(sql))!)
         
         
     }

@@ -23,5 +23,8 @@ class YDSQLiteOpenHelper: NSObject {
         self.dbVersion = dbVersion
 
     }
-    
+ 
+    func getDb() -> YDOrmSQLiteDB {
+        return self.db!
+    }
 }
