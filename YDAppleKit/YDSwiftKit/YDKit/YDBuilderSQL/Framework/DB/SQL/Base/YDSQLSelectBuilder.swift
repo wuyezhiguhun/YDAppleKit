@@ -25,6 +25,15 @@ class YDSQLSelectBuilder: YDSQLBuilder {
         self.sql.append("from ")
         return self
     }
+    
+    func selectAllFromTable(table: String) -> YDSQLSelectBuilder {
+        return self.select().all().from().table(table) as! YDSQLSelectBuilder
+    }
+    
+    func selectAllFromTable(table: String, name: String, value: Any) -> YDSQLSelectBuilder {
+        return self.select().all().from().table(table).wh().whAnd(name, value: value) as! YDSQLSelectBuilder
+    }
+    
     func selectAllFromTableWhereForma(table: String, wh: [String: Any]) -> YDSQLSelectBuilder {
         return self.select().all().from().table(table).wh().whOrFormat(wh) as! YDSQLSelectBuilder
     }

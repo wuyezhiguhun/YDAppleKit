@@ -75,6 +75,11 @@ class YDSQLBuilder: NSObject {
     func whAnd(_ wh: [String: Any]) -> YDSQLBuilder {
         return self.wh(isFormat: false, isAnd: true, isOr: false, wh)
     }
+    func whAnd(_ name: String, value: Any) -> YDSQLBuilder {
+        var wh = [String: Any]()
+        wh[name] = value
+        return self.wh(isFormat: false, isAnd: true, isOr: false, wh)
+    }
     func whAndFormat(_ wh: [String: Any]) -> YDSQLBuilder {
         return self.wh(isFormat: true, isAnd: true, isOr: false, wh)
     }

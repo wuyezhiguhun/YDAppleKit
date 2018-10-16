@@ -9,5 +9,20 @@
 import UIKit
 
 class YDOrmSQLUpdateBuilder<T: NSObject>: YDSQLUpdateBuilder {
+    
+    //默认情况下是根据主键更新
+    func updateTable(orm: YDOrm, obj: T) -> YDSQLUpdateBuilder {
+        //需要更新的字段
+        var columns = [String: Any]()
+        for item in orm.items! {
+            let name = item.property
+            let value = obj.value(forKey: name)
+            columns[item.column] = value
+        }
+        //查询条件
+        let name = orm.key?.column
+        let value = obj.value(forKey: (orm.key?.property)!)
+        return self
+    }
 
 }

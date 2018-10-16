@@ -27,8 +27,33 @@ class YDBaseDao<T: NSObject>: NSObject {
         //根据ORM构建SQL语句
         let sql = insertBuilder.insertIntoTableOrm(orm: orm, obj: obj).build()
         print("构建的SQL： \(sql)")
-        return Int((self.helper?.getDb().execute(sql))!)
-        
+        return Int((self.helper?.getDb().execute(sql: sql))!)
+    }
+    
+    //更新用户信息
+    func update(obj: T) -> Int {
+        let orm = getOrm(cls: obj.classForCoder)
+        let sql = updateBuilder.updateTable(orm: orm, obj: obj).build()
+        return Int((self.helper?.getDb().execute(sql: sql))!)
+    }
+    
+    //删除指定用户
+    func delete(obj: T) -> Int {
+        //构建SQL
+        let orm = getOrm(cls: obj.classForCoder)
+        let sql = deleteBuilder.deleteFromTable(orm: orm, obj: obj).build()
+        return Int((self.helper?.getDb().execute(sql: sql))!)
+    }
+    
+    //查询单个用户（根据主键查询）
+    func select(id: Int) -> T {
+        let orm = getOrm(cls: T.classForCoder())
+        let sql = selectBuilder.selectAllTable(orm: orm, id: id).build()
+        return self.select(orm: orm, sql: sql)[0]
+    }
+    
+    private func select(orm: YDOrm, sql: String) -> Array<T> {
+        let dicArray: [[String: Any]] = (self.helper?.getDb().query(sql: sql))
         
     }
     
