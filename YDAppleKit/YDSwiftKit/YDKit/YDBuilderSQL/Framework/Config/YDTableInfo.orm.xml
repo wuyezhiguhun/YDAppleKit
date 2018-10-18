@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <orm tableName="student"
-     className="YDTableInfo"
+     className="YDUser"
      daoName="YDTableInfoDao">
      
      <!--每一张表对应了很多字段,字段对应属性-->

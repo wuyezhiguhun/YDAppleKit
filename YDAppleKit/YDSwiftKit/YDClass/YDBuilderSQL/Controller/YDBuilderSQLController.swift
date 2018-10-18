@@ -212,6 +212,22 @@ extension YDBuilderSQLController {
     //测试五 测试DAO
     func testFive() {
         YDTableTemplateConfig.sharedInstace.initXml()
+        let helper = YDOrmSQLiteOpenHelper()
+        
+//        let dao = YDBaseDao<YDUser>(helper: helper)
+        let baseDao = YDBaseDao<YDUser>()
+        let user = YDUser()
+        user.tableId = 1
+        user.tableName = "Dream"
+        user.tableAge = 20
+        let result = baseDao.insert(obj: user)
+        
+        self.sqlLabel.text = String(result)
+        print("结果：\(result)")
+        
+        
+        
+        
 //        let dao = <#value#>
         
     }

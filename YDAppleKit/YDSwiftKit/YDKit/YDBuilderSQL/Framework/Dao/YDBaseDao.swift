@@ -21,6 +21,10 @@ class YDBaseDao<T: NSObject>: NSObject {
         self.helper = helper
     }
     
+    override init() {
+        super.init()
+    }
+    
     //插入数据
     func insert(obj: T) -> Int {
         let orm = getOrm(cls: T.classForCoder())
@@ -53,8 +57,24 @@ class YDBaseDao<T: NSObject>: NSObject {
     }
     
     private func select(orm: YDOrm, sql: String) -> Array<T> {
-        let dicArray: [[String: Any]] = (self.helper?.getDb().query(sql: sql))
-        
+        let dicArray: [[String: Any]] = (self.helper?.getDb().query(sql: sql))!
+        var obj: T? = nil
+        var array = Array<T>()
+        for item in dicArray {
+            //创建对象
+            obj = T()
+            //首先获取主键
+            var value = item[(orm.key?.column)!]
+            //通过KVC赋值
+            obj?.setValue(value, forKey: (orm.key?.property)!)
+            //接下来获取普通字段
+            for ormItem in orm.items! {
+                value = item[ormItem.column]
+                obj?.setValue(value, forKey: ormItem.property)
+            }
+            array.append(obj!)
+        }
+        return array
     }
     
     /**

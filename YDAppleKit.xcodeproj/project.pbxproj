@@ -24,6 +24,14 @@
 		5AA52B512170B2A800DB0421 /* YDSQLUpdateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B4F2170B2A800DB0421 /* YDSQLUpdateBuilder.swift */; };
 		5AA52B532170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B522170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift */; };
 		5AA52B542170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B522170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift */; };
+		5AB970B02176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970AF2176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift */; };
+		5AB970B12176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970AF2176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift */; };
+		5AB970B32176E9F30060E39D /* YDSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B22176E9F30060E39D /* YDSQLAlterTableBuilder.swift */; };
+		5AB970B42176E9F30060E39D /* YDSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B22176E9F30060E39D /* YDSQLAlterTableBuilder.swift */; };
+		5AB970B62177390E0060E39D /* YDOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B52177390D0060E39D /* YDOrder.swift */; };
+		5AB970B72177390E0060E39D /* YDOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B52177390D0060E39D /* YDOrder.swift */; };
+		5AB970BA2177394F0060E39D /* YDUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B92177394F0060E39D /* YDUser.swift */; };
+		5AB970BB2177394F0060E39D /* YDUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B92177394F0060E39D /* YDUser.swift */; };
 		5ACBA6152175F1B500643733 /* YDSQLSelectTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBA6142175F1B500643733 /* YDSQLSelectTableBuilder.swift */; };
 		5ACBA6162175F1B500643733 /* YDSQLSelectTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBA6142175F1B500643733 /* YDSQLSelectTableBuilder.swift */; };
 		5ADC3492216C9C5A0020310B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3488216C9C4D0020310B /* main.m */; };
@@ -267,6 +275,10 @@
 		5AA52B4C2170B1C200DB0421 /* YDOrmSQLSelectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmSQLSelectBuilder.swift; sourceTree = "<group>"; };
 		5AA52B4F2170B2A800DB0421 /* YDSQLUpdateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLUpdateBuilder.swift; sourceTree = "<group>"; };
 		5AA52B522170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmSQLUpdateBuilder.swift; sourceTree = "<group>"; };
+		5AB970AF2176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmSQLAlterTableBuilder.swift; sourceTree = "<group>"; };
+		5AB970B22176E9F30060E39D /* YDSQLAlterTableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLAlterTableBuilder.swift; sourceTree = "<group>"; };
+		5AB970B52177390D0060E39D /* YDOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrder.swift; sourceTree = "<group>"; };
+		5AB970B92177394F0060E39D /* YDUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDUser.swift; sourceTree = "<group>"; };
 		5ACBA6142175F1B500643733 /* YDSQLSelectTableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLSelectTableBuilder.swift; sourceTree = "<group>"; };
 		5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDObjectiveCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADC3488216C9C4D0020310B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -489,6 +501,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB970B82177392B0060E39D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AB970B92177394F0060E39D /* YDUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5ADC346D216C9C4B0020310B = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +721,7 @@
 			isa = PBXGroup;
 			children = (
 				5ADC34DB216CA84F0020310B /* YDTableInfo.swift */,
+				5AB970B52177390D0060E39D /* YDOrder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -749,6 +770,7 @@
 				5AA52B4C2170B1C200DB0421 /* YDOrmSQLSelectBuilder.swift */,
 				5AA52B522170B2E400DB0421 /* YDOrmSQLUpdateBuilder.swift */,
 				5AE9EBCA2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift */,
+				5AB970AF2176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift */,
 			);
 			path = Orm;
 			sourceTree = "<group>";
@@ -762,6 +784,7 @@
 				5AA52B492170B10300DB0421 /* YDSQLDeleteBuilder.swift */,
 				5AA52B4F2170B2A800DB0421 /* YDSQLUpdateBuilder.swift */,
 				5AE9EBCD217476E1009C7A47 /* YDSQLCreateTableBuilder.swift */,
+				5AB970B22176E9F30060E39D /* YDSQLAlterTableBuilder.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -793,6 +816,7 @@
 		5ADC350F216CA8780020310B /* YDBuilderSQL */ = {
 			isa = PBXGroup;
 			children = (
+				5AB970B82177392B0060E39D /* Model */,
 				5ADC3510216CA8780020310B /* Controller */,
 			);
 			path = YDBuilderSQL;
@@ -1632,12 +1656,14 @@
 				5ADC350A216CA84F0020310B /* YDSingletonPattern.swift in Sources */,
 				5ADC370D216CAB570020310B /* YDMultiLanguage.m in Sources */,
 				5ADC3707216CAB570020310B /* UIView+DDExtension.m in Sources */,
+				5AB970B32176E9F30060E39D /* YDSQLAlterTableBuilder.swift in Sources */,
 				5ADC3687216CA9440020310B /* YDModuleRouterUrl.m in Sources */,
 				5AA52B412170AD5F00DB0421 /* YDOrderDao.swift in Sources */,
 				5ADC3502216CA84F0020310B /* YDSQLBuilder.swift in Sources */,
 				5ADC3703216CAB570020310B /* YDSingletonPattern.m in Sources */,
 				5ADC34F8216CA84F0020310B /* YDSQLiteOpenHelper.swift in Sources */,
 				5ADC374F216CAB570020310B /* UIViewController+YDCategory.m in Sources */,
+				5AB970B02176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift in Sources */,
 				5ADC3662216CA8FC0020310B /* YDJokeController.m in Sources */,
 				5ADC3508216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */,
 				5ADC3678216CA8FC0020310B /* YDMainViewController.m in Sources */,
@@ -1692,7 +1718,9 @@
 				5ADC3737216CAB570020310B /* YDBaiduMapFactory.m in Sources */,
 				5ADC34F0216CA84F0020310B /* YDTableTemplateConfig.swift in Sources */,
 				5ADC3735216CAB570020310B /* YDBaiduMapView.m in Sources */,
+				5AB970BA2177394F0060E39D /* YDUser.swift in Sources */,
 				5ADC34FA216CA84F0020310B /* YDOrm.swift in Sources */,
+				5AB970B62177390E0060E39D /* YDOrder.swift in Sources */,
 				5ADC3739216CAB570020310B /* YDAmapMapLocationService.m in Sources */,
 				5ADC370F216CAB570020310B /* YDMultiLanguageContainer.m in Sources */,
 				5ADC372B216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */,
@@ -1741,16 +1769,19 @@
 				5ADC370E216CAB570020310B /* YDMultiLanguage.m in Sources */,
 				5ADC34C3216CA47D0020310B /* YDSwiftMainController.swift in Sources */,
 				5ADC34B8216C9FAA0020310B /* YDSwiftAppDelegate.m in Sources */,
+				5AB970B42176E9F30060E39D /* YDSQLAlterTableBuilder.swift in Sources */,
 				5ADC34BF216CA1CB0020310B /* YDConstant.m in Sources */,
 				5ADC3677216CA8FC0020310B /* YDFactoryController.m in Sources */,
 				5ADC3750216CAB570020310B /* UIViewController+YDCategory.m in Sources */,
 				5ADC34EF216CA84F0020310B /* YDTableInfoDao.swift in Sources */,
+				5AB970B72177390E0060E39D /* YDOrder.swift in Sources */,
 				5ADC34EB216CA84F0020310B /* String-Extras.swift in Sources */,
 				5AE9EBCF217476E1009C7A47 /* YDSQLCreateTableBuilder.swift in Sources */,
 				5ADC3507216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */,
 				5ADC372E216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5ADC370A216CAB570020310B /* YDRefresh.m in Sources */,
 				5AA52B452170AD7A00DB0421 /* YDBaseDao.swift in Sources */,
+				5AB970BB2177394F0060E39D /* YDUser.swift in Sources */,
 				5AA52B4B2170B10300DB0421 /* YDSQLDeleteBuilder.swift in Sources */,
 				5ADC34F3216CA84F0020310B /* YDOrmItem.swift in Sources */,
 				5ADC3663216CA8FC0020310B /* YDJokeController.m in Sources */,
@@ -1775,6 +1806,7 @@
 				5ADC3667216CA8FC0020310B /* YDJokeTableViewCell.m in Sources */,
 				5ADC3704216CAB570020310B /* YDSingletonPattern.m in Sources */,
 				5ADC3492216C9C5A0020310B /* main.m in Sources */,
+				5AB970B12176E8DC0060E39D /* YDOrmSQLAlterTableBuilder.swift in Sources */,
 				5ADC34FB216CA84F0020310B /* YDOrm.swift in Sources */,
 				5ADC3669216CA8FC0020310B /* YDMVCController.m in Sources */,
 				5ADC34F9216CA84F0020310B /* YDSQLiteOpenHelper.swift in Sources */,
