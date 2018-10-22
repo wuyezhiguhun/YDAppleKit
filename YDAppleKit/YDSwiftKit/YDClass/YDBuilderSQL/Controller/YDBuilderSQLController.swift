@@ -82,7 +82,7 @@ class YDBuilderSQLController: UIViewController, UITableViewDelegate, UITableView
         return table
     }()
     lazy var titleList: [String] = {
-        let list: [String] = ["测试壹","测试贰","测试叁","测试肆","测试伍","测试陆","测试柒","测试捌","测试玖","测试拾"]
+        let list: [String] = ["测试壹","测试贰","测试叁","测试肆","测试伍","测试陆 - 测试创建数据库","测试柒","测试捌","测试玖","测试拾"]
         return list
     }()
 
@@ -215,12 +215,12 @@ extension YDBuilderSQLController {
         let helper = YDOrmSQLiteOpenHelper()
         
 //        let dao = YDBaseDao<YDUser>(helper: helper)
-        let baseDao = YDBaseDao<YDUser>()
-        let user = YDUser()
-        user.tableId = 1
-        user.tableName = "Dream"
-        user.tableAge = 20
-        let result = baseDao.insert(obj: user)
+        let baseDao = YDBaseDao<YDTableInfo>(helper: helper)
+        let tableInfo = YDTableInfo()
+        tableInfo.tableId = 1
+        tableInfo.tableName = "student"
+        tableInfo.tableAge = 20
+        let result = baseDao.insert(obj: tableInfo)
         
         self.sqlLabel.text = String(result)
         print("结果：\(result)")
@@ -231,9 +231,19 @@ extension YDBuilderSQLController {
 //        let dao = <#value#>
         
     }
-    //测试六
+    //测试六 - 测试创建数据库
     func testSix() {
+        YDTableTemplateConfig.sharedInstace.initXml()
+        let helper = YDOrmSQLiteOpenHelper()
+        let baseDao = YDBaseDao<YDTableInfo>(helper: helper)
+        let tableInfo = YDTableInfo()
+        tableInfo.tableId = 1
+        tableInfo.tableName = "student"
+        tableInfo.tableAge = 20
+        let result = baseDao.insert(obj: tableInfo)
         
+        self.sqlLabel.text = String(result)
+        print("结果：\(result)")
     }
     //测试七
     func testSeven() {

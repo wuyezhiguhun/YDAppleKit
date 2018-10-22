@@ -13,14 +13,14 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
     let LABEL_ORM:String = "orm"
     let LABEL_KEY:String = "key"
     let LABEL_ITEM:String = "item"
-    let ATTRIBUTE_BEAN_NAME:String = "beanName"
+    let ATTRIBUTE_BEAN_NAME:String = "className"
     let ATTRIBUTE_DAO_NAME:String = "daoName"
     let ATTRIBUTE_TABLE_NAME:String = "tableName"
     let ATTRIBUTE_COLUMN:String = "column"
     let ATTRIBUTE_IDENTITY:String = "identity"
     let ATTRIBUTE_PROPERTY:String = "property"
     let ATTRIBUTE_COLUMN_TYPE:String = "columnType"
-    let ATTRIBUTE_TYPE:String = "type"
+    let ATTRIBUTE_TYPE:String = "propertyType"
     
     var parser: XMLParser!
     var orm:YDOrm!
@@ -43,7 +43,7 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
             self.orm.className = attributeDict[ATTRIBUTE_BEAN_NAME]!
             self.orm.tableName = attributeDict[ATTRIBUTE_TABLE_NAME]!
             self.orm.daoName = attributeDict[ATTRIBUTE_DAO_NAME]!
-            self.ormDic["Dream_Architect_Orm." + self.orm.className] = self.orm
+            self.ormDic["YDSwiftKit." + self.orm.className] = self.orm
             break
         case LABEL_KEY:
             self.key = YDOrmKey()
