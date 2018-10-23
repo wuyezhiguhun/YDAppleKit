@@ -19,6 +19,14 @@ typedef NS_ENUM(NSInteger, YDAppType){
 @property (nonatomic, assign, readonly) YDAppType appType;
 /** AppDelegate 名字 */
 @property (nonatomic, copy, readonly) NSString *appDelegateName;
+/** 百度AI AppID */
+@property (nonatomic, copy, readonly) NSString *baiduAiAppID;
+/** 百度AI API key */
+@property (nonatomic, copy, readonly) NSString *baiduAiApiKey;
+/** 百度AI Secret Key */
+@property (nonatomic, copy, readonly) NSString *baiduAiSecretKey;
+
+
 
 /** 创建单例 */
 + (instancetype)shareConstant;

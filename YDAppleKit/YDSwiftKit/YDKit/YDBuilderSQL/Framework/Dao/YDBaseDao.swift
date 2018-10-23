@@ -68,7 +68,7 @@ class YDBaseDao<T: NSObject>: NSObject {
             //通过KVC赋值
             obj?.setValue(value, forKey: (orm.key?.property)!)
             //接下来获取普通字段
-            for ormItem in orm.items! {
+            for ormItem in orm.items {
                 value = item[ormItem.column]
                 obj?.setValue(value, forKey: ormItem.property)
             }

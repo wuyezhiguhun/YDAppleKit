@@ -72,4 +72,26 @@ static YDConstant *constant = nil;
     return @"YDObjectiveCAppDelegate";
 }
 
+/** 百度AI AppID */
+- (NSString *)baiduAiAppID {
+    if (self.appType == YDAppTypeObjectC) {
+        return @"14521919";
+    }
+    return @"14521919";
+}
+/** 百度AI API key */
+- (NSString *)baiduAiApiKey {
+    if (self.appType == YDAppTypeObjectC) {
+        return @"8TRBSX66tMdGfYGQUg5HjvBC";
+    }
+    return @"8TRBSX66tMdGfYGQUg5HjvBC";
+}
+/** 百度AI Secret Key */
+- (NSString *)baiduAiSecretKey {
+    if (self.appType == YDAppTypeObjectC) {
+        return @"a8zwtdCGcFG4fGGqO7WDgLpoTgozsqSX";
+    }
+    return @"a8zwtdCGcFG4fGGqO7WDgLpoTgozsqSX";
+}
+
 @end

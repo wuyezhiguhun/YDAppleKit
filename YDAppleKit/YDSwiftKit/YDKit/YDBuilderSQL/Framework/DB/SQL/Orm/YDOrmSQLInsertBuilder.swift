@@ -19,7 +19,7 @@ class YDOrmSQLInsertBuilder<T: NSObject>: YDSQLInsertBuilder {
         values.append(obj.value(forKey: (orm.key?.property)!)!)
         
         //普通字段没有拼接
-        for item in orm.items! {
+        for item in orm.items {
             columns.append(item.column)
             values.append(obj.value(forKey: item.property)!)
         }
@@ -31,10 +31,10 @@ class YDOrmSQLInsertBuilder<T: NSObject>: YDSQLInsertBuilder {
         var columns = Array<String>()
         var values = Array<Any>()
         columns.append((orm.key?.column)!)
-        values.append(table.value(forKey: (orm.key?.property)!))
-        for item in orm.items! {
+        values.append(table.value(forKey: (orm.key?.property)!)!)
+        for item in orm.items {
             columns.append(item.column)
-            values.append(table.value(forKey: item.property))
+            values.append(table.value(forKey: item.property)!)
         }
         return self.insert().into().table(orm.tableName).colums(columns).values(values)
     }

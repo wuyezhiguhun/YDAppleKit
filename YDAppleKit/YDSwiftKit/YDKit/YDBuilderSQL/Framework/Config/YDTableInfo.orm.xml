@@ -6,7 +6,7 @@
      
      <!--每一张表对应了很多字段,字段对应属性-->
      <key
-     column="id"
+     column="student_id"
      columnType="integer"
      property="tableId"
      propertyType="Int"
@@ -15,14 +15,14 @@
      
      <!--普通字段-->
      <item
-     column="name"
+     column="student_name"
      columnType="text"
      property="tableName"
      propertyType="String"
      isNull="false"/>
      
      <item
-     column="age"
+     column="student_age"
      columnType="integer"
      property="tableAge"
      propertyType="Int"

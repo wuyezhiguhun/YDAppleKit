@@ -15,6 +15,6 @@ class YDOrm: NSObject {
     var daoName:String = ""
     
     var key:YDOrmKey?
-    var items:Array<YDOrmItem>?
+    var items:Array<YDOrmItem> = Array<YDOrmItem>()
     
 }

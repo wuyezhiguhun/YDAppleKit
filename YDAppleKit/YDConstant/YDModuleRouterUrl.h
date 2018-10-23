@@ -20,6 +20,8 @@ FOUNDATION_EXPORT NSString * const YDModuleRouterSingletonUrl;
 FOUNDATION_EXPORT NSString * const YDModuleRoyterJokeDaquanUrl;
 /** MVC架构 */
 FOUNDATION_EXPORT NSString * const YDModuleRouterMVCUrl;
+/** 百度AI学习 */
+FOUNDATION_EXPORT NSString * const YDModuleRouterBaiduAIUrl;
 
 
 @interface YDModuleRouterUrl : NSObject

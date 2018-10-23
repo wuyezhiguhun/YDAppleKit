@@ -59,12 +59,14 @@
  * @pram urlString URL
  * @pram parameters 请求参数
  * @pram error 错误
+ * @pram completionError 请求完成失败回调
  * @pram completionHandler 请求完成Block
  */
 + (void)POSTWithURLString:(NSString *)urlString
                parameters:(id)parameters
-                    error:(NSError *__autoreleasing *)error
-        completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler {
+                    Error:(NSError *__autoreleasing *)error
+          completionError:(nullable void (^)(NSURLResponse *response, NSError * _Nullable error))completionError
+        completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject))completionHandler {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     NSURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:urlString parameters:parameters error:error];
@@ -72,7 +74,11 @@
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
     } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
     } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        completionHandler(response,responseObject,error);
+        if (error) {
+            completionError(response, error);
+        } else {
+            completionHandler(response, responseObject);
+        }
     }];
     [dataTask resume];
 }
@@ -107,24 +113,31 @@
     }];
     [dataTask resume];
 }
+
 /**
  * GET请类方法，不包含上传进度和下载进度
  * @pram urlString URL
  * @pram parameters 请求参数
  * @pram error 错误
+ * @pram completionError 请求完成失败
  * @pram completionHandler 请求完成Block
  */
 + (void)GETWithURLString:(NSString *)urlString
               parameters:(id)parameters
                    error:(NSError *__autoreleasing *)error
-       completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler {
+         completionError:(nullable void (^)(NSURLResponse *response, NSError * _Nullable error))completionError
+       completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject))completionHandler {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     NSURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"GET" URLString:urlString parameters:parameters error:error];
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
     } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
     } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        completionHandler(response,responseObject,error);
+        if (error) {
+            completionError(response, error);
+        } else {
+            completionHandler(response, responseObject);
+        }
     }];
     [dataTask resume];
 }

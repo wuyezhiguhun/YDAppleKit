@@ -13,6 +13,7 @@
 #import "YDSingletonController.h"
 #import "YDJokeController.h"
 #import "YDMVCController.h"
+#import "YDBaiduAIController.h"
 
 /** 网络请求模块 */
 NSString * const YDModuleRouterNetworkingUrl         = @"weixin.wuyezhiguhun/module.router/networking";
@@ -26,6 +27,8 @@ NSString * const YDModuleRouterSingletonUrl          = @"weixin.wuyezhiguhun/mod
 NSString * const YDModuleRoyterJokeDaquanUrl         = @"weixin.wuyezhiguhun/module.router/joke";
 /** MVC架构 */
 NSString * const YDModuleRouterMVCUrl                = @"weixin.wuyezhiguhun/module.router/mvc";
+/** 百度AI学习 */
+NSString * const YDModuleRouterBaiduAIUrl            = @"weixin.wuyezhiguhun/module.router/baidu.ai";
 
 
 @implementation YDModuleRouterUrl
@@ -37,6 +40,7 @@ NSString * const YDModuleRouterMVCUrl                = @"weixin.wuyezhiguhun/mod
     [[YDRouter shared] map:YDModuleRouterSingletonUrl toControllerClass:[YDSingletonController class]];
     [[YDRouter shared] map:YDModuleRoyterJokeDaquanUrl toControllerClass:[YDJokeController class]];
     [[YDRouter shared] map:YDModuleRouterMVCUrl toControllerClass:[YDMVCController class]];
+    [[YDRouter shared] map:YDModuleRouterBaiduAIUrl toControllerClass:[YDBaiduAIController class]];
 }
 
 @end

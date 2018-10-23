@@ -14,7 +14,7 @@ class YDOrmSQLUpdateBuilder<T: NSObject>: YDSQLUpdateBuilder {
     func updateTable(orm: YDOrm, obj: T) -> YDSQLUpdateBuilder {
         //需要更新的字段
         var columns = [String: Any]()
-        for item in orm.items! {
+        for item in orm.items {
             let name = item.property
             let value = obj.value(forKey: name)
             columns[item.column] = value

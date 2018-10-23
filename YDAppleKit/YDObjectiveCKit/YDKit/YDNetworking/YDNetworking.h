@@ -43,12 +43,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @pram urlString URL
  * @pram parameters 请求参数
  * @pram error 错误
+ * @pram completionError 请求完成失败回调
  * @pram completionHandler 请求完成Block
  */
-+ (void)POSTWithURLString:(nullable NSString *)urlString
-               parameters:(nullable id)parameters
-                    error:(NSError * _Nullable __autoreleasing *)error
-        completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
++ (void)POSTWithURLString:(NSString *)urlString
+               parameters:(id)parameters
+                    Error:(NSError *__autoreleasing *)error
+          completionError:(nullable void (^)(NSURLResponse *response, NSError * _Nullable error))completionError
+        completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject))completionHandler;
 
 
 /**
@@ -66,17 +68,20 @@ NS_ASSUME_NONNULL_BEGIN
           uploadProgress:(nullable void (^)(NSProgress *uploadProgress)) uploadProgressBlock
         downloadProgress:(nullable void (^)(NSProgress *downloadProgress)) downloadProgressBlock
        completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
+
 /**
  * GET请类方法，不包含上传进度和下载进度
  * @pram urlString URL
  * @pram parameters 请求参数
  * @pram error 错误
+ * @pram completionError 请求完成失败
  * @pram completionHandler 请求完成Block
  */
-+ (void)GETWithURLString:(nullable NSString *)urlString
-              parameters:(nullable id)parameters
-                   error:(NSError * _Nullable __autoreleasing *)error
-       completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
++ (void)GETWithURLString:(NSString *)urlString
+              parameters:(id)parameters
+                   error:(NSError *__autoreleasing *)error
+         completionError:(nullable void (^)(NSURLResponse *response, NSError * _Nullable error))completionError
+       completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject))completionHandler;
 
 
 /**

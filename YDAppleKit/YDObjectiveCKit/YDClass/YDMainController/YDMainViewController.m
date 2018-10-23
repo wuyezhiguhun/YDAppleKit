@@ -33,7 +33,7 @@
 }
 
 - (void)reloadUIWhenLanguageChange {
-    self.titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap"),YDLanguage(@"YDSingletonPattern"),YDLanguage(@"YDJokeDaquan"),YDLanguage(@"YDMVC")];
+    self.titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap"),YDLanguage(@"YDSingletonPattern"),YDLanguage(@"YDJokeDaquan"),YDLanguage(@"YDMVC"),YDLanguage(@"YDBaiduAI")];
     [self.tableView reloadData];
 }
 #pragma mark -- UITableViewDelegate
@@ -78,13 +78,13 @@
 }
 - (NSArray *)titleList {
     if (!_titleList) {
-        _titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap"),YDLanguage(@"YDSingletonPattern"),YDLanguage(@"YDJokeDaquan"),YDLanguage(@"YDMVC")];
+        _titleList = @[YDLanguage(@"YDNetworkingModule"),YDLanguage(@"YDFactoryPattern"),YDLanguage(@"YDFactoryMap"),YDLanguage(@"YDSingletonPattern"),YDLanguage(@"YDJokeDaquan"),YDLanguage(@"YDMVC"),YDLanguage(@"YDBaiduAI")];
     }
     return _titleList;
 }
 - (NSArray *)routerList {
     if (!_routerList) {
-        _routerList = @[YDModuleRouterNetworkingUrl,YDModuleRouterFactoryUrl,YDModuleRouterFactoryMapUrl,YDModuleRouterSingletonUrl,YDModuleRoyterJokeDaquanUrl,YDModuleRouterMVCUrl];
+        _routerList = @[YDModuleRouterNetworkingUrl,YDModuleRouterFactoryUrl,YDModuleRouterFactoryMapUrl,YDModuleRouterSingletonUrl,YDModuleRoyterJokeDaquanUrl,YDModuleRouterMVCUrl,YDModuleRouterBaiduAIUrl];
     }
     return _routerList;
 }

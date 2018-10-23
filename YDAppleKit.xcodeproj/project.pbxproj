@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		21E053BA16EBF26D105011E5 /* libPods-defaults-YDSwiftKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6743E4ED25198DBCAC90AA58 /* libPods-defaults-YDSwiftKit.a */; };
+		5A35544D217F06C0008AB4C6 /* YDBaiduAIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A35544C217F06C0008AB4C6 /* YDBaiduAIController.m */; };
+		5A35544E217F06C0008AB4C6 /* YDBaiduAIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A35544C217F06C0008AB4C6 /* YDBaiduAIController.m */; };
+		5A355459217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */; };
+		5A35545A217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */; };
+		5A35545D217F2801008AB4C6 /* YDBaiduAiAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */; };
+		5A35545E217F2801008AB4C6 /* YDBaiduAiAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */; };
 		5AA52B3E2170ACC100DB0421 /* YDUserDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */; };
 		5AA52B3F2170ACC100DB0421 /* YDUserDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */; };
 		5AA52B412170AD5F00DB0421 /* YDOrderDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */; };
@@ -267,6 +273,13 @@
 /* Begin PBXFileReference section */
 		13CF037865E0D2AC41717AA8 /* Pods-defaults-YDSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDSwiftKit/Pods-defaults-YDSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
 		59EDC63E8DEECFA288E9C65A /* Pods-defaults-YDObjectiveCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-YDObjectiveCKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-YDObjectiveCKit/Pods-defaults-YDObjectiveCKit.release.xcconfig"; sourceTree = "<group>"; };
+		5A35544B217F06C0008AB4C6 /* YDBaiduAIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduAIController.h; sourceTree = "<group>"; };
+		5A35544C217F06C0008AB4C6 /* YDBaiduAIController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduAIController.m; sourceTree = "<group>"; };
+		5A355454217F0CFC008AB4C6 /* YDBaiduAiMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduAiMacro.h; sourceTree = "<group>"; };
+		5A355457217F1002008AB4C6 /* YDBaiduAiAuthNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduAiAuthNet.h; sourceTree = "<group>"; };
+		5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduAiAuthNet.m; sourceTree = "<group>"; };
+		5A35545B217F2801008AB4C6 /* YDBaiduAiAuthInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduAiAuthInfo.h; sourceTree = "<group>"; };
+		5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduAiAuthInfo.m; sourceTree = "<group>"; };
 		5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDUserDao.swift; sourceTree = "<group>"; };
 		5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrderDao.swift; sourceTree = "<group>"; };
 		5AA52B432170AD7A00DB0421 /* YDBaseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDBaseDao.swift; sourceTree = "<group>"; };
@@ -501,6 +514,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A355449217F05F4008AB4C6 /* YDBaiduAI */ = {
+			isa = PBXGroup;
+			children = (
+				5A355455217F0F68008AB4C6 /* YDModel */,
+				5A35544F217F0C8E008AB4C6 /* YDConstant */,
+				5A35544A217F0684008AB4C6 /* Controller */,
+			);
+			path = YDBaiduAI;
+			sourceTree = "<group>";
+		};
+		5A35544A217F0684008AB4C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A35544B217F06C0008AB4C6 /* YDBaiduAIController.h */,
+				5A35544C217F06C0008AB4C6 /* YDBaiduAIController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A35544F217F0C8E008AB4C6 /* YDConstant */ = {
+			isa = PBXGroup;
+			children = (
+				5A355454217F0CFC008AB4C6 /* YDBaiduAiMacro.h */,
+			);
+			path = YDConstant;
+			sourceTree = "<group>";
+		};
+		5A355455217F0F68008AB4C6 /* YDModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A355457217F1002008AB4C6 /* YDBaiduAiAuthNet.h */,
+				5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */,
+				5A35545B217F2801008AB4C6 /* YDBaiduAiAuthInfo.h */,
+				5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */,
+			);
+			path = YDModel;
+			sourceTree = "<group>";
+		};
 		5AB970B82177392B0060E39D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +632,7 @@
 		5ADC34AB216C9E8D0020310B /* YDClass */ = {
 			isa = PBXGroup;
 			children = (
+				5A355449217F05F4008AB4C6 /* YDBaiduAI */,
 				5ADC3617216CA8FC0020310B /* YDFactory */,
 				5ADC3626216CA8FC0020310B /* YDFactoryMap */,
 				5ADC35DE216CA8FB0020310B /* YDJoke */,
@@ -1642,6 +1694,7 @@
 				5ADC3713216CAB570020310B /* YDViewFactory.m in Sources */,
 				5ADC3500216CA84F0020310B /* YDSQLiteDB.swift in Sources */,
 				5ADC3504216CA84F0020310B /* YDOrmSQLInsertBuilder.swift in Sources */,
+				5A35545D217F2801008AB4C6 /* YDBaiduAiAuthInfo.m in Sources */,
 				5ADC3743216CAB570020310B /* YDAmapMapView.m in Sources */,
 				5ADC3676216CA8FC0020310B /* YDFactoryController.m in Sources */,
 				5ADC367A216CA8FC0020310B /* YDNetworkingController.m in Sources */,
@@ -1714,6 +1767,7 @@
 				5ADC34EE216CA84F0020310B /* YDTableInfoDao.swift in Sources */,
 				5ADC366C216CA8FC0020310B /* YDMVCItem.m in Sources */,
 				5ADC3754216CB3870020310B /* AppDelegate.m in Sources */,
+				5A35544D217F06C0008AB4C6 /* YDBaiduAIController.m in Sources */,
 				5ADC373D216CAB570020310B /* YDAmapMapSearch.m in Sources */,
 				5ADC3737216CAB570020310B /* YDBaiduMapFactory.m in Sources */,
 				5ADC34F0216CA84F0020310B /* YDTableTemplateConfig.swift in Sources */,
@@ -1727,6 +1781,7 @@
 				5ADC3725216CAB570020310B /* YDMapPlatformXmlParser.m in Sources */,
 				5ADC3668216CA8FC0020310B /* YDMVCController.m in Sources */,
 				5ADC34B2216C9F9C0020310B /* YDObjectiveCAppDelegate.m in Sources */,
+				5A355459217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1746,6 +1801,7 @@
 				5ADC3732216CAB570020310B /* YDBaiduMapPoiDetailResult.m in Sources */,
 				5ADC367F216CA8FC0020310B /* YDFactoryMapController.m in Sources */,
 				5ADC3716216CAB570020310B /* YDViewXmlParser.m in Sources */,
+				5A35544E217F06C0008AB4C6 /* YDBaiduAIController.m in Sources */,
 				5AA52B512170B2A800DB0421 /* YDSQLUpdateBuilder.swift in Sources */,
 				5ADC34F5216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift in Sources */,
 				5ADC3513216CA8780020310B /* YDSwiftSingletonController.swift in Sources */,
@@ -1779,6 +1835,7 @@
 				5AE9EBCF217476E1009C7A47 /* YDSQLCreateTableBuilder.swift in Sources */,
 				5ADC3507216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */,
 				5ADC372E216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */,
+				5A35545E217F2801008AB4C6 /* YDBaiduAiAuthInfo.m in Sources */,
 				5ADC370A216CAB570020310B /* YDRefresh.m in Sources */,
 				5AA52B452170AD7A00DB0421 /* YDBaseDao.swift in Sources */,
 				5AB970BB2177394F0060E39D /* YDUser.swift in Sources */,
@@ -1787,6 +1844,7 @@
 				5ADC3663216CA8FC0020310B /* YDJokeController.m in Sources */,
 				5AA52B3F2170ACC100DB0421 /* YDUserDao.swift in Sources */,
 				5ADC3748216CAB570020310B /* YDMapEngine.m in Sources */,
+				5A35545A217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */,
 				5ACBA6162175F1B500643733 /* YDSQLSelectTableBuilder.swift in Sources */,
 				5ADC3738216CAB570020310B /* YDBaiduMapFactory.m in Sources */,
 				5ADC3755216CB3870020310B /* AppDelegate.m in Sources */,

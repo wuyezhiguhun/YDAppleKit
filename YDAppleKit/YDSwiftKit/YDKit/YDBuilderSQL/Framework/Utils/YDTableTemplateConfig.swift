@@ -64,7 +64,7 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
             self.item.columnType = attributeDict[ATTRIBUTE_COLUMN_TYPE]!
             self.item.property = attributeDict[ATTRIBUTE_PROPERTY]!
             self.item.propertyType = attributeDict[ATTRIBUTE_TYPE]!
-            self.orm.items?.append(self.item)
+            self.orm.items.append(self.item)
             break
         default:
             break

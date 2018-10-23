@@ -17,7 +17,7 @@ class YDOrmSQLCreateTableBuilder: YDSQLCreateTableBuilder {
         //首先添加主键
         columns[(orm.key?.column)!] = self.getColumnType(propertyType: (orm.key?.property)!)
         //其次添加普通属性
-        for item in orm.items! {
+        for item in orm.items {
             columns[item.column] = self.getColumnType(propertyType: (item.propertyType))
         }
         return self.create().table(orm.tableName).columns(columns)

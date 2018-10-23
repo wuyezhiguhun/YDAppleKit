@@ -28,7 +28,7 @@ class YDOrmSQLAlterTableBuilder: YDSQLAlterTableBuilder {
     func alterTable(orm: YDOrm, srcColumns: [String: String]) -> YDSQLAlterTableBuilder {
         var columns = [String: String]()
         //过来已存在的字段，添加新的字段
-        for item in orm.items! {
+        for item in orm.items {
             let result = srcColumns[item.column]
             if (result == nil) {
                 //注意：保存nil不行
