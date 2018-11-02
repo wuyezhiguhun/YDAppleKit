@@ -44,6 +44,8 @@ static YDConstant *constant = nil;
             self.appType = YDAppTypeObjectC;
         } else if ([bundleId isEqualToString:@"com.wuyezhiguhun.YDSwiftKit"]) {
             self.appType = YDAppTypeSwift;
+        } else if ([bundleId isEqualToString:@"com.weixin.wuyezhiguhun.YDiOSKit"]) {
+            self.appType = YDAppTypeiOS;
         }
     }
     return self;
@@ -59,6 +61,8 @@ static YDConstant *constant = nil;
         type = YDAppTypeObjectC;
     } else if ([bundleId isEqualToString:@"com.wuyezhiguhun.YDSwiftKit"]) {
         type = YDAppTypeSwift;
+    } else if ([bundleId isEqualToString:@"com.weixin.wuyezhiguhun.YDiOSKit"]) {
+        type = YDAppTypeiOS;
     }
     
     return type;
@@ -68,6 +72,8 @@ static YDConstant *constant = nil;
         return @"YDObjectiveCAppDelegate";
     } else if (self.appType == YDAppTypeSwift) {
         return @"YDSwiftAppDelegate";
+    } else if (self.appType == YDAppTypeiOS) {
+        return @"YDiOSAppDelegate";
     }
     return @"YDObjectiveCAppDelegate";
 }
@@ -76,6 +82,8 @@ static YDConstant *constant = nil;
 - (NSString *)baiduAiAppID {
     if (self.appType == YDAppTypeObjectC) {
         return @"14521919";
+    } else if (self.appType == YDAppTypeiOS) {
+        return @"14533142";
     }
     return @"14521919";
 }
@@ -83,6 +91,8 @@ static YDConstant *constant = nil;
 - (NSString *)baiduAiApiKey {
     if (self.appType == YDAppTypeObjectC) {
         return @"8TRBSX66tMdGfYGQUg5HjvBC";
+    } else if (self.appType == YDAppTypeiOS) {
+        return @"6eqcfCAsnInWviAOo8ELNNp6";
     }
     return @"8TRBSX66tMdGfYGQUg5HjvBC";
 }
@@ -90,6 +100,8 @@ static YDConstant *constant = nil;
 - (NSString *)baiduAiSecretKey {
     if (self.appType == YDAppTypeObjectC) {
         return @"a8zwtdCGcFG4fGGqO7WDgLpoTgozsqSX";
+    } else if (self.appType == YDAppTypeiOS) {
+        return @"zk5HmmqzBjS6mGeL3aVevu49IFpCi6zt";
     }
     return @"a8zwtdCGcFG4fGGqO7WDgLpoTgozsqSX";
 }

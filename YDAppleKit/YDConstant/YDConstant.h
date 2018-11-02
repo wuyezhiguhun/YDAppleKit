@@ -10,7 +10,8 @@
 
 typedef NS_ENUM(NSInteger, YDAppType){
     YDAppTypeSwift       = 1,
-    YDAppTypeObjectC     = 2
+    YDAppTypeObjectC     = 2,
+    YDAppTypeiOS         = 3
 };
 
 @interface YDConstant : NSObject

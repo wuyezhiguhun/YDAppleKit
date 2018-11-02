@@ -46,8 +46,9 @@
 }
 - (void)baiduAiAuthNetSuccess:(NSDictionary *)success {
     YDBaiduAiAuthInfo *baiduAiAuthInfo = [YDBaiduAiAuthInfo alloc];
-    NSLog(@":<- access_token ->:  --  %@",baiduAiAuthInfo.access_token);
-    NSLog(@":<- refresh_token ->:  --  %@",baiduAiAuthInfo.refresh_token);
+    
+    YDLog(@":<- access_token ->:  --  %@",baiduAiAuthInfo.access_token);
+    YDLog(@":<- refresh_token ->:  --  %@",baiduAiAuthInfo.refresh_token);
     
 }
 - (void)baiduAiAuthNetFailure:(NSString *)failure {

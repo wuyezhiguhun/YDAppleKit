@@ -15,49 +15,6 @@ class YDBuilderSQLController: UIViewController, UITableViewDelegate, UITableView
         self.setBaseParameter()
         self.view.addSubview(self.sqlLabel)
         self.view.addSubview(self.tableView)
-        
-        
-        
-        //单行SQL语句
-//        var colums = Array<String>()
-//        colums.append("id")
-//        colums.append("name")
-//        colums.append("age")
-//
-//        var values = Array<Any>()
-//        values.append(1)
-//        values.append("Dream")
-//        values.append(18)
-//
-//        let insert = YDSQLInsertBuilder()
-//        let sql = insert.insert().into().table("student").colums(colums).values(values).build()
-//        self.sqlLabel.text = sql
-//        print("SQL: " + sql)
-
-        //批量插入SQL语句
-//        var colums = Array<String>()
-//        colums.append("id")
-//        colums.append("name")
-//        colums.append("age")
-//
-//        var batchValues = Array<Array<Any>>()
-//
-//        var values1 = Array<Any>()
-//        values1.append(1)
-//        values1.append("Dream")
-//        values1.append(19)
-//        batchValues.append(values1)
-//
-//        var values2 = Array<Any>()
-//        values2.append(2)
-//        values2.append("阳光种在风雨后")
-//        values2.append(20)
-//        batchValues.append(values2)
-//
-//        let insert = YDSQLInsertBuilder()
-//        let sql = insert.insert().into().table("student").colums(colums).batchValues(batchValues).build()
-//        print("SQL: " + sql)
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -215,6 +172,7 @@ extension YDBuilderSQLController {
         let helper = YDOrmSQLiteOpenHelper()
         
 //        let dao = YDBaseDao<YDUser>(helper: helper)
+//        YDTableInfo
         let baseDao = YDBaseDao<YDTableInfo>(helper: helper)
         let tableInfo = YDTableInfo()
         tableInfo.tableId = 1
@@ -224,12 +182,7 @@ extension YDBuilderSQLController {
         
         self.sqlLabel.text = String(result)
         print("结果：\(result)")
-        
-        
-        
-        
-//        let dao = <#value#>
-        
+
     }
     //测试六 - 测试创建数据库
     func testSix() {

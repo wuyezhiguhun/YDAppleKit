@@ -11,6 +11,7 @@ abstract_target 'defaults' do
     pod 'YDCategory' ,:git => 'https://github.com/wuyezhiguhun/YDCategory.git'
     
     target 'YDObjectiveCKit'
+    target 'YDiOSKit'
     target 'YDSwiftKit'
 
 end

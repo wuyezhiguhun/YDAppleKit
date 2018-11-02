@@ -12,7 +12,6 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         NSString *className = [YDConstant shareConstant].appDelegateName;
-//        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YDSwiftAppDelegate class]));
         return UIApplicationMain(argc, argv, nil, className);
     }
 }
