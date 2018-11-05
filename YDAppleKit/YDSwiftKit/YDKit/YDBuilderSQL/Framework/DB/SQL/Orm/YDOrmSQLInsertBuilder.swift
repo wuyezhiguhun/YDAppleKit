@@ -6,8 +6,7 @@
 //  Copyright © 2018年 王允顶. All rights reserved.
 //
 
-//import UIKit
-import Foundation
+import UIKit
 
 class YDOrmSQLInsertBuilder<T: NSObject>: YDSQLInsertBuilder {
 
@@ -16,36 +15,7 @@ class YDOrmSQLInsertBuilder<T: NSObject>: YDSQLInsertBuilder {
         var values = Array<Any>()
         columns.append((orm.key?.column)!)
         
-        //采用KVC获取属性的值
-        let key = orm.key?.property
-        
-        let table = YDTableInfo()
-        table.tableId = 11
-        table.tableAge = 54
-        table.tableName = "41525"
-        
-        
-        
-//        let tableInfoName = YDTableInfo.value(forKey: "tableName")
-        
-        
-        
-//        let tableName = table.value(forKey: "tableName")
-//
-//
-//        
-//
-//        let tableValue = table.value(forKey: "tableId")
-//
-//
-//        let objValue = obj.value(forKey: "tableId")
-        
-        let property: String = orm.key?.property as! String
-        
-        let value = obj.value(forKey: property)
-        
-        
-        values.append(value)
+        values.append(obj.value(forKey: (orm.key?.property)!)!)
         
         //普通字段没有拼接
         for item in orm.items {

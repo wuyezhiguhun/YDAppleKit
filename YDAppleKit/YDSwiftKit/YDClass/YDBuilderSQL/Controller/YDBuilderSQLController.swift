@@ -66,9 +66,7 @@ extension YDBuilderSQLController {
         cell.backgroundColor = UIColor.clear
         return cell
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 60
-//    }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.sqlTest(indexPath.row)
     }
@@ -171,8 +169,6 @@ extension YDBuilderSQLController {
         YDTableTemplateConfig.sharedInstace.initXml()
         let helper = YDOrmSQLiteOpenHelper()
         
-//        let dao = YDBaseDao<YDUser>(helper: helper)
-//        YDTableInfo
         let baseDao = YDBaseDao<YDTableInfo>(helper: helper)
         let tableInfo = YDTableInfo()
         tableInfo.tableId = 1
@@ -182,7 +178,6 @@ extension YDBuilderSQLController {
         
         self.sqlLabel.text = String(result)
         print("结果：\(result)")
-
     }
     //测试六 - 测试创建数据库
     func testSix() {

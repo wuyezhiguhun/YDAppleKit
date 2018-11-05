@@ -14,6 +14,12 @@
 		5A35545A217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */; };
 		5A35545D217F2801008AB4C6 /* YDBaiduAiAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */; };
 		5A35545E217F2801008AB4C6 /* YDBaiduAiAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */; };
+		5A515A4821903363002EFF6A /* YDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A515A4721903363002EFF6A /* YDLog.swift */; };
+		5A515A4921903363002EFF6A /* YDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A515A4721903363002EFF6A /* YDLog.swift */; };
+		5A515A4A21903363002EFF6A /* YDLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A515A4721903363002EFF6A /* YDLog.swift */; };
+		5A515A4D21903F39002EFF6A /* YDLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A515A4C21903F39002EFF6A /* YDLogController.swift */; };
+		5A515A4E21903F39002EFF6A /* YDLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A515A4C21903F39002EFF6A /* YDLogController.swift */; };
+		5A515A4F21903F39002EFF6A /* YDLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A515A4C21903F39002EFF6A /* YDLogController.swift */; };
 		5A67B69621801D1500B61860 /* YDMVCRecordingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3613216CA8FC0020310B /* YDMVCRecordingCell.m */; };
 		5A67B69721801D1500B61860 /* YDViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A2216CAB560020310B /* YDViewFactory.m */; };
 		5A67B69821801D1500B61860 /* YDSQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E0216CA84F0020310B /* YDSQLiteDB.swift */; };
@@ -419,6 +425,8 @@
 		5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduAiAuthNet.m; sourceTree = "<group>"; };
 		5A35545B217F2801008AB4C6 /* YDBaiduAiAuthInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaiduAiAuthInfo.h; sourceTree = "<group>"; };
 		5A35545C217F2801008AB4C6 /* YDBaiduAiAuthInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaiduAiAuthInfo.m; sourceTree = "<group>"; };
+		5A515A4721903363002EFF6A /* YDLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDLog.swift; sourceTree = "<group>"; };
+		5A515A4C21903F39002EFF6A /* YDLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDLogController.swift; sourceTree = "<group>"; };
 		5A67B71E21801D1500B61860 /* YDiOSKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDiOSKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A67B72421801E4500B61860 /* YDiOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDiOSAppDelegate.h; sourceTree = "<group>"; };
 		5A67B72521801E4500B61860 /* YDiOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDiOSAppDelegate.m; sourceTree = "<group>"; };
@@ -705,6 +713,22 @@
 			path = YDModel;
 			sourceTree = "<group>";
 		};
+		5A515A412190324D002EFF6A /* YDLogger */ = {
+			isa = PBXGroup;
+			children = (
+				5A515A4721903363002EFF6A /* YDLog.swift */,
+			);
+			path = YDLogger;
+			sourceTree = "<group>";
+		};
+		5A515A4B21903F13002EFF6A /* YDLogger */ = {
+			isa = PBXGroup;
+			children = (
+				5A515A4C21903F39002EFF6A /* YDLogController.swift */,
+			);
+			path = YDLogger;
+			sourceTree = "<group>";
+		};
 		5A67B72021801DC900B61860 /* YDiOSKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +871,7 @@
 		5ADC34AC216C9EA00020310B /* YDClass */ = {
 			isa = PBXGroup;
 			children = (
+				5A515A4B21903F13002EFF6A /* YDLogger */,
 				5ADC350F216CA8780020310B /* YDBuilderSQL */,
 				5ADC350C216CA8780020310B /* YDSingletonPattern */,
 				5ADC34C0216CA3720020310B /* YDMainController */,
@@ -901,6 +926,7 @@
 		5ADC34CA216CA84F0020310B /* YDKit */ = {
 			isa = PBXGroup;
 			children = (
+				5A515A412190324D002EFF6A /* YDLogger */,
 				5ADC34CB216CA84F0020310B /* YDExtension */,
 				5ADC34CD216CA84F0020310B /* YDBuilderSQL */,
 				5ADC34E8216CA84F0020310B /* YDSingletonPattern */,
@@ -2013,6 +2039,7 @@
 				5A67B6A621801D1500B61860 /* YDSingletonPattern.swift in Sources */,
 				5A67B6A721801D1500B61860 /* YDMultiLanguage.m in Sources */,
 				5A67B6A821801D1500B61860 /* UIView+DDExtension.m in Sources */,
+				5A515A4F21903F39002EFF6A /* YDLogController.swift in Sources */,
 				5A67B6A921801D1500B61860 /* YDSQLAlterTableBuilder.swift in Sources */,
 				5A67B6AA21801D1500B61860 /* YDModuleRouterUrl.m in Sources */,
 				5A67B6AB21801D1500B61860 /* YDOrderDao.swift in Sources */,
@@ -2040,6 +2067,7 @@
 				5A67B6C021801D1500B61860 /* YDOrmSQLiteOpenHelper.swift in Sources */,
 				5A67B6C121801D1500B61860 /* YDSingletonController.m in Sources */,
 				5A67B6C221801D1500B61860 /* YDOrmSQLDeleteBuilder.swift in Sources */,
+				5A515A4A21903363002EFF6A /* YDLog.swift in Sources */,
 				5A67B6C321801D1500B61860 /* YDOrmItem.swift in Sources */,
 				5A67B6C421801D1500B61860 /* YDFactoryMapController.m in Sources */,
 				5A67B6C521801D1500B61860 /* YDOrmSQLCreateTableBuilder.swift in Sources */,
@@ -2114,6 +2142,7 @@
 				5ADC350A216CA84F0020310B /* YDSingletonPattern.swift in Sources */,
 				5ADC370D216CAB570020310B /* YDMultiLanguage.m in Sources */,
 				5ADC3707216CAB570020310B /* UIView+DDExtension.m in Sources */,
+				5A515A4D21903F39002EFF6A /* YDLogController.swift in Sources */,
 				5AB970B32176E9F30060E39D /* YDSQLAlterTableBuilder.swift in Sources */,
 				5ADC3687216CA9440020310B /* YDModuleRouterUrl.m in Sources */,
 				5AA52B412170AD5F00DB0421 /* YDOrderDao.swift in Sources */,
@@ -2141,6 +2170,7 @@
 				5ADC34F4216CA84F0020310B /* YDOrmSQLiteOpenHelper.swift in Sources */,
 				5ADC367C216CA8FC0020310B /* YDSingletonController.m in Sources */,
 				5AA52B472170B0C100DB0421 /* YDOrmSQLDeleteBuilder.swift in Sources */,
+				5A515A4821903363002EFF6A /* YDLog.swift in Sources */,
 				5ADC34F2216CA84F0020310B /* YDOrmItem.swift in Sources */,
 				5ADC367E216CA8FC0020310B /* YDFactoryMapController.m in Sources */,
 				5AE9EBCB2174768D009C7A47 /* YDOrmSQLCreateTableBuilder.swift in Sources */,
@@ -2201,6 +2231,7 @@
 				5ADC3730216CAB570020310B /* YDBaiduMapPoiSearch.m in Sources */,
 				5ADC373E216CAB570020310B /* YDAmapMapSearch.m in Sources */,
 				5ADC371C216CAB570020310B /* YDNetworking.m in Sources */,
+				5A515A4921903363002EFF6A /* YDLog.swift in Sources */,
 				5ADC3501216CA84F0020310B /* YDSQLiteDB.swift in Sources */,
 				5ADC372A216CAB570020310B /* YDBaiduMapLocationService.m in Sources */,
 				5ADC3744216CAB570020310B /* YDAmapMapView.m in Sources */,
@@ -2252,6 +2283,7 @@
 				5ADC34F3216CA84F0020310B /* YDOrmItem.swift in Sources */,
 				5ADC3663216CA8FC0020310B /* YDJokeController.m in Sources */,
 				5AA52B3F2170ACC100DB0421 /* YDUserDao.swift in Sources */,
+				5A515A4E21903F39002EFF6A /* YDLogController.swift in Sources */,
 				5ADC3748216CAB570020310B /* YDMapEngine.m in Sources */,
 				5A35545A217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */,
 				5ACBA6162175F1B500643733 /* YDSQLSelectTableBuilder.swift in Sources */,
@@ -2537,6 +2569,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDSwiftKitBridgingHeader.h";

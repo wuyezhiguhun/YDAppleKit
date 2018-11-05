@@ -17,8 +17,10 @@
 #define YDScreenHeight            [UIScreen mainScreen].bounds.size.height
 
 #ifdef DEBUG
+#define SwiftDebug      1
 #define YDLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
+#define SwiftDebug      0
 #define YDLog(fmt, ...)
 #endif
 

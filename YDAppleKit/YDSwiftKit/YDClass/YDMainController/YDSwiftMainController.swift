@@ -35,11 +35,11 @@ import UIKit
         return table
     }()
     lazy var titleList: [String] = {
-        let list = ["单例模式", "构建者模式SQL"]
+        let list = ["单例模式", "构建者模式SQL","YDLog打印"]
         return list
     }()
     lazy var controllerList: [String] = {
-        let list = [YDModuleRouterSwiftSingletonUrl, YDModuleRouterSwiftBuilderSQLUrl]
+        let list = [YDModuleRouterSwiftSingletonUrl, YDModuleRouterSwiftBuilderSQLUrl, YDModuleRouterSwiftLogUrl]
         return list
     }()
     lazy var backImageView: UIImageView = {
