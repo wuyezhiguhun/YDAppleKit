@@ -43,6 +43,8 @@ class YDOrmSQLInsertBuilder<T: NSObject>: YDSQLInsertBuilder {
         let property: String = orm.key?.property as! String
         
         let value = obj.value(forKey: property)
+        
+        
         values.append(value)
         
         //普通字段没有拼接

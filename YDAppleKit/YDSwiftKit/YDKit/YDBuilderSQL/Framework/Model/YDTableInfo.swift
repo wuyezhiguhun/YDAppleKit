@@ -11,8 +11,8 @@ import Foundation
 
 class YDTableInfo: NSObject {
 
-    var tableId: Int = 0
-    var tableAge: Int = 18
-    var tableName: String = ""
+    @objc var tableId: Int = 0
+    @objc var tableAge: Int = 18
+    @objc var tableName: String = ""
     
 }

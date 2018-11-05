@@ -6,10 +6,10 @@
 //  Copyright © 2018年 rowena. All rights reserved.
 //
 
-#import "YDObjectiveCAppDelegate.h"
+#import "YDObjcAppDelegate.h"
 #import "YDMainViewController.h"
 
-@implementation YDObjectiveCAppDelegate
+@implementation YDObjcAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     

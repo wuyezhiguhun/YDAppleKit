@@ -69,13 +69,13 @@ static YDConstant *constant = nil;
 }
 - (NSString *)appDelegateName {
     if (self.appType == YDAppTypeObjectC) {
-        return @"YDObjectiveCAppDelegate";
+        return @"YDObjcAppDelegate";
     } else if (self.appType == YDAppTypeSwift) {
         return @"YDSwiftAppDelegate";
     } else if (self.appType == YDAppTypeiOS) {
         return @"YDiOSAppDelegate";
     }
-    return @"YDObjectiveCAppDelegate";
+    return @"YDObjcAppDelegate";
 }
 
 /** 百度AI AppID */

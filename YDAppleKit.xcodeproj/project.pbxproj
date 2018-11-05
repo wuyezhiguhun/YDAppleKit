@@ -104,7 +104,7 @@
 		5A67B6ED21801D1500B61860 /* YDBaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C0216CAB560020310B /* YDBaiduMapUserLocation.m */; };
 		5A67B6EE21801D1500B61860 /* YDMapPlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B9216CAB560020310B /* YDMapPlatformXmlParser.m */; };
 		5A67B6EF21801D1500B61860 /* YDMVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3608216CA8FC0020310B /* YDMVCController.m */; };
-		5A67B6F021801D1500B61860 /* YDObjectiveCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */; };
+		5A67B6F021801D1500B61860 /* YDObjcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34AF216C9F9C0020310B /* YDObjcAppDelegate.m */; };
 		5A67B6F121801D1500B61860 /* YDBaiduAiAuthNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A355458217F1002008AB4C6 /* YDBaiduAiAuthNet.m */; };
 		5A67B6F321801D1500B61860 /* libPods-defaults-YDObjectiveCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD88D8F9C7A25E1356D0C51C /* libPods-defaults-YDObjectiveCKit.a */; };
 		5A67B6F521801D1500B61860 /* anime-14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F6216CA8FB0020310B /* anime-14@3x.png */; };
@@ -133,7 +133,7 @@
 		5A67B70C21801D1500B61860 /* anime-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E4216CA8FB0020310B /* anime-01@2x.png */; };
 		5A67B70D21801D1500B61860 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AE2297D216F4E860058C0C5 /* Localizable.strings */; };
 		5A67B70E21801D1500B61860 /* anime-03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35E1216CA8FB0020310B /* anime-03@2x.png */; };
-		5A67B70F21801D1500B61860 /* YDObjectiveCInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */; };
+		5A67B70F21801D1500B61860 /* YDObjcInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B1216C9F9C0020310B /* YDObjcInfo.plist */; };
 		5A67B71021801D1500B61860 /* anime-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35F0216CA8FB0020310B /* anime-02@2x.png */; };
 		5A67B71121801D1500B61860 /* YDConfig.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC36B4216CAB560020310B /* YDConfig.map.xml */; };
 		5A67B71221801D1500B61860 /* anime-04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC35FA216CA8FB0020310B /* anime-04@3x.png */; };
@@ -182,8 +182,8 @@
 		5ADC3492216C9C5A0020310B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3488216C9C4D0020310B /* main.m */; };
 		5ADC34A6216C9E1F0020310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34A5216C9E1F0020310B /* Assets.xcassets */; };
 		5ADC34A7216C9E1F0020310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34A5216C9E1F0020310B /* Assets.xcassets */; };
-		5ADC34B2216C9F9C0020310B /* YDObjectiveCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */; };
-		5ADC34B3216C9F9C0020310B /* YDObjectiveCInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */; };
+		5ADC34B2216C9F9C0020310B /* YDObjcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34AF216C9F9C0020310B /* YDObjcAppDelegate.m */; };
+		5ADC34B3216C9F9C0020310B /* YDObjcInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B1216C9F9C0020310B /* YDObjcInfo.plist */; };
 		5ADC34B7216C9FAA0020310B /* YDSwiftInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ADC34B5216C9FAA0020310B /* YDSwiftInfo.plist */; };
 		5ADC34B8216C9FAA0020310B /* YDSwiftAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34B6216C9FAA0020310B /* YDSwiftAppDelegate.m */; };
 		5ADC34B9216CA0E80020310B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3488216C9C4D0020310B /* main.m */; };
@@ -438,13 +438,13 @@
 		5AB970B52177390D0060E39D /* YDOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrder.swift; sourceTree = "<group>"; };
 		5AB970B92177394F0060E39D /* YDUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDUser.swift; sourceTree = "<group>"; };
 		5ACBA6142175F1B500643733 /* YDSQLSelectTableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLSelectTableBuilder.swift; sourceTree = "<group>"; };
-		5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDObjectiveCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADC3476216C9C4B0020310B /* YDObjcKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDObjcKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADC3488216C9C4D0020310B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ADC349C216C9C5A0020310B /* YDSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADC34A5216C9E1F0020310B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObjectiveCAppDelegate.m; sourceTree = "<group>"; };
-		5ADC34B0216C9F9C0020310B /* YDObjectiveCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObjectiveCAppDelegate.h; sourceTree = "<group>"; };
-		5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDObjectiveCInfo.plist; sourceTree = "<group>"; };
+		5ADC34AF216C9F9C0020310B /* YDObjcAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObjcAppDelegate.m; sourceTree = "<group>"; };
+		5ADC34B0216C9F9C0020310B /* YDObjcAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObjcAppDelegate.h; sourceTree = "<group>"; };
+		5ADC34B1216C9F9C0020310B /* YDObjcInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDObjcInfo.plist; sourceTree = "<group>"; };
 		5ADC34B4216C9FAA0020310B /* YDSwiftAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSwiftAppDelegate.h; sourceTree = "<group>"; };
 		5ADC34B5216C9FAA0020310B /* YDSwiftInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDSwiftInfo.plist; sourceTree = "<group>"; };
 		5ADC34B6216C9FAA0020310B /* YDSwiftAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSwiftAppDelegate.m; sourceTree = "<group>"; };
@@ -771,7 +771,7 @@
 		5ADC3477216C9C4B0020310B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */,
+				5ADC3476216C9C4B0020310B /* YDObjcKit.app */,
 				5ADC349C216C9C5A0020310B /* YDSwiftKit.app */,
 				5A67B71E21801D1500B61860 /* YDiOSKit.app */,
 			);
@@ -786,7 +786,7 @@
 				5ADC34A8216C9E260020310B /* YDPublic */,
 				5ADC34BB216CA1920020310B /* YDConstant */,
 				5ADC34AA216C9E7C0020310B /* YDSwiftKit */,
-				5ADC34A9216C9E6D0020310B /* YDObjectiveCKit */,
+				5ADC34A9216C9E6D0020310B /* YDObjcKit */,
 			);
 			path = YDAppleKit;
 			sourceTree = "<group>";
@@ -810,13 +810,13 @@
 			path = YDPublic;
 			sourceTree = "<group>";
 		};
-		5ADC34A9216C9E6D0020310B /* YDObjectiveCKit */ = {
+		5ADC34A9216C9E6D0020310B /* YDObjcKit */ = {
 			isa = PBXGroup;
 			children = (
 				5ADC3689216CAB560020310B /* YDKit */,
 				5ADC34AB216C9E8D0020310B /* YDClass */,
 			);
-			path = YDObjectiveCKit;
+			path = YDObjcKit;
 			sourceTree = "<group>";
 		};
 		5ADC34AA216C9E7C0020310B /* YDSwiftKit */ = {
@@ -858,9 +858,9 @@
 		5ADC34AD216C9EA70020310B /* YDAppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				5ADC34B0216C9F9C0020310B /* YDObjectiveCAppDelegate.h */,
-				5ADC34AF216C9F9C0020310B /* YDObjectiveCAppDelegate.m */,
-				5ADC34B1216C9F9C0020310B /* YDObjectiveCInfo.plist */,
+				5ADC34B0216C9F9C0020310B /* YDObjcAppDelegate.h */,
+				5ADC34AF216C9F9C0020310B /* YDObjcAppDelegate.m */,
+				5ADC34B1216C9F9C0020310B /* YDObjcInfo.plist */,
 			);
 			path = YDAppDelegate;
 			sourceTree = "<group>";
@@ -1656,9 +1656,9 @@
 			productReference = 5A67B71E21801D1500B61860 /* YDiOSKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5ADC3475216C9C4B0020310B /* YDObjectiveCKit */ = {
+		5ADC3475216C9C4B0020310B /* YDObjcKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5ADC348C216C9C4D0020310B /* Build configuration list for PBXNativeTarget "YDObjectiveCKit" */;
+			buildConfigurationList = 5ADC348C216C9C4D0020310B /* Build configuration list for PBXNativeTarget "YDObjcKit" */;
 			buildPhases = (
 				CF7B862BFEB767924EB2BAED /* [CP] Check Pods Manifest.lock */,
 				5ADC3472216C9C4B0020310B /* Sources */,
@@ -1670,9 +1670,9 @@
 			);
 			dependencies = (
 			);
-			name = YDObjectiveCKit;
+			name = YDObjcKit;
 			productName = YDAppleKit;
-			productReference = 5ADC3476216C9C4B0020310B /* YDObjectiveCKit.app */;
+			productReference = 5ADC3476216C9C4B0020310B /* YDObjcKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5ADC348F216C9C5A0020310B /* YDSwiftKit */ = {
@@ -1727,7 +1727,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5ADC3475216C9C4B0020310B /* YDObjectiveCKit */,
+				5ADC3475216C9C4B0020310B /* YDObjcKit */,
 				5ADC348F216C9C5A0020310B /* YDSwiftKit */,
 				5A67B69321801D1500B61860 /* YDiOSKit */,
 			);
@@ -1766,7 +1766,7 @@
 				5A67B70C21801D1500B61860 /* anime-01@2x.png in Resources */,
 				5A67B70D21801D1500B61860 /* Localizable.strings in Resources */,
 				5A67B70E21801D1500B61860 /* anime-03@2x.png in Resources */,
-				5A67B70F21801D1500B61860 /* YDObjectiveCInfo.plist in Resources */,
+				5A67B70F21801D1500B61860 /* YDObjcInfo.plist in Resources */,
 				5A67B71021801D1500B61860 /* anime-02@2x.png in Resources */,
 				5A67B71121801D1500B61860 /* YDConfig.map.xml in Resources */,
 				5A67B71221801D1500B61860 /* anime-04@3x.png in Resources */,
@@ -1811,7 +1811,7 @@
 				5ADC3632216CA8FC0020310B /* anime-01@2x.png in Resources */,
 				5AE2297A216F4E860058C0C5 /* Localizable.strings in Resources */,
 				5ADC362C216CA8FC0020310B /* anime-03@2x.png in Resources */,
-				5ADC34B3216C9F9C0020310B /* YDObjectiveCInfo.plist in Resources */,
+				5ADC34B3216C9F9C0020310B /* YDObjcInfo.plist in Resources */,
 				5ADC364A216CA8FC0020310B /* anime-02@2x.png in Resources */,
 				5ADC3721216CAB570020310B /* YDConfig.map.xml in Resources */,
 				5ADC365E216CA8FC0020310B /* anime-04@3x.png in Resources */,
@@ -2086,7 +2086,7 @@
 				5A67B6ED21801D1500B61860 /* YDBaiduMapUserLocation.m in Sources */,
 				5A67B6EE21801D1500B61860 /* YDMapPlatformXmlParser.m in Sources */,
 				5A67B6EF21801D1500B61860 /* YDMVCController.m in Sources */,
-				5A67B6F021801D1500B61860 /* YDObjectiveCAppDelegate.m in Sources */,
+				5A67B6F021801D1500B61860 /* YDObjcAppDelegate.m in Sources */,
 				5A67B6F121801D1500B61860 /* YDBaiduAiAuthNet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2187,7 +2187,7 @@
 				5ADC372B216CAB570020310B /* YDBaiduMapUserLocation.m in Sources */,
 				5ADC3725216CAB570020310B /* YDMapPlatformXmlParser.m in Sources */,
 				5ADC3668216CA8FC0020310B /* YDMVCController.m in Sources */,
-				5ADC34B2216C9F9C0020310B /* YDObjectiveCAppDelegate.m in Sources */,
+				5ADC34B2216C9F9C0020310B /* YDObjcAppDelegate.m in Sources */,
 				5A355459217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2476,13 +2476,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EED7BFFE614F6748ABA69157 /* Pods-defaults-YDObjectiveCKit.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_OC;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_OC;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Objc;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_Objc;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Q4N5684Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDPrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDObjectiveCKit/YDClass/YDAppDelegate/YDObjectiveCInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDObjcKit/YDClass/YDAppDelegate/YDObjcInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2500,13 +2500,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59EDC63E8DEECFA288E9C65A /* Pods-defaults-YDObjectiveCKit.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_OC;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_OC;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Objc;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage_Objc;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Q4N5684Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDPrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDObjectiveCKit/YDClass/YDAppDelegate/YDObjectiveCInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/YDAppleKit/YDObjcKit/YDClass/YDAppDelegate/YDObjcInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2592,7 +2592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ADC348C216C9C4D0020310B /* Build configuration list for PBXNativeTarget "YDObjectiveCKit" */ = {
+		5ADC348C216C9C4D0020310B /* Build configuration list for PBXNativeTarget "YDObjcKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ADC348D216C9C4D0020310B /* Debug */,
