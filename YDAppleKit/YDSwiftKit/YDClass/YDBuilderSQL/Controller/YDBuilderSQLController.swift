@@ -39,7 +39,7 @@ class YDBuilderSQLController: UIViewController, UITableViewDelegate, UITableView
         return table
     }()
     lazy var titleList: [String] = {
-        let list: [String] = ["测试壹","测试贰","测试叁","测试肆","测试伍","测试陆 - 测试创建数据库","测试柒","测试捌","测试玖","测试拾"]
+        let list: [String] = ["测试壹","测试贰","测试叁","测试肆","测试伍","测试陆 - 测试创建数据库","测试柒 - 删除操作","测试捌 - 查询操作","测试玖 - 其他条件查询","测试拾 - 数据更新"]
         return list
     }()
 
@@ -193,13 +193,34 @@ extension YDBuilderSQLController {
         self.sqlLabel.text = String(result)
         print("结果：\(result)")
     }
-    //测试七
+    //测试七 - 删除操作
     func testSeven() {
+        YDTableTemplateConfig.sharedInstace.initXml()
+        let helper = YDOrmSQLiteOpenHelper()
+        let dao = YDBaseDao<YDTableInfo>(helper: helper)
+        let tableInfo = YDTableInfo()
+        tableInfo.tableId = 1
+        tableInfo.tableName = "student"
+        tableInfo.tableAge = 20
+        let result = dao.delete(obj: tableInfo)
+        
+        self.sqlLabel.text = String(result)
+        print("结果：\(result)")
+        
+        
         
     }
     //测试八
     func testEight() {
-        
+        YDTableTemplateConfig.sharedInstace.initXml()
+        let helper = YDOrmSQLiteOpenHelper()
+        let dao = YDBaseDao<YDTableInfo>(helper: helper)
+        let result = dao.selectAll()
+        for item in result {
+            print("用户ID：\(item.tableId)")
+            print("用户名：\(item.tableName)")
+            print("用户年龄：\(item.tableAge)")
+        }
     }
     //测试九
     func testNine() {

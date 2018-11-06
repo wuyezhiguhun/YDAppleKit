@@ -51,6 +51,13 @@ class YDBaseDao<T: NSObject>: NSObject {
         return Int((self.helper?.getDb().execute(sql: sql))!)
     }
     
+    //查询所有用户
+    func selectAll() -> Array<T> {
+        let orm = getOrm(cls: T.classForCoder())
+        let sql = selectBuilder.selectAllTable(orm: orm).build()
+        return self.select(orm: orm, sql: sql)
+    }
+    
     //查询单个用户（根据主键查询）
     func select(id: Int) -> T {
         let orm = getOrm(cls: T.classForCoder())
