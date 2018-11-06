@@ -13,7 +13,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        YDLog(@"YDFactoryButton");
+        [[YDLog shared] i:@"YDFactoryButton"];
     }
     return self;
 }

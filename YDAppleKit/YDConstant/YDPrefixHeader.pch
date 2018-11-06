@@ -22,6 +22,7 @@
 #import "YDKit.h"
 #import "YDModuleRouterUrl.h"
 #import "YDMacro.h"
+#import "YDSwiftKit-Swift.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

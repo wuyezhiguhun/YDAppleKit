@@ -14,9 +14,9 @@ class YDSwiftSingletonController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.orange
         self.navigationItem.title = "单例模式"
-        let singleton1 = YDSingletonPattern.sharedInstance()
-        let singleton2 = YDSingletonPattern.sharedInstance()
-        let singleton3 = YDSingletonPattern.sharedInstance()
+        let singleton1 = YDSwiftSingletonPattern.sharedInstance()
+        let singleton2 = YDSwiftSingletonPattern.sharedInstance()
+        let singleton3 = YDSwiftSingletonPattern.sharedInstance()
         
         NSLog("YDSingletonPattern --*singleton1*-- %@", singleton1)
         NSLog("YDSingletonPattern --*singleton2*-- %@", singleton2)

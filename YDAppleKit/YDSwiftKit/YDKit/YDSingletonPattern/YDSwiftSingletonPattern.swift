@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class YDSingletonPattern: NSObject {
+final class YDSwiftSingletonPattern: NSObject {
 
-    private static let instance: YDSingletonPattern = YDSingletonPattern()
-    class func sharedInstance() -> YDSingletonPattern {
+    private static let instance: YDSwiftSingletonPattern = YDSwiftSingletonPattern()
+    class func sharedInstance() -> YDSwiftSingletonPattern {
         return instance
     }
     

@@ -35,9 +35,17 @@ public enum YDLogLevel: Int {
 }
 
 
-class YDLog: NSObject {
+@objc class YDLog: NSObject {
 
-    public static let shared = YDLog()
+    private static let instance: YDLog = YDLog()
+    @objc class func shared() -> YDLog {
+        return instance
+    }
+    
+    //将构成方法私有化
+    private override init() {
+        
+    }
     
     // MARK: - Output
     public var tag: String?
@@ -55,7 +63,7 @@ class YDLog: NSObject {
 
 
 //MARK: --- 打印 带有标记的 打印
-extension YDLog {
+@objc extension YDLog {
     
     public func i(_ tag: String, _ message: String) {
         log(tag, .i, message: message, currentTime: Date())
@@ -79,17 +87,40 @@ extension YDLog {
         log(tag, .e, message: message, currentTime: Date())
     }
     
-    private func log(_ tag: String, _ level: YDLogLevel, message: String, currentTime: Date) {
-        
-        let text = level.name + self.dateFormater.string(from: currentTime) + " : " + tag + " : " +  message
-        
-        print(text)
+    
+}
+
+//MARK: --- 类方法 打印 带有标记的 打印
+@objc extension YDLog {
+    
+    class func i(_ tag: String, _ message: String) {
+        log(tag, .i, message: message, currentTime: Date())
     }
+    class func r(_ tag: String, _ message: String) {
+        #if DEBUG
+        #else
+        log(tag, .r, message: message, currentTime: Date())
+        #endif
+    }
+    class func d(_ tag: String, _ message: String) {
+        #if DEBUG
+        log(tag, .d, message: message, currentTime: Date())
+        #else
+        #endif
+    }
+    class func w(_ tag: String, _ message: String) {
+        log(tag, .w, message: message, currentTime: Date())
+    }
+    class func e(_ tag: String, _ message: String) {
+        log(tag, .e, message: message, currentTime: Date())
+    }
+    
+    
 }
 
 
-//MARK: --- 打印
-extension YDLog {
+//MARK: ---对象方法 打印
+@objc extension YDLog {
     public func i(_ message: String) {
         log(.i, message: message, currentTime: Date())
     }
@@ -100,7 +131,7 @@ extension YDLog {
         #endif
     }
     public func d(_ message: String) {
-        #if DEBUG_ASSERT_COMPONENT_NAME_STRING
+        #if DEBUG
         log(.r, message: message, currentTime: Date())
         #else
         #endif
@@ -112,10 +143,63 @@ extension YDLog {
         log(.e, message: message, currentTime: Date())
     }
     
+    
+}
+//MARK: ---类象方法 打印
+@objc extension YDLog {
+    class func i(_ message: String) {
+        log(.i, message: message, currentTime: Date())
+    }
+    class func r(_ message: String) {
+        #if DEBUG
+        #else
+        log(.r, message: message, currentTime: Date())
+        #endif
+    }
+    class func d(_ message: String) {
+        #if DEBUG
+        log(.r, message: message, currentTime: Date())
+        #else
+        #endif
+    }
+    class func w(_ message: String) {
+        log(.w, message: message, currentTime: Date())
+    }
+    class func e(_ message: String) {
+        log(.e, message: message, currentTime: Date())
+    }
+    
+    
+}
+
+//MARK: -- 对象方法 打印
+extension YDLog {
+    //不带标记打印
     private func log(_ level: YDLogLevel, message: String, currentTime: Date) {
-        
         let text = level.name + self.dateFormater.string(from: currentTime) + " : " +  message
-        
+        print(text)
+    }
+    //带标记打印
+    private func log(_ tag: String, _ level: YDLogLevel, message: String, currentTime: Date) {
+        let text = level.name + self.dateFormater.string(from: currentTime) + " : " + tag + " : " +  message
+        print(text)
+    }
+}
+
+//MARK: -- 类方法 打印
+extension YDLog {
+    //不带标记打印
+    class func log(_ level: YDLogLevel, message: String, currentTime: Date) {
+        let formater = DateFormatter()
+        formater.dateFormat = "yyyy-MM-dd HH:mm:ss.sss"
+        let text = level.name + formater.string(from: currentTime) + " : " +  message
+        print(text)
+    }
+    //带标记打印
+    class func log(_ tag: String, _ level: YDLogLevel, message: String, currentTime: Date) {
+        let formater = DateFormatter()
+        formater.dateFormat = "yyyy-MM-dd HH:mm:ss.sss"
+        let text = level.name + formater.string(from: currentTime) + " : " + tag + " : " +  message
         print(text)
     }
 }

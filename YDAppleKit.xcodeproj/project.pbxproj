@@ -36,7 +36,7 @@
 		5A67B6A321801D1500B61860 /* YDBaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B432170AD7A00DB0421 /* YDBaseDao.swift */; };
 		5A67B6A421801D1500B61860 /* YDMapPlatformPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36B8216CAB560020310B /* YDMapPlatformPlistParser.m */; };
 		5A67B6A521801D1500B61860 /* YDRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3691216CAB560020310B /* YDRefresh.m */; };
-		5A67B6A621801D1500B61860 /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */; };
+		5A67B6A621801D1500B61860 /* YDSwiftSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSwiftSingletonPattern.swift */; };
 		5A67B6A721801D1500B61860 /* YDMultiLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3699216CAB560020310B /* YDMultiLanguage.m */; };
 		5A67B6A821801D1500B61860 /* UIView+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3690216CAB560020310B /* UIView+DDExtension.m */; };
 		5A67B6A921801D1500B61860 /* YDSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B22176E9F30060E39D /* YDSQLAlterTableBuilder.swift */; };
@@ -230,8 +230,8 @@
 		5ADC3507216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */; };
 		5ADC3508216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */; };
 		5ADC3509216CA84F0020310B /* YDSQLInsertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */; };
-		5ADC350A216CA84F0020310B /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */; };
-		5ADC350B216CA84F0020310B /* YDSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */; };
+		5ADC350A216CA84F0020310B /* YDSwiftSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSwiftSingletonPattern.swift */; };
+		5ADC350B216CA84F0020310B /* YDSwiftSingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E9216CA84F0020310B /* YDSwiftSingletonPattern.swift */; };
 		5ADC3512216CA8780020310B /* YDSwiftSingletonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */; };
 		5ADC3513216CA8780020310B /* YDSwiftSingletonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */; };
 		5ADC3514216CA8780020310B /* YDBuilderSQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3511216CA8780020310B /* YDBuilderSQLController.swift */; };
@@ -477,7 +477,7 @@
 		5ADC34E4216CA84F0020310B /* YDOrmSQLInsertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDOrmSQLInsertBuilder.swift; sourceTree = "<group>"; };
 		5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLSelectBuilder.swift; sourceTree = "<group>"; };
 		5ADC34E7216CA84F0020310B /* YDSQLInsertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSQLInsertBuilder.swift; sourceTree = "<group>"; };
-		5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSingletonPattern.swift; sourceTree = "<group>"; };
+		5ADC34E9216CA84F0020310B /* YDSwiftSingletonPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSwiftSingletonPattern.swift; sourceTree = "<group>"; };
 		5ADC350E216CA8780020310B /* YDSwiftSingletonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSwiftSingletonController.swift; sourceTree = "<group>"; };
 		5ADC3511216CA8780020310B /* YDBuilderSQLController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDBuilderSQLController.swift; sourceTree = "<group>"; };
 		5ADC35E0216CA8FB0020310B /* anime-11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime-11@2x.png"; sourceTree = "<group>"; };
@@ -1069,7 +1069,7 @@
 		5ADC34E8216CA84F0020310B /* YDSingletonPattern */ = {
 			isa = PBXGroup;
 			children = (
-				5ADC34E9216CA84F0020310B /* YDSingletonPattern.swift */,
+				5ADC34E9216CA84F0020310B /* YDSwiftSingletonPattern.swift */,
 			);
 			path = YDSingletonPattern;
 			sourceTree = "<group>";
@@ -2036,7 +2036,7 @@
 				5A67B6A321801D1500B61860 /* YDBaseDao.swift in Sources */,
 				5A67B6A421801D1500B61860 /* YDMapPlatformPlistParser.m in Sources */,
 				5A67B6A521801D1500B61860 /* YDRefresh.m in Sources */,
-				5A67B6A621801D1500B61860 /* YDSingletonPattern.swift in Sources */,
+				5A67B6A621801D1500B61860 /* YDSwiftSingletonPattern.swift in Sources */,
 				5A67B6A721801D1500B61860 /* YDMultiLanguage.m in Sources */,
 				5A67B6A821801D1500B61860 /* UIView+DDExtension.m in Sources */,
 				5A515A4F21903F39002EFF6A /* YDLogController.swift in Sources */,
@@ -2139,7 +2139,7 @@
 				5AA52B442170AD7A00DB0421 /* YDBaseDao.swift in Sources */,
 				5ADC3723216CAB570020310B /* YDMapPlatformPlistParser.m in Sources */,
 				5ADC3709216CAB570020310B /* YDRefresh.m in Sources */,
-				5ADC350A216CA84F0020310B /* YDSingletonPattern.swift in Sources */,
+				5ADC350A216CA84F0020310B /* YDSwiftSingletonPattern.swift in Sources */,
 				5ADC370D216CAB570020310B /* YDMultiLanguage.m in Sources */,
 				5ADC3707216CAB570020310B /* UIView+DDExtension.m in Sources */,
 				5A515A4D21903F39002EFF6A /* YDLogController.swift in Sources */,
@@ -2321,7 +2321,7 @@
 				5ADC3675216CA8FC0020310B /* YDMVCFolderCell.m in Sources */,
 				5ADC373A216CAB570020310B /* YDAmapMapLocationService.m in Sources */,
 				5ADC366D216CA8FC0020310B /* YDMVCItem.m in Sources */,
-				5ADC350B216CA84F0020310B /* YDSingletonPattern.swift in Sources */,
+				5ADC350B216CA84F0020310B /* YDSwiftSingletonPattern.swift in Sources */,
 				5ADC3686216CA9440020310B /* YDSwiftModuleRouterUrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2569,7 +2569,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuyezhiguhun.YDSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YDAppleKit/YDConstant/YDSwiftKitBridgingHeader.h";

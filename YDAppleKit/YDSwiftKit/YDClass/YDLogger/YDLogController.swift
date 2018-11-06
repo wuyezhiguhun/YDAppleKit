@@ -14,15 +14,17 @@ class YDLogController: UIViewController {
         super.viewDidLoad()
         setBaseParameter()
         
-        YDLog.shared.i("打印之I")
-        YDLog.shared.d("打印之D")
-        YDLog.shared.w("打印之W")
-        YDLog.shared.e("打印之E")
+        YDLog.shared().i("打印之I")
+        YDLog.r("打印之R")
+        YDLog.shared().d("打印之D")
+        YDLog.shared().w("打印之W")
+        YDLog.shared().e("打印之E")
         
-        YDLog.shared.i("info", "打印之I")
-        YDLog.shared.d("debug", "打印之D")
-        YDLog.shared.w("warning", "打印之W")
-        YDLog.shared.e("error", "打印之E")
+        YDLog.shared().i("info", "打印之I")
+        YDLog.shared().r("relese", "打印之R")
+        YDLog.shared().d("debug", "打印之D")
+        YDLog.shared().w("warning", "打印之W")
+        YDLog.shared().e("error", "打印之E")
         
     }
     
