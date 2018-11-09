@@ -10,8 +10,11 @@ import UIKit
 
 class YDBuilderSQLController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var filePath: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.filePath = Bundle.main.path(forResource: "YDTableInfo", ofType: "orm.xml")
         self.setBaseParameter()
         self.view.addSubview(self.sqlLabel)
         self.view.addSubview(self.tableView)
@@ -39,7 +42,7 @@ class YDBuilderSQLController: UIViewController, UITableViewDelegate, UITableView
         return table
     }()
     lazy var titleList: [String] = {
-        let list: [String] = ["测试壹","测试贰","测试叁","测试肆","测试伍","测试陆 - 测试创建数据库","测试柒 - 删除操作","测试捌 - 查询操作","测试玖 - 其他条件查询","测试拾 - 数据更新"]
+        let list: [String] = ["测试壹 - 查询语句","测试贰 - 查询排序","测试叁 - 插入","测试肆 - 批量插入","测试伍 - 测试Dao","测试陆 - 测试创建数据库","测试柒 - 删除操作","测试捌 - 查询操作","测试玖 - 其他条件查询","测试拾 - 数据更新"]
         return list
     }()
 
@@ -100,39 +103,40 @@ extension YDBuilderSQLController {
             self.testOne()
         }
     }
-    //测试一
+    //测试一 - 查询语句
     func testOne() {
         let selectSQLBuilder = YDSQLSelectBuilder()
         var wh = [String: Any]()
-        wh["age"] = 18
-        wh["name"] = "Dream"
+        wh["tableId"] = 2
+        wh["tableName"] = "zhangsan"
+        wh["tableAge"] = 20
         let sql: String = selectSQLBuilder.select().all().from().table("student").wh().whAnd(wh).build()
         self.sqlLabel.text = sql;
         print("SQL: " + sql)
     }
-    //测试二
+    //测试二 - 查询排序
     func testSecond() {
         let selectSQLBuilder = YDSQLSelectBuilder()
         var wh = [String: Any]()
-        wh["age"] = 19
-        wh["id"] = "1010101"
-        wh["name"] = "Dream"
+        wh["tableAge"] = 20
+        wh["tableId"] = "2"
+        wh["tableName"] = "zhangsan"
         
-        let sql: String = selectSQLBuilder.selectAllFromTableWhereForma(table: "student", wh: wh).orderBy("age").orderByAsc().build()
+        let sql: String = selectSQLBuilder.selectAllFromTableWhereForma(table: "student", wh: wh).orderBy("tableAge").orderByAsc().build()
         self.sqlLabel.text = sql
         print("SQL: " + sql)
     }
-    //测试三
+    //测试三 - 插入
     func testThree() {
         var colums = Array<String>()
-        colums.append("id")
-        colums.append("age")
-        colums.append("name")
+        colums.append("tableId")
+        colums.append("tableAge")
+        colums.append("tableName")
         
         var values = Array<Any>()
-        values.append("0000001")
+        values.append("11")
         values.append(18)
-        values.append("张三")
+        values.append("zhangsan")
         
         let insert = YDSQLInsertBuilder()
         let sql = insert.insert().into().table("student").colums(colums).values(values).build()
@@ -142,20 +146,20 @@ extension YDBuilderSQLController {
     //测试四 批量插入
     func testFour() {
         var colums = Array<String>()
-        colums.append("id")
-        colums.append("age")
-        colums.append("name")
+        colums.append("tableId")
+        colums.append("tableAge")
+        colums.append("tableName")
         
         var values = Array<Array<Any>>()
         var values1 = Array<Any>()
-        values1.append(0000002)
-        values1.append("李四")
+        values1.append(12)
+        values1.append("lisi")
         values1.append(19)
         values.append(values1)
         
         var values2 = Array<Any>()
-        values2.append(0000003)
-        values2.append("王二")
+        values2.append(13)
+        values2.append("wanger")
         values2.append(20)
         values.append(values2)
         
@@ -164,16 +168,16 @@ extension YDBuilderSQLController {
         self.sqlLabel.text = sql
         print("SQL: " + sql)
     }
-    //测试五 测试DAO
+    //测试五 测试DAO - 创建数据库
     func testFive() {
-        YDTableTemplateConfig.sharedInstace.initXml()
+        YDTableTemplateConfig.sharedInstace.initXml(self.filePath!)
         let helper = YDOrmSQLiteOpenHelper()
         
         let baseDao = YDBaseDao<YDTableInfo>(helper: helper)
         let tableInfo = YDTableInfo()
-        tableInfo.tableId = 1
-        tableInfo.tableName = "student"
-        tableInfo.tableAge = 20
+        tableInfo.tableId = 2
+        tableInfo.tableName = "teacher"
+        tableInfo.tableAge = 25
         let result = baseDao.insert(obj: tableInfo)
         
         self.sqlLabel.text = String(result)
@@ -181,7 +185,7 @@ extension YDBuilderSQLController {
     }
     //测试六 - 测试创建数据库
     func testSix() {
-        YDTableTemplateConfig.sharedInstace.initXml()
+        YDTableTemplateConfig.sharedInstace.initXml(self.filePath!)
         let helper = YDOrmSQLiteOpenHelper()
         let baseDao = YDBaseDao<YDTableInfo>(helper: helper)
         let tableInfo = YDTableInfo()
@@ -195,7 +199,7 @@ extension YDBuilderSQLController {
     }
     //测试七 - 删除操作
     func testSeven() {
-        YDTableTemplateConfig.sharedInstace.initXml()
+        YDTableTemplateConfig.sharedInstace.initXml(self.filePath!)
         let helper = YDOrmSQLiteOpenHelper()
         let dao = YDBaseDao<YDTableInfo>(helper: helper)
         let tableInfo = YDTableInfo()
@@ -206,28 +210,47 @@ extension YDBuilderSQLController {
         
         self.sqlLabel.text = String(result)
         print("结果：\(result)")
-        
-        
-        
     }
-    //测试八
+    //测试八 - 查询操作
     func testEight() {
-        YDTableTemplateConfig.sharedInstace.initXml()
+        YDTableTemplateConfig.sharedInstace.initXml(self.filePath!)
         let helper = YDOrmSQLiteOpenHelper()
         let dao = YDBaseDao<YDTableInfo>(helper: helper)
         let result = dao.selectAll()
         for item in result {
-            print("用户ID：\(item.tableId)")
-            print("用户名：\(item.tableName)")
-            print("用户年龄：\(item.tableAge)")
+            print("用户ID：\(item.tableId) :||: 用户名：\(item.tableName) :||: 用户年龄：\(item.tableAge)")
         }
     }
     //测试九
     func testNine() {
+        YDTableTemplateConfig.sharedInstace.initXml(self.filePath!)
+        let helper = YDOrmSQLiteOpenHelper()
+        let dao = YDBaseDao<YDTableInfo>(helper: helper)
         
+        let tableInfo = dao.select(id: 1)
+        
+        print("用户ID：\(tableInfo.tableId) :||: 用户名：\(tableInfo.tableName) :||: 用户年龄：\(tableInfo.tableAge)")
+        
+
+        var wh = [String: Any]()
+        wh["tableName"] = "student"
+        let array = dao.select(wh: wh)
+        for item in array {
+            print("用户ID：\(item.tableId) :||: 用户名：\(item.tableName) :||: 用户年龄：\(item.tableAge)")
+        }
     }
-    //测试十
+    //测试十 测试数据更新
     func testTen() {
+        YDTableTemplateConfig.sharedInstace.initXml(self.filePath!)
+        let helper = YDOrmSQLiteOpenHelper()
+        let dao = YDBaseDao<YDTableInfo>(helper: helper)
+        let tableInfo = YDTableInfo()
+        tableInfo.tableId = 2
+        tableInfo.tableName = "teacher"
+        tableInfo.tableAge = 30
+        let result = dao.update(obj: tableInfo)
+        
+        print("更新结果： \(result)")
         
     }
     

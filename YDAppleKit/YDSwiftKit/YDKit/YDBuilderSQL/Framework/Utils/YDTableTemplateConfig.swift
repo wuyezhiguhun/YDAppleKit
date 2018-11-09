@@ -30,8 +30,8 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
     
     static let sharedInstace = YDTableTemplateConfig()
     
-    func initXml() {
-        self.parser = XMLParser(contentsOf: NSURL(fileURLWithPath: Bundle.main.path(forResource: "YDTableInfo", ofType: "orm.xml")!) as URL)
+    func initXml(_ filePate: String) {
+        self.parser = XMLParser(contentsOf: NSURL(fileURLWithPath: filePate) as URL)
         self.parser.delegate = self
         self.parser.parse()
     }
@@ -51,9 +51,9 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
             self.key.columnType = attributeDict[ATTRIBUTE_COLUMN_TYPE]!
             self.key.property = attributeDict[ATTRIBUTE_PROPERTY]!
             self.key.propertyType = attributeDict[ATTRIBUTE_TYPE]!
-            if(attributeDict[ATTRIBUTE_IDENTITY] == "true"){
+            if(attributeDict[ATTRIBUTE_IDENTITY] == "true") {
                 self.key.identity = true
-            }else{
+            } else {
                 self.key.identity = false
             }
             self.orm.key = self.key
@@ -71,36 +71,4 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
         }
         
     }
-
-    
-    
-    
-    
-    
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

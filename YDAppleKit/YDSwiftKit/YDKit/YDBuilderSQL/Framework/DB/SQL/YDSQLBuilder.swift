@@ -95,10 +95,9 @@ class YDSQLBuilder: NSObject {
             self.sql.append(key)
             self.sql.append(" = ")
             if isFormat {
-                self.sql.append("?")
+                self.sql.append("? ")
             } else {
                 self.appendValue(wh[key]!)
-//                self.sql.append(String(describing: wh[key])
             }
             index += 1
             if index < wh.count {

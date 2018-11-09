@@ -10,6 +10,6 @@ import UIKit
 
 class YDOrmKey: YDOrmItem {
 
-    var identity:Bool = true
+    var identity: Bool = true
     
 }

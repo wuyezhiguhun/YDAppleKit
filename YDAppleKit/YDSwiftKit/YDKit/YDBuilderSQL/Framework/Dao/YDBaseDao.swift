@@ -40,6 +40,7 @@ class YDBaseDao<T: NSObject>: NSObject {
     func update(obj: T) -> Int {
         let orm = getOrm(cls: obj.classForCoder)
         let sql = updateBuilder.updateTable(orm: orm, obj: obj).build()
+        
         return Int((self.helper?.getDb().execute(sql: sql))!)
     }
     
@@ -49,6 +50,13 @@ class YDBaseDao<T: NSObject>: NSObject {
         let orm = getOrm(cls: obj.classForCoder)
         let sql = deleteBuilder.deleteFromTable(orm: orm, obj: obj).build()
         return Int((self.helper?.getDb().execute(sql: sql))!)
+    }
+    
+    //根据条件查询（让客户端指定查询条件）
+    func select(wh: [String: Any]) -> Array<T> {
+        let orm = getOrm(cls: T.classForCoder())
+        let sql = selectBuilder.selectAllTable(orm: orm, wh: wh).build()
+        return self.select(orm: orm, sql: sql)
     }
     
     //查询所有用户

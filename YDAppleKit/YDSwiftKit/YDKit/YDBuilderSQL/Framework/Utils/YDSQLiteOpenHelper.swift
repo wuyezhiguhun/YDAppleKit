@@ -39,7 +39,6 @@ class YDSQLiteOpenHelper: NSObject {
                 if (result == 1) {
                     userDefault.set(self.dbVersionCode, forKey: "YDDBVersionCode")
                 }
-                
             }
         }
     }

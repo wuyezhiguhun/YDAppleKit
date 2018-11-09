@@ -41,7 +41,6 @@
 		5A67B6A821801D1500B61860 /* UIView+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3690216CAB560020310B /* UIView+DDExtension.m */; };
 		5A67B6A921801D1500B61860 /* YDSQLAlterTableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB970B22176E9F30060E39D /* YDSQLAlterTableBuilder.swift */; };
 		5A67B6AA21801D1500B61860 /* YDModuleRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3683216CA9440020310B /* YDModuleRouterUrl.m */; };
-		5A67B6AB21801D1500B61860 /* YDOrderDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */; };
 		5A67B6AC21801D1500B61860 /* YDSQLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E2216CA84F0020310B /* YDSQLBuilder.swift */; };
 		5A67B6AD21801D1500B61860 /* YDSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC368C216CAB560020310B /* YDSingletonPattern.m */; };
 		5A67B6AE21801D1500B61860 /* YDSQLiteOpenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34D8216CA84F0020310B /* YDSQLiteOpenHelper.swift */; };
@@ -75,7 +74,6 @@
 		5A67B6CA21801D1500B61860 /* YDJokeNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC3601216CA8FC0020310B /* YDJokeNetworking.m */; };
 		5A67B6CB21801D1500B61860 /* YDAmapMapPoiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36DD216CAB570020310B /* YDAmapMapPoiInfo.m */; };
 		5A67B6CC21801D1500B61860 /* YDSQLSelectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34E6216CA84F0020310B /* YDSQLSelectBuilder.swift */; };
-		5A67B6CD21801D1500B61860 /* YDUserDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */; };
 		5A67B6CE21801D1500B61860 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC34CC216CA84F0020310B /* String-Extras.swift */; };
 		5A67B6CF21801D1500B61860 /* YDBaiduMapPoiSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36C3216CAB560020310B /* YDBaiduMapPoiSearchResponse.m */; };
 		5A67B6D021801D1500B61860 /* YDViewXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC36A4216CAB560020310B /* YDViewXmlParser.m */; };
@@ -159,10 +157,6 @@
 		5A67B73021801FD600B61860 /* YDiOSKitInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B72F21801FD500B61860 /* YDiOSKitInfo.plist */; };
 		5A67B73121801FD600B61860 /* YDiOSKitInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B72F21801FD500B61860 /* YDiOSKitInfo.plist */; };
 		5A67B73221801FD600B61860 /* YDiOSKitInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B72F21801FD500B61860 /* YDiOSKitInfo.plist */; };
-		5AA52B3E2170ACC100DB0421 /* YDUserDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */; };
-		5AA52B3F2170ACC100DB0421 /* YDUserDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */; };
-		5AA52B412170AD5F00DB0421 /* YDOrderDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */; };
-		5AA52B422170AD5F00DB0421 /* YDOrderDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */; };
 		5AA52B442170AD7A00DB0421 /* YDBaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B432170AD7A00DB0421 /* YDBaseDao.swift */; };
 		5AA52B452170AD7A00DB0421 /* YDBaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B432170AD7A00DB0421 /* YDBaseDao.swift */; };
 		5AA52B472170B0C100DB0421 /* YDOrmSQLDeleteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA52B462170B0C100DB0421 /* YDOrmSQLDeleteBuilder.swift */; };
@@ -433,8 +427,6 @@
 		5A67B72A21801EC500B61860 /* YDiOSMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDiOSMainController.h; sourceTree = "<group>"; };
 		5A67B72B21801EC500B61860 /* YDiOSMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDiOSMainController.m; sourceTree = "<group>"; };
 		5A67B72F21801FD500B61860 /* YDiOSKitInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YDiOSKitInfo.plist; sourceTree = "<group>"; };
-		5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDUserDao.swift; sourceTree = "<group>"; };
-		5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrderDao.swift; sourceTree = "<group>"; };
 		5AA52B432170AD7A00DB0421 /* YDBaseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDBaseDao.swift; sourceTree = "<group>"; };
 		5AA52B462170B0C100DB0421 /* YDOrmSQLDeleteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDOrmSQLDeleteBuilder.swift; sourceTree = "<group>"; };
 		5AA52B492170B10300DB0421 /* YDSQLDeleteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSQLDeleteBuilder.swift; sourceTree = "<group>"; };
@@ -974,8 +966,6 @@
 			isa = PBXGroup;
 			children = (
 				5ADC34D2216CA84F0020310B /* YDTableInfoDao.swift */,
-				5AA52B3D2170ACC100DB0421 /* YDUserDao.swift */,
-				5AA52B402170AD5F00DB0421 /* YDOrderDao.swift */,
 				5AA52B432170AD7A00DB0421 /* YDBaseDao.swift */,
 			);
 			path = Dao;
@@ -2042,7 +2032,6 @@
 				5A515A4F21903F39002EFF6A /* YDLogController.swift in Sources */,
 				5A67B6A921801D1500B61860 /* YDSQLAlterTableBuilder.swift in Sources */,
 				5A67B6AA21801D1500B61860 /* YDModuleRouterUrl.m in Sources */,
-				5A67B6AB21801D1500B61860 /* YDOrderDao.swift in Sources */,
 				5A67B6AC21801D1500B61860 /* YDSQLBuilder.swift in Sources */,
 				5A67B72E21801EC500B61860 /* YDiOSMainController.m in Sources */,
 				5A67B6AD21801D1500B61860 /* YDSingletonPattern.m in Sources */,
@@ -2079,7 +2068,6 @@
 				5A67B6CA21801D1500B61860 /* YDJokeNetworking.m in Sources */,
 				5A67B6CB21801D1500B61860 /* YDAmapMapPoiInfo.m in Sources */,
 				5A67B6CC21801D1500B61860 /* YDSQLSelectBuilder.swift in Sources */,
-				5A67B6CD21801D1500B61860 /* YDUserDao.swift in Sources */,
 				5A67B6CE21801D1500B61860 /* String-Extras.swift in Sources */,
 				5A67B6CF21801D1500B61860 /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5A67B6D021801D1500B61860 /* YDViewXmlParser.m in Sources */,
@@ -2145,7 +2133,6 @@
 				5A515A4D21903F39002EFF6A /* YDLogController.swift in Sources */,
 				5AB970B32176E9F30060E39D /* YDSQLAlterTableBuilder.swift in Sources */,
 				5ADC3687216CA9440020310B /* YDModuleRouterUrl.m in Sources */,
-				5AA52B412170AD5F00DB0421 /* YDOrderDao.swift in Sources */,
 				5ADC3502216CA84F0020310B /* YDSQLBuilder.swift in Sources */,
 				5A67B72C21801EC500B61860 /* YDiOSMainController.m in Sources */,
 				5ADC3703216CAB570020310B /* YDSingletonPattern.m in Sources */,
@@ -2182,7 +2169,6 @@
 				5ADC3664216CA8FC0020310B /* YDJokeNetworking.m in Sources */,
 				5ADC3741216CAB570020310B /* YDAmapMapPoiInfo.m in Sources */,
 				5ADC3506216CA84F0020310B /* YDSQLSelectBuilder.swift in Sources */,
-				5AA52B3E2170ACC100DB0421 /* YDUserDao.swift in Sources */,
 				5ADC34EA216CA84F0020310B /* String-Extras.swift in Sources */,
 				5ADC372D216CAB570020310B /* YDBaiduMapPoiSearchResponse.m in Sources */,
 				5ADC3715216CAB570020310B /* YDViewXmlParser.m in Sources */,
@@ -2282,14 +2268,12 @@
 				5AA52B4B2170B10300DB0421 /* YDSQLDeleteBuilder.swift in Sources */,
 				5ADC34F3216CA84F0020310B /* YDOrmItem.swift in Sources */,
 				5ADC3663216CA8FC0020310B /* YDJokeController.m in Sources */,
-				5AA52B3F2170ACC100DB0421 /* YDUserDao.swift in Sources */,
 				5A515A4E21903F39002EFF6A /* YDLogController.swift in Sources */,
 				5ADC3748216CAB570020310B /* YDMapEngine.m in Sources */,
 				5A35545A217F1002008AB4C6 /* YDBaiduAiAuthNet.m in Sources */,
 				5ACBA6162175F1B500643733 /* YDSQLSelectTableBuilder.swift in Sources */,
 				5ADC3738216CAB570020310B /* YDBaiduMapFactory.m in Sources */,
 				5ADC3755216CB3870020310B /* AppDelegate.m in Sources */,
-				5AA52B422170AD5F00DB0421 /* YDOrderDao.swift in Sources */,
 				5ADC371E216CAB570020310B /* YDRouter.m in Sources */,
 				5ADC373C216CAB570020310B /* YDAmapMapUserLocation.m in Sources */,
 				5ADC3718216CAB570020310B /* YDFactoryImageView.m in Sources */,

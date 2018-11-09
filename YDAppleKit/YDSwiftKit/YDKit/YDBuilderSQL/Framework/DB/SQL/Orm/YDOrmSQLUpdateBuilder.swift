@@ -22,7 +22,7 @@ class YDOrmSQLUpdateBuilder<T: NSObject>: YDSQLUpdateBuilder {
         //查询条件
         let name = orm.key?.column
         let value = obj.value(forKey: (orm.key?.property)!)
-        return self
+        return self.updateTableSetWhere(table: orm.tableName, columns: columns, name: name!, value: value!)
     }
 
 }
