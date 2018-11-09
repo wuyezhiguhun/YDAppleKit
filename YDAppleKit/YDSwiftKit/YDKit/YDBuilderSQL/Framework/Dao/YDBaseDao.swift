@@ -31,8 +31,6 @@ class YDBaseDao<T: NSObject>: NSObject {
         //根据ORM构建SQL语句
         let sql = insertBuilder.insertIntoTableOrm(orm: orm, obj: obj).build()
         
-        print("wuyezhiguhun")
-        print("构建的SQL： \(sql)")
         return Int((self.helper?.getDb().execute(sql: sql))!)
     }
     

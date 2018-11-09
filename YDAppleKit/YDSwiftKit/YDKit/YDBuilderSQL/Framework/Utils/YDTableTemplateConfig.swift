@@ -43,7 +43,10 @@ class YDTableTemplateConfig: NSObject, XMLParserDelegate {
             self.orm.className = attributeDict[ATTRIBUTE_BEAN_NAME]!
             self.orm.tableName = attributeDict[ATTRIBUTE_TABLE_NAME]!
             self.orm.daoName = attributeDict[ATTRIBUTE_DAO_NAME]!
-            self.ormDic["YDSwiftKit." + self.orm.className] = self.orm
+            let ormKey: String = Bundle.main.infoDictionary![kCFBundleExecutableKey as String] as! String + "." + self.orm.className
+            self.ormDic[ormKey] = self.orm
+
+//            self.ormDic["YDSwiftKit." + self.orm.className] = self.orm
             break
         case LABEL_KEY:
             self.key = YDOrmKey()

@@ -53,7 +53,7 @@ class YDSQLiteDB: NSObject {
         #endif
         let path = (docDir as NSString).appendingPathComponent(self.dbName)
         
-        YDLog.i("Database path: \(path)")
+        print("Database path: \(path)")
         
         if !(fm.fileExists(atPath: path)) {
             guard let rp = Bundle.main.resourcePath else { return }
